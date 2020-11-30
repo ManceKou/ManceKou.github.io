@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mance&#39;s Blogs</title>
+  
+  <subtitle>不随波逐流，也不必刻意逆流</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://mancekou.github.io/"/>
+  <updated>2020-05-29T10:12:49.797Z</updated>
+  <id>https://mancekou.github.io/</id>
+  
+  <author>
+    <name>Mance Kou</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Guassian学习备忘录</title>
+    <link href="https://mancekou.github.io/2020/05/29/Guassian%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>https://mancekou.github.io/2020/05/29/Guassian学习备忘录/</id>
+    <published>2020-05-29T10:00:39.000Z</published>
+    <updated>2020-05-29T10:12:49.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>计算小白的求学之路</p><a id="more"></a><h1 id="1-使用软件"><a href="#1-使用软件" class="headerlink" title="1. 使用软件"></a>1. 使用软件</h1><p>Gaussian 09</p><h1 id="2-概念"><a href="#2-概念" class="headerlink" title="2. 概念"></a>2. 概念</h1><p><a href="https://www.jianshu.com/p/c83c3a1b263f" target="_blank" rel="noopener">教程 | 使用基组和赝势</a> by 简书</p><h2 id="基组"><a href="#基组" class="headerlink" title="基组"></a>基组</h2><p>例如：3-21g</p><p>为劈裂(split)基组，其含义是：内层的每个AO用3个GF描述，价层的AO劈裂为两组，分别用2个和1个GF描述。</p><blockquote><p>O：内层为1s，AO数为1，GF数为3，价层2s的AO数为2，GF数为3，价层2p的AO数为          6，GF数为9，共1+2+6=9个AO，3+3+9=15个GF。</p></blockquote><p><strong>极化函数</strong>：指具有比原子价轨道更高角量子数的高斯函数。</p><p><code>极化函数的使用目的在于使原子价轨道在空间取向上变得更“柔软”，从而使之易于与其它原子的轨道成键</code></p><p><strong>环状分子或存在π作用的体系</strong></p><p>在标准基组后加“*”，“**”，(d)，(d,p)，(3df,3pd)等</p><p>对于(d,p)，第一个“d”表示对非H原子添加极化函数, 第二个“p”则对H原子添加极化函数。</p><blockquote><p>如：H的价轨道为1s，则其极化函数为p型GF，同样对C、O等价层为p轨道的原子，它        们的极化函数应为d型或f型轨道，类似地，对于过渡金属原子的极化函数为f型轨        道。</p></blockquote><p><strong>弥散函数</strong>：指具有较小轨道指数的高斯函数。</p><p><code>弥散函数的使用目的在于增加价轨道在空间上的分布范围</code></p><p><strong>带有较多电荷的体系或考察弱相互作用的体系</strong></p><p>在标准基组后加上“+”或“++”，如6-31+G, 6-31++G*等。</p><p>其中，第一个“+”表示对非H原子添加弥散函数, 第二个“+”则对H原子添加弥散函数.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">极化函数用于改进价轨道的角度分布，弥散函数则用于改进价轨道的径向分布。</span><br></pre></td></tr></table></figure><p><strong>赝势基组</strong>：将内层原子的影响用势函数来代替</p><p>对于重元素常采使用赝势基组</p><blockquote><p>对于过渡金属原子一般使用lanl系列的基组，对于主族元素采用cep系列的基组，sdd基组相对较少使用</p></blockquote><p><code>对lanl2系列的基组，除了价层电子外，还考虑了次外层的电子（对部分主族元素例外）</code></p><p><strong>混合基组</strong></p><p>关键字：GEN, PSEUDO=READ (赝势基组：GENECP=GEN, PSEUDO=READ)</p><p><code>gen是不同的基组的混合基组输入的关键字,genecp是有赝势的混合基组输入的关键字</code></p><h2 id="体系多重度"><a href="#体系多重度" class="headerlink" title="体系多重度"></a>体系多重度</h2><p>通过比较不同多重度时体系的能量来确定基态能量。</p><blockquote><p>以O2为例(基组为6-31G*)：<br>   S=1    -150.25734a.u.<br>   S=3    -150.31998a.u.<br>   S=5    -149.79200a.u.<br>   S=7    -148.80784a.u.<br>由上结果可见，O2的基态应为三重态。</p></blockquote><h2 id="构型优化"><a href="#构型优化" class="headerlink" title="构型优化"></a>构型优化</h2><p>关键字：OPT</p><p><strong>POP</strong>：控制分子轨道，几种布居分析以及原子电荷分布的打印</p><p><em>默认：输出原子电荷和轨道能量</em> </p><p><code>控制输出文件内容的选项</code></p><blockquote><p>minimal：原子总电荷和轨道能量</p><p>regular ：五个能量最高的占据轨道，五个能量最低的虚轨道，以及密度矩阵和完全的（逐个轨道，逐个原子）Mulliken 布居分析</p><p>Full：输出所有轨道以外，和Regular 布居分析相同</p><p>Always：在结构优化计算的每一步，而非第一步和最后一步，执行布居分析</p><p>Orbitals[=N]：对N 个最高占据轨道和N 个最低虚轨道执行布居分析</p><p>ThreshOrbitals=N：在各个轨道的布居分析中，设定包含轨道贡献的最小百分比</p></blockquote><p><code>布居分析选项</code></p><blockquote><p>Bonding：除了执行标准分析之外，还执行键布居分析</p></blockquote><p><code>自然轨道有关的选项</code></p><blockquote><p>NaturalOrbitals：对总密度进行自然轨道分析</p><p>NOAB：分别进行α 和β 密度的自然轨道分析</p><p>SpinNatural：对自旋密度（以自旋α 为正）产生自然轨道</p></blockquote><p><code>产生静电势导出电荷的选项</code></p><blockquote></blockquote><p><code>NBO 有关选项</code></p><blockquote><p>NBO：使用NBO 版本3，进行完整的自然键轨道（Natural Bond Orbital）分析</p><p>NBORead：请求进行完整的NBO 分析，使用从输入串读入的数据控制分析计算</p><p>NBODel：删除某些相互作用后，对其影响进行NBO 分析</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">occ：占据轨道vir：虚轨道</span><br></pre></td></tr></table></figure><p><strong>NBO</strong></p><blockquote><p>轨道类型：</p><blockquote><p>​    BD:成键轨道; </p><p>​    CR: 内层轨道；</p><p>   LP: 孤对电子；</p><p>​    RY: Rydberg弥散轨道；</p><p>​    BD*：反键轨道</p></blockquote></blockquote><p><strong>虚频</strong></p><p><code>几何优化默认用的是近似的Hessian矩阵，而频率计算用的是精确Hessian矩阵</code></p><p>有虚频说明结构并非处于势能面的局域极小点</p><p><strong>牛顿法</strong>是高效、最常用的寻找多元函数驻点的方法，在量化研究中，这个方法被广泛用来搜索过渡态和优化几何结构。</p><p><strong>准牛顿法</strong>是每一步不精确计算Hessian，而是只计算受力，通过受力和上一步的Hessian矩阵来近似得到这一步的Hessian矩阵</p><h2 id="重组能"><a href="#重组能" class="headerlink" title="重组能"></a>重组能</h2><p><strong>重组能</strong>（reorganization energy）：重组能是基于Marcus理论计算电子转移速率的关键的量，具体分为内重组能和外重组能</p><p><strong>内重组能</strong>：衡量电子得/失后（或更广义来说，电子态改变后）因几何结构的弛豫导致的体系能量变化。</p><p>外重组能：外重组能则对应将周围环境分子重新极化所花费的能量</p><p><img src="http://sobereva.com/usr/uploads/image/20160531/20160531072740_99455.png" title="重组能1" alt="RE1" style="zoom:70%;"><img src="http://sobereva.com/usr/uploads/image/20160531/20160531072755_47585.png" title="重组能2" alt="RE1" style="zoom:70%;"></p><table><thead><tr><th>左侧图</th><th>右侧图</th></tr></thead><tbody><tr><td>重组能有两部分，λ(I)和λ(II)</td><td>如果charged态是带+1电荷的情况，算出来的重组能用λ+表示，也称空穴重组能λe。如果charged态是带-1电荷，算出来的重组能用λ-表示，也称电子重组能λe。</td></tr></tbody></table><blockquote><p>计算λh（对应右侧图）:</p><p>需要以下步骤</p><blockquote><p>(a) 优化中性状态结构<br>(b) 在(a)的结构下算中性状态的能量E1<br>(c) 在(a)的结构下算阳离子状态的能量E2<br>(d) 优化阳离子状态结构<br>(e) 在(d)的结构下算中性状态的能量E3<br>(f) 在(d)的结构下算阳离子状态的能量E4<br>重组能为<br>λ(I)=|E3-E1|<br>λ(II)=|E2-E4|<br>λh= λ(I)+λ(II)</p></blockquote><p>如果charged为Anion</p><p>则：λe= λ(I)+λ(II)</p></blockquote><p><strong>电离能</strong>是基态的气态原子失去电子变为气态阳离子（即电离），必须克服核电荷对电子的引力而所需要的能量。</p><p><strong>亲和能</strong>是一个气态原子获得电子成为气态阴离子时所释放的能量。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算小白的求学之路&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Quantum Chemistry" scheme="https://mancekou.github.io/categories/Quantum-Chemistry/"/>
+    
+    
+      <category term="Computer calculation" scheme="https://mancekou.github.io/tags/Computer-calculation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome插件推荐</title>
+    <link href="https://mancekou.github.io/2020/05/29/Chrome%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>https://mancekou.github.io/2020/05/29/Chrome插件推荐/</id>
+    <published>2020-05-29T09:50:07.000Z</published>
+    <updated>2020-11-30T14:15:20.995Z</updated>
+    
+    <content type="html"><![CDATA[<p>几个Chrome插件</p><a id="more"></a><h1 id="1-Adblock-Plus"><a href="#1-Adblock-Plus" class="headerlink" title="1. Adblock Plus"></a>1. Adblock Plus</h1><p>阻止 YouTube™ 广告、弹出窗口并抵御恶意软件！<br>享受没有恼人广告的网络世界。</p><p>Adblock Plus for Google Chrome 会阻挡：<br>· 横幅<br>· YouTube 视频广告<br>· Facebook 广告<br>· 弹出窗口<br>· 所有其他显眼的广告</p><p>Adblock Plus 是世界上最流行的浏览器扩展，世界各地有数百万用户在使用它。这是一个社区驱动的开源项目，有数百名志愿者为 Adblock Plus 的成功作出了贡献，以实现所有烦人的广告被自动阻挡。</p><h1 id="2-哔哩哔哩助手"><a href="#2-哔哩哔哩助手" class="headerlink" title="2. 哔哩哔哩助手"></a>2. 哔哩哔哩助手</h1><p>哔哩哔哩弹幕网辅助扩展，拥有视频区和直播区的人性化功能。</p><h1 id="3-Custom-Cursor-for-Chrome"><a href="#3-Custom-Cursor-for-Chrome" class="headerlink" title="3. Custom Cursor for Chrome"></a>3. Custom Cursor for Chrome</h1><p>Chrome™的自定义光标。 使用大量免费游标或上传自己的游标。<br>使用酷炫的免费鼠标光标自定义使用Chrome浏览器的体验。</p><p>从任何图像创建自己的鼠标光标集合。</p><h1 id="4-Tampermonkey"><a href="#4-Tampermonkey" class="headerlink" title="4. Tampermonkey"></a>4. Tampermonkey</h1><p>世界上最流行的用户脚本管理器</p><p>Tampermonkey是最受欢迎的用户脚本管理器，拥有超过1000万用户。</p><p>Tampermonkey用于运行所谓的用户脚本（有时也称为Greasemonkey脚本）。用户脚本是一些小的计算机程序，例如向YouTube页面添加下载按钮、清理Facebook时间线或帮助玩在线游戏。</p><blockquote><p>适合添加的脚本</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;几个Chrome插件&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Computer" scheme="https://mancekou.github.io/categories/Computer/"/>
+    
+    
+      <category term="资源" scheme="https://mancekou.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>感兴趣的收藏</title>
+    <link href="https://mancekou.github.io/2019/12/29/%E6%84%9F%E5%85%B4%E8%B6%A3%E7%9A%84%E6%94%B6%E8%97%8F/"/>
+    <id>https://mancekou.github.io/2019/12/29/感兴趣的收藏/</id>
+    <published>2019-12-29T02:20:40.000Z</published>
+    <updated>2020-11-30T14:15:23.139Z</updated>
+    
+    <content type="html"><![CDATA[<p>希望你也喜欢</p><a id="more"></a><h1 id="博主"><a href="#博主" class="headerlink" title="博主"></a>博主</h1><p><a href="https://liam.page/" target="_blank" rel="noopener">黄晨成</a>：Tex大那<br><a href="https://yihui.org/" target="_blank" rel="noopener">谢益辉</a>：统计大那</p><h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><p><a href="https://github.com/" target="_blank" rel="noopener">Github</a></p><h1 id="Latex"><a href="#Latex" class="headerlink" title="Latex"></a>Latex</h1><p><a href="https://www.latexstudio.net/" target="_blank" rel="noopener">LaTeX科技排版工作室</a><br><a href="https://www.ctan.org/" target="_blank" rel="noopener">CTAN</a><br><a href="https://www.overleaf.com/" target="_blank" rel="noopener">LaTeX在线文档编辑器</a><br><a href="https://www.codecogs.com/latex/eqneditor.php" target="_blank" rel="noopener">LaTeX在线公式编辑器</a><br><a href="http://www.tikzedt.org/index.html" target="_blank" rel="noopener">LaTeX Tikz编辑器</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;希望你也喜欢&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Computer" scheme="https://mancekou.github.io/categories/Computer/"/>
+    
+    
+      <category term="资源" scheme="https://mancekou.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>气体分子的碰撞</title>
+    <link href="https://mancekou.github.io/2019/06/07/%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90%E7%9A%84%E7%A2%B0%E6%92%9E/"/>
+    <id>https://mancekou.github.io/2019/06/07/气体分子的碰撞/</id>
+    <published>2019-06-07T12:21:43.000Z</published>
+    <updated>2020-05-29T09:58:29.216Z</updated>
+    
+    <content type="html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script><p>傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。</p><a id="more"></a><h1 id="一种气体分子的碰撞"><a href="#一种气体分子的碰撞" class="headerlink" title="一种气体分子的碰撞"></a>一种气体分子的碰撞</h1><p>其碰撞频率公式为</p><p>$$ z = \pi d^2 \sqrt{ \frac{4RT}{\pi M} } n^2 $$</p><p>\( d \) ——有效直径<br>\( M \) ——气体分子的摩尔质量</p><p>其证明略</p><h1 id="两种气体分子的碰撞"><a href="#两种气体分子的碰撞" class="headerlink" title="两种气体分子的碰撞"></a>两种气体分子的碰撞</h1><p>讨论两群分子间的碰撞，假设第一群分子的有效直径为 \( d_A \) ，具有  \(u_A \sim u_A+du_A\) 之间，第一群分子的有效直径为 \( d_B \) ，具有  \(u_B \sim u_B+du_B\) 之间，当第一群分子中的一个分子A与第二群分子中的某个分子B中心距离小于或等于 \( d_{AB} \) 时就会发生一次碰撞（与单分子的碰撞相似，可以参考单分子的碰撞理解双分子的碰撞）</p><p>两种气体分子碰撞的有效直径</p><p>$$ d_{AB} = \frac{d_A}{2} + \frac{d_B}{2} $$</p><p>将第一、二群分子的碰撞等效于一群分子与一群质点的碰撞，第一群分子中的任一分子A与第二群分子的碰撞，等效于分子球  \( A’ \) 以相对速度 \( \overrightarrow{u}  \) 在质点组成的气体中运动，单位时间内掠过的单位体积为 \( \pi d^2_{AB} u \)，设单位体积内质点数为 \( n_B \) ，所以单位时间内碰撞次数为 \( \pi d^2_{AB} u n_B \)</p><p>两个分子的此相对速度为 \( \overrightarrow{u} = \overrightarrow{v_{a, A}} - \overrightarrow{v_{a, B} } \)</p><p>发生有效碰撞的横截面积为 \( \pi d^2_{AB} \)</p><p>若单位体积内分子球的个数为\(n_A\)，由麦克斯韦速率分布定律，单位体积内相对速率分布在 \(u \sim u+du\) 区间内的分子数为</p><p>$$ d N_A = 4 \pi ( \frac{\mu }{2 \pi kT})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u $$</p><p>\( k \) ——玻尔兹曼常数<br>\( \mu \) ——折合质量<br>$$ \frac{1}{\mu} = \frac{1}{M_A} + \frac{1}{M_B} $$</p><p>所以，单位时间内单位体积中等效分子球与质点的总碰撞数为</p><p>$$ z_{AB} = \int_{0}^{n_A} n_B \pi d_{AB}^2 u {\color{Orange}{d N_A}} $$</p><p>替换 \( d N_A\) 得<br>$$ z_{AB} = \int_{0}^{\infty} n_B \pi d_{AB}^2 u {\color{Orange}{4 \pi ( \frac{ \mu }{2 \pi k T})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u}} $$</p><p>整理得</p><p>$$ z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 {\frac{\mu}{2 \pi k T}}^{1.5} \int_{0}^{\infty} u^3 exp(- \frac{ \mu u^2}{2 k T}) d u $$</p><p>查积分表有$$\int_{0}^{\infty} x^3 exp(-a x^2) d x = \frac{1}{2} {a}^{-2} $$</p><p>因此<br>$$z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 (\frac{\mu}{2 \pi k T})^{1.5} \frac{1}{2} (\frac{ \mu }{2 k T})^{-2}$$</p><p>化简得，两种气体的互碰频率<br>$$z_{AB} = {\pi} d_{AB}^2 \sqrt{ \frac{8 R T}{ \pi \mu}} n_A n_B $$</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="物理化学" scheme="https://mancekou.github.io/categories/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6/"/>
+    
+    
+      <category term="气体分子" scheme="https://mancekou.github.io/tags/%E6%B0%94%E4%BD%93%E5%88%86%E5%AD%90/"/>
+    
+      <category term="碰撞" scheme="https://mancekou.github.io/tags/%E7%A2%B0%E6%92%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让Word文档变的不那么一样</title>
+    <link href="https://mancekou.github.io/2019/05/26/Word%E7%9A%84%E7%BE%8E%E5%8C%96%E6%80%BB%E7%BB%93/"/>
+    <id>https://mancekou.github.io/2019/05/26/Word的美化总结/</id>
+    <published>2019-05-26T01:17:20.000Z</published>
+    <updated>2020-05-29T09:59:20.756Z</updated>
+    
+    <content type="html"><![CDATA[<p>一些可以帮助文档变美的小技巧</p><a id="more"></a><h2 id="为什么选择Word"><a href="#为什么选择Word" class="headerlink" title="为什么选择Word"></a>为什么选择Word</h2><p>这里所讨论的Word软件为微软公司旗下的办公三件套的Word软件。</p><p>其因素主要有但不局限于以下几点：</p><ul><li>学习成本低；</li><li>一款优秀的所见即所得的软件，可以直观的看见自己排版的结果；</li><li>软件具有大众性，基本在每一台电脑都会安装这款软件或类Word软件。</li></ul><p>基于以上因素，很多人就会优先选择Word来处理文档。</p><h2 id="为什么排版的文档总是不够美观"><a href="#为什么排版的文档总是不够美观" class="headerlink" title="为什么排版的文档总是不够美观"></a>为什么排版的文档总是不够美观</h2><p>我会使用Word编辑自己文的档，却排版不出一篇美观的文档。</p><p>这是为什么呢？</p><p>你是否出现过以下几点问题：</p><ul><li>没有想过我产生的这篇文档需要我去排版；</li><li>由于没有排版的模板，不知道如何去排版，没有一个好的Idear；</li><li>不熟悉Word功能，无法实现自己的排版想法；</li><li>在上面都不存在的情况下，由于一些细节问题，导致自己文档排版的失败，例如：全角半角符号混乱、空格多余、保存方式不恰当等。</li><li>最重要的一点是我们作为文档的生产者，是否以这篇文档的服务对象为主考虑排版方式。</li></ul><!--<font  size=2>`如果有上面提到的现象，还请继续往下看，如果没有，可能这个文档对你就没有什么帮助，你可以选择关闭这篇文章了。`</font>--><p>如果你能够解决上面列出来的问题，那么你的文档距离成为一篇美观的高质量的文档就只差一定次数的练习了。</p><h2 id="如何让文档变的美观"><a href="#如何让文档变的美观" class="headerlink" title="如何让文档变的美观"></a>如何让文档变的美观</h2><p>最重要的一点 <strong>以人为本</strong>，站在文档服务对象的角度考虑问题，思考如何让自己文档直观漂亮的呈现给对方。</p><p>说了这么多，我们直接来讲点技术性的东西吧。</p><p>毕竟码字不是我这种理工男的特长。<font size="2"><del>我这意气风发，该死的温柔。</del></font>  </p><h3 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h3><p>一篇文档首先需要设置页面，包括页面大小、页面边距、页面方向等。一般只会设置这三个选项，而且更一般的就是保持它的默认值，毕竟真的没什么可以设置的，所以没事干千万不要去想着设置。</p><p>不过文档服务对象对文档有特殊要求的话，那么有必要且必须按服务对象要求来，例如：投稿论文时，期刊可能就有特殊要求，做毕业设计、毕业论文时，学校可能就会有其他的要求。</p><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>文档字体的话，千万不要用什么花里胡哨的艺术字，或者在中文上面使用英文字体，在英文上使用中文字体。</p><p>对于中文，我们计算机自带的几种字体完全可以胜任一切正式文档，例如：宋体、仿宋、黑体和楷体。</p><p>对于英文，一般常使用Times New Roman和Euclid。</p><h3 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h3><p>一般常见的为小四或者五号字体。对于标题字体大小可能就需要更具具体情况具体调整了。</p><h3 id="字体颜色"><a href="#字体颜色" class="headerlink" title="字体颜色"></a>字体颜色</h3><p>使用黑色不好吗？</p><p>如果对于红头文件，那么不可避免的在特定地方需要使用红色。</p><h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><ul><li><p>我们可以打开<code>Word选项 -&gt; 选项 -&gt; 显示</code>，然后在<code>始终在屏幕上显示这些格式标记</code>中勾选<code>制表符(T)</code>、<code>空格(S)</code>、<code>段落标(M)</code>、<code>对象位置(C)</code>和<code>显示所有格式标记(A)</code>，这样我们可以在文档中可以可视化的看到各种格式符，可以很方便的帮助我们调整格式，避免因为手误输入的一些不可见格式。</p></li><li><p>在保存文件的时候，一般建议保存为<code>.doc</code> 格式，这样可以避免文档到其他电脑上出现格式混乱的现象。（步骤：<code>导出 -&gt; Word97-2003文档</code>，即可实现这个格式转换）</p></li><li><p>另一种更保险的方法，可以直接导出为<code>.pdf</code>格式，缺点就是不能再次编辑。</p></li><li><p>粘贴时，推荐<code>无格式粘贴</code>，这样可以避免粘贴来的文档与原文档格式不符的情况，一般步骤为：<code>开始 -&gt; 剪贴板 -&gt; 粘贴 -&gt; 选择性粘贴 -&gt; 无格式文本</code>，否者就会遇见，辛苦粘贴来的文档，还需要从新调整格式问题，这是一个及其浪费时间的过程。在这里也可以用<code>宏</code>的方式，记录这个过程，这样以后就可以仅靠单击一次完成这样一个无格式粘贴的过程。一般步骤为：<code>视图 -&gt; 宏 -&gt; 录制宏 -&gt; 命名（这个操作的名称）-&gt; 设置按钮 -&gt; 确认-&gt; 重复无格式粘贴的过程（开始 -&gt; 剪贴板 -&gt; 粘贴 -&gt; 选择性粘贴 -&gt; 无格式文本） -&gt; 点击停止录制</code>，这样就完成了这样一个过程。</p></li></ul><font size="2">剩余内容将继续更新。</font>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些可以帮助文档变美的小技巧&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Computer" scheme="https://mancekou.github.io/categories/Computer/"/>
+    
+    
+      <category term="Word" scheme="https://mancekou.github.io/tags/Word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Latex学习备忘录</title>
+    <link href="https://mancekou.github.io/2019/05/25/Latex%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>https://mancekou.github.io/2019/05/25/Latex学习备忘录/</id>
+    <published>2019-05-25T13:52:55.000Z</published>
+    <updated>2019-10-25T07:33:50.009Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Latex"><a href="#Latex" class="headerlink" title="Latex"></a>Latex</h1><p> 一款非常优秀的排版工具。</p> <a id="more"></a><h1 id="从-documentclass-开始"><a href="#从-documentclass-开始" class="headerlink" title="从 \documentclass 开始"></a>从 <font size="3"><code>\documentclass</code> </font>开始</h1><p>首先我们在编译器输入这样一段话。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;ctexart&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line"></span><br><span class="line">Hello, Texing!</span><br><span class="line"></span><br><span class="line">你好，Texing！</span><br><span class="line"></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure><p>这样在编译后，你的Pdf文档可以显示这样的结果</p><blockquote><p>Hello, Texing!<br>你好，Texing！</p></blockquote><p>在一般情况下，上面的语句就可以排版出一篇文章。</p><h1 id="丰富你的文档"><a href="#丰富你的文档" class="headerlink" title="丰富你的文档"></a>丰富你的文档</h1><p>如果你需要更加丰富的功能，以及个性化的设计，这个时候可能就需要使用宏包，以及定义命令。</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123; [宏包名] &#125;</span></span></span><br></pre></td></tr></table></figure><ul><li>正在更新中…</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Latex&quot;&gt;&lt;a href=&quot;#Latex&quot; class=&quot;headerlink&quot; title=&quot;Latex&quot;&gt;&lt;/a&gt;Latex&lt;/h1&gt;&lt;p&gt; 一款非常优秀的排版工具。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Computer" scheme="https://mancekou.github.io/categories/Computer/"/>
+    
+    
+      <category term="Latex" scheme="https://mancekou.github.io/tags/Latex/"/>
+    
+  </entry>
+  
+</feed>
