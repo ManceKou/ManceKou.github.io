@@ -489,7 +489,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.2k</span>
+                <span title="本文字数">2.5k</span>
               
 
               
@@ -526,27 +526,22 @@
 <p>傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。</p>
 <a id="more"></a>
 <h1 id="一种气体分子的碰撞"><a href="#一种气体分子的碰撞" class="headerlink" title="一种气体分子的碰撞"></a>一种气体分子的碰撞</h1><p>其碰撞频率公式为</p>
-<p>$$ z = \pi d^2 \sqrt{ \frac{4RT}{\pi M} } n^2 $$</p>
-<p>\( d \) ——有效直径<br>\( M \) ——气体分子的摩尔质量</p>
+<script type="math/tex; mode=display">z = \pi d^2 \sqrt{ \frac{4RT}{\pi M} } n^2</script><p>\( d \) ——有效直径<br>\( M \) ——气体分子的摩尔质量</p>
 <p>其证明略</p>
 <h1 id="两种气体分子的碰撞"><a href="#两种气体分子的碰撞" class="headerlink" title="两种气体分子的碰撞"></a>两种气体分子的碰撞</h1><p>讨论两群分子间的碰撞，假设第一群分子的有效直径为 \( d_A \) ，具有  \(u_A \sim u_A+du_A\) 之间，第一群分子的有效直径为 \( d_B \) ，具有  \(u_B \sim u_B+du_B\) 之间，当第一群分子中的一个分子A与第二群分子中的某个分子B中心距离小于或等于 \( d_{AB} \) 时就会发生一次碰撞（与单分子的碰撞相似，可以参考单分子的碰撞理解双分子的碰撞）</p>
 <p>两种气体分子碰撞的有效直径</p>
-<p>$$ d_{AB} = \frac{d_A}{2} + \frac{d_B}{2} $$</p>
-<p>将第一、二群分子的碰撞等效于一群分子与一群质点的碰撞，第一群分子中的任一分子A与第二群分子的碰撞，等效于分子球  \( A’ \) 以相对速度 \( \overrightarrow{u}  \) 在质点组成的气体中运动，单位时间内掠过的单位体积为 \( \pi d^2_{AB} u \)，设单位体积内质点数为 \( n_B \) ，所以单位时间内碰撞次数为 \( \pi d^2_{AB} u n_B \)</p>
+<script type="math/tex; mode=display">d_{AB} = \frac{d_A}{2} + \frac{d_B}{2}</script><p>将第一、二群分子的碰撞等效于一群分子与一群质点的碰撞，第一群分子中的任一分子A与第二群分子的碰撞，等效于分子球  \( A’ \) 以相对速度 \( \overrightarrow{u}  \) 在质点组成的气体中运动，单位时间内掠过的单位体积为 \( \pi d^2_{AB} u \)，设单位体积内质点数为 \( n_B \) ，所以单位时间内碰撞次数为 \( \pi d^2_{AB} u n_B \)</p>
 <p>两个分子的此相对速度为 \( \overrightarrow{u} = \overrightarrow{v_{a, A}} - \overrightarrow{v_{a, B} } \)</p>
 <p>发生有效碰撞的横截面积为 \( \pi d^2_{AB} \)</p>
 <p>若单位体积内分子球的个数为\(n_A\)，由麦克斯韦速率分布定律，单位体积内相对速率分布在 \(u \sim u+du\) 区间内的分子数为</p>
-<p>$$ d N_A = 4 \pi ( \frac{\mu }{2 \pi kT})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u $$</p>
-<p>\( k \) ——玻尔兹曼常数<br>\( \mu \) ——折合质量<br>$$ \frac{1}{\mu} = \frac{1}{M_A} + \frac{1}{M_B} $$</p>
-<p>所以，单位时间内单位体积中等效分子球与质点的总碰撞数为</p>
-<p>$$ z_{AB} = \int_{0}^{n_A} n_B \pi d_{AB}^2 u {\color{Orange}{d N_A}} $$</p>
-<p>替换 \( d N_A\) 得<br>$$ z_{AB} = \int_{0}^{\infty} n_B \pi d_{AB}^2 u {\color{Orange}{4 \pi ( \frac{ \mu }{2 \pi k T})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u}} $$</p>
-<p>整理得</p>
-<p>$$ z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 {\frac{\mu}{2 \pi k T}}^{1.5} \int_{0}^{\infty} u^3 exp(- \frac{ \mu u^2}{2 k T}) d u $$</p>
-<p>查积分表有$$\int_{0}^{\infty} x^3 exp(-a x^2) d x = \frac{1}{2} {a}^{-2} $$</p>
-<p>因此<br>$$z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 (\frac{\mu}{2 \pi k T})^{1.5} \frac{1}{2} (\frac{ \mu }{2 k T})^{-2}$$</p>
-<p>化简得，两种气体的互碰频率<br>$$z_{AB} = {\pi} d_{AB}^2 \sqrt{ \frac{8 R T}{ \pi \mu}} n_A n_B $$</p>
-
+<script type="math/tex; mode=display">d N_A = 4 \pi ( \frac{\mu }{2 \pi kT})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u</script><p>\( k \) ——玻尔兹曼常数<br>\( \mu \) ——折合质量</p>
+<script type="math/tex; mode=display">\frac{1}{\mu} = \frac{1}{M_A} + \frac{1}{M_B}</script><p>所以，单位时间内单位体积中等效分子球与质点的总碰撞数为</p>
+<script type="math/tex; mode=display">z_{AB} = \int_{0}^{n_A} n_B \pi d_{AB}^2 u {\color{Orange}{d N_A}}</script><p>替换 \( d N_A\) 得</p>
+<script type="math/tex; mode=display">z_{AB} = \int_{0}^{\infty} n_B \pi d_{AB}^2 u {\color{Orange}{4 \pi ( \frac{ \mu }{2 \pi k T})^{1.5} \exp(- \frac{\mu u^2}{2kT}) u^2 n_A d u}}</script><p>整理得</p>
+<script type="math/tex; mode=display">z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 {\frac{\mu}{2 \pi k T}}^{1.5} \int_{0}^{\infty} u^3 exp(- \frac{ \mu u^2}{2 k T}) d u</script><p>查积分表有<script type="math/tex">\int_{0}^{\infty} x^3 exp(-a x^2) d x = \frac{1}{2} {a}^{-2}</script></p>
+<p>因此</p>
+<script type="math/tex; mode=display">z_{AB} = 4 n_A n_B {\pi}^2 d_{AB}^2 (\frac{\mu}{2 \pi k T})^{1.5} \frac{1}{2} (\frac{ \mu }{2 k T})^{-2}</script><p>化简得，两种气体的互碰频率</p>
+<script type="math/tex; mode=display">z_{AB} = {\pi} d_{AB}^2 \sqrt{ \frac{8 R T}{ \pi \mu}} n_A n_B</script>
       
     </div>
 
