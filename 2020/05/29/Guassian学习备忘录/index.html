@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://sobereva.com/usr/uploads/image/20160531/20160531072740_99455.png">
 <meta property="og:image" content="http://sobereva.com/usr/uploads/image/20160531/20160531072755_47585.png">
-<meta property="og:updated_time" content="2021-03-20T14:26:50.315Z">
+<meta property="og:updated_time" content="2021-03-20T14:51:49.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Guassian学习备忘录">
 <meta name="twitter:description" content="计算小白的求学之路">
@@ -439,7 +439,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-03-20 22:26:50" itemprop="dateModified" datetime="2021-03-20T22:26:50+08:00">2021-03-20</time>
+                <time title="修改时间：2021-03-20 22:51:49" itemprop="dateModified" datetime="2021-03-20T22:51:49+08:00">2021-03-20</time>
               
             
           </span>
@@ -573,9 +573,9 @@
 <p><strong>内重组能</strong>：衡量电子得/失后（或更广义来说，电子态改变后）因几何结构的弛豫导致的体系能量变化。</p>
 <p>外重组能：外重组能则对应将周围环境分子重新极化所花费的能量</p>
 <p><img src="http://sobereva.com/usr/uploads/image/20160531/20160531072740_99455.png" title="重组能1" alt="RE1" style="zoom:70%;"><img src="http://sobereva.com/usr/uploads/image/20160531/20160531072755_47585.png" title="重组能2" alt="RE1" style="zoom:70%;"></p>
-<p>上图，重组能有两部分，λ(I)和λ(II)</p>
-<p>下图，如果charged态是带+1电荷的情况，算出来的重组能用λ+表示，也称空穴重组能λe。如果charged态是带-1电荷，算出来的重组能用λ-表示，也称电子重组能λe。</p>
-<p>计算λh（对应下图）:<br>需要以下步骤<br>(a) 优化中性状态结构<br>(b) 在(a)的结构下算中性状态的能量E1<br>(c) 在(a)的结构下算阳离子状态的能量E2<br>(d) 优化阳离子状态结构<br>(e) 在(d)的结构下算中性状态的能量E3<br>(f) 在(d)的结构下算阳离子状态的能量E4<br>重组能为<br>λ(I)=|E3-E1|<br>λ(II)=|E2-E4|<br>λh= λ(I)+λ(II)<br>如果charged为Anion<br>则：λe= λ(I)+λ(II)</p>
+<p>上图，重组能有两部分，$λ_I$和$λ_{II}$</p>
+<p>下图，如果charged态是带+1电荷的情况，算出来的重组能用λ+表示，也称空穴重组能$λ_e$。如果charged态是带-1电荷，算出来的重组能用λ-表示，也称电子重组能$λ_e$。</p>
+<p>计算λh（对应下图）:<br>需要以下步骤<br>(a) 优化中性状态结构<br>(b) 在(a)的结构下算中性状态的能量$E_1$<br>(c) 在(a)的结构下算阳离子状态的能量$E_2$<br>(d) 优化阳离子状态结构<br>(e) 在(d)的结构下算中性状态的能量$E_3$<br>(f) 在(d)的结构下算阳离子状态的能量$E_4$<br>重组能为<br>$λ_I=|E_3-E_1|$<br>$λ_{II}=|E_2-E_4|$<br>$λ_h= λ_I+λ_{II}$<br>如果charged为Anion<br>则：$λ_e= λ_I+λ_{II}$</p>
 <p><strong>电离能</strong>是基态的气态原子失去电子变为气态阳离子（即电离），必须克服核电荷对电子的引力而所需要的能量。</p>
 <p><strong>亲和能</strong>是一个气态原子获得电子成为气态阴离子时所释放的能量。</p>
 
@@ -1353,6 +1353,53 @@
   
 
   
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
 
   
 

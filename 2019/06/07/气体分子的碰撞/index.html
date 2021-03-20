@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Mance&#39;s Blogs">
 <meta property="og:description" content="傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-29T09:58:29.216Z">
+<meta property="og:updated_time" content="2021-03-20T14:46:57.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="气体分子的碰撞">
 <meta name="twitter:description" content="傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。">
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-05-29 17:58:29" itemprop="dateModified" datetime="2020-05-29T17:58:29+08:00">2020-05-29</time>
+                <time title="修改时间：2021-03-20 22:46:57" itemprop="dateModified" datetime="2021-03-20T22:46:57+08:00">2021-03-20</time>
               
             
           </span>
@@ -489,7 +489,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.5k</span>
+                <span title="本文字数">2.4k</span>
               
 
               
@@ -521,9 +521,7 @@
       
 
       
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<p>傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。</p>
+        <p>傅献彩的《物理化学》中，介绍了两个不同气体原子相互碰撞时，它们互碰频率的公式，然而对于此公式的推导并没有详细讲解（可能认为不重要吧），故在此文进行尝试推导。</p>
 <a id="more"></a>
 <h1 id="一种气体分子的碰撞"><a href="#一种气体分子的碰撞" class="headerlink" title="一种气体分子的碰撞"></a>一种气体分子的碰撞</h1><p>其碰撞频率公式为</p>
 <script type="math/tex; mode=display">z = \pi d^2 \sqrt{ \frac{4RT}{\pi M} } n^2</script><p>\( d \) ——有效直径<br>\( M \) ——气体分子的摩尔质量</p>
@@ -1318,6 +1316,53 @@
   
 
   
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
 
   
 
