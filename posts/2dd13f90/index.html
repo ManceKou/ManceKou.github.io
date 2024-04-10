@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://mancekou.github.io/posts/2dd13f90/2dd13f90-02.jpg">
 <meta property="og:image" content="https://mancekou.github.io/posts/2dd13f90/2dd13f90-03.jpg">
 <meta property="article:published_time" content="2023-12-15T14:16:26.000Z">
-<meta property="article:modified_time" content="2024-03-08T13:47:46.548Z">
+<meta property="article:modified_time" content="2024-03-23T01:13:36.167Z">
 <meta property="article:author" content="半仓">
 <meta property="article:tag" content="Gaussian">
 <meta property="article:tag" content="整理">
@@ -252,10 +252,10 @@
 <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>设备：服务器（不建议使用个人电脑进行提交任务）、个人电脑（用于前期的输入文件准备和数据可视化与处理）</p>
 <p>服务器系统：Linux系统（Windows的Gaussian的运行效率没有Linux的好）（听说的，具体那看到的忘了，反正建议使用Linux系统）</p>
 <p>个人电脑系统：什么系统都行（Windows、Mac或Linux），只要自己会用（反正我用的Windows）</p>
-<p>软件：Gaussian（用于执行计算任务，安装于服务器），GaussView（用于数据的可视化与处理，安装再于个人电脑），Multiwfn（用于数据的处理，安装于个人电脑和服务器都行，只要再相应的系统会用就行）</p>
+<p>软件：Gaussian（用于执行计算任务，安装于服务器），GaussView（用于数据的可视化与处理，安装在于个人电脑），Multiwfn（用于数据的处理，安装于个人电脑和服务器都行，只要再相应的系统会用就行）</p>
 <p>个人技能：应该知道如果操作Linux系统（非桌面系统），以及如何建模、准备Gaussian输入文件和提交Gaussian任务（后面我还是会写一点的）</p>
 <h1 id="Linux系统的操作"><a href="#Linux系统的操作" class="headerlink" title="Linux系统的操作"></a>Linux系统的操作</h1><p>使用Linux应该了解的操作应该有如何进入文件夹、如何退出文件夹、如何显示当前文件夹的文件、如何copy文件、如何删除文件和如何删除文件夹等等，反正就是在Win系统中常见的操作应该学会如何使用<code>命令行</code>的方式进行操作。</p>
-<h2 id="文件夹操作"><a href="#文件夹操作" class="headerlink" title="文件夹操作"></a>文件夹操作</h2><p>为什么要进行文件的操作捏，因为在Linux系统中，进行相关的任务操作都是在当前的文件中进行，并不能在文件夹1中去操作文件夹2中的任务，为了操作文件夹2中的任务，需要通过文件夹的切换，到文件夹2中后才能进行任务操作。因此有必要了解下面写的一些简单的命令，当然Linux系统的命令是丰富的，如果需要完成一些下面没有提到的操作，可以直接baidu搜索Linux命令大全（应该会出现很多，捡一下觉得顺眼的学习一下就好了）。</p>
+<h2 id="文件夹操作"><a href="#文件夹操作" class="headerlink" title="文件夹操作"></a>文件夹操作</h2><p>为什么要进行文件的操作捏，因为在Linux系统中，进行相关的任务操作都是在当前的文件中进行，并不能在文件夹1中去操作文件夹2中的任务，为了操作文件夹2中的任务，需要通过文件夹的切换，到文件夹2中后才能进行任务操作。因此有必要了解下面写的一些简单的命令，当然Linux系统的命令是丰富的，如果需要完成一些下面没有提到的操作，可以直接在浏览器搜索<a target="_blank" rel="noopener" href="https://cn.bing.com/search?pglt=171&q=Linux%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8&cvid=1c4b1e04a6914bc8ab47cc0fee3704a2&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQc2MzNqMGoxqAIAsAIA&FORM=ANAB01&PC=EDGEDB">Linux命令大全</a>（应该会出现很多，捡一下觉得顺眼的学习一下就好了）。</p>
 <p><strong>创建文件夹</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir 文件夹</span><br></pre></td></tr></table></figure>
 
@@ -263,11 +263,11 @@
 <p><strong>进入文件夹</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd 文件夹</span><br></pre></td></tr></table></figure>
 
-<p>只需要cd文件夹就可以进入下一级文件夹。</p>
+<p>只需要<code>cd</code>文件夹就可以进入下一级文件夹。</p>
 <p><strong>返回上级文件夹</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ../</span><br></pre></td></tr></table></figure>
 
-<p>在cd的时候使用两个点和一个反斜杠就可以返回到上一级文件夹。</p>
+<p>在<code>cd</code>的时候使用两个点和一个反斜杠就可以返回到上一级文件夹。</p>
 <p>当然我们也是可以使用cd进入到多层文件夹里面，只需要如下操作就可以。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd 文件夹1/文件夹2</span><br></pre></td></tr></table></figure>
 
@@ -277,7 +277,7 @@
 <p><strong>删除文件夹</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf 文件夹</span><br></pre></td></tr></table></figure>
 
-<p>加上-rf是因为有时候文件夹内可能还有文件（非空文件夹），直接使用rm系统是不让删除的，因此加上-rf可以解决这个问题。</p>
+<p>加上<code>-rf</code>是因为有时候文件夹内可能还有文件（非空文件夹），直接使用<code>rm</code>系统是不让删除的，因此加上<code>-rf</code>可以解决这个问题。</p>
 <p>根据上面的操作，基本可以实现在服务器中的文件夹的操作。</p>
 <h2 id="文件的操作"><a href="#文件的操作" class="headerlink" title="文件的操作"></a>文件的操作</h2><p>由于本博文主要服务于理论计算，因此文件的操作主要针对文本文件。（一般在Linux系统中，文本文件使用Vim操作）</p>
 <p><strong>文件的新建</strong></p>
@@ -293,7 +293,7 @@
 <p><strong>文件的删除</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f 文件名</span><br></pre></td></tr></table></figure>
 
-<p>-f的加入是为了强制删除该文件。</p>
+<p><code>-f</code>的加入是为了强制删除该文件。</p>
 <p>根据上面的操作，基本可以满足当前的工作需求。</p>
 <h1 id="Gaussian软件的操作"><a href="#Gaussian软件的操作" class="headerlink" title="Gaussian软件的操作"></a>Gaussian软件的操作</h1><p>Gaussian是提供量子化学计算的主要软件，本博客所涉及的所有量化计算都是使用该软件完成。因此，这部分主要讲的是Linux中Gaussian的操作，即任务的提交，查看和删除。</p>
 <h2 id="任务提交"><a href="#任务提交" class="headerlink" title="任务提交"></a>任务提交</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g16 文件名.gjf 文件名.out</span><br></pre></td></tr></table></figure>
@@ -302,7 +302,7 @@
 <p>如果想使当前任务为后台运行（后台运行的好处是可以不用停在软件执行页面，操作者可以进行别的操作，即使退出账号后也是可以继续执行后台任务的，如果是非后台运行任务，退出服务器时，任务也就一起停止了），只需要在其命令后面添加“&amp;”即可，操作如下。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g16 文件名.gjf 文件名.out &amp;</span><br></pre></td></tr></table></figure>
 
-<p>如果服务器使用的为“Slurm 作业调度系统”进行任务的管理，则需要将上述任务提交命令填入相应的脚本文件中，通过提交脚本来实现脚本文件。</p>
+<p>如果服务器使用的为“Slurm”作业调度系统”进行任务的管理，则需要将上述任务提交命令填入相应的脚本文件中，通过提交脚本来实现脚本文件。</p>
 <h2 id="任务查看"><a href="#任务查看" class="headerlink" title="任务查看"></a>任务查看</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
 
 <p><code>top</code>命令经常用来监控Linux的系统状况，因此也可以用于监视提交的Gaussian任务，对于成功提交的任务都会产生一个对应的PID号，该PID号对应的USER就是提交任务的账号名称（可以用于核对该任务是否为自己提交的任务），同时对应COMMAND显示的就为Gaussian调用的任务程序（其实可以通过这个任务程序判断Gaussian进到到那个模块）。</p>
@@ -380,7 +380,7 @@
 <li><p>《关于入门高斯的一个小小指南 V1.6》by Paramecium86</p>
 </li>
 </ul>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>写了这么多，确实也累了，也真的没想到，我尽然还能写出一篇这么长的博文（虽然，可能里面大多数为流水账，望见谅），实属不易。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>写了这么多，确实也累了，也真的没想到，我尽然还能写出一篇这么长的博文，实属不易。（虽然，可能里面大多数为流水账，望见谅）</p>
 
     </div>
 
