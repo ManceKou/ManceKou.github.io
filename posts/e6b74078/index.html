@@ -21,26 +21,24 @@
     var CONFIG = {"hostname":"mancekou.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。">
+  <meta name="description" content="最近我那台在2016年的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包不的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Multiwfn软件获取量化计算数据的教程">
-<meta property="og:url" content="https://mancekou.github.io/posts/f5b46dab/index.html">
+<meta property="og:title" content="关于Hexo博客内容迁移的备忘录">
+<meta property="og:url" content="https://mancekou.github.io/posts/e6b74078/index.html">
 <meta property="og:site_name" content="Mancekou">
-<meta property="og:description" content="由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。">
+<meta property="og:description" content="最近我那台在2016年的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包不的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://mancekou.github.io/.io//f5b46dab-01.png">
-<meta property="og:image" content="https://mancekou.github.io/.io//f5b46dab-02.png">
-<meta property="og:image" content="https://mancekou.github.io/.io//f5b46dab-03.png">
-<meta property="og:image" content="https://mancekou.github.io/.io//f5b46dab-04.png">
-<meta property="article:published_time" content="2022-02-19T09:15:07.000Z">
-<meta property="article:modified_time" content="2024-03-08T13:50:01.452Z">
+<meta property="og:image" content="https://mancekou.github.io/.io//e6b74078-01.png">
+<meta property="og:image" content="https://mancekou.github.io/.io//e6b74078-02.png">
+<meta property="og:image" content="https://mancekou.github.io/.io//e6b74078-03.png">
+<meta property="article:published_time" content="2024-08-20T10:17:34.000Z">
+<meta property="article:modified_time" content="2024-08-20T11:12:15.163Z">
 <meta property="article:author" content="满东">
-<meta property="article:tag" content="整理">
-<meta property="article:tag" content="Gaussian">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mancekou.github.io/.io//f5b46dab-01.png">
+<meta name="twitter:image" content="https://mancekou.github.io/.io//e6b74078-01.png">
 
-<link rel="canonical" href="https://mancekou.github.io/posts/f5b46dab/">
+<link rel="canonical" href="https://mancekou.github.io/posts/e6b74078/">
 
 
 <script id="page-configurations">
@@ -53,7 +51,7 @@
   };
 </script>
 
-  <title>使用Multiwfn软件获取量化计算数据的教程 | Mancekou</title>
+  <title>关于Hexo博客内容迁移的备忘录 | Mancekou</title>
   
 
 
@@ -185,7 +183,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://mancekou.github.io/posts/f5b46dab/">
+    <link itemprop="mainEntityOfPage" href="https://mancekou.github.io/posts/e6b74078/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -198,7 +196,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          使用Multiwfn软件获取量化计算数据的教程
+          关于Hexo博客内容迁移的备忘录
         </h1>
 
         <div class="post-meta">
@@ -208,7 +206,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-02-19 17:15:07" itemprop="dateCreated datePublished" datetime="2022-02-19T17:15:07+08:00">2022-02-19</time>
+              <time title="创建时间：2024-08-20 18:17:34" itemprop="dateCreated datePublished" datetime="2024-08-20T18:17:34+08:00">2024-08-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -216,7 +214,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%9F%A5%E8%AF%86%E7%99%BE%E5%AE%9D%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">知识百宝库</span></a>
+                  <a href="/categories/%E7%BD%91%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">网站</span></a>
                 </span>
             </span>
 
@@ -233,14 +231,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.1k</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -252,79 +250,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
-<span id="more"></span>
-<p>文中使用到的软件：Multiwfn和GaussView。</p>
-<h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
+        <p>最近我那台在2016年的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包不的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。<br><span id="more"></span></p>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
+<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
+<p><img src="/.io//e6b74078-01.png" alt="movefile"></p>
+<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads)</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
+<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
+<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
+<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
+</blockquote>
+<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
+<p>先设置用户名：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure></p>
+<p><code>your name</code>建议根据github仓库设置。</p>
+<p>再设置邮箱：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure></p>
+<p><code>your email</code>建议根据github仓库设置。</p>
+<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
 <ul>
-<li>输入0 Show molecular structure and view orbitals，按回车键</li>
+<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
+<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
 </ul>
-<p>此时，会弹出一个显示窗口，可以直观的观察分子式，以及不同分子轨道的电子云分布，如下图所示。</p>
-<p><img src="/.io//f5b46dab-01.png" alt="f5b46dab-01"></p>
-<p>其中，1号红框内可以切换不同的分子轨道，2号红框可以旋转、缩放分子。</p>
-<p>在DOC窗口中，可以读取对应分子轨道的能量，以及能隙，如下图所示。</p>
-<p><img src="/.io//f5b46dab-02.png" alt="f5b46dab-02"></p>
-<p>通过，红色框内内容，可以读出轨道255代表的是HOMO轨道，256代表的是LUMO轨道，同理，254就是HOMO-1，257就是LUMO+1，以此类推其它HOMO、LUMO轨道。</p>
-<h1 id="轨道成分"><a href="#轨道成分" class="headerlink" title="轨道成分"></a>轨道成分</h1><p>此处使用NAO方法获取分子轨道成分，具体内容见Sob老师的<a target="_blank" rel="noopener" href="http://sobereva.com/131">谈谈轨道成份的计算方法</a>。</p>
-<p>重新打开Multiwfn 程序，将NAO作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入8 Orbital composition analysis</li>
-</ul>
-<ul>
-<li>输入7 Orbital composition analysis by natural atomic orbital (NAO) method</li>
-</ul>
-<p>如果只想分析单个原子在某个分子轨道的贡献。</p>
-<ul>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道，输出结果如下</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
-<p>如果修改展示的贡献范围，可以操作如下：</p>
-<ul>
-<li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
-</li>
-<li><p>输入1 Show non-Rydberg NAOs/shells</p>
-</li>
-<li>输入0 Show composition of an orbital</li>
-<li>输入分析的轨道编号，此处输入255号轨道</li>
-</ul>
-<p>对于各个原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
-<p>对于钌原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
-<p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
-<p>如果准备分析某一分子片段，则选要先定义片段。</p>
-<ul>
-<li>输入-1 Define fragment for option 1</li>
-<li>输入clean Clean current fragment</li>
-<li>输入a 3,4,6,7,17-19,26,27,30-50,95-98,107-112（此处3,4,6,7,17-19,26,27,30-50,95-98,107-112为举例，以实际的片段序号为准。）</li>
-<li>输入q save and exit</li>
-<li>输入1 Show fragment contribution to a batch of orbitals</li>
-<li>输入255,256 输出结果如下</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
-<p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
-<p><strong>补充：</strong></p>
-<p>关于原子序号的查找：</p>
-<p>打开GaussView，将NAO作业的out文件，拖入软件。</p>
-<p><img src="/.io//f5b46dab-03.png" alt="f5b46dab-01"></p>
-<p>如上图所示，点击View里的Labels选项，此时分子式中就会出现其各个原子的序号，想定义哪一个片段，就整理哪一个片段的原子序号就好，图中，两个邻菲罗啉的原子序号就是3,4,6,7,17-19,26,27,30-50,95-98,107-112。</p>
-<h1 id="紫外吸收光谱"><a href="#紫外吸收光谱" class="headerlink" title="紫外吸收光谱"></a>紫外吸收光谱</h1><p>重新打开Multiwfn 程序，将紫外吸收或者磷光发射作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入18 Electron excitation analysis</li>
-<li>输入15 Print major MO transitions in all excited states</li>
-</ul>
-<p>此时，就会输出紫外吸收的组态信息，如下图所示。</p>
-<p><img src="/.io//f5b46dab-04.png" alt="f5b46dab-04"></p>
-<p>其中，1代表S1态，2.5460 eV代表激发能，486.98 nm代表激发波长，f代表振子强度，Spin multiplicity代表多重度，其余部分就是组态信息（包含不同的跃迁轨道以及贡献成分）</p>
-<p>（发射光谱的分析同紫外吸收光谱光谱分析的内容，在此不再赘述。）</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>Multiwfn可以从Sob老师的论坛“计算化学公社“获取。</p>
-<p>（网址：<a target="_blank" rel="noopener" href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>）</p>
-<p>该博文参考了Sob老师的多篇博文，如有兴趣自行到公社获取。</p>
-<p>若待发表论文中有使用Sob老师的相关研究成果，建议引用相关研究成果。</p>
+<p>这里的Users为电脑的用户名。</p>
+<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
+<p>剩下的回车即可，直至结束。</p>
+<p>当看到如下内容后，说明设置成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>同时他也会展示他的密钥内容。</p>
+<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
+<p><img src="/.io//e6b74078-02.png" alt="setting"></p>
+<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
+<p><img src="/.io//e6b74078-03.png" alt="ssh"></p>
+<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
+<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
+<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
+<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
+<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
+<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
+<p>资料参考：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
 
     </div>
 
@@ -340,7 +305,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://mancekou.github.io/posts/f5b46dab/" title="使用Multiwfn软件获取量化计算数据的教程">https://mancekou.github.io/posts/f5b46dab/</a>
+    <a href="https://mancekou.github.io/posts/e6b74078/" title="关于Hexo博客内容迁移的备忘录">https://mancekou.github.io/posts/e6b74078/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -351,8 +316,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%95%B4%E7%90%86/" rel="tag"># 整理</a>
-              <a href="/tags/Gaussian/" rel="tag"># Gaussian</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           </div>
 
         
@@ -360,11 +324,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/posts/3a0936ab/" rel="next" title="荧光探针常见发光机机理整理">
-      荧光探针常见发光机机理整理 <i class="fa fa-chevron-right"></i>
+    <a href="/posts/9549c3dc/" rel="prev" title="ChimeraX软件的学习记录">
+      <i class="fa fa-chevron-left"></i> ChimeraX软件的学习记录
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -423,7 +387,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E5%AD%90%E7%9A%84%E8%83%BD%E7%BA%A7"><span class="nav-number">1.</span> <span class="nav-text">分子的能级</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%A8%E9%81%93%E6%88%90%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">轨道成分</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B4%AB%E5%A4%96%E5%90%B8%E6%94%B6%E5%85%89%E8%B0%B1"><span class="nav-number">3.</span> <span class="nav-text">紫外吸收光谱</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E5%90%8E"><span class="nav-number">4.</span> <span class="nav-text">最后</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD"><span class="nav-number">1.</span> <span class="nav-text">原始数据的备份</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BF%81%E7%A7%BB"><span class="nav-number">2.</span> <span class="nav-text">原始数据的迁移</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%8F%8A%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.</span> <span class="nav-text">软件及环境的准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.1.</span> <span class="nav-text">git软件的准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.2.</span> <span class="nav-text">Node软件的准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.3.</span> <span class="nav-text">环境的准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gitbash%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7"><span class="nav-number">3.4.</span> <span class="nav-text">gitbash设置用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.5.</span> <span class="nav-text">SSH的配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E5%AF%86%E9%92%A5%E6%B7%BB%E5%8A%A0%E5%88%B0Github"><span class="nav-number">3.6.</span> <span class="nav-text">将密钥添加到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E7%9A%84%E5%87%86%E5%A4%87"><span class="nav-number">3.7.</span> <span class="nav-text">hexo的准备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E5%90%8E"><span class="nav-number">4.</span> <span class="nav-text">最后</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
