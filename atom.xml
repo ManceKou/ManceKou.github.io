@@ -6,7 +6,7 @@
   <link href="https://mancekou.github.io/atom.xml" rel="self"/>
   
   <link href="https://mancekou.github.io/"/>
-  <updated>2024-08-30T11:22:53.117Z</updated>
+  <updated>2024-08-30T13:16:08.209Z</updated>
   <id>https://mancekou.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Chemdraw画分子式的参数设置</title>
+    <title>Chemdraw画化学分子式的参数设置</title>
     <link href="https://mancekou.github.io/posts/904ca03/"/>
     <id>https://mancekou.github.io/posts/904ca03/</id>
     <published>2024-08-30T09:35:30.000Z</published>
-    <updated>2024-08-30T11:22:53.117Z</updated>
+    <updated>2024-08-30T13:16:08.209Z</updated>
     
-    <content type="html"><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p><span id="more"></span><h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p><p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p><p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p><p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p><h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p><p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p><p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p><p>这样就可以将一个化学方程式由B样式变为C样式。</p><p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p><h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，就可以进行颜色的修改，这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p><p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p><p>通过以上操作基本就完成了一个化学结构式的修改。</p><p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）和黑色（0，0，0）。</p><h1 id="文献反应式的模仿"><a href="#文献反应式的模仿" class="headerlink" title="文献反应式的模仿"></a>文献反应式的模仿</h1><p>文献（还是上面那篇文献）中的TOC。</p><p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p><p>模仿的TOC分子反应方程式。</p><p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p><p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm。</p><p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p><p>调整后分子式基本与文献中一致。</p><h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，0.07略微有带你太粗了，当然如果喜欢这种紧凑感，可以考虑这种比较粗的键，我更倾向于0.04这种比较简洁的感觉。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>]]></content>
+    <content type="html"><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p><span id="more"></span><h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p><p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p><p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p><p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p><h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p><p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p><p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p><p>这样就可以将一个化学方程式由B样式变为C样式。</p><p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p><h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，进一步修改分子式的颜色。这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p><p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p><p>通过以上操作基本就完成了一个化学结构式的修改。</p><p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）、红色（256，0，0）和黑色（0，0，0）。</p><h1 id="文献中化学反应方程式的模仿"><a href="#文献中化学反应方程式的模仿" class="headerlink" title="文献中化学反应方程式的模仿"></a>文献中化学反应方程式的模仿</h1><p>文献（还是上面那篇文献）中TOC的化学反应方程式。</p><p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p><p>模仿上图的化学反应方程式，绘图如下：</p><p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p><p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm，效果如下：</p><p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p><p>调整后分子式基本与文献中一致（我觉得成果检验还算ok）。</p><h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，给人比较简洁的感觉，0.07略微有点太粗，当然如果喜欢这种紧凑感，可以考虑这种风格。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。&lt;/p&gt;</summary>
