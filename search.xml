@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chemdraw画化学分子式的参数设置</title>
+    <url>/posts/904ca03/</url>
+    <content><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p>
+<span id="more"></span>
+
+<h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p>
+<p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p>
+<p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p>
+<p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p>
+<h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p>
+<p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p>
+<p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p>
+<p>这样就可以将一个化学方程式由B样式变为C样式。</p>
+<p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p>
+<h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，进一步修改分子式的颜色。这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p>
+<p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p>
+<p>通过以上操作基本就完成了一个化学结构式的修改。</p>
+<p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）、红色（256，0，0）和黑色（0，0，0）。</p>
+<h1 id="文献中化学反应方程式的模仿"><a href="#文献中化学反应方程式的模仿" class="headerlink" title="文献中化学反应方程式的模仿"></a>文献中化学反应方程式的模仿</h1><p>文献（还是上面那篇文献）中TOC的化学反应方程式。</p>
+<p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p>
+<p>模仿上图的化学反应方程式，绘图如下：</p>
+<p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p>
+<p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm，效果如下：</p>
+<p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p>
+<p>调整后分子式基本与文献中一致（我觉得成果检验还算ok）。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，给人比较简洁的感觉，0.07略微有点太粗，当然如果喜欢这种紧凑感，可以考虑这种风格。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Chemdraw</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2024的暑假之行</title>
     <url>/posts/aea410b9/</url>
     <content><![CDATA[<p>用朋友圈的九宫格总结这次暑假，总觉的缺点意思，也不知道那九张照片可以代表这丰富的两周行程，随写这篇流水帐，将我所见所闻陈述一遍。</p>
@@ -211,38 +246,90 @@
       </tags>
   </entry>
   <entry>
-    <title>Chemdraw画化学分子式的参数设置</title>
-    <url>/posts/904ca03/</url>
-    <content><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p>
+    <title>ChimeraX软件的学习记录</title>
+    <url>/posts/9549c3dc/</url>
+    <content><![CDATA[<p>UCSF ChimeraX（或简称ChimeraX）是继UCSF Chimer之后，生物计算、可视化和信息学资源（RBVI）的下一代分子可视化程序（这句话是从官网上抄的）。ChimeraX作为一款功能强大的生化分析和可视化软件，对于我这样一个学化学的，是不太会那些高端操作的，也没那能力，但最近觉得ChimeraX做的图质感很好，随产生了用该软件画反应机理计算中的分子结构图的想法。但我是小白呀，从没接触过该软件，对于分子的调整完全不了解。本着边学边做笔记的想法，随产生了写这篇博文的想法。</p>
 <span id="more"></span>
 
-<h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p>
-<p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p>
-<p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p>
-<p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p>
-<h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p>
-<p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p>
-<p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p>
-<p>这样就可以将一个化学方程式由B样式变为C样式。</p>
-<p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p>
-<h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，进一步修改分子式的颜色。这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p>
-<p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p>
-<p>通过以上操作基本就完成了一个化学结构式的修改。</p>
-<p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）、红色（256，0，0）和黑色（0，0，0）。</p>
-<h1 id="文献中化学反应方程式的模仿"><a href="#文献中化学反应方程式的模仿" class="headerlink" title="文献中化学反应方程式的模仿"></a>文献中化学反应方程式的模仿</h1><p>文献（还是上面那篇文献）中TOC的化学反应方程式。</p>
-<p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p>
-<p>模仿上图的化学反应方程式，绘图如下：</p>
-<p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p>
-<p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm，效果如下：</p>
-<p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p>
-<p>调整后分子式基本与文献中一致（我觉得成果检验还算ok）。</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，给人比较简洁的感觉，0.07略微有点太粗，当然如果喜欢这种紧凑感，可以考虑这种风格。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>
+<h1 id="软件的安装"><a href="#软件的安装" class="headerlink" title="软件的安装"></a>软件的安装</h1><p>软件的下载，来自官网 <a href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX Home Page</a>。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-01.png" alt="ChimeraX_web1"></p>
+<p>点击Download，进入软件下载页面 <a href="https://www.cgl.ucsf.edu/chimerax/download.html">Download UCSF ChimeraX</a>。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-02.png" alt="Chimera_download"></p>
+<p>此处下载的版本为Windows ChimearX-1.8.exe，点击上图红色框的位置，进入到UCSF ChimeraX的非商业软件许可协议，点击最下方的 Accept，即可下载该软件。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-03.png" alt="Chimera_agreement"></p>
+<p>根据作者要求使用该软件发表文章应添加acknowledgment和cite。</p>
+<blockquote>
+<p>include an acknowledgment similar to the following:<br>Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.<br>cite one or more of the <a href="https://www.cgl.ucsf.edu/chimerax/docs/morerefs.html">ChimeraX references</a>, mainly:<br>UCSF ChimeraX: Tools for structure building and analysis. Meng EC, Goddard TD, Pettersen EF, Couch GS, Pearson ZJ, Morris JH, Ferrin TE. Protein Sci. 2023 Nov;32(11):e4792.</p>
+<p>UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. Protein Sci. 2021 Jan;30(1):70-82.</p>
+<p>UCSF ChimeraX: Meeting modern challenges in visualization and analysis. Goddard TD, Huang CC, Meng EC, Pettersen EF, Couch GS, Morris JH, Ferrin TE. Protein Sci. 2018 Jan;27(1):14-25.</p>
+<p>Publications include papers, posters, films, videos, exhibits, and artwork. The home page <a href="https://www.rbvi.ucsf.edu/chimerax/">https://www.rbvi.ucsf.edu/chimerax</a> can also be cited.</p>
+</blockquote>
+<p>下载完软件安装包后，对于Windows系统直接双击即可，在安装的过程中，如果有修改安装路径的需求，应自定义安装路径（点击下图红色框选择安装位置）。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-04.png" alt="Chimera_installl"></p>
+<p>正常安装完后，双击桌面图标，即可使用该软件。</p>
+<h1 id="软件的使用"><a href="#软件的使用" class="headerlink" title="软件的使用"></a>软件的使用</h1><h2 id="文件的准备"><a href="#文件的准备" class="headerlink" title="文件的准备"></a>文件的准备</h2><p>最近刚好做了一个醛胺氨缩合的过渡态，就以这个有机反应进行举例，反应方程式如下：</p>
+<p><img src="/posts/9549c3dc/9549c3dc-05.png" alt="Aldoamine_condensation"></p>
+<p>对于这个反应的进行过程，从量子化学的角度由应该如何考虑呐？</p>
+<p>那么就需要思考这个反应的醛基是如何进攻苯胺，如果找到这个过渡态，也就找到了常说的反应能垒。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-06.png" alt="Aldoamine_condensation_mechanism"></p>
+<p>如上氨基氮进攻羰基碳，形成中间态，再通过质子交换，将羰基碳氢转移到羰基氧上，最后脱水形成亚胺。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-07.jpg" alt="Mechanism_diagram_1"></p>
+<p>上图是通过Gaussian找到的两个过渡态，频率计算验证只有一个虚频，最后通过IRC找到了对应的始态和终态，与推测的结果一致，证明了这些过度态的合理性。</p>
+<p>在以上一通操作下，获得了一个始态、一个终态、两个过渡态和三个中间态，虽然也成功画出了反应路径的能级图，但总觉得GaussView导出的分子结构图不是很美观（肯定也能用拉），因此开始本博文的内容，进一步的美化。</p>
+<h2 id="文件格式的转换"><a href="#文件格式的转换" class="headerlink" title="文件格式的转换"></a>文件格式的转换</h2><p>一般Gaussian计算过的输出文件为out文件，需要将out文件转化为pdb文件。</p>
+<p>此处使用卢天老师的<a href="http://sobereva.com/multiwfn/">Multiwfn</a>软件进行格式转换。</p>
+<h2 id="文件的导入"><a href="#文件的导入" class="headerlink" title="文件的导入"></a>文件的导入</h2><p>双击桌面的ChimeraX软件图标，进入到软件界面。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-08.png" alt="Chimera_interface"></p>
+<p>将刚才导出的pdb文件拖入软件的灰色窗口，这里TS1的pdb文件为例。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-09.png" alt="Chimera_molecule"></p>
+<p>操作：</p>
+<ul>
+<li>按住鼠标左键移动鼠标，可以旋转分子模型；</li>
+<li>按住鼠标滚轮移动鼠标，可以平移分子模型；</li>
+<li>旋转鼠标滚轮，可以放大或缩小分子模型。</li>
+</ul>
+<p>对于这个分子，现在我对它的模型是满意的，但是它在显示上是有一个错误的地方，即氨基氮与醛基碳之间的键不应该是实键，因为是过度态，应该为虚键这种伪键才对。以下内容将针对这个目的进行操作实现。</p>
+<h2 id="分子模型的修改"><a href="#分子模型的修改" class="headerlink" title="分子模型的修改"></a>分子模型的修改</h2><p>根据在计算化学公社查到的一篇名为《<a href="http://bbs.keinsci.com/forum.php?mod=viewthread&tid=36383&highlight=Chimera%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%AD%EF%BF%BD%EF%BF%BD%D6%AE%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%B7%EF%BF%BD%CA%BD%EF%BF%BD%EF%BF%BD">Chimera如何自定义两个原子之间的连接方式呢</a>》的博文，获得了一种修改两个原子之间连接方式的方法。</p>
+<p>博文内容为：</p>
+<blockquote>
+<p>首先第一步，Alt+鼠标左键选择想要改变的键，点击右下角的放大镜图标，打开Inspect Selection窗口；第二步选择Molecule model选项，将下面的line style改成自己想要的模式；第三步选择Bond选项，将bond style改为wire，将halfbond mode关闭后可以在color处更改键的颜色；第四步退出选中模式即可，图中的实键已经变为了自己想要的虚线。另外这个过程是可逆的，也有其他的选项可供大家设置，谢谢大家。</p>
+</blockquote>
+<p>我也尝试了改博主写的的修改方法，但是在做到第二步的时候，就遇到了问题，在软件的Inspect Selection窗口没有Molecule model选项，因此没能推进下去。（我电脑安装的软件也没有显示第一步所说的放大镜图标，该窗口的打开，我是通过home选项下的Selection部分的inspect打开的。）</p>
+<p>由于上面的方法没有行通，因此又继续寻找了新的方法。</p>
+<p>其实上面也讲了，对于该分子只是希望在两个原子之家形成以虚线形式显示的伪键。因此，首先去查询了如何创建一个新的伪键，官方文档给出的是通过命令行的方法，但是经过了多次尝试，并没有成功执行目标命令，这条路随止。（后期如果我看懂了官方文档，我在补充这部分内容）</p>
+<p>无意间我看到了distance这个选项，想到我本来的目的就是创建一个虚线的伪键，以及显示对应的长度，那么是不是可以通过distance来实现我的目的，随进行了尝试。</p>
+<p><strong>第一步</strong>，按住ctrl键使用鼠标选中需要修改的键（选中后会出现绿色边框）；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-10.png" alt="Chimera_bondselection"></p>
+<p><strong>第二步</strong>，在点击Actions下的Atoms&#x2F;Bonds选项的Hide，隐藏该碳氮键；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-11.png" alt="Chimera_bondhide"></p>
+<p><strong>第三步</strong>，点击Right Mouse选项下的Annotation部分的Distance（选中后该icon会出现绿色背景），接着同时按着Ctrl和Shift，选中氨基氮原子和醛基碳原子，再右击鼠标，就会产生虚线的伪键和键长参数；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-12.png" alt="Chimera_bonddistance"></p>
+<p><strong>第四步</strong>，按住Ctrl后，选中虚线伪键，点击home选项下的Selection部分的inspect打开Selection Insqector窗口；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-13.png" alt="Chimera_bondselectioninspector"></p>
+<p><strong>第五步</strong>，在Selection Insqector窗口将Inspect的Pseudibonds改为Pseudibond models，通过修改Color可以改变键的颜色，修改Dashes可以改变伪键的分段数，修改Radius可以改变伪键的半径。（这里我只改变了Dashes，因为感觉原先的分段太密集了。）</p>
+<p><img src="/posts/9549c3dc/9549c3dc-14.png" alt="Chimera_bondstyle"></p>
+<p><strong>第六步</strong>，点击Right Mouse选项下的Annotation部分的Move label（选中后该icon会出现绿色背景），然后将鼠标移动至label处并按住鼠标右键，即可移动label位置；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-15.png" alt="Chimera_bondlabelmove"></p>
+<p>另一种方法，在最下方的Command命令窗口输入label offset 0.1,0.2,0，来修改标签的位置。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-16.png" alt="Chimera_bondlabel"></p>
+<blockquote>
+<p>offset将标签的绝对偏移量指定为屏幕坐标系中沿x、y和z轴的三个逗号分隔值x、y、z，以数据的距离单位（通常为Å）表示。偏移量是标签矩形左下角相对于标记项目中心的位置。可以给出负值。默认偏移量为：0,0,0。</p>
+</blockquote>
+<p>注：第二种方法，通过上述命令只适合单label，对于多label的位置调整，还请自行查阅官方文档。</p>
+<p><strong>第七步</strong>，点击home选项下的Background部分White，修改背景为白色；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-17.png" alt="Chimera_bondbackground"></p>
+<p><strong>第八步</strong>，点击File下的Save…保存文件，建议保存一份文件名为cxs的ChimeraX文件，再保存一份文件名为bmp或者png的图片文件。（这里保存为bmp文件）</p>
+<p><img src="/posts/9549c3dc/9549c3dc-18.bmp" alt="TS1"></p>
+<p>以上操作就算完成了最开始的的想法，画出一个过渡态的伪键，并标记其键长。对于其他的分子同理操作。</p>
+<h2 id="修改后的反应机理图"><a href="#修改后的反应机理图" class="headerlink" title="修改后的反应机理图"></a>修改后的反应机理图</h2><p><img src="/posts/9549c3dc/9549c3dc-19.jpg" alt="Mechanism_diagram_2"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>ChimeraX作为一款功能强大的生化分析和可视化软件，对于我现在使用的是有点大材小用了，但现阶段也仅仅是使用它重画了分子结构（用C4D太麻烦了，也不太会，而ChimeraX的分子渲染风格是美观的）。以上记录笔记仅仅是简单的文件导入和图片的导出操作，关于软件的其它操作，等学会了再补充进来。</p>
 ]]></content>
       <categories>
         <category>Software</category>
       </categories>
       <tags>
-        <tag>Chemdraw</tag>
+        <tag>ChimeraX</tag>
+        <tag>整理</tag>
       </tags>
   </entry>
   <entry>
@@ -333,95 +420,71 @@
         <category>Software</category>
       </categories>
       <tags>
-        <tag>Gaussian</tag>
         <tag>整理</tag>
+        <tag>Gaussian</tag>
       </tags>
   </entry>
   <entry>
-    <title>ChimeraX软件的学习记录</title>
-    <url>/posts/9549c3dc/</url>
-    <content><![CDATA[<p>UCSF ChimeraX（或简称ChimeraX）是继UCSF Chimer之后，生物计算、可视化和信息学资源（RBVI）的下一代分子可视化程序（这句话是从官网上抄的）。ChimeraX作为一款功能强大的生化分析和可视化软件，对于我这样一个学化学的，是不太会那些高端操作的，也没那能力，但最近觉得ChimeraX做的图质感很好，随产生了用该软件画反应机理计算中的分子结构图的想法。但我是小白呀，从没接触过该软件，对于分子的调整完全不了解。本着边学边做笔记的想法，随产生了写这篇博文的想法。</p>
+    <title>关于Hexo博客内容迁移的备忘录</title>
+    <url>/posts/e6b74078/</url>
+    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
 <span id="more"></span>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
+<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
+<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
+<blockquote>
+<p>自己测试了一下，也可以不删除这个文件夹。</p>
+</blockquote>
+<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
+<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
+<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
+<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
+</blockquote>
+<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
+<p>先设置用户名：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
 
-<h1 id="软件的安装"><a href="#软件的安装" class="headerlink" title="软件的安装"></a>软件的安装</h1><p>软件的下载，来自官网 <a href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX Home Page</a>。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-01.png" alt="ChimeraX_web1"></p>
-<p>点击Download，进入软件下载页面 <a href="https://www.cgl.ucsf.edu/chimerax/download.html">Download UCSF ChimeraX</a>。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-02.png" alt="Chimera_download"></p>
-<p>此处下载的版本为Windows ChimearX-1.8.exe，点击上图红色框的位置，进入到UCSF ChimeraX的非商业软件许可协议，点击最下方的 Accept，即可下载该软件。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-03.png" alt="Chimera_agreement"></p>
-<p>根据作者要求使用该软件发表文章应添加acknowledgment和cite。</p>
-<blockquote>
-<p>include an acknowledgment similar to the following:<br>Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.<br>cite one or more of the <a href="https://www.cgl.ucsf.edu/chimerax/docs/morerefs.html">ChimeraX references</a>, mainly:<br>UCSF ChimeraX: Tools for structure building and analysis. Meng EC, Goddard TD, Pettersen EF, Couch GS, Pearson ZJ, Morris JH, Ferrin TE. Protein Sci. 2023 Nov;32(11):e4792.</p>
-<p>UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. Protein Sci. 2021 Jan;30(1):70-82.</p>
-<p>UCSF ChimeraX: Meeting modern challenges in visualization and analysis. Goddard TD, Huang CC, Meng EC, Pettersen EF, Couch GS, Morris JH, Ferrin TE. Protein Sci. 2018 Jan;27(1):14-25.</p>
-<p>Publications include papers, posters, films, videos, exhibits, and artwork. The home page <a href="https://www.rbvi.ucsf.edu/chimerax/">https://www.rbvi.ucsf.edu/chimerax</a> can also be cited.</p>
-</blockquote>
-<p>下载完软件安装包后，对于Windows系统直接双击即可，在安装的过程中，如果有修改安装路径的需求，应自定义安装路径（点击下图红色框选择安装位置）。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-04.png" alt="Chimera_installl"></p>
-<p>正常安装完后，双击桌面图标，即可使用该软件。</p>
-<h1 id="软件的使用"><a href="#软件的使用" class="headerlink" title="软件的使用"></a>软件的使用</h1><h2 id="文件的准备"><a href="#文件的准备" class="headerlink" title="文件的准备"></a>文件的准备</h2><p>最近刚好做了一个醛胺氨缩合的过渡态，就以这个有机反应进行举例，反应方程式如下：</p>
-<p><img src="/posts/9549c3dc/9549c3dc-05.png" alt="Aldoamine_condensation"></p>
-<p>对于这个反应的进行过程，从量子化学的角度由应该如何考虑呐？</p>
-<p>那么就需要思考这个反应的醛基是如何进攻苯胺，如果找到这个过渡态，也就找到了常说的反应能垒。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-06.png" alt="Aldoamine_condensation_mechanism"></p>
-<p>如上氨基氮进攻羰基碳，形成中间态，再通过质子交换，将羰基碳氢转移到羰基氧上，最后脱水形成亚胺。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-07.jpg" alt="Mechanism_diagram_1"></p>
-<p>上图是通过Gaussian找到的两个过渡态，频率计算验证只有一个虚频，最后通过IRC找到了对应的始态和终态，与推测的结果一致，证明了这些过度态的合理性。</p>
-<p>在以上一通操作下，获得了一个始态、一个终态、两个过渡态和三个中间态，虽然也成功画出了反应路径的能级图，但总觉得GaussView导出的分子结构图不是很美观（肯定也能用拉），因此开始本博文的内容，进一步的美化。</p>
-<h2 id="文件格式的转换"><a href="#文件格式的转换" class="headerlink" title="文件格式的转换"></a>文件格式的转换</h2><p>一般Gaussian计算过的输出文件为out文件，需要将out文件转化为pdb文件。</p>
-<p>此处使用卢天老师的<a href="http://sobereva.com/multiwfn/">Multiwfn</a>软件进行格式转换。</p>
-<h2 id="文件的导入"><a href="#文件的导入" class="headerlink" title="文件的导入"></a>文件的导入</h2><p>双击桌面的ChimeraX软件图标，进入到软件界面。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-08.png" alt="Chimera_interface"></p>
-<p>将刚才导出的pdb文件拖入软件的灰色窗口，这里TS1的pdb文件为例。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-09.png" alt="Chimera_molecule"></p>
-<p>操作：</p>
+<p><code>your name</code>建议根据github仓库设置。</p>
+<p>再设置邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>your email</code>建议根据github仓库设置。</p>
+<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
 <ul>
-<li>按住鼠标左键移动鼠标，可以旋转分子模型；</li>
-<li>按住鼠标滚轮移动鼠标，可以平移分子模型；</li>
-<li>旋转鼠标滚轮，可以放大或缩小分子模型。</li>
+<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
+<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
 </ul>
-<p>对于这个分子，现在我对它的模型是满意的，但是它在显示上是有一个错误的地方，即氨基氮与醛基碳之间的键不应该是实键，因为是过度态，应该为虚键这种伪键才对。以下内容将针对这个目的进行操作实现。</p>
-<h2 id="分子模型的修改"><a href="#分子模型的修改" class="headerlink" title="分子模型的修改"></a>分子模型的修改</h2><p>根据在计算化学公社查到的一篇名为《<a href="http://bbs.keinsci.com/forum.php?mod=viewthread&tid=36383&highlight=Chimera%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%AD%EF%BF%BD%EF%BF%BD%D6%AE%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%B7%EF%BF%BD%CA%BD%EF%BF%BD%EF%BF%BD">Chimera如何自定义两个原子之间的连接方式呢</a>》的博文，获得了一种修改两个原子之间连接方式的方法。</p>
-<p>博文内容为：</p>
+<p>这里的Users为电脑的用户名。</p>
+<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
+<p>剩下的回车即可，直至结束。</p>
+<p>当看到如下内容后，说明设置成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>同时他也会展示他的密钥内容。</p>
+<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
+<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
+<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
+<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
+<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
+<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
+<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
+<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
 <blockquote>
-<p>首先第一步，Alt+鼠标左键选择想要改变的键，点击右下角的放大镜图标，打开Inspect Selection窗口；第二步选择Molecule model选项，将下面的line style改成自己想要的模式；第三步选择Bond选项，将bond style改为wire，将halfbond mode关闭后可以在color处更改键的颜色；第四步退出选中模式即可，图中的实键已经变为了自己想要的虚线。另外这个过程是可逆的，也有其他的选项可供大家设置，谢谢大家。</p>
+<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
 </blockquote>
-<p>我也尝试了改博主写的的修改方法，但是在做到第二步的时候，就遇到了问题，在软件的Inspect Selection窗口没有Molecule model选项，因此没能推进下去。（我电脑安装的软件也没有显示第一步所说的放大镜图标，该窗口的打开，我是通过home选项下的Selection部分的inspect打开的。）</p>
-<p>由于上面的方法没有行通，因此又继续寻找了新的方法。</p>
-<p>其实上面也讲了，对于该分子只是希望在两个原子之家形成以虚线形式显示的伪键。因此，首先去查询了如何创建一个新的伪键，官方文档给出的是通过命令行的方法，但是经过了多次尝试，并没有成功执行目标命令，这条路随止。（后期如果我看懂了官方文档，我在补充这部分内容）</p>
-<p>无意间我看到了distance这个选项，想到我本来的目的就是创建一个虚线的伪键，以及显示对应的长度，那么是不是可以通过distance来实现我的目的，随进行了尝试。</p>
-<p><strong>第一步</strong>，按住ctrl键使用鼠标选中需要修改的键（选中后会出现绿色边框）；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-10.png" alt="Chimera_bondselection"></p>
-<p><strong>第二步</strong>，在点击Actions下的Atoms&#x2F;Bonds选项的Hide，隐藏该碳氮键；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-11.png" alt="Chimera_bondhide"></p>
-<p><strong>第三步</strong>，点击Right Mouse选项下的Annotation部分的Distance（选中后该icon会出现绿色背景），接着同时按着Ctrl和Shift，选中氨基氮原子和醛基碳原子，再右击鼠标，就会产生虚线的伪键和键长参数；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-12.png" alt="Chimera_bonddistance"></p>
-<p><strong>第四步</strong>，按住Ctrl后，选中虚线伪键，点击home选项下的Selection部分的inspect打开Selection Insqector窗口；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-13.png" alt="Chimera_bondselectioninspector"></p>
-<p><strong>第五步</strong>，在Selection Insqector窗口将Inspect的Pseudibonds改为Pseudibond models，通过修改Color可以改变键的颜色，修改Dashes可以改变伪键的分段数，修改Radius可以改变伪键的半径。（这里我只改变了Dashes，因为感觉原先的分段太密集了。）</p>
-<p><img src="/posts/9549c3dc/9549c3dc-14.png" alt="Chimera_bondstyle"></p>
-<p><strong>第六步</strong>，点击Right Mouse选项下的Annotation部分的Move label（选中后该icon会出现绿色背景），然后将鼠标移动至label处并按住鼠标右键，即可移动label位置；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-15.png" alt="Chimera_bondlabelmove"></p>
-<p>另一种方法，在最下方的Command命令窗口输入label offset 0.1,0.2,0，来修改标签的位置。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-16.png" alt="Chimera_bondlabel"></p>
-<blockquote>
-<p>offset将标签的绝对偏移量指定为屏幕坐标系中沿x、y和z轴的三个逗号分隔值x、y、z，以数据的距离单位（通常为Å）表示。偏移量是标签矩形左下角相对于标记项目中心的位置。可以给出负值。默认偏移量为：0,0,0。</p>
-</blockquote>
-<p>注：第二种方法，通过上述命令只适合单label，对于多label的位置调整，还请自行查阅官方文档。</p>
-<p><strong>第七步</strong>，点击home选项下的Background部分White，修改背景为白色；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-17.png" alt="Chimera_bondbackground"></p>
-<p><strong>第八步</strong>，点击File下的Save…保存文件，建议保存一份文件名为cxs的ChimeraX文件，再保存一份文件名为bmp或者png的图片文件。（这里保存为bmp文件）</p>
-<p><img src="/posts/9549c3dc/9549c3dc-18.bmp" alt="TS1"></p>
-<p>以上操作就算完成了最开始的的想法，画出一个过渡态的伪键，并标记其键长。对于其他的分子同理操作。</p>
-<h2 id="修改后的反应机理图"><a href="#修改后的反应机理图" class="headerlink" title="修改后的反应机理图"></a>修改后的反应机理图</h2><p><img src="/posts/9549c3dc/9549c3dc-19.jpg" alt="Mechanism_diagram_2"></p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>ChimeraX作为一款功能强大的生化分析和可视化软件，对于我现在使用的是有点大材小用了，但现阶段也仅仅是使用它重画了分子结构（用C4D太麻烦了，也不太会，而ChimeraX的分子渲染风格是美观的）。以上记录笔记仅仅是简单的文件导入和图片的导出操作，关于软件的其它操作，等学会了再补充进来。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
+<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>网站</category>
       </categories>
       <tags>
-        <tag>整理</tag>
-        <tag>ChimeraX</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -567,71 +630,8 @@
         <category>Software</category>
       </categories>
       <tags>
-        <tag>Gaussian</tag>
         <tag>整理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Hexo博客内容迁移的备忘录</title>
-    <url>/posts/e6b74078/</url>
-    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
-<span id="more"></span>
-<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
-<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
-<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
-<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
-<blockquote>
-<p>自己测试了一下，也可以不删除这个文件夹。</p>
-</blockquote>
-<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
-<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
-<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
-<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
-</blockquote>
-<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
-<p>先设置用户名：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
-
-<p><code>your name</code>建议根据github仓库设置。</p>
-<p>再设置邮箱：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
-
-<p><code>your email</code>建议根据github仓库设置。</p>
-<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
-<ul>
-<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
-<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
-</ul>
-<p>这里的Users为电脑的用户名。</p>
-<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
-<p>剩下的回车即可，直至结束。</p>
-<p>当看到如下内容后，说明设置成功。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<p>同时他也会展示他的密钥内容。</p>
-<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
-<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
-<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
-<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
-<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
-<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
-<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
-<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
-<blockquote>
-<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
-</blockquote>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
-<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
+        <tag>Gaussian</tag>
       </tags>
   </entry>
   <entry>
@@ -655,7 +655,7 @@
             <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
             <th style>C<sub>6</sub>D<sub>6</sub></th>
             <th style>CD<sub>3</sub>CN</th>
-            <th style>CD<sub>3</sub>OH</th>
+            <th style>CD<sub>3</sub>OD</th>
             <th style>D<sub>2</sub>O</th>
         </tr>
     </thead>
@@ -1436,63 +1436,6 @@
       </tags>
   </entry>
   <entry>
-    <title>荧光探针常见发光机理整理</title>
-    <url>/posts/3a0936ab/</url>
-    <content><![CDATA[<p>最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。</p>
-<span id="more"></span>
-
-<h1 id="发光机理内容"><a href="#发光机理内容" class="headerlink" title="发光机理内容"></a>发光机理内容</h1><p>常见的发光机理主要包括：分子内电荷转移（intramolecular charge transfer，<strong>ICT</strong>）、扭曲分子内电荷转移（twisted intramolecular charge transfer，<strong>TICT</strong>）、荧光共振能量转移（fluorescence resonance energy transfer，<strong>FRET</strong>）、跨键能量转移（through bond energy transfer，<strong>TBET</strong>）、光诱导电子转移（photoinduced electron transfer，<strong>PET</strong>）、激发态分子内质子转移(excited state intramolecular proton transfer, <strong>ESIPT</strong>)和聚集诱导发光（aggregation-induced emission，<strong>AIE</strong>）等。</p>
-<p>荧光探针的研究人员基于这些发光机理设计大量的发光和检测探针，进一步丰富了探针的多功能性。因此学习和了解这些发光机理将有助于帮助探针的初学者快速的入门，并加深对探针设计（高端的叫法应该就是“分子工程”了吧）的理解。</p>
-<p>那么就让我们开始吧。</p>
-<h1 id="分子内电荷转移（ICT）"><a href="#分子内电荷转移（ICT）" class="headerlink" title="分子内电荷转移（ICT）"></a>分子内电荷转移（ICT）</h1><p>分子内电荷转移又叫做光致电荷转移（Photo-induced Charge Transfer, PCT），是设计比例型探针的重要手段。这类探针一般由供电子基团（Donor），吸电子基团（Acceptor）和π共轭桥组成，因此分子内部存在着由给电子基团经π桥向吸电子基团的电荷转移过程，这个过程就叫分子内电荷转移。ICT效应诱导的荧光也叫做ICT发射。而对于检测型探针，一般会将供电子基团或吸电子基团修饰为识别基团，进而阻断这种ICT发射，只有在识别基团与待识别物质结合或反应后，改变供电子基团或者吸电子基团的推拉电子性能，才能打开这种ICT发射，以实现对待识别物质检测的目的。</p>
-<p><img src="/posts/3a0936ab/3a0936a-01.jpg" alt="3a0936a-01"></p>
-<p>如果从势能面的角度来分析这种电子的转移，就如上图所示，响应前的分子被激发后直接通过局域的电荷跃迁（LE transition）返回基态，而与待识别物质响应后，分子内的供电子基团或者吸电子基团的推拉电子能力发生改变，促使激发态的电子容易越过一个过渡态（Transition state，TS）到达ICT态，进而实现ICT发射。</p>
-<p><img src="/posts/3a0936ab/3a0936a-02.jpg" alt="3a0936a-02"></p>
-<p>而对于比率型探针中的这种波长的改变，相信这幅图可以更好的理解。当供电子基团的推电子能力减弱或者吸电子基团的拉电子能力增强时，会导致能隙的减少，引起发射波长的红移，这是大多数ICT类型探针采用的策略。反之，当供电子基团的推电子能力增强或者吸电子基团的拉电子能力减弱时，会导致能隙的增大，引起发射波长的蓝移。</p>
-<h1 id="扭曲分子内电荷转移（TICT）"><a href="#扭曲分子内电荷转移（TICT）" class="headerlink" title="扭曲分子内电荷转移（TICT）"></a>扭曲分子内电荷转移（TICT）</h1><p>扭曲分子内电荷转移在结构上区别于ICT的平面共轭结构，在TICT中，供体和受体之间以单键连接并呈现一定的夹角（甚至达到相互垂直的水平），但本质上还是利用电荷的离域，因此说TICT是ICT的一种特例。</p>
-<p><img src="/posts/3a0936ab/3a0936a-03.jpg" alt="3a0936a-03"></p>
-<p>如果从势能面的角度分析，就如上图所示，分子首先被激发到激发态，然后通过分子结构的扭曲，转变为TICT态。由于激发态结构具有较大的结构形变，因此分子在从激发态返回激发态的过程中，大部分的能量将用于非辐射跃迁，以恢复分子的变形。因此将TICT分子用于光热和光动力材料较多。</p>
-<p>注：ICT分子的电子转移是在一个平面上进行的，而TICT分子的电子转移发生在两个具有一定夹角的平面甚至垂直。</p>
-<h1 id="荧光共振能量转移（FRET）"><a href="#荧光共振能量转移（FRET）" class="headerlink" title="荧光共振能量转移（FRET）"></a>荧光共振能量转移（FRET）</h1><p>FRET如其名，当供体（荧光团A）吸收特定频率的光子时，它会被激发到更高的电子能量状态。在电子返回其基态之前，它通过偶极-偶极相互作用将能量传递给相邻的受体（荧光团B），进一步激发受体，被激发的受体通过辐射跃迁（荧光）的方式返回基态。这种通过偶极-偶极相互作用转移的能力是非辐射性的。这一理论基于将被激发荧光分子看成振荡偶极子，能够和有同一震荡频率的另一个偶极子发生能量交换，因此称为荧光共振能量转移。</p>
-<p><img src="/posts/3a0936ab/3a0936a-04.jpg" alt="3a0936a-04"></p>
-<p>如果从势能面的角度分析，就如上图所示，供体的电子被光激发到激发态，在释放能量返回基态的时候，由于偶极-偶极相互作用，释放的这部分能量刚好满足激发受体的能量要求，因此能量被转移到受体上，用于激发基态的受体电子到激发态，在经过一系列内转换和震动弛豫后，电子通过辐射跃迁（荧光）的方式返回基态。</p>
-<p>一般来说，发生FRET需要具备以下四个条件：供体和受体必须在物理上彼此接近、供体荧光分子的发射光谱必须成功地与受体荧光分子的吸收光谱重叠、供体和受体的激发光必须充分分离、供体和受体的偶极矩取向必须以特定方式对齐。</p>
-<p><img src="/posts/3a0936ab/3a0936a-05.jpg" alt="3a0936a-05"></p>
-<p>基于以上的理论知识，可以得出只要有两个荧光团，并且他们具备发生FRET的四个条件，理论上就可以发生荧光共振能量转移，无论他们是否通过共价连接的方式连接。通过文献调研不难发现，刚才提到的说法是完全成立的，即FRET既可以发生在双分子之间，也可以发生在单分子内。</p>
-<h1 id="跨键能量转移（TBET）"><a href="#跨键能量转移（TBET）" class="headerlink" title="跨键能量转移（TBET）"></a>跨键能量转移（TBET）</h1><p>跨键能量转移在能量传递方式上区别于FRET的偶极-偶极相互作用。在TBET系统中，供体基团的能量通过电子共轭刚性结构（如苯基或三键）传递到受体基团。但在一定程度上，TBET发光的机制上与FRET是一样的，都是基于能量的转移，因此TBET为FRET的一种特例。</p>
-<p>对于TBET，由于采用共轭结构连接供体和受体，因此在能量传递上的要求就低于FRET的共振能量传递机制，同时导致TBET具有比FRET更高的能量传递效率。但该类分子的设计仍然具有一定难度，容易受FRET机制的影响。</p>
-<p><img src="/posts/3a0936ab/3a0936a-06.jpg" alt="3a0936a-06"></p>
-<p>如果从势能面的角度分析，就如上图所示，由于供体和受体采用共价连接的方式连接，因此，可以将供体和受体的势能面画到一起，其能量的转移不用经过一个能量的释放和吸收的过程，而是直接将能量转移到受体上。</p>
-<h1 id="光诱导电子转移（PET）"><a href="#光诱导电子转移（PET）" class="headerlink" title="光诱导电子转移（PET）"></a>光诱导电子转移（PET）</h1><p>光诱导电子转移型荧光探针中，供体（荧光团）与受体单元之间存在着光诱导电子转移，对荧光有非常强的淬灭作用，通常是电子从供体转移到激发态荧光团。因此在未结合客体之前，探针分子不发射荧光，或荧光很弱。一旦受体与客体相结合，光诱导电子转移作用受到抑制，甚至被完全阻断，荧光团就会发射荧光。</p>
-<p>对于PET型荧光探针，根据淬灭机制的不同，又一般分为Donor-PET和Acceptor-PET。</p>
-<p><img src="/posts/3a0936ab/3a0936a-07.jpg" alt="3a0936a-07"></p>
-<p>对于Donor-PET，供体的HOMO能量最低，供体的LUMO的能量位于受体的HOMO和LUMO能量之间，因此，供体的电子被激发到LUMO，由于受体的HOMO能量低于供体的LUMO，因此，受体HOMO上的电子容易转移到供体的HOMO轨道上，由于供体的HOMO被电子填满，导致供体LUMO上的电子不能按原路径返回供体的HOMO轨道，因此荧光被淬灭。</p>
-<p><img src="/posts/3a0936ab/3a0936a-08.jpg" alt="3a0936a-08"></p>
-<p>对于Acceptor-PET，受体的HOMO能量最低，受体的LUMO能量位于供体的HOMO和LUMO之间，因此，供体的电子被激发到LUMO，由于根据轨道的能量排布，供体LUMO上的电子更容易跃迁到与供体LUMO能量相差最小的受体LUMO上，供体的电子没有按原路径返回供体的HOMO，因此荧光被淬灭。</p>
-<p><img src="/posts/3a0936ab/3a0936a-09.jpg" alt="3a0936a-09"></p>
-<p>而只有当供体的HOMO和LUMO位于受体的HOMO和LUMO之间时，供体被激发的电子才能按原路径从供体的LUMO经辐射跃迁（荧光）返回HOMO。</p>
-<p>对于PET型荧光探针，正是利用受体（识别基团）与待识别物质的结合或反应，来改变受体的HOMO和LUMO能量，实现荧光的恢复。</p>
-<h1 id="激发态分子内质子转移-ESIPT"><a href="#激发态分子内质子转移-ESIPT" class="headerlink" title="激发态分子内质子转移(ESIPT)"></a>激发态分子内质子转移(ESIPT)</h1><p>激发态分子内质子转移是探针分子受光激发后，电子从基态跃迁到激发态，分子内的氢质子通过分子内的氢键转移到分子内相邻近的N、O和S等杂原子上，诱导基态和激发态间烯醇式（Enol）-酮式（Keto）转换，形成互变异构体。ESIPT过程是一个完全可逆的循环过程。</p>
-<p><img src="/posts/3a0936ab/3a0936a-10.jpg" alt="3a0936a-10"></p>
-<p>如果从势能面的角度分析，就如上图所示，醇式结构的分子被激发到激发态，在激发态经过烯醇式到酮式的转变，在通过辐射跃迁（荧光）的方式返回基态，并在基态通过酮式到烯醇式的转变恢复到最初的结构。</p>
-<h1 id="聚集诱导发光（AIE）"><a href="#聚集诱导发光（AIE）" class="headerlink" title="聚集诱导发光（AIE）"></a>聚集诱导发光（AIE）</h1><p>传统的荧光生色团在高浓度下荧光会减弱甚至不发光，这种现象被称作“浓度猝灭”效应。浓度猝灭的主要原因跟聚集体的形成有关，故浓度猝灭效应通常被叫做“聚集导致荧光猝灭（aggregation-caused quenching, ACQ）”。而有一类有机分子在溶液中几乎不发光，在凝聚态（形成聚集体或固体状态）中发光大幅度增强的现象，这类随着浓度增强的现象被叫做“聚集诱导荧光发光（AIE）“。</p>
-<p>与传统的发光分子不同，AIE分子呈现非平面的构型，它们就像微型螺旋桨一样，不停地转动。但当它们聚集时，旋转大大抑制，从而能量以光的形式释放出来。</p>
-<p><img src="/posts/3a0936ab/3a0936a-11.jpg" alt="3a0936a-11"></p>
-<p>在低粘度的稀溶液中，AIE分子可以自由地转动或振动，激发态的能量通过结构弛豫而稳定，而基态的能量明显升高，两态之间的能隙急剧减小，这使得激发态分子通过非辐射跃迁方式衰减到基态。</p>
-<p><img src="/posts/3a0936ab/3a0936a-12.jpg" alt="3a0936a-12"></p>
-<p>而在固体或晶体态中，由于相邻分子的空间位阻，激发态的能量在达到最低点之后急剧上升，分子内的运动由于较大的能量势垒而受到限制，从而阻断了非辐射跃迁方式，打开了诱导发光的大门。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>PET和ESIPT机理常用于设计具有淬灭和增强响应的荧光探针，该类探针具有信噪低和设计简单的优点。而ICT、FRET和TBET机理常用于设计具有比率响应的荧光探针，该类探针在实际应用中，由于采用双波长比值的方式来量化在检测过程的信号变化，相对于增强型和淬灭型探针，比率型探针极大的提高到检测型探针的灵敏度和准确性。TICT型分子由于具有较强的非辐射跃迁，常备用于光热和光动力整理。而AIE分子作为唐本忠院士提出的”明星分子“，被广泛的应用在各类分子的设计中。</p>
-<p>参考文献：<em>Chem. Biomed. Imaging</em> <strong>2024</strong>, 2, 2, 81–97</p>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>整理</tag>
-        <tag>发光探针</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>收藏页（持续更新）</title>
     <url>/posts/6e97f420/</url>
     <content><![CDATA[<p>该部分内容为一些网页收藏。</p>
@@ -1511,6 +1454,7 @@
         clear: both;
     }
     .card {
+        float: left;
         width: 45%;
         font-size: 1rem;
         padding: 10px 20px;
@@ -1519,11 +1463,8 @@
         margin-bottom: 1rem;
         display:flex;
     }
-    .card:nth-child(odd) {
-        float: left;
-    }
-    .card:nth-child(even) {
-        float: right;
+    .card-header {
+        width: 45%;
     }
     .card:hover {
         transform: scale(1.1);
@@ -1561,6 +1502,17 @@
         min-width: 0;
         overflow: hidden;
         white-space: nowrap;
+    }
+    /* 响应式样式 */  
+    @media (max-width: 600px) {  
+        .link-navigation {  
+            flex-direction: column; /* 在小屏幕上改为列布局 */  
+        }  
+      
+        .card {  
+            width: 90%; /* 占据全部宽度 */  
+            margin-bottom: 10px; /* 可调整移动端间距 */  
+        }  
     }
 
 </style>
@@ -1609,6 +1561,14 @@
                <a href="https://sci-hub.se/">SCI-HUB</a>
             </div>
             <div class="info">免费提供学术文献的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://yiyan.baidu.com/">文心一言</a>
+            </div>
+            <div class="info">百度全新一代知识增强大语言模型</div>
          </div>
       </div>
     </div>
@@ -1866,7 +1826,7 @@
       <div class="card">
          <div class="card-header">
             <div>
-               <a href="https://agedm1.com/">AGE动漫</a>
+               <a href="https://www.agedm.org/">AGE动漫</a>
             </div>
             <div class="info">看动漫</div>
          </div>
@@ -1913,6 +1873,63 @@
       </tags>
   </entry>
   <entry>
+    <title>荧光探针常见发光机理整理</title>
+    <url>/posts/3a0936ab/</url>
+    <content><![CDATA[<p>最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。</p>
+<span id="more"></span>
+
+<h1 id="发光机理内容"><a href="#发光机理内容" class="headerlink" title="发光机理内容"></a>发光机理内容</h1><p>常见的发光机理主要包括：分子内电荷转移（intramolecular charge transfer，<strong>ICT</strong>）、扭曲分子内电荷转移（twisted intramolecular charge transfer，<strong>TICT</strong>）、荧光共振能量转移（fluorescence resonance energy transfer，<strong>FRET</strong>）、跨键能量转移（through bond energy transfer，<strong>TBET</strong>）、光诱导电子转移（photoinduced electron transfer，<strong>PET</strong>）、激发态分子内质子转移(excited state intramolecular proton transfer, <strong>ESIPT</strong>)和聚集诱导发光（aggregation-induced emission，<strong>AIE</strong>）等。</p>
+<p>荧光探针的研究人员基于这些发光机理设计大量的发光和检测探针，进一步丰富了探针的多功能性。因此学习和了解这些发光机理将有助于帮助探针的初学者快速的入门，并加深对探针设计（高端的叫法应该就是“分子工程”了吧）的理解。</p>
+<p>那么就让我们开始吧。</p>
+<h1 id="分子内电荷转移（ICT）"><a href="#分子内电荷转移（ICT）" class="headerlink" title="分子内电荷转移（ICT）"></a>分子内电荷转移（ICT）</h1><p>分子内电荷转移又叫做光致电荷转移（Photo-induced Charge Transfer, PCT），是设计比例型探针的重要手段。这类探针一般由供电子基团（Donor），吸电子基团（Acceptor）和π共轭桥组成，因此分子内部存在着由给电子基团经π桥向吸电子基团的电荷转移过程，这个过程就叫分子内电荷转移。ICT效应诱导的荧光也叫做ICT发射。而对于检测型探针，一般会将供电子基团或吸电子基团修饰为识别基团，进而阻断这种ICT发射，只有在识别基团与待识别物质结合或反应后，改变供电子基团或者吸电子基团的推拉电子性能，才能打开这种ICT发射，以实现对待识别物质检测的目的。</p>
+<p><img src="/posts/3a0936ab/3a0936a-01.jpg" alt="3a0936a-01"></p>
+<p>如果从势能面的角度来分析这种电子的转移，就如上图所示，响应前的分子被激发后直接通过局域的电荷跃迁（LE transition）返回基态，而与待识别物质响应后，分子内的供电子基团或者吸电子基团的推拉电子能力发生改变，促使激发态的电子容易越过一个过渡态（Transition state，TS）到达ICT态，进而实现ICT发射。</p>
+<p><img src="/posts/3a0936ab/3a0936a-02.jpg" alt="3a0936a-02"></p>
+<p>而对于比率型探针中的这种波长的改变，相信这幅图可以更好的理解。当供电子基团的推电子能力减弱或者吸电子基团的拉电子能力增强时，会导致能隙的减少，引起发射波长的红移，这是大多数ICT类型探针采用的策略。反之，当供电子基团的推电子能力增强或者吸电子基团的拉电子能力减弱时，会导致能隙的增大，引起发射波长的蓝移。</p>
+<h1 id="扭曲分子内电荷转移（TICT）"><a href="#扭曲分子内电荷转移（TICT）" class="headerlink" title="扭曲分子内电荷转移（TICT）"></a>扭曲分子内电荷转移（TICT）</h1><p>扭曲分子内电荷转移在结构上区别于ICT的平面共轭结构，在TICT中，供体和受体之间以单键连接并呈现一定的夹角（甚至达到相互垂直的水平），但本质上还是利用电荷的离域，因此说TICT是ICT的一种特例。</p>
+<p><img src="/posts/3a0936ab/3a0936a-03.jpg" alt="3a0936a-03"></p>
+<p>如果从势能面的角度分析，就如上图所示，分子首先被激发到激发态，然后通过分子结构的扭曲，转变为TICT态。由于激发态结构具有较大的结构形变，因此分子在从激发态返回激发态的过程中，大部分的能量将用于非辐射跃迁，以恢复分子的变形。因此将TICT分子用于光热和光动力材料较多。</p>
+<p>注：ICT分子的电子转移是在一个平面上进行的，而TICT分子的电子转移发生在两个具有一定夹角的平面甚至垂直。</p>
+<h1 id="荧光共振能量转移（FRET）"><a href="#荧光共振能量转移（FRET）" class="headerlink" title="荧光共振能量转移（FRET）"></a>荧光共振能量转移（FRET）</h1><p>FRET如其名，当供体（荧光团A）吸收特定频率的光子时，它会被激发到更高的电子能量状态。在电子返回其基态之前，它通过偶极-偶极相互作用将能量传递给相邻的受体（荧光团B），进一步激发受体，被激发的受体通过辐射跃迁（荧光）的方式返回基态。这种通过偶极-偶极相互作用转移的能力是非辐射性的。这一理论基于将被激发荧光分子看成振荡偶极子，能够和有同一震荡频率的另一个偶极子发生能量交换，因此称为荧光共振能量转移。</p>
+<p><img src="/posts/3a0936ab/3a0936a-04.jpg" alt="3a0936a-04"></p>
+<p>如果从势能面的角度分析，就如上图所示，供体的电子被光激发到激发态，在释放能量返回基态的时候，由于偶极-偶极相互作用，释放的这部分能量刚好满足激发受体的能量要求，因此能量被转移到受体上，用于激发基态的受体电子到激发态，在经过一系列内转换和震动弛豫后，电子通过辐射跃迁（荧光）的方式返回基态。</p>
+<p>一般来说，发生FRET需要具备以下四个条件：供体和受体必须在物理上彼此接近、供体荧光分子的发射光谱必须成功地与受体荧光分子的吸收光谱重叠、供体和受体的激发光必须充分分离、供体和受体的偶极矩取向必须以特定方式对齐。</p>
+<p><img src="/posts/3a0936ab/3a0936a-05.jpg" alt="3a0936a-05"></p>
+<p>基于以上的理论知识，可以得出只要有两个荧光团，并且他们具备发生FRET的四个条件，理论上就可以发生荧光共振能量转移，无论他们是否通过共价连接的方式连接。通过文献调研不难发现，刚才提到的说法是完全成立的，即FRET既可以发生在双分子之间，也可以发生在单分子内。</p>
+<h1 id="跨键能量转移（TBET）"><a href="#跨键能量转移（TBET）" class="headerlink" title="跨键能量转移（TBET）"></a>跨键能量转移（TBET）</h1><p>跨键能量转移在能量传递方式上区别于FRET的偶极-偶极相互作用。在TBET系统中，供体基团的能量通过电子共轭刚性结构（如苯基或三键）传递到受体基团。但在一定程度上，TBET发光的机制上与FRET是一样的，都是基于能量的转移，因此TBET为FRET的一种特例。</p>
+<p>对于TBET，由于采用共轭结构连接供体和受体，因此在能量传递上的要求就低于FRET的共振能量传递机制，同时导致TBET具有比FRET更高的能量传递效率。但该类分子的设计仍然具有一定难度，容易受FRET机制的影响。</p>
+<p><img src="/posts/3a0936ab/3a0936a-06.jpg" alt="3a0936a-06"></p>
+<p>如果从势能面的角度分析，就如上图所示，由于供体和受体采用共价连接的方式连接，因此，可以将供体和受体的势能面画到一起，其能量的转移不用经过一个能量的释放和吸收的过程，而是直接将能量转移到受体上。</p>
+<h1 id="光诱导电子转移（PET）"><a href="#光诱导电子转移（PET）" class="headerlink" title="光诱导电子转移（PET）"></a>光诱导电子转移（PET）</h1><p>光诱导电子转移型荧光探针中，供体（荧光团）与受体单元之间存在着光诱导电子转移，对荧光有非常强的淬灭作用，通常是电子从供体转移到激发态荧光团。因此在未结合客体之前，探针分子不发射荧光，或荧光很弱。一旦受体与客体相结合，光诱导电子转移作用受到抑制，甚至被完全阻断，荧光团就会发射荧光。</p>
+<p>对于PET型荧光探针，根据淬灭机制的不同，又一般分为Donor-PET和Acceptor-PET。</p>
+<p><img src="/posts/3a0936ab/3a0936a-07.jpg" alt="3a0936a-07"></p>
+<p>对于Donor-PET，供体的HOMO能量最低，供体的LUMO的能量位于受体的HOMO和LUMO能量之间，因此，供体的电子被激发到LUMO，由于受体的HOMO能量低于供体的LUMO，因此，受体HOMO上的电子容易转移到供体的HOMO轨道上，由于供体的HOMO被电子填满，导致供体LUMO上的电子不能按原路径返回供体的HOMO轨道，因此荧光被淬灭。</p>
+<p><img src="/posts/3a0936ab/3a0936a-08.jpg" alt="3a0936a-08"></p>
+<p>对于Acceptor-PET，受体的HOMO能量最低，受体的LUMO能量位于供体的HOMO和LUMO之间，因此，供体的电子被激发到LUMO，由于根据轨道的能量排布，供体LUMO上的电子更容易跃迁到与供体LUMO能量相差最小的受体LUMO上，供体的电子没有按原路径返回供体的HOMO，因此荧光被淬灭。</p>
+<p><img src="/posts/3a0936ab/3a0936a-09.jpg" alt="3a0936a-09"></p>
+<p>而只有当供体的HOMO和LUMO位于受体的HOMO和LUMO之间时，供体被激发的电子才能按原路径从供体的LUMO经辐射跃迁（荧光）返回HOMO。</p>
+<p>对于PET型荧光探针，正是利用受体（识别基团）与待识别物质的结合或反应，来改变受体的HOMO和LUMO能量，实现荧光的恢复。</p>
+<h1 id="激发态分子内质子转移-ESIPT"><a href="#激发态分子内质子转移-ESIPT" class="headerlink" title="激发态分子内质子转移(ESIPT)"></a>激发态分子内质子转移(ESIPT)</h1><p>激发态分子内质子转移是探针分子受光激发后，电子从基态跃迁到激发态，分子内的氢质子通过分子内的氢键转移到分子内相邻近的N、O和S等杂原子上，诱导基态和激发态间烯醇式（Enol）-酮式（Keto）转换，形成互变异构体。ESIPT过程是一个完全可逆的循环过程。</p>
+<p><img src="/posts/3a0936ab/3a0936a-10.jpg" alt="3a0936a-10"></p>
+<p>如果从势能面的角度分析，就如上图所示，醇式结构的分子被激发到激发态，在激发态经过烯醇式到酮式的转变，在通过辐射跃迁（荧光）的方式返回基态，并在基态通过酮式到烯醇式的转变恢复到最初的结构。</p>
+<h1 id="聚集诱导发光（AIE）"><a href="#聚集诱导发光（AIE）" class="headerlink" title="聚集诱导发光（AIE）"></a>聚集诱导发光（AIE）</h1><p>传统的荧光生色团在高浓度下荧光会减弱甚至不发光，这种现象被称作“浓度猝灭”效应。浓度猝灭的主要原因跟聚集体的形成有关，故浓度猝灭效应通常被叫做“聚集导致荧光猝灭（aggregation-caused quenching, ACQ）”。而有一类有机分子在溶液中几乎不发光，在凝聚态（形成聚集体或固体状态）中发光大幅度增强的现象，这类随着浓度增强的现象被叫做“聚集诱导荧光发光（AIE）“。</p>
+<p>与传统的发光分子不同，AIE分子呈现非平面的构型，它们就像微型螺旋桨一样，不停地转动。但当它们聚集时，旋转大大抑制，从而能量以光的形式释放出来。</p>
+<p><img src="/posts/3a0936ab/3a0936a-11.jpg" alt="3a0936a-11"></p>
+<p>在低粘度的稀溶液中，AIE分子可以自由地转动或振动，激发态的能量通过结构弛豫而稳定，而基态的能量明显升高，两态之间的能隙急剧减小，这使得激发态分子通过非辐射跃迁方式衰减到基态。</p>
+<p><img src="/posts/3a0936ab/3a0936a-12.jpg" alt="3a0936a-12"></p>
+<p>而在固体或晶体态中，由于相邻分子的空间位阻，激发态的能量在达到最低点之后急剧上升，分子内的运动由于较大的能量势垒而受到限制，从而阻断了非辐射跃迁方式，打开了诱导发光的大门。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>PET和ESIPT机理常用于设计具有淬灭和增强响应的荧光探针，该类探针具有信噪低和设计简单的优点。而ICT、FRET和TBET机理常用于设计具有比率响应的荧光探针，该类探针在实际应用中，由于采用双波长比值的方式来量化在检测过程的信号变化，相对于增强型和淬灭型探针，比率型探针极大的提高到检测型探针的灵敏度和准确性。TICT型分子由于具有较强的非辐射跃迁，常备用于光热和光动力整理。而AIE分子作为唐本忠院士提出的”明星分子“，被广泛的应用在各类分子的设计中。</p>
+<p>参考文献：<em>Chem. Biomed. Imaging</em> <strong>2024</strong>, 2, 2, 81–97</p>
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>整理</tag>
+        <tag>发光探针</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>量化学习——结构优化</title>
     <url>/posts/ff240d57/</url>
     <content><![CDATA[<p>最近看了Tim（B站UP主）的一些视频后，产生了写一些内容的想法，以实现以写促学的目的。现阶段，我在计算方面的学习止步不前，还停留在吃老本的阶段（虽然没有什么老本可吃），但又想再学习一些新东西的想法，因此，开始想写一些计算的知识点整理（仅为DFT计算），一是帮助有可能看到这篇博文的读者，二是巩固自己的对这些内容的掌握。所写内容可能不成体系，没有前后逻辑关系，所以选择自己想看的部分吧。这部分主要写结构优化的部分，涉及分子结构的构建、任务的提交和结果的查看。</p>
@@ -1954,8 +1971,8 @@
         <category>Software</category>
       </categories>
       <tags>
-        <tag>Gaussian</tag>
         <tag>整理</tag>
+        <tag>Gaussian</tag>
       </tags>
   </entry>
 </search>
