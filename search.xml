@@ -333,69 +333,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Hexo博客内容迁移的备忘录</title>
-    <url>/posts/e6b74078/</url>
-    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
-<span id="more"></span>
-<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
-<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
-<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
-<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
-<blockquote>
-<p>自己测试了一下，也可以不删除这个文件夹。</p>
-</blockquote>
-<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
-<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
-<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
-<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
-</blockquote>
-<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
-<p>先设置用户名：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
-
-<p><code>your name</code>建议根据github仓库设置。</p>
-<p>再设置邮箱：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
-
-<p><code>your email</code>建议根据github仓库设置。</p>
-<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
-<ul>
-<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
-<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
-</ul>
-<p>这里的Users为电脑的用户名。</p>
-<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
-<p>剩下的回车即可，直至结束。</p>
-<p>当看到如下内容后，说明设置成功。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<p>同时他也会展示他的密钥内容。</p>
-<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
-<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
-<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
-<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
-<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
-<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
-<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
-<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
-<blockquote>
-<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
-</blockquote>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
-<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Multiwfn软件获取量化计算数据的教程</title>
     <url>/posts/f5b46dab/</url>
     <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
@@ -485,6 +422,69 @@
       <tags>
         <tag>整理</tag>
         <tag>Gaussian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Hexo博客内容迁移的备忘录</title>
+    <url>/posts/e6b74078/</url>
+    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
+<span id="more"></span>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
+<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
+<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
+<blockquote>
+<p>自己测试了一下，也可以不删除这个文件夹。</p>
+</blockquote>
+<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
+<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
+<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
+<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
+</blockquote>
+<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
+<p>先设置用户名：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>your name</code>建议根据github仓库设置。</p>
+<p>再设置邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>your email</code>建议根据github仓库设置。</p>
+<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
+<ul>
+<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
+<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
+</ul>
+<p>这里的Users为电脑的用户名。</p>
+<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
+<p>剩下的回车即可，直至结束。</p>
+<p>当看到如下内容后，说明设置成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>同时他也会展示他的密钥内容。</p>
+<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
+<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
+<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
+<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
+<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
+<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
+<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
+<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
+<blockquote>
+<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
+</blockquote>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
+<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1573,8 +1573,203 @@
          </div>
       </div>
     </div>
+  </div>  
+  <dvi>
+        <h1>工具网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://103.40.13.47:33301/">谷歌搜索</a>
+            </div>
+            <div class="info">该链接为镜像网址</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://checkcif.iucr.org/">Checkcif</a>
+            </div>
+            <div class="info">获取CIF检验报告的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cassi.cas.org/search.jsp">CAS Source Index Search Tool</a>
+            </div>
+            <div class="info">获取期刊简写的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.chemicalbook.com/ProductIndex.aspx">Chemiacl Book</a>
+            </div>
+            <div class="info">化学产品搜索工具</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://zh.webqc.org/">Web Quintessential Chemistry</a>
+            </div>
+            <div class="info">在线化学工具（常用里面的单位换算）</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://ptable.com/?lang=zh-hans#">元素周期表</a>
+            </div>
+            <div class="info">更美观的化学周期表</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cdkm.com/">CDKM</a>
+            </div>
+            <div class="info">各种文件的格式转换</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://mycolor.space/">ColorSpave</a>
+            </div>
+            <div class="info">配色网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://emojipedia.org/">Emojipedia</a>
+            </div>
+            <div class="info">Emoji图标</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://fa5.dashgame.com/#/">Font Awesome</a>
+            </div>
+            <div class="info">矢量图标和社交标志</div>
+         </div>
+      </div>       
+    </div>
+  </div>
+  <dvi>
+        <h1>论坛网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://bbs.keinsci.com/forum.php">计算化学公社</a>
+            </div>
+            <div class="info">国内最大的计算化学论坛</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://zotero-chinese.com/">Zotero非官方中文社区</a>
+            </div>
+            <div class="info">更详细、更易于理解的Zotero中文文档和指导</div>
+         </div>
+      </div>
+    </div>
   </div>
     <dvi>
+        <h1>影视网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://ddys.pro/">低端影视</a>
+            </div>
+            <div class="info">便捷及超清画质的在线影视剧平台</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.bilibili.com/">BiliBili</a>
+            </div>
+            <div class="info">内容创作与分享的视频网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.agedm.org/">AGE动漫</a>
+            </div>
+            <div class="info">看动漫</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.douyin.com/">抖音</a>
+            </div>
+            <div class="info">短视频平台</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>音乐网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.gequbao.com/">歌曲宝</a>
+            </div>
+            <div class="info">音乐下载平台</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>快乐一下</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://lks.cc/">LKs网站推荐合集</a>
+            </div>
+            <div class="info">由B站图一乐up主LKs制作的网站合集</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cook.yunyoujun.cn/">食用手册</a>
+            </div>
+            <div class="info">给自己吃什么找个方案</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.ckvmk.com/">Ai导航</a>
+            </div>
+            <div class="info">各种Ai应用的合集</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
         <h1>期刊网址</h1>
     </dvi>
     <div class="links-content">
@@ -1689,201 +1884,6 @@
                <a href="https://chemrxiv.org/engage/chemrxiv/public-dashboard">ChemRxiv</a>
             </div>
             <div class="info">预印版文献网址</div>
-         </div>
-      </div>
-    </div>
-  </div>  
-  <dvi>
-        <h1>工具网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://g.savalone.com/">谷歌搜索</a>
-            </div>
-            <div class="info">该链接为镜像网址</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="http://checkcif.iucr.org/">Checkcif</a>
-            </div>
-            <div class="info">获取CIF检验报告的网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cassi.cas.org/search.jsp">CAS Source Index Search Tool</a>
-            </div>
-            <div class="info">获取期刊简写的网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.chemicalbook.com/ProductIndex.aspx">Chemiacl Book</a>
-            </div>
-            <div class="info">化学产品搜索工具</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://zh.webqc.org/">Web Quintessential Chemistry</a>
-            </div>
-            <div class="info">在线化学工具（常用里面的单位换算）</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://ptable.com/?lang=zh-hans#">元素周期表</a>
-            </div>
-            <div class="info">更美观的化学周期表</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cdkm.com/cn/m4a-to-mp3#google_vignette">M4A转MP3</a>
-            </div>
-            <div class="info">Apple音频文件转换</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://mycolor.space/">ColorSpave</a>
-            </div>
-            <div class="info">配色网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://emojipedia.org/">Emojipedia</a>
-            </div>
-            <div class="info">Emoji图标</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://fa5.dashgame.com/#/">Font Awesome</a>
-            </div>
-            <div class="info">矢量图标和社交标志</div>
-         </div>
-      </div>      
-    </div>
-  </div>
-  <dvi>
-        <h1>论坛网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="http://bbs.keinsci.com/forum.php">计算化学公社</a>
-            </div>
-            <div class="info">国内最大的计算化学论坛</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://zotero-chinese.com/">Zotero非官方中文社区</a>
-            </div>
-            <div class="info">更详细、更易于理解的Zotero中文文档和指导</div>
-         </div>
-      </div>
-    </div>
-  </div>
-    <dvi>
-        <h1>影视网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://ddys.pro/">低端影视</a>
-            </div>
-            <div class="info">便捷及超清画质的在线影视剧平台</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.bilibili.com/">BiliBili</a>
-            </div>
-            <div class="info">内容创作与分享的视频网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.agedm.org/">AGE动漫</a>
-            </div>
-            <div class="info">看动漫</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.douyin.com/">抖音</a>
-            </div>
-            <div class="info">短视频平台</div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <dvi>
-        <h1>音乐网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://bailemi.com/#google_vignette">白米乐</a>
-            </div>
-            <div class="info">在线音乐平台</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.gequbao.com/">歌曲宝</a>
-            </div>
-            <div class="info">音乐下载平台</div>
-         </div>
-      </div>
-    </div>
-  </div>
-    <dvi>
-        <h1>快乐一下</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://lks.cc/">LKs网站推荐合集</a>
-            </div>
-            <div class="info">由B站图一乐up主LKs制作的网站合集</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cook.yunyoujun.cn/">食用手册</a>
-            </div>
-            <div class="info">给自己吃什么找个方案</div>
          </div>
       </div>
     </div>
