@@ -1,6 +1,719 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chemdraw画化学分子式的参数设置</title>
+    <url>/posts/904ca03/</url>
+    <content><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p>
+<span id="more"></span>
+
+<h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p>
+<p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p>
+<p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p>
+<p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p>
+<h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p>
+<p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p>
+<p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p>
+<p>这样就可以将一个化学方程式由B样式变为C样式。</p>
+<p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p>
+<h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，进一步修改分子式的颜色。这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p>
+<p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p>
+<p>通过以上操作基本就完成了一个化学结构式的修改。</p>
+<p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）、红色（256，0，0）和黑色（0，0，0）。</p>
+<h1 id="文献中化学反应方程式的模仿"><a href="#文献中化学反应方程式的模仿" class="headerlink" title="文献中化学反应方程式的模仿"></a>文献中化学反应方程式的模仿</h1><p>文献（还是上面那篇文献）中TOC的化学反应方程式。</p>
+<p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p>
+<p>模仿上图的化学反应方程式，绘图如下：</p>
+<p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p>
+<p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm，效果如下：</p>
+<p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p>
+<p>调整后分子式基本与文献中一致（我觉得成果检验还算ok）。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，给人比较简洁的感觉，0.07略微有点太粗，当然如果喜欢这种紧凑感，可以考虑这种风格。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Chemdraw</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ChimeraX软件的学习记录</title>
+    <url>/posts/9549c3dc/</url>
+    <content><![CDATA[<p>UCSF ChimeraX（或简称ChimeraX）是继UCSF Chimer之后，生物计算、可视化和信息学资源（RBVI）的下一代分子可视化程序（这句话是从官网上抄的）。ChimeraX作为一款功能强大的生化分析和可视化软件，对于我这样一个学化学的，是不太会那些高端操作的，也没那能力，但最近觉得ChimeraX做的图质感很好，随产生了用该软件画反应机理计算中的分子结构图的想法。但我是小白呀，从没接触过该软件，对于分子的调整完全不了解。本着边学边做笔记的想法，随产生了写这篇博文的想法。</p>
+<span id="more"></span>
+
+<h1 id="软件的安装"><a href="#软件的安装" class="headerlink" title="软件的安装"></a>软件的安装</h1><p>软件的下载，来自官网 <a href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX Home Page</a>。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-01.png" alt="ChimeraX_web1"></p>
+<p>点击Download，进入软件下载页面 <a href="https://www.cgl.ucsf.edu/chimerax/download.html">Download UCSF ChimeraX</a>。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-02.png" alt="Chimera_download"></p>
+<p>此处下载的版本为Windows ChimearX-1.8.exe，点击上图红色框的位置，进入到UCSF ChimeraX的非商业软件许可协议，点击最下方的 Accept，即可下载该软件。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-03.png" alt="Chimera_agreement"></p>
+<p>根据作者要求使用该软件发表文章应添加acknowledgment和cite。</p>
+<blockquote>
+<p>include an acknowledgment similar to the following:<br>Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.<br>cite one or more of the <a href="https://www.cgl.ucsf.edu/chimerax/docs/morerefs.html">ChimeraX references</a>, mainly:<br>UCSF ChimeraX: Tools for structure building and analysis. Meng EC, Goddard TD, Pettersen EF, Couch GS, Pearson ZJ, Morris JH, Ferrin TE. Protein Sci. 2023 Nov;32(11):e4792.</p>
+<p>UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. Protein Sci. 2021 Jan;30(1):70-82.</p>
+<p>UCSF ChimeraX: Meeting modern challenges in visualization and analysis. Goddard TD, Huang CC, Meng EC, Pettersen EF, Couch GS, Morris JH, Ferrin TE. Protein Sci. 2018 Jan;27(1):14-25.</p>
+<p>Publications include papers, posters, films, videos, exhibits, and artwork. The home page <a href="https://www.rbvi.ucsf.edu/chimerax/">https://www.rbvi.ucsf.edu/chimerax</a> can also be cited.</p>
+</blockquote>
+<p>下载完软件安装包后，对于Windows系统直接双击即可，在安装的过程中，如果有修改安装路径的需求，应自定义安装路径（点击下图红色框选择安装位置）。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-04.png" alt="Chimera_installl"></p>
+<p>正常安装完后，双击桌面图标，即可使用该软件。</p>
+<h1 id="软件的使用"><a href="#软件的使用" class="headerlink" title="软件的使用"></a>软件的使用</h1><h2 id="文件的准备"><a href="#文件的准备" class="headerlink" title="文件的准备"></a>文件的准备</h2><p>最近刚好做了一个醛胺氨缩合的过渡态，就以这个有机反应进行举例，反应方程式如下：</p>
+<p><img src="/posts/9549c3dc/9549c3dc-05.png" alt="Aldoamine_condensation"></p>
+<p>对于这个反应的进行过程，从量子化学的角度由应该如何考虑呐？</p>
+<p>那么就需要思考这个反应的醛基是如何进攻苯胺，如果找到这个过渡态，也就找到了常说的反应能垒。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-06.png" alt="Aldoamine_condensation_mechanism"></p>
+<p>如上氨基氮进攻羰基碳，形成中间态，再通过质子交换，将羰基碳氢转移到羰基氧上，最后脱水形成亚胺。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-07.jpg" alt="Mechanism_diagram_1"></p>
+<p>上图是通过Gaussian找到的两个过渡态，频率计算验证只有一个虚频，最后通过IRC找到了对应的始态和终态，与推测的结果一致，证明了这些过度态的合理性。</p>
+<p>在以上一通操作下，获得了一个始态、一个终态、两个过渡态和三个中间态，虽然也成功画出了反应路径的能级图，但总觉得GaussView导出的分子结构图不是很美观（肯定也能用拉），因此开始本博文的内容，进一步的美化。</p>
+<h2 id="文件格式的转换"><a href="#文件格式的转换" class="headerlink" title="文件格式的转换"></a>文件格式的转换</h2><p>一般Gaussian计算过的输出文件为out文件，需要将out文件转化为pdb文件。</p>
+<p>此处使用卢天老师的<a href="http://sobereva.com/multiwfn/">Multiwfn</a>软件进行格式转换。</p>
+<h2 id="文件的导入"><a href="#文件的导入" class="headerlink" title="文件的导入"></a>文件的导入</h2><p>双击桌面的ChimeraX软件图标，进入到软件界面。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-08.png" alt="Chimera_interface"></p>
+<p>将刚才导出的pdb文件拖入软件的灰色窗口，这里TS1的pdb文件为例。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-09.png" alt="Chimera_molecule"></p>
+<p>操作：</p>
+<ul>
+<li>按住鼠标左键移动鼠标，可以旋转分子模型；</li>
+<li>按住鼠标滚轮移动鼠标，可以平移分子模型；</li>
+<li>旋转鼠标滚轮，可以放大或缩小分子模型。</li>
+</ul>
+<p>对于这个分子，现在我对它的模型是满意的，但是它在显示上是有一个错误的地方，即氨基氮与醛基碳之间的键不应该是实键，因为是过度态，应该为虚键这种伪键才对。以下内容将针对这个目的进行操作实现。</p>
+<h2 id="分子模型的修改"><a href="#分子模型的修改" class="headerlink" title="分子模型的修改"></a>分子模型的修改</h2><p>根据在计算化学公社查到的一篇名为《<a href="http://bbs.keinsci.com/forum.php?mod=viewthread&tid=36383&highlight=Chimera%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%AD%EF%BF%BD%EF%BF%BD%D6%AE%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%B7%EF%BF%BD%CA%BD%EF%BF%BD%EF%BF%BD">Chimera如何自定义两个原子之间的连接方式呢</a>》的博文，获得了一种修改两个原子之间连接方式的方法。</p>
+<p>博文内容为：</p>
+<blockquote>
+<p>首先第一步，Alt+鼠标左键选择想要改变的键，点击右下角的放大镜图标，打开Inspect Selection窗口；第二步选择Molecule model选项，将下面的line style改成自己想要的模式；第三步选择Bond选项，将bond style改为wire，将halfbond mode关闭后可以在color处更改键的颜色；第四步退出选中模式即可，图中的实键已经变为了自己想要的虚线。另外这个过程是可逆的，也有其他的选项可供大家设置，谢谢大家。</p>
+</blockquote>
+<p>我也尝试了改博主写的的修改方法，但是在做到第二步的时候，就遇到了问题，在软件的Inspect Selection窗口没有Molecule model选项，因此没能推进下去。（我电脑安装的软件也没有显示第一步所说的放大镜图标，该窗口的打开，我是通过home选项下的Selection部分的inspect打开的。）</p>
+<p>由于上面的方法没有行通，因此又继续寻找了新的方法。</p>
+<p>其实上面也讲了，对于该分子只是希望在两个原子之家形成以虚线形式显示的伪键。因此，首先去查询了如何创建一个新的伪键，官方文档给出的是通过命令行的方法，但是经过了多次尝试，并没有成功执行目标命令，这条路随止。（后期如果我看懂了官方文档，我在补充这部分内容）</p>
+<p>无意间我看到了distance这个选项，想到我本来的目的就是创建一个虚线的伪键，以及显示对应的长度，那么是不是可以通过distance来实现我的目的，随进行了尝试。</p>
+<p><strong>第一步</strong>，按住ctrl键使用鼠标选中需要修改的键（选中后会出现绿色边框）；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-10.png" alt="Chimera_bondselection"></p>
+<p><strong>第二步</strong>，在点击Actions下的Atoms&#x2F;Bonds选项的Hide，隐藏该碳氮键；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-11.png" alt="Chimera_bondhide"></p>
+<p><strong>第三步</strong>，点击Right Mouse选项下的Annotation部分的Distance（选中后该icon会出现绿色背景），接着同时按着Ctrl和Shift，选中氨基氮原子和醛基碳原子，再右击鼠标，就会产生虚线的伪键和键长参数；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-12.png" alt="Chimera_bonddistance"></p>
+<p><strong>第四步</strong>，按住Ctrl后，选中虚线伪键，点击home选项下的Selection部分的inspect打开Selection Insqector窗口；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-13.png" alt="Chimera_bondselectioninspector"></p>
+<p><strong>第五步</strong>，在Selection Insqector窗口将Inspect的Pseudibonds改为Pseudibond models，通过修改Color可以改变键的颜色，修改Dashes可以改变伪键的分段数，修改Radius可以改变伪键的半径。（这里我只改变了Dashes，因为感觉原先的分段太密集了。）</p>
+<p><img src="/posts/9549c3dc/9549c3dc-14.png" alt="Chimera_bondstyle"></p>
+<p><strong>第六步</strong>，点击Right Mouse选项下的Annotation部分的Move label（选中后该icon会出现绿色背景），然后将鼠标移动至label处并按住鼠标右键，即可移动label位置；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-15.png" alt="Chimera_bondlabelmove"></p>
+<p>另一种方法，在最下方的Command命令窗口输入label offset 0.1,0.2,0，来修改标签的位置。</p>
+<p><img src="/posts/9549c3dc/9549c3dc-16.png" alt="Chimera_bondlabel"></p>
+<blockquote>
+<p>offset将标签的绝对偏移量指定为屏幕坐标系中沿x、y和z轴的三个逗号分隔值x、y、z，以数据的距离单位（通常为Å）表示。偏移量是标签矩形左下角相对于标记项目中心的位置。可以给出负值。默认偏移量为：0,0,0。</p>
+</blockquote>
+<p>注：第二种方法，通过上述命令只适合单label，对于多label的位置调整，还请自行查阅官方文档。</p>
+<p><strong>第七步</strong>，点击home选项下的Background部分White，修改背景为白色；</p>
+<p><img src="/posts/9549c3dc/9549c3dc-17.png" alt="Chimera_bondbackground"></p>
+<p><strong>第八步</strong>，点击File下的Save…保存文件，建议保存一份文件名为cxs的ChimeraX文件，再保存一份文件名为bmp或者png的图片文件。（这里保存为bmp文件）</p>
+<p><img src="/posts/9549c3dc/9549c3dc-18.bmp" alt="TS1"></p>
+<p>以上操作就算完成了最开始的的想法，画出一个过渡态的伪键，并标记其键长。对于其他的分子同理操作。</p>
+<h2 id="修改后的反应机理图"><a href="#修改后的反应机理图" class="headerlink" title="修改后的反应机理图"></a>修改后的反应机理图</h2><p><img src="/posts/9549c3dc/9549c3dc-19.jpg" alt="Mechanism_diagram_2"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>ChimeraX作为一款功能强大的生化分析和可视化软件，对于我现在使用的是有点大材小用了，但现阶段也仅仅是使用它重画了分子结构（用C4D太麻烦了，也不太会，而ChimeraX的分子渲染风格是美观的）。以上记录笔记仅仅是简单的文件导入和图片的导出操作，关于软件的其它操作，等学会了再补充进来。</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>ChimeraX</tag>
+        <tag>整理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《个人收藏页》的位置更改说明</title>
+    <url>/posts/a783eba7/</url>
+    <content><![CDATA[<p>《<a href="https://mancekou.github.io/posts/6e97f420/#more">个人收藏页</a>》作为本人基于兴趣以及便利自己的目的进行的整理，但相信随着时间的流逝，也可能会有人喜欢上这个页面（自作多情的想法哈，哈哈哈哈），原先作为post方式显示在首页，就显的略微不合适和美观了。另一方面，随着其它博文的加入，这篇博文也会被排序到后方（博文基于时间排序，随着新博文的添加，旧的就会被挪到后面），不方便查找（现在去找NMR的氢谱和碳谱就有点不那么便利了，需要往后划一些才能看到），随产生更改该博文位置的想法。</p>
+<span id="more"></span>
+
+<h1 id="网络地址"><a href="#网络地址" class="headerlink" title="网络地址"></a>网络地址</h1><p>个人收藏页：<a href="https://mancekou.github.io/posts/6e97f420/#more">https://mancekou.github.io/posts/6e97f420/#more</a></p>
+<h1 id="更改说明"><a href="#更改说明" class="headerlink" title="更改说明"></a>更改说明</h1><p>原先的收藏页如下图所示，是显示在首页的顶部的，一方面我感觉内容有点空旷，不尽美观，二方面考虑到后期的博文需求，随将该篇博文的链接转移到侧边栏。</p>
+<p><img src="/posts/a783eba7/a783eba7-01.png" alt="a783eba7-01.png"></p>
+<p>相信有的朋友原先已经发现在侧边栏有一个叫<code>Bookmark</code>的链接，这个链接就是对应的《个人收藏页》这篇博文，今天特写这篇博文以作告知（不过做了名字的更改，由原先的<code>Bookmark</code>变更为<code>个人收藏页</code>）。</p>
+<h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><p>由于本博客是基于hexo的静态网页，对于重新写一个收藏页面，考虑到本人技术有限（俗称：太菜）。因此，使用了一个讨巧的方法，将该《个人收藏页》的发表时间进行了手动更改，将其挪到了最后（最后一篇博文）。现在如果还需要访问该页面的方法有两种，一个是点击如下图所示的首页链接<code>个人收藏页</code>，二是通过访问最后一篇博文（下拉的最底部，选择最后的页面）。</p>
+<p><img src="/posts/a783eba7/a783eba7-02.png" alt="a783eba7-02.png"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>《个人收藏页》作为一个我自己觉得用着还算方便的页面，希望阅读到的朋友也可以喜欢。这个收藏页本应该如一个导航页那般，但从新一个页面对于我来说还有点难度，并且现在被记录的内容还不算多，因此，就先将就用吧，等哪天这个页面变得不那么方便的时候，在考虑刚刚提到的写一个导航页。</p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>有趣</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Multiwfn软件获取量化计算数据的教程</title>
+    <url>/posts/f5b46dab/</url>
+    <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
+<span id="more"></span>
+
+<p>文中使用到的软件：Multiwfn和GaussView。</p>
+<h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入0 Show molecular structure and view orbitals，按回车键</li>
+</ul>
+<p>此时，会弹出一个显示窗口，可以直观的观察分子式，以及不同分子轨道的电子云分布，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-01.png" alt="f5b46dab-01"></p>
+<p>其中，1号红框内可以切换不同的分子轨道，2号红框可以旋转、缩放分子。</p>
+<p>在DOC窗口中，可以读取对应分子轨道的能量，以及能隙，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-02.png" alt="f5b46dab-02"></p>
+<p>通过，红色框内内容，可以读出轨道255代表的是HOMO轨道，256代表的是LUMO轨道，同理，254就是HOMO-1，257就是LUMO+1，以此类推其它HOMO、LUMO轨道。</p>
+<h1 id="轨道成分"><a href="#轨道成分" class="headerlink" title="轨道成分"></a>轨道成分</h1><p>此处使用NAO方法获取分子轨道成分，具体内容见Sob老师的<a href="http://sobereva.com/131">谈谈轨道成份的计算方法</a>。</p>
+<p>重新打开Multiwfn 程序，将NAO作业的out文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入8 Orbital composition analysis</li>
+</ul>
+<ul>
+<li>输入7 Orbital composition analysis by natural atomic orbital (NAO) method</li>
+</ul>
+<p>如果只想分析单个原子在某个分子轨道的贡献。</p>
+<ul>
+<li><p>输入0 Show composition of an orbital</p>
+</li>
+<li><p>输入分析的轨道编号，此处输入255号轨道，输出结果如下</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
+
+<p>如果修改展示的贡献范围，可以操作如下：</p>
+<ul>
+<li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
+</li>
+<li><p>输入1 Show non-Rydberg NAOs&#x2F;shells</p>
+</li>
+<li><p>输入0 Show composition of an orbital</p>
+</li>
+<li><p>输入分析的轨道编号，此处输入255号轨道</p>
+</li>
+</ul>
+<p>对于各个原子可以找到如下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
+<p>对于钌原子可以找到如下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
+<p>如果准备分析某一分子片段，则选要先定义片段。</p>
+<ul>
+<li>输入-1 Define fragment for option 1</li>
+<li>输入clean Clean current fragment</li>
+<li>输入a 3,4,6,7,17-19,26,27,30-50,95-98,107-112（此处3,4,6,7,17-19,26,27,30-50,95-98,107-112为举例，以实际的片段序号为准。）</li>
+<li>输入q save and exit</li>
+<li>输入1 Show fragment contribution to a batch of orbitals</li>
+<li>输入255,256 输出结果如下</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
+<p><strong>补充：</strong></p>
+<p>关于原子序号的查找：</p>
+<p>打开GaussView，将NAO作业的out文件，拖入软件。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-03.png" alt="f5b46dab-01"></p>
+<p>如上图所示，点击View里的Labels选项，此时分子式中就会出现其各个原子的序号，想定义哪一个片段，就整理哪一个片段的原子序号就好，图中，两个邻菲罗啉的原子序号就是3,4,6,7,17-19,26,27,30-50,95-98,107-112。</p>
+<h1 id="紫外吸收光谱"><a href="#紫外吸收光谱" class="headerlink" title="紫外吸收光谱"></a>紫外吸收光谱</h1><p>重新打开Multiwfn 程序，将紫外吸收或者磷光发射作业的out文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入18 Electron excitation analysis</li>
+<li>输入15 Print major MO transitions in all excited states</li>
+</ul>
+<p>此时，就会输出紫外吸收的组态信息，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-04.png" alt="f5b46dab-04"></p>
+<p>其中，1代表S1态，2.5460 eV代表激发能，486.98 nm代表激发波长，f代表振子强度，Spin multiplicity代表多重度，其余部分就是组态信息（包含不同的跃迁轨道以及贡献成分）</p>
+<p>（发射光谱的分析同紫外吸收光谱光谱分析的内容，在此不再赘述。）</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>Multiwfn可以从Sob老师的论坛“计算化学公社“获取。</p>
+<p>（网址：<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>）</p>
+<p>该博文参考了Sob老师的多篇博文，如有兴趣自行到公社获取。</p>
+<p>若待发表论文中有使用Sob老师的相关研究成果，建议引用相关研究成果。</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>整理</tag>
+        <tag>Gaussian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人收藏页（持续更新）</title>
+    <url>/posts/6e97f420/</url>
+    <content><![CDATA[<p>该部分内容为一些网页收藏。</p>
+<span id="more"></span>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+    .links-content{
+        margin-top:1rem;
+    }
+    .link-navigation::after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+    .card {
+        float: left;
+        width: 40%;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition-duration: 0.15s;
+        margin-bottom: 1rem;
+        margin-right: 4%;
+        display:flex;
+    }
+    .card-header {
+        width: 45%;
+    }
+    .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    }
+    .card a {
+        border:none;
+    }
+    .card .ava {
+        width: 3rem!important;
+        height: 3rem!important;
+        margin:0!important;
+        margin-right: 1em!important;
+        border-radius:4px;
+    }
+    .card .card-header {
+        font-style: italic;
+        overflow: hidden;
+        width: 100%;
+    }
+    .card .card-header a {
+        font-style: normal;
+        color: #2bbc8a;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .card .card-header a:hover {
+        color: #00b6ff;
+        text-decoration: none;
+    }
+    .card .card-header .info {
+        font-style:normal;
+        color:#a3a3a3;
+        font-size:14px;
+        min-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    /* 响应式样式 */  
+    @media (max-width: 1024px) {  
+        .link-navigation {  
+            flex-direction: column; /* 在小屏幕上改为列布局 */  
+        }  
+      
+        .card {  
+            width: 90%; /* 占据全部宽度 */  
+            margin-bottom: 1rem; /* 可调整移动端间距 */  
+        }  
+    }
+</style>
+
+<p><strong>免责声明</strong>：本网页由博主<a href="https://mancekou.github.io/">满东</a>制作，展示的所有网站均为个人兴趣收集，不含任何商业推广成分，仅供交流学习。如有网站违反国家政策法规或链接已失效请联系博主（首页有E-mail或者在留言板留言），我将尽快修改。所有网站使用前请仔细查阅授权许可，部分网站的产出不可用于商业用途，如错误使用产生的相关后果均与本站无关。</p>
+<body>
+    <dvi>
+        <h1>学习网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.x-mol.com/">X-MOL学术平台</a>
+            </div>
+            <div class="info">文献检索和追踪平网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.researchgate.net/">ResearchGate</a>
+            </div>
+            <div class="info">科学文献追踪平台</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://scholar.dosf.top/">谷歌学术</a>
+            </div>
+            <div class="info">该链接为镜像网址</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://gfsoso.99lb.net/">谷粉学术</a>
+            </div>
+            <div class="info">谷歌学术的平替</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://sci-hub.se/">SCI-HUB</a>
+            </div>
+            <div class="info">免费提供学术文献的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://yiyan.baidu.com/">文心一言</a>
+            </div>
+            <div class="info">百度全新一代知识增强大语言模型</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>工具网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+            <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>
+            </div>
+            <div class="info">查阅氢谱溶剂峰</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://mancekou.github.io/posts/2504b91/#more">常见NMR碳谱溶剂峰</a>
+            </div>
+            <div class="info">查阅碳谱溶剂峰</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://103.40.13.47:33301/">谷歌搜索</a>
+            </div>
+            <div class="info">该链接为镜像网址</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://checkcif.iucr.org/">Checkcif</a>
+            </div>
+            <div class="info">获取CIF检验报告的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cassi.cas.org/search.jsp">CAS Source Index Search Tool</a>
+            </div>
+            <div class="info">获取期刊简写的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.chemicalbook.com/ProductIndex.aspx">Chemiacl Book</a>
+            </div>
+            <div class="info">化学产品搜索工具</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://zh.webqc.org/">Web Quintessential Chemistry</a>
+            </div>
+            <div class="info">在线化学工具（常用里面的单位换算）</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://ptable.com/?lang=zh-hans#">元素周期表</a>
+            </div>
+            <div class="info">更美观的化学周期表</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cdkm.com/">CDKM</a>
+            </div>
+            <div class="info">各种文件的格式转换</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://mycolor.space/">ColorSpave</a>
+            </div>
+            <div class="info">配色网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://emojipedia.org/">Emojipedia</a>
+            </div>
+            <div class="info">Emoji图标</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://fa5.dashgame.com/#/">Font Awesome</a>
+            </div>
+            <div class="info">矢量图标和社交标志</div>
+         </div>
+      </div>       
+    </div>
+  </div>
+  <dvi>
+        <h1>论坛网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://bbs.keinsci.com/forum.php">计算化学公社</a>
+            </div>
+            <div class="info">国内最大的计算化学论坛</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://zotero-chinese.com/">Zotero非官方中文社区</a>
+            </div>
+            <div class="info">更详细、更易于理解的Zotero中文文档和指导</div>
+         </div>
+      </div>
+    </div>
+  </div>
+    <dvi>
+        <h1>影视网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://ddys.pro/">低端影视</a>
+            </div>
+            <div class="info">便捷及超清画质的在线影视剧平台</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.bilibili.com/">BiliBili</a>
+            </div>
+            <div class="info">内容创作与分享的视频网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.agedm.org/">AGE动漫</a>
+            </div>
+            <div class="info">看动漫</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.douyin.com/">抖音</a>
+            </div>
+            <div class="info">短视频平台</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>音乐网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.gequbao.com/">歌曲宝</a>
+            </div>
+            <div class="info">音乐下载平台</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>快乐一下</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://lks.cc/">LKs网站推荐合集</a>
+            </div>
+            <div class="info">由B站图一乐up主LKs制作的网站合集</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://cook.yunyoujun.cn/">食用手册</a>
+            </div>
+            <div class="info">给自己吃什么找个方案</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.ckvmk.com/">Ai导航</a>
+            </div>
+            <div class="info">各种Ai应用的合集</div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <dvi>
+        <h1>期刊网址</h1>
+    </dvi>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/jacsat">Journal of the American Chemical Society</a>
+            </div>
+            <div class="info">ACS旗下JACS</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://onlinelibrary.wiley.com/journal/15213757">Angewandte Chemie International Edition</a>
+            </div>
+            <div class="info">Wiley旗下Angew</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://onlinelibrary.wiley.com/journal/15214095">Advanced Materials</a>
+            </div>
+            <div class="info">Wiley旗下AM</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://onlinelibrary.wiley.com/journal/16163028">Advanced Functional Materials</a>
+            </div>
+            <div class="info">Wiley旗下AFM</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://onlinelibrary.wiley.com/journal/21922659">Advanced Healthcare Materials</a>
+            </div>
+            <div class="info">Wiley旗下AHM</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/ancac3">ACS Nano</a>
+            </div>
+            <div class="info">ACS旗下Nano</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/aamick">ACS Applied Materials & Interfaces</a>
+            </div>
+            <div class="info">ACS旗下AMI</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/ancham">Analytical Chemistry</a>
+            </div>
+            <div class="info">ACS旗下AC</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/jmcmar">Journal of Medicinal Chemistry</a>
+            </div>
+            <div class="info">ACS旗下JMC</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://pubs.acs.org/journal/inocaj">Inorganic Chemistry</a>
+            </div>
+            <div class="info">ACS旗下IC</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.sciencedirect.com/journal/sensors-and-actuators-b-chemical">Sensors and Actuators B: Chemicaly</a>
+            </div>
+            <div class="info">Elsevier旗下Sensor B</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.sciencedirect.com/journal/talanta">Talanta</a>
+            </div>
+            <div class="info">Elsevier旗下Talanta</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.sciencedirect.com/journal/dyes-and-pigments">Dyes and Pigments</a>
+            </div>
+            <div class="info">Elsevier旗下DP</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://chemrxiv.org/engage/chemrxiv/public-dashboard">ChemRxiv</a>
+            </div>
+            <div class="info">预印版文献网址</div>
+         </div>
+      </div>
+    </div>
+  </div>
+</body>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>有趣</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2024的暑假之行</title>
     <url>/posts/aea410b9/</url>
     <content><![CDATA[<p>用朋友圈的九宫格总结这次暑假，总觉的缺点意思，也不知道那九张照片可以代表这丰富的两周行程，随写这篇流水帐，将我所见所闻陈述一遍。</p>
@@ -211,225 +924,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Chemdraw画化学分子式的参数设置</title>
-    <url>/posts/904ca03/</url>
-    <content><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p>
-<span id="more"></span>
-
-<h1 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h1><p>这是一个讨巧的方法，首先选择<code>File-&gt;Apply Document Settings from</code>下的<code>ACS Document 1996</code>，这样就可以将一个化学方程式由A样式变为B样式。</p>
-<p><img src="/posts/904ca03/904ca03-01.png" alt="904ca03-01.png"></p>
-<p>化学式里面元素符号的字体大小保持默认的Arial 10pt。</p>
-<p>这个时候，化学式结构变的就不那么头重脚轻了，也变的更加紧凑，使信息更加集中。</p>
-<h1 id="键宽参数"><a href="#键宽参数" class="headerlink" title="键宽参数"></a>键宽参数</h1><p>对于B样式，他的化学键宽度还是有一点的细，这里尝试加粗它的键宽。</p>
-<p>选择<code>File-&gt;Document Settings...</code>进入到Document Settings设置页面，选择里面的<code>Drawing</code>部分，修改<code>Line Width</code>为0.04 cm。</p>
-<p><img src="/posts/904ca03/904ca03-02.png" alt="904ca03-02.png"></p>
-<p>这样就可以将一个化学方程式由B样式变为C样式。</p>
-<p><img src="/posts/904ca03/904ca03-03.png" alt="904ca03-03.png"></p>
-<h1 id="颜色改变"><a href="#颜色改变" class="headerlink" title="颜色改变"></a>颜色改变</h1><p>在基本样式修改好后，进一步修改分子式的颜色。这里以文献（<em>Anal. Chem.</em> <strong>2023</strong>, 95, 12478−12486）为例，修改不同结构单元的颜色，这样就可以将一个化学方程式由C样式变为D样式。</p>
-<p><img src="/posts/904ca03/904ca03-04.png" alt="904ca03-04.png"></p>
-<p>通过以上操作基本就完成了一个化学结构式的修改。</p>
-<p>本博文使用到的颜色：灰色（137，147，153）、深红（118，18，9）、紫色（96，34，154）、蓝色（46，143，249）、红色（256，0，0）和黑色（0，0，0）。</p>
-<h1 id="文献中化学反应方程式的模仿"><a href="#文献中化学反应方程式的模仿" class="headerlink" title="文献中化学反应方程式的模仿"></a>文献中化学反应方程式的模仿</h1><p>文献（还是上面那篇文献）中TOC的化学反应方程式。</p>
-<p><img src="/posts/904ca03/904ca03-05.png" alt="904ca03-05.png"></p>
-<p>模仿上图的化学反应方程式，绘图如下：</p>
-<p><img src="/posts/904ca03/904ca03-06.png" alt="904ca03-06.png"></p>
-<p>上面模仿的部分可以看出键的宽度还是有点小，这里可以再增大至0.07 cm，效果如下：</p>
-<p><img src="/posts/904ca03/904ca03-07.png" alt="904ca03-07.png"></p>
-<p>调整后分子式基本与文献中一致（我觉得成果检验还算ok）。</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>虽然在模仿文献中的分子式时，重新调整了键的宽度为0.07 cm，但我还是建议使用0.04 cm的键宽，给人比较简洁的感觉，0.07略微有点太粗，当然如果喜欢这种紧凑感，可以考虑这种风格。对于使用Chemdraw画分子式，建议基于软件本身自带的模板进行修改，这样会减少修改参数的次数，也更容易得到目标效果图。</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Chemdraw</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ChimeraX软件的学习记录</title>
-    <url>/posts/9549c3dc/</url>
-    <content><![CDATA[<p>UCSF ChimeraX（或简称ChimeraX）是继UCSF Chimer之后，生物计算、可视化和信息学资源（RBVI）的下一代分子可视化程序（这句话是从官网上抄的）。ChimeraX作为一款功能强大的生化分析和可视化软件，对于我这样一个学化学的，是不太会那些高端操作的，也没那能力，但最近觉得ChimeraX做的图质感很好，随产生了用该软件画反应机理计算中的分子结构图的想法。但我是小白呀，从没接触过该软件，对于分子的调整完全不了解。本着边学边做笔记的想法，随产生了写这篇博文的想法。</p>
-<span id="more"></span>
-
-<h1 id="软件的安装"><a href="#软件的安装" class="headerlink" title="软件的安装"></a>软件的安装</h1><p>软件的下载，来自官网 <a href="https://www.cgl.ucsf.edu/chimerax/">UCSF ChimeraX Home Page</a>。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-01.png" alt="ChimeraX_web1"></p>
-<p>点击Download，进入软件下载页面 <a href="https://www.cgl.ucsf.edu/chimerax/download.html">Download UCSF ChimeraX</a>。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-02.png" alt="Chimera_download"></p>
-<p>此处下载的版本为Windows ChimearX-1.8.exe，点击上图红色框的位置，进入到UCSF ChimeraX的非商业软件许可协议，点击最下方的 Accept，即可下载该软件。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-03.png" alt="Chimera_agreement"></p>
-<p>根据作者要求使用该软件发表文章应添加acknowledgment和cite。</p>
-<blockquote>
-<p>include an acknowledgment similar to the following:<br>Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.<br>cite one or more of the <a href="https://www.cgl.ucsf.edu/chimerax/docs/morerefs.html">ChimeraX references</a>, mainly:<br>UCSF ChimeraX: Tools for structure building and analysis. Meng EC, Goddard TD, Pettersen EF, Couch GS, Pearson ZJ, Morris JH, Ferrin TE. Protein Sci. 2023 Nov;32(11):e4792.</p>
-<p>UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. Protein Sci. 2021 Jan;30(1):70-82.</p>
-<p>UCSF ChimeraX: Meeting modern challenges in visualization and analysis. Goddard TD, Huang CC, Meng EC, Pettersen EF, Couch GS, Morris JH, Ferrin TE. Protein Sci. 2018 Jan;27(1):14-25.</p>
-<p>Publications include papers, posters, films, videos, exhibits, and artwork. The home page <a href="https://www.rbvi.ucsf.edu/chimerax/">https://www.rbvi.ucsf.edu/chimerax</a> can also be cited.</p>
-</blockquote>
-<p>下载完软件安装包后，对于Windows系统直接双击即可，在安装的过程中，如果有修改安装路径的需求，应自定义安装路径（点击下图红色框选择安装位置）。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-04.png" alt="Chimera_installl"></p>
-<p>正常安装完后，双击桌面图标，即可使用该软件。</p>
-<h1 id="软件的使用"><a href="#软件的使用" class="headerlink" title="软件的使用"></a>软件的使用</h1><h2 id="文件的准备"><a href="#文件的准备" class="headerlink" title="文件的准备"></a>文件的准备</h2><p>最近刚好做了一个醛胺氨缩合的过渡态，就以这个有机反应进行举例，反应方程式如下：</p>
-<p><img src="/posts/9549c3dc/9549c3dc-05.png" alt="Aldoamine_condensation"></p>
-<p>对于这个反应的进行过程，从量子化学的角度由应该如何考虑呐？</p>
-<p>那么就需要思考这个反应的醛基是如何进攻苯胺，如果找到这个过渡态，也就找到了常说的反应能垒。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-06.png" alt="Aldoamine_condensation_mechanism"></p>
-<p>如上氨基氮进攻羰基碳，形成中间态，再通过质子交换，将羰基碳氢转移到羰基氧上，最后脱水形成亚胺。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-07.jpg" alt="Mechanism_diagram_1"></p>
-<p>上图是通过Gaussian找到的两个过渡态，频率计算验证只有一个虚频，最后通过IRC找到了对应的始态和终态，与推测的结果一致，证明了这些过度态的合理性。</p>
-<p>在以上一通操作下，获得了一个始态、一个终态、两个过渡态和三个中间态，虽然也成功画出了反应路径的能级图，但总觉得GaussView导出的分子结构图不是很美观（肯定也能用拉），因此开始本博文的内容，进一步的美化。</p>
-<h2 id="文件格式的转换"><a href="#文件格式的转换" class="headerlink" title="文件格式的转换"></a>文件格式的转换</h2><p>一般Gaussian计算过的输出文件为out文件，需要将out文件转化为pdb文件。</p>
-<p>此处使用卢天老师的<a href="http://sobereva.com/multiwfn/">Multiwfn</a>软件进行格式转换。</p>
-<h2 id="文件的导入"><a href="#文件的导入" class="headerlink" title="文件的导入"></a>文件的导入</h2><p>双击桌面的ChimeraX软件图标，进入到软件界面。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-08.png" alt="Chimera_interface"></p>
-<p>将刚才导出的pdb文件拖入软件的灰色窗口，这里TS1的pdb文件为例。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-09.png" alt="Chimera_molecule"></p>
-<p>操作：</p>
-<ul>
-<li>按住鼠标左键移动鼠标，可以旋转分子模型；</li>
-<li>按住鼠标滚轮移动鼠标，可以平移分子模型；</li>
-<li>旋转鼠标滚轮，可以放大或缩小分子模型。</li>
-</ul>
-<p>对于这个分子，现在我对它的模型是满意的，但是它在显示上是有一个错误的地方，即氨基氮与醛基碳之间的键不应该是实键，因为是过度态，应该为虚键这种伪键才对。以下内容将针对这个目的进行操作实现。</p>
-<h2 id="分子模型的修改"><a href="#分子模型的修改" class="headerlink" title="分子模型的修改"></a>分子模型的修改</h2><p>根据在计算化学公社查到的一篇名为《<a href="http://bbs.keinsci.com/forum.php?mod=viewthread&tid=36383&highlight=Chimera%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D4%AD%EF%BF%BD%EF%BF%BD%D6%AE%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%D3%B7%EF%BF%BD%CA%BD%EF%BF%BD%EF%BF%BD">Chimera如何自定义两个原子之间的连接方式呢</a>》的博文，获得了一种修改两个原子之间连接方式的方法。</p>
-<p>博文内容为：</p>
-<blockquote>
-<p>首先第一步，Alt+鼠标左键选择想要改变的键，点击右下角的放大镜图标，打开Inspect Selection窗口；第二步选择Molecule model选项，将下面的line style改成自己想要的模式；第三步选择Bond选项，将bond style改为wire，将halfbond mode关闭后可以在color处更改键的颜色；第四步退出选中模式即可，图中的实键已经变为了自己想要的虚线。另外这个过程是可逆的，也有其他的选项可供大家设置，谢谢大家。</p>
-</blockquote>
-<p>我也尝试了改博主写的的修改方法，但是在做到第二步的时候，就遇到了问题，在软件的Inspect Selection窗口没有Molecule model选项，因此没能推进下去。（我电脑安装的软件也没有显示第一步所说的放大镜图标，该窗口的打开，我是通过home选项下的Selection部分的inspect打开的。）</p>
-<p>由于上面的方法没有行通，因此又继续寻找了新的方法。</p>
-<p>其实上面也讲了，对于该分子只是希望在两个原子之家形成以虚线形式显示的伪键。因此，首先去查询了如何创建一个新的伪键，官方文档给出的是通过命令行的方法，但是经过了多次尝试，并没有成功执行目标命令，这条路随止。（后期如果我看懂了官方文档，我在补充这部分内容）</p>
-<p>无意间我看到了distance这个选项，想到我本来的目的就是创建一个虚线的伪键，以及显示对应的长度，那么是不是可以通过distance来实现我的目的，随进行了尝试。</p>
-<p><strong>第一步</strong>，按住ctrl键使用鼠标选中需要修改的键（选中后会出现绿色边框）；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-10.png" alt="Chimera_bondselection"></p>
-<p><strong>第二步</strong>，在点击Actions下的Atoms&#x2F;Bonds选项的Hide，隐藏该碳氮键；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-11.png" alt="Chimera_bondhide"></p>
-<p><strong>第三步</strong>，点击Right Mouse选项下的Annotation部分的Distance（选中后该icon会出现绿色背景），接着同时按着Ctrl和Shift，选中氨基氮原子和醛基碳原子，再右击鼠标，就会产生虚线的伪键和键长参数；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-12.png" alt="Chimera_bonddistance"></p>
-<p><strong>第四步</strong>，按住Ctrl后，选中虚线伪键，点击home选项下的Selection部分的inspect打开Selection Insqector窗口；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-13.png" alt="Chimera_bondselectioninspector"></p>
-<p><strong>第五步</strong>，在Selection Insqector窗口将Inspect的Pseudibonds改为Pseudibond models，通过修改Color可以改变键的颜色，修改Dashes可以改变伪键的分段数，修改Radius可以改变伪键的半径。（这里我只改变了Dashes，因为感觉原先的分段太密集了。）</p>
-<p><img src="/posts/9549c3dc/9549c3dc-14.png" alt="Chimera_bondstyle"></p>
-<p><strong>第六步</strong>，点击Right Mouse选项下的Annotation部分的Move label（选中后该icon会出现绿色背景），然后将鼠标移动至label处并按住鼠标右键，即可移动label位置；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-15.png" alt="Chimera_bondlabelmove"></p>
-<p>另一种方法，在最下方的Command命令窗口输入label offset 0.1,0.2,0，来修改标签的位置。</p>
-<p><img src="/posts/9549c3dc/9549c3dc-16.png" alt="Chimera_bondlabel"></p>
-<blockquote>
-<p>offset将标签的绝对偏移量指定为屏幕坐标系中沿x、y和z轴的三个逗号分隔值x、y、z，以数据的距离单位（通常为Å）表示。偏移量是标签矩形左下角相对于标记项目中心的位置。可以给出负值。默认偏移量为：0,0,0。</p>
-</blockquote>
-<p>注：第二种方法，通过上述命令只适合单label，对于多label的位置调整，还请自行查阅官方文档。</p>
-<p><strong>第七步</strong>，点击home选项下的Background部分White，修改背景为白色；</p>
-<p><img src="/posts/9549c3dc/9549c3dc-17.png" alt="Chimera_bondbackground"></p>
-<p><strong>第八步</strong>，点击File下的Save…保存文件，建议保存一份文件名为cxs的ChimeraX文件，再保存一份文件名为bmp或者png的图片文件。（这里保存为bmp文件）</p>
-<p><img src="/posts/9549c3dc/9549c3dc-18.bmp" alt="TS1"></p>
-<p>以上操作就算完成了最开始的的想法，画出一个过渡态的伪键，并标记其键长。对于其他的分子同理操作。</p>
-<h2 id="修改后的反应机理图"><a href="#修改后的反应机理图" class="headerlink" title="修改后的反应机理图"></a>修改后的反应机理图</h2><p><img src="/posts/9549c3dc/9549c3dc-19.jpg" alt="Mechanism_diagram_2"></p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>ChimeraX作为一款功能强大的生化分析和可视化软件，对于我现在使用的是有点大材小用了，但现阶段也仅仅是使用它重画了分子结构（用C4D太麻烦了，也不太会，而ChimeraX的分子渲染风格是美观的）。以上记录笔记仅仅是简单的文件导入和图片的导出操作，关于软件的其它操作，等学会了再补充进来。</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>ChimeraX</tag>
-        <tag>整理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Multiwfn软件获取量化计算数据的教程</title>
-    <url>/posts/f5b46dab/</url>
-    <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
-<span id="more"></span>
-
-<p>文中使用到的软件：Multiwfn和GaussView。</p>
-<h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入0 Show molecular structure and view orbitals，按回车键</li>
-</ul>
-<p>此时，会弹出一个显示窗口，可以直观的观察分子式，以及不同分子轨道的电子云分布，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-01.png" alt="f5b46dab-01"></p>
-<p>其中，1号红框内可以切换不同的分子轨道，2号红框可以旋转、缩放分子。</p>
-<p>在DOC窗口中，可以读取对应分子轨道的能量，以及能隙，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-02.png" alt="f5b46dab-02"></p>
-<p>通过，红色框内内容，可以读出轨道255代表的是HOMO轨道，256代表的是LUMO轨道，同理，254就是HOMO-1，257就是LUMO+1，以此类推其它HOMO、LUMO轨道。</p>
-<h1 id="轨道成分"><a href="#轨道成分" class="headerlink" title="轨道成分"></a>轨道成分</h1><p>此处使用NAO方法获取分子轨道成分，具体内容见Sob老师的<a href="http://sobereva.com/131">谈谈轨道成份的计算方法</a>。</p>
-<p>重新打开Multiwfn 程序，将NAO作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入8 Orbital composition analysis</li>
-</ul>
-<ul>
-<li>输入7 Orbital composition analysis by natural atomic orbital (NAO) method</li>
-</ul>
-<p>如果只想分析单个原子在某个分子轨道的贡献。</p>
-<ul>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道，输出结果如下</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
-
-<p>如果修改展示的贡献范围，可以操作如下：</p>
-<ul>
-<li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
-</li>
-<li><p>输入1 Show non-Rydberg NAOs&#x2F;shells</p>
-</li>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道</p>
-</li>
-</ul>
-<p>对于各个原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
-<p>对于钌原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
-<p>如果准备分析某一分子片段，则选要先定义片段。</p>
-<ul>
-<li>输入-1 Define fragment for option 1</li>
-<li>输入clean Clean current fragment</li>
-<li>输入a 3,4,6,7,17-19,26,27,30-50,95-98,107-112（此处3,4,6,7,17-19,26,27,30-50,95-98,107-112为举例，以实际的片段序号为准。）</li>
-<li>输入q save and exit</li>
-<li>输入1 Show fragment contribution to a batch of orbitals</li>
-<li>输入255,256 输出结果如下</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
-<p><strong>补充：</strong></p>
-<p>关于原子序号的查找：</p>
-<p>打开GaussView，将NAO作业的out文件，拖入软件。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-03.png" alt="f5b46dab-01"></p>
-<p>如上图所示，点击View里的Labels选项，此时分子式中就会出现其各个原子的序号，想定义哪一个片段，就整理哪一个片段的原子序号就好，图中，两个邻菲罗啉的原子序号就是3,4,6,7,17-19,26,27,30-50,95-98,107-112。</p>
-<h1 id="紫外吸收光谱"><a href="#紫外吸收光谱" class="headerlink" title="紫外吸收光谱"></a>紫外吸收光谱</h1><p>重新打开Multiwfn 程序，将紫外吸收或者磷光发射作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入18 Electron excitation analysis</li>
-<li>输入15 Print major MO transitions in all excited states</li>
-</ul>
-<p>此时，就会输出紫外吸收的组态信息，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-04.png" alt="f5b46dab-04"></p>
-<p>其中，1代表S1态，2.5460 eV代表激发能，486.98 nm代表激发波长，f代表振子强度，Spin multiplicity代表多重度，其余部分就是组态信息（包含不同的跃迁轨道以及贡献成分）</p>
-<p>（发射光谱的分析同紫外吸收光谱光谱分析的内容，在此不再赘述。）</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>Multiwfn可以从Sob老师的论坛“计算化学公社“获取。</p>
-<p>（网址：<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>）</p>
-<p>该博文参考了Sob老师的多篇博文，如有兴趣自行到公社获取。</p>
-<p>若待发表论文中有使用Sob老师的相关研究成果，建议引用相关研究成果。</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>整理</tag>
-        <tag>Gaussian</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于Hexo博客内容迁移的备忘录</title>
     <url>/posts/e6b74078/</url>
     <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
 <span id="more"></span>
-<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有不上通过直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
 <p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
 <h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
 <p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
@@ -1103,7 +1602,7 @@
   <entry>
     <title>常见NMR碳谱溶剂峰</title>
     <url>/posts/2504b91/</url>
-    <content><![CDATA[<p>书接上回《常见NMR氢谱溶剂峰》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
 <span id="more"></span>
 
 <style>
@@ -1436,465 +1935,49 @@
       </tags>
   </entry>
   <entry>
-    <title>收藏页（持续更新）</title>
-    <url>/posts/6e97f420/</url>
-    <content><![CDATA[<p>该部分内容为一些网页收藏。</p>
+    <title>量化学习——结构优化</title>
+    <url>/posts/ff240d57/</url>
+    <content><![CDATA[<p>最近看了Tim（B站UP主）的一些视频后，产生了写一些内容的想法，以实现以写促学的目的。现阶段，我在计算方面的学习止步不前，还停留在吃老本的阶段（虽然没有什么老本可吃），但又想再学习一些新东西的想法，因此，开始想写一些计算的知识点整理（仅为DFT计算），一是帮助有可能看到这篇博文的读者，二是巩固自己的对这些内容的掌握。所写内容可能不成体系，没有前后逻辑关系，所以选择自己想看的部分吧。这部分主要写结构优化的部分，涉及分子结构的构建、任务的提交和结果的查看。</p>
 <span id="more"></span>
 
-<style>
-    h1 {
-        text-align: center;
-    }
-    .links-content{
-        margin-top:1rem;
-    }
-    .link-navigation::after {
-        content: " ";
-        display: block;
-        clear: both;
-    }
-    .card {
-        float: left;
-        width: 40%;
-        font-size: 1rem;
-        padding: 10px 20px;
-        border-radius: 4px;
-        transition-duration: 0.15s;
-        margin-bottom: 1rem;
-        margin-right: 4%;
-        display:flex;
-    }
-    .card-header {
-        width: 45%;
-    }
-    .card:hover {
-        transform: scale(1.1);
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
-    }
-    .card a {
-        border:none;
-    }
-    .card .ava {
-        width: 3rem!important;
-        height: 3rem!important;
-        margin:0!important;
-        margin-right: 1em!important;
-        border-radius:4px;
-    }
-    .card .card-header {
-        font-style: italic;
-        overflow: hidden;
-        width: 100%;
-    }
-    .card .card-header a {
-        font-style: normal;
-        color: #2bbc8a;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .card .card-header a:hover {
-        color: #00b6ff;
-        text-decoration: none;
-    }
-    .card .card-header .info {
-        font-style:normal;
-        color:#a3a3a3;
-        font-size:14px;
-        min-width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    /* 响应式样式 */  
-    @media (max-width: 1024px) {  
-        .link-navigation {  
-            flex-direction: column; /* 在小屏幕上改为列布局 */  
-        }  
-      
-        .card {  
-            width: 90%; /* 占据全部宽度 */  
-            margin-bottom: 1rem; /* 可调整移动端间距 */  
-        }  
-    }
-</style>
+<h1 id="什么是结构优化"><a href="#什么是结构优化" class="headerlink" title="什么是结构优化"></a>什么是结构优化</h1><p>结构优化是指对整个输入体系的坐标进行调整，得到一个相对稳定的基态结构。我们知道基态是一个稳定态，但是对于一个基态势能面，我们需要去找一个最稳定的点，也就是所谓的极小值点（你可以想象在一个凹凸不平的平面上找那里面的凹陷点）。但是对于整个势能面来说，势能面上不止一个极小值点，因此有必要去找最小值点（这个点的能量最低，也意味着更稳定，但这不是一个必要条件，需要根据情况去选择最优结构）。</p>
+<p>在Gaussian中结构优化的关键词为<code>opt</code>。</p>
+<p>而结构优化根据优化需求分为非限制性优化和限制性优化，常规优化一般为非限制性优化，即基于所有原子的优化。</p>
+<h1 id="分子结构的构建"><a href="#分子结构的构建" class="headerlink" title="分子结构的构建"></a>分子结构的构建</h1><h2 id="手搓版"><a href="#手搓版" class="headerlink" title="手搓版"></a>手搓版</h2><p>对于没有晶体结构或者没有报道结构信息的分子，这种分子结构就需要通过建模软件手搓，常用的手搓软件有GaussView和Avogadro（推荐前者）。</p>
+<p>关于如何使用GaussView可以见《<a href="https://mancekou.github.io/posts/2dd13f90/#more">基于Gaussian理论计算的粗浅经验小结</a>》中的GaussView软件的操作。</p>
+<h2 id="非手搓版"><a href="#非手搓版" class="headerlink" title="非手搓版"></a>非手搓版</h2><p>对于那些有晶体结构的分子，可以通过获取晶体结构的xyz坐标来作为优化的分子坐标。而对于那些已被报道的结构信息分子，可以通过文献获取相应的分子坐标。</p>
+<p>当然也可以通过对这些结构进行修饰来获取目标结构，这将极大的减少工作量，尤其是具有立体空间关系的分子，如配合物、分子笼、MOFs。</p>
+<h1 id="任务的提交"><a href="#任务的提交" class="headerlink" title="任务的提交"></a>任务的提交</h1><p>在提交任务之前，要对分子结构进行任务的设置。</p>
+<p>对于非限制性结构优化的分子，只需要使用结构优化的关键词<code>opt</code>即可。而对于限制性结构优化的分子，则需要考虑原子冻结的问题。对于原子冻结来说，一般分为两种方法。</p>
+<p>方法一：</p>
+<p>对想冻结的原子可以在文本文件的坐标部分进行修改，如想冻结原子1，在原子1符号和原子1坐标之间添加-1即可，对于不冻结原子，添加数字0即可。形式如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                0    1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                0    2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                0    2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                0    0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C               -1    2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                0    3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                0    2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C               -1    1.99379147    1.51724783    1.25599826</span><br><span class="line"> H               -1    0.92379369    1.51895378    1.25464336</span><br><span class="line"> H               -1    2.35015690    2.02153807    2.12983751</span><br><span class="line"> H               -1    2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><strong>免责声明</strong>：本网页由博主<a href="https://mancekou.github.io/">满东</a>制作，展示的所有网站均为个人兴趣收集，不含任何商业推广成分，仅供交流学习。如有网站违反国家政策法规或链接已失效请联系博主（首页有E-mail或者在留言板留言），我将尽快修改。所有网站使用前请仔细查阅授权许可，部分网站的产出不可用于商业用途，如错误使用产生的相关后果均与本站无关。</p>
-<body>
-    <dvi>
-        <h1>学习网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.x-mol.com/">X-MOL学术平台</a>
-            </div>
-            <div class="info">文献检索和追踪平网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.researchgate.net/">ResearchGate</a>
-            </div>
-            <div class="info">科学文献追踪平台</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://scholar.dosf.top/">谷歌学术</a>
-            </div>
-            <div class="info">该链接为镜像网址</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://gfsoso.99lb.net/">谷粉学术</a>
-            </div>
-            <div class="info">谷歌学术的平替</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://sci-hub.se/">SCI-HUB</a>
-            </div>
-            <div class="info">免费提供学术文献的网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://yiyan.baidu.com/">文心一言</a>
-            </div>
-            <div class="info">百度全新一代知识增强大语言模型</div>
-         </div>
-      </div>
-    </div>
-  </div>  
-  <dvi>
-        <h1>工具网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="http://103.40.13.47:33301/">谷歌搜索</a>
-            </div>
-            <div class="info">该链接为镜像网址</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="http://checkcif.iucr.org/">Checkcif</a>
-            </div>
-            <div class="info">获取CIF检验报告的网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cassi.cas.org/search.jsp">CAS Source Index Search Tool</a>
-            </div>
-            <div class="info">获取期刊简写的网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.chemicalbook.com/ProductIndex.aspx">Chemiacl Book</a>
-            </div>
-            <div class="info">化学产品搜索工具</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://zh.webqc.org/">Web Quintessential Chemistry</a>
-            </div>
-            <div class="info">在线化学工具（常用里面的单位换算）</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://ptable.com/?lang=zh-hans#">元素周期表</a>
-            </div>
-            <div class="info">更美观的化学周期表</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cdkm.com/">CDKM</a>
-            </div>
-            <div class="info">各种文件的格式转换</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://mycolor.space/">ColorSpave</a>
-            </div>
-            <div class="info">配色网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://emojipedia.org/">Emojipedia</a>
-            </div>
-            <div class="info">Emoji图标</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://fa5.dashgame.com/#/">Font Awesome</a>
-            </div>
-            <div class="info">矢量图标和社交标志</div>
-         </div>
-      </div>       
-    </div>
-  </div>
-  <dvi>
-        <h1>论坛网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="http://bbs.keinsci.com/forum.php">计算化学公社</a>
-            </div>
-            <div class="info">国内最大的计算化学论坛</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://zotero-chinese.com/">Zotero非官方中文社区</a>
-            </div>
-            <div class="info">更详细、更易于理解的Zotero中文文档和指导</div>
-         </div>
-      </div>
-    </div>
-  </div>
-    <dvi>
-        <h1>影视网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://ddys.pro/">低端影视</a>
-            </div>
-            <div class="info">便捷及超清画质的在线影视剧平台</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.bilibili.com/">BiliBili</a>
-            </div>
-            <div class="info">内容创作与分享的视频网站</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.agedm.org/">AGE动漫</a>
-            </div>
-            <div class="info">看动漫</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.douyin.com/">抖音</a>
-            </div>
-            <div class="info">短视频平台</div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <dvi>
-        <h1>音乐网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.gequbao.com/">歌曲宝</a>
-            </div>
-            <div class="info">音乐下载平台</div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <dvi>
-        <h1>快乐一下</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://lks.cc/">LKs网站推荐合集</a>
-            </div>
-            <div class="info">由B站图一乐up主LKs制作的网站合集</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://cook.yunyoujun.cn/">食用手册</a>
-            </div>
-            <div class="info">给自己吃什么找个方案</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.ckvmk.com/">Ai导航</a>
-            </div>
-            <div class="info">各种Ai应用的合集</div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <dvi>
-        <h1>期刊网址</h1>
-    </dvi>
-    <div class="links-content">
-        <div class="link-navigation">
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/jacsat">Journal of the American Chemical Society</a>
-            </div>
-            <div class="info">ACS旗下JACS</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://onlinelibrary.wiley.com/journal/15213757">Angewandte Chemie International Edition</a>
-            </div>
-            <div class="info">Wiley旗下Angew</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://onlinelibrary.wiley.com/journal/15214095">Advanced Materials</a>
-            </div>
-            <div class="info">Wiley旗下AM</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://onlinelibrary.wiley.com/journal/16163028">Advanced Functional Materials</a>
-            </div>
-            <div class="info">Wiley旗下AFM</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://onlinelibrary.wiley.com/journal/21922659">Advanced Healthcare Materials</a>
-            </div>
-            <div class="info">Wiley旗下AHM</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/ancac3">ACS Nano</a>
-            </div>
-            <div class="info">ACS旗下Nano</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/aamick">ACS Applied Materials & Interfaces</a>
-            </div>
-            <div class="info">ACS旗下AMI</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/ancham">Analytical Chemistry</a>
-            </div>
-            <div class="info">ACS旗下AC</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/jmcmar">Journal of Medicinal Chemistry</a>
-            </div>
-            <div class="info">ACS旗下JMC</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://pubs.acs.org/journal/inocaj">Inorganic Chemistry</a>
-            </div>
-            <div class="info">ACS旗下IC</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.sciencedirect.com/journal/sensors-and-actuators-b-chemical">Sensors and Actuators B: Chemicaly</a>
-            </div>
-            <div class="info">Elsevier旗下Sensor B</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.sciencedirect.com/journal/talanta">Talanta</a>
-            </div>
-            <div class="info">Elsevier旗下Talanta</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://www.sciencedirect.com/journal/dyes-and-pigments">Dyes and Pigments</a>
-            </div>
-            <div class="info">Elsevier旗下DP</div>
-         </div>
-      </div>
-      <div class="card">
-         <div class="card-header">
-            <div>
-               <a href="https://chemrxiv.org/engage/chemrxiv/public-dashboard">ChemRxiv</a>
-            </div>
-            <div class="info">预印版文献网址</div>
-         </div>
-      </div>
-    </div>
-  </div>
-</body>
+<p>当然如上的冻结方式也可以通过GaussView进行操作。</p>
+<p>首先将输入文件导入GaussView，使用原子选择工具选择需要冻结的原子。接下来点击分子窗口的原子，选中后该原子为亮黄色。这时点击Tools下的Atom groups…选项，显示如下窗口界面。这时需要将Atom Group Class选择改为Freeze，以及选中Freeze (Yes)，点击Group Actions … 中的Add Selected Atoms to “Freeze (Yes)”。</p>
+<p><img src="/posts/ff240d57/ff240d57-01.png" alt="ff240d57-01"></p>
+<p>冻结完原子后，可以看到如下图中的Freeze (Yes)行中的Atom Tags中发现已经有了对应的原子序号。这时关闭Atom Group Editor窗口，保存文件即可。（对于冻结原子显示绿色的外发光，而不冻结原子显示红色外发光）</p>
+<p><img src="/posts/ff240d57/ff240d57-02.png" alt="ff240d57-02"></p>
+<p>查阅输入文件的文本形式，也可以发现在原子符号和原子坐标之间添加了0和-1，说明已经冻结了想要冻结的原子。</p>
+<p>方法二：</p>
+<p>对于一类原子时，就可以使用一个讨巧的方法，在关键词<code>opt</code>后添加<code>readopt</code>选项，这时只需要在原子坐标后空一行然后用<code>notatoms=冻结原子元素符号1,冻结原子元素符号2,冻结原子元素符号3</code>来冻结原子即可。形式如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt=readopt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                   1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                   2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                   2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                   0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C                   2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                   3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                   2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C                   1.99379147    1.51724783    1.25599826</span><br><span class="line"> H                   0.92379369    1.51895378    1.25464336</span><br><span class="line"> H                   2.35015690    2.02153807    2.12983751</span><br><span class="line"> H                   2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line">notatoms=C</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>对于上面两种方法，建议根据实际情况来选择，如果是冻结部分基团，那么方法一更加灵活，如果是冻结好几种元素，只优化一种元素时，方法二则更便捷。</p>
+<p>完成上面操作后，就可以像其他任务一样，将任务提交到对应的服务器，当然自己最好对输入文件设置内存和核数的多少，这样有利于对服务器资源的管理于分配。如果不会任务的提交，请查阅《<a href="https://mancekou.github.io/posts/2dd13f90/#more">基于Gaussian理论计算的粗浅经验小结</a>》。</p>
+<p>注：一般在进行优化计算的时候，都会写上<code>freq</code>，同时进行频率计算，以方便验证计算结果得到的结构是否为最优结构，如果没有虚频说明这个可用。但是否符合自己的预期，就需要根据自己的需要来判断是否可以被自己用于接下来的计算。</p>
+<h1 id="结果的查看"><a href="#结果的查看" class="headerlink" title="结果的查看"></a>结果的查看</h1><p>计算任务结束后，就可以得到一个out文件或者log文件（这两个都是日志文件，记录计算输出的信息）。</p>
+<p>将一个计算完的out文件拖入GaussView后，就可以看到优化后的结构，以及优化了多少步，同时在分子结构窗口点击鼠标右键点击Results中的Summary…，就可以看到优化完后的一些分子信息，包括计算的方法和基组、分子的自旋多重度和能量，以及在这里最关心的虚频数。</p>
+<p>如果是0，则说明这个结构可用，否者就需要重新的调整分子进行结构优化。</p>
+<p><img src="/posts/ff240d57/ff240d57-03.png" alt="ff240d57-03"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>本文介绍的内容是所有计算最开始的工作，如果不能获得一个优化好的结构，那么对于后续的所有计算都存在不合理性，对于数据的可信度也就有待商榷了。本文整理的内容比较简单，但对于大多数结构优化的任务，就是这样的操作，希望对能够读到这篇博文的人有所帮助。</p>
 ]]></content>
       <categories>
-        <category>网站</category>
+        <category>Software</category>
       </categories>
       <tags>
-        <tag>有趣</tag>
+        <tag>整理</tag>
+        <tag>Gaussian</tag>
       </tags>
   </entry>
   <entry>
@@ -1955,52 +2038,6 @@
       <tags>
         <tag>整理</tag>
         <tag>发光探针</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>量化学习——结构优化</title>
-    <url>/posts/ff240d57/</url>
-    <content><![CDATA[<p>最近看了Tim（B站UP主）的一些视频后，产生了写一些内容的想法，以实现以写促学的目的。现阶段，我在计算方面的学习止步不前，还停留在吃老本的阶段（虽然没有什么老本可吃），但又想再学习一些新东西的想法，因此，开始想写一些计算的知识点整理（仅为DFT计算），一是帮助有可能看到这篇博文的读者，二是巩固自己的对这些内容的掌握。所写内容可能不成体系，没有前后逻辑关系，所以选择自己想看的部分吧。这部分主要写结构优化的部分，涉及分子结构的构建、任务的提交和结果的查看。</p>
-<span id="more"></span>
-
-<h1 id="什么是结构优化"><a href="#什么是结构优化" class="headerlink" title="什么是结构优化"></a>什么是结构优化</h1><p>结构优化是指对整个输入体系的坐标进行调整，得到一个相对稳定的基态结构。我们知道基态是一个稳定态，但是对于一个基态势能面，我们需要去找一个最稳定的点，也就是所谓的极小值点（你可以想象在一个凹凸不平的平面上找那里面的凹陷点）。但是对于整个势能面来说，势能面上不止一个极小值点，因此有必要去找最小值点（这个点的能量最低，也意味着更稳定，但这不是一个必要条件，需要根据情况去选择最优结构）。</p>
-<p>在Gaussian中结构优化的关键词为<code>opt</code>。</p>
-<p>而结构优化根据优化需求分为非限制性优化和限制性优化，常规优化一般为非限制性优化，即基于所有原子的优化。</p>
-<h1 id="分子结构的构建"><a href="#分子结构的构建" class="headerlink" title="分子结构的构建"></a>分子结构的构建</h1><h2 id="手搓版"><a href="#手搓版" class="headerlink" title="手搓版"></a>手搓版</h2><p>对于没有晶体结构或者没有报道结构信息的分子，这种分子结构就需要通过建模软件手搓，常用的手搓软件有GaussView和Avogadro（推荐前者）。</p>
-<p>关于如何使用GaussView可以见《<a href="https://mancekou.github.io/posts/2dd13f90/#more">基于Gaussian理论计算的粗浅经验小结</a>》中的GaussView软件的操作。</p>
-<h2 id="非手搓版"><a href="#非手搓版" class="headerlink" title="非手搓版"></a>非手搓版</h2><p>对于那些有晶体结构的分子，可以通过获取晶体结构的xyz坐标来作为优化的分子坐标。而对于那些已被报道的结构信息分子，可以通过文献获取相应的分子坐标。</p>
-<p>当然也可以通过对这些结构进行修饰来获取目标结构，这将极大的减少工作量，尤其是具有立体空间关系的分子，如配合物、分子笼、MOFs。</p>
-<h1 id="任务的提交"><a href="#任务的提交" class="headerlink" title="任务的提交"></a>任务的提交</h1><p>在提交任务之前，要对分子结构进行任务的设置。</p>
-<p>对于非限制性结构优化的分子，只需要使用结构优化的关键词<code>opt</code>即可。而对于限制性结构优化的分子，则需要考虑原子冻结的问题。对于原子冻结来说，一般分为两种方法。</p>
-<p>方法一：</p>
-<p>对想冻结的原子可以在文本文件的坐标部分进行修改，如想冻结原子1，在原子1符号和原子1坐标之间添加-1即可，对于不冻结原子，添加数字0即可。形式如下。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                0    1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                0    2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                0    2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                0    0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C               -1    2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                0    3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                0    2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C               -1    1.99379147    1.51724783    1.25599826</span><br><span class="line"> H               -1    0.92379369    1.51895378    1.25464336</span><br><span class="line"> H               -1    2.35015690    2.02153807    2.12983751</span><br><span class="line"> H               -1    2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>当然如上的冻结方式也可以通过GaussView进行操作。</p>
-<p>首先将输入文件导入GaussView，使用原子选择工具选择需要冻结的原子。接下来点击分子窗口的原子，选中后该原子为亮黄色。这时点击Tools下的Atom groups…选项，显示如下窗口界面。这时需要将Atom Group Class选择改为Freeze，以及选中Freeze (Yes)，点击Group Actions … 中的Add Selected Atoms to “Freeze (Yes)”。</p>
-<p><img src="/posts/ff240d57/ff240d57-01.png" alt="ff240d57-01"></p>
-<p>冻结完原子后，可以看到如下图中的Freeze (Yes)行中的Atom Tags中发现已经有了对应的原子序号。这时关闭Atom Group Editor窗口，保存文件即可。（对于冻结原子显示绿色的外发光，而不冻结原子显示红色外发光）</p>
-<p><img src="/posts/ff240d57/ff240d57-02.png" alt="ff240d57-02"></p>
-<p>查阅输入文件的文本形式，也可以发现在原子符号和原子坐标之间添加了0和-1，说明已经冻结了想要冻结的原子。</p>
-<p>方法二：</p>
-<p>对于一类原子时，就可以使用一个讨巧的方法，在关键词<code>opt</code>后添加<code>readopt</code>选项，这时只需要在原子坐标后空一行然后用<code>notatoms=冻结原子元素符号1,冻结原子元素符号2,冻结原子元素符号3</code>来冻结原子即可。形式如下。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt=readopt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                   1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                   2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                   2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                   0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C                   2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                   3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                   2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C                   1.99379147    1.51724783    1.25599826</span><br><span class="line"> H                   0.92379369    1.51895378    1.25464336</span><br><span class="line"> H                   2.35015690    2.02153807    2.12983751</span><br><span class="line"> H                   2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line">notatoms=C</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>对于上面两种方法，建议根据实际情况来选择，如果是冻结部分基团，那么方法一更加灵活，如果是冻结好几种元素，只优化一种元素时，方法二则更便捷。</p>
-<p>完成上面操作后，就可以像其他任务一样，将任务提交到对应的服务器，当然自己最好对输入文件设置内存和核数的多少，这样有利于对服务器资源的管理于分配。如果不会任务的提交，请查阅《<a href="https://mancekou.github.io/posts/2dd13f90/#more">基于Gaussian理论计算的粗浅经验小结</a>》。</p>
-<p>注：一般在进行优化计算的时候，都会写上<code>freq</code>，同时进行频率计算，以方便验证计算结果得到的结构是否为最优结构，如果没有虚频说明这个可用。但是否符合自己的预期，就需要根据自己的需要来判断是否可以被自己用于接下来的计算。</p>
-<h1 id="结果的查看"><a href="#结果的查看" class="headerlink" title="结果的查看"></a>结果的查看</h1><p>计算任务结束后，就可以得到一个out文件或者log文件（这两个都是日志文件，记录计算输出的信息）。</p>
-<p>将一个计算完的out文件拖入GaussView后，就可以看到优化后的结构，以及优化了多少步，同时在分子结构窗口点击鼠标右键点击Results中的Summary…，就可以看到优化完后的一些分子信息，包括计算的方法和基组、分子的自旋多重度和能量，以及在这里最关心的虚频数。</p>
-<p>如果是0，则说明这个结构可用，否者就需要重新的调整分子进行结构优化。</p>
-<p><img src="/posts/ff240d57/ff240d57-03.png" alt="ff240d57-03"></p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>本文介绍的内容是所有计算最开始的工作，如果不能获得一个优化好的结构，那么对于后续的所有计算都存在不合理性，对于数据的可信度也就有待商榷了。本文整理的内容比较简单，但对于大多数结构优化的任务，就是这样的操作，希望对能够读到这篇博文的人有所帮助。</p>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>整理</tag>
-        <tag>Gaussian</tag>
       </tags>
   </entry>
 </search>
