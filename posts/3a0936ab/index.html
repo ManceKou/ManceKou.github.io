@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+<meta name="google-site-verification" content="fSQGPNRAU4DCvvnYGCHYOpUg94XlzSCdD5Uk2xLF2fI">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mancekou.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="荧光探针常见发光机理整理">
+<meta property="og:url" content="https://mancekou.github.io/posts/3a0936ab/index.html">
+<meta property="og:site_name" content="Mancekou">
+<meta property="og:description" content="最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-01.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-02.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-03.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-04.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-05.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-06.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-07.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-08.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-09.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-10.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-11.jpg">
+<meta property="og:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-12.jpg">
+<meta property="article:published_time" content="2023-11-25T02:41:04.000Z">
+<meta property="article:modified_time" content="2024-11-30T03:00:01.372Z">
+<meta property="article:author" content="满东">
+<meta property="article:tag" content="整理">
+<meta property="article:tag" content="发光探针">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mancekou.github.io/posts/3a0936ab/3a0936a-01.jpg">
+
+<link rel="canonical" href="https://mancekou.github.io/posts/3a0936ab/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>荧光探针常见发光机理整理 | Mancekou</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Mancekou" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Mancekou</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">真诚 热情 笃行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">9</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a>
+
+  </li>
+        <li class="menu-item menu-item-notes">
+
+    <a href="/notes" rel="section"><i class="fa fa-list-alt fa-fw"></i>手记</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works" rel="section"><i class="fa fa-laptop fa-fw"></i>参与工作</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>个人说明书</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mancekou.github.io/posts/3a0936ab/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="满东">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mancekou">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          荧光探针常见发光机理整理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-11-25 10:41:04" itemprop="dateCreated datePublished" datetime="2023-11-25T10:41:04+08:00">2023-11-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index"><span itemprop="name">Notes</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。</p>
+<span id="more"></span>
+
+<h1 id="发光机理内容"><a href="#发光机理内容" class="headerlink" title="发光机理内容"></a>发光机理内容</h1><p>常见的发光机理主要包括：分子内电荷转移（intramolecular charge transfer，<strong>ICT</strong>）、扭曲分子内电荷转移（twisted intramolecular charge transfer，<strong>TICT</strong>）、荧光共振能量转移（fluorescence resonance energy transfer，<strong>FRET</strong>）、跨键能量转移（through bond energy transfer，<strong>TBET</strong>）、光诱导电子转移（photoinduced electron transfer，<strong>PET</strong>）、激发态分子内质子转移(excited state intramolecular proton transfer, <strong>ESIPT</strong>)和聚集诱导发光（aggregation-induced emission，<strong>AIE</strong>）等。</p>
+<p>荧光探针的研究人员基于这些发光机理设计大量的发光和检测探针，进一步丰富了探针的多功能性。因此学习和了解这些发光机理将有助于帮助探针的初学者快速的入门，并加深对探针设计（高端的叫法应该就是“分子工程”了吧）的理解。</p>
+<p>那么就让我们开始吧。</p>
+<h1 id="分子内电荷转移（ICT）"><a href="#分子内电荷转移（ICT）" class="headerlink" title="分子内电荷转移（ICT）"></a>分子内电荷转移（ICT）</h1><p>分子内电荷转移又叫做光致电荷转移（Photo-induced Charge Transfer, PCT），是设计比例型探针的重要手段。这类探针一般由供电子基团（Donor），吸电子基团（Acceptor）和π共轭桥组成，因此分子内部存在着由给电子基团经π桥向吸电子基团的电荷转移过程，这个过程就叫分子内电荷转移。ICT效应诱导的荧光也叫做ICT发射。而对于检测型探针，一般会将供电子基团或吸电子基团修饰为识别基团，进而阻断这种ICT发射，只有在识别基团与待识别物质结合或反应后，改变供电子基团或者吸电子基团的推拉电子性能，才能打开这种ICT发射，以实现对待识别物质检测的目的。</p>
+<p><img src="/posts/3a0936ab/3a0936a-01.jpg" alt="3a0936a-01"></p>
+<p>如果从势能面的角度来分析这种电子的转移，就如上图所示，响应前的分子被激发后直接通过局域的电荷跃迁（LE transition）返回基态，而与待识别物质响应后，分子内的供电子基团或者吸电子基团的推拉电子能力发生改变，促使激发态的电子容易越过一个过渡态（Transition state，TS）到达ICT态，进而实现ICT发射。</p>
+<p><img src="/posts/3a0936ab/3a0936a-02.jpg" alt="3a0936a-02"></p>
+<p>而对于比率型探针中的这种波长的改变，相信这幅图可以更好的理解。当供电子基团的推电子能力减弱或者吸电子基团的拉电子能力增强时，会导致能隙的减少，引起发射波长的红移，这是大多数ICT类型探针采用的策略。反之，当供电子基团的推电子能力增强或者吸电子基团的拉电子能力减弱时，会导致能隙的增大，引起发射波长的蓝移。</p>
+<h1 id="扭曲分子内电荷转移（TICT）"><a href="#扭曲分子内电荷转移（TICT）" class="headerlink" title="扭曲分子内电荷转移（TICT）"></a>扭曲分子内电荷转移（TICT）</h1><p>扭曲分子内电荷转移在结构上区别于ICT的平面共轭结构，在TICT中，供体和受体之间以单键连接并呈现一定的夹角（甚至达到相互垂直的水平），但本质上还是利用电荷的离域，因此说TICT是ICT的一种特例。</p>
+<p><img src="/posts/3a0936ab/3a0936a-03.jpg" alt="3a0936a-03"></p>
+<p>如果从势能面的角度分析，就如上图所示，分子首先被激发到激发态，然后通过分子结构的扭曲，转变为TICT态。由于激发态结构具有较大的结构形变，因此分子在从激发态返回激发态的过程中，大部分的能量将用于非辐射跃迁，以恢复分子的变形。因此将TICT分子用于光热和光动力材料较多。</p>
+<p>注：ICT分子的电子转移是在一个平面上进行的，而TICT分子的电子转移发生在两个具有一定夹角的平面甚至垂直。</p>
+<h1 id="荧光共振能量转移（FRET）"><a href="#荧光共振能量转移（FRET）" class="headerlink" title="荧光共振能量转移（FRET）"></a>荧光共振能量转移（FRET）</h1><p>FRET如其名，当供体（荧光团A）吸收特定频率的光子时，它会被激发到更高的电子能量状态。在电子返回其基态之前，它通过偶极-偶极相互作用将能量传递给相邻的受体（荧光团B），进一步激发受体，被激发的受体通过辐射跃迁（荧光）的方式返回基态。这种通过偶极-偶极相互作用转移的能力是非辐射性的。这一理论基于将被激发荧光分子看成振荡偶极子，能够和有同一震荡频率的另一个偶极子发生能量交换，因此称为荧光共振能量转移。</p>
+<p><img src="/posts/3a0936ab/3a0936a-04.jpg" alt="3a0936a-04"></p>
+<p>如果从势能面的角度分析，就如上图所示，供体的电子被光激发到激发态，在释放能量返回基态的时候，由于偶极-偶极相互作用，释放的这部分能量刚好满足激发受体的能量要求，因此能量被转移到受体上，用于激发基态的受体电子到激发态，在经过一系列内转换和震动弛豫后，电子通过辐射跃迁（荧光）的方式返回基态。</p>
+<p>一般来说，发生FRET需要具备以下四个条件：供体和受体必须在物理上彼此接近、供体荧光分子的发射光谱必须成功地与受体荧光分子的吸收光谱重叠、供体和受体的激发光必须充分分离、供体和受体的偶极矩取向必须以特定方式对齐。</p>
+<p><img src="/posts/3a0936ab/3a0936a-05.jpg" alt="3a0936a-05"></p>
+<p>基于以上的理论知识，可以得出只要有两个荧光团，并且他们具备发生FRET的四个条件，理论上就可以发生荧光共振能量转移，无论他们是否通过共价连接的方式连接。通过文献调研不难发现，刚才提到的说法是完全成立的，即FRET既可以发生在双分子之间，也可以发生在单分子内。</p>
+<h1 id="跨键能量转移（TBET）"><a href="#跨键能量转移（TBET）" class="headerlink" title="跨键能量转移（TBET）"></a>跨键能量转移（TBET）</h1><p>跨键能量转移在能量传递方式上区别于FRET的偶极-偶极相互作用。在TBET系统中，供体基团的能量通过电子共轭刚性结构（如苯基或三键）传递到受体基团。但在一定程度上，TBET发光的机制上与FRET是一样的，都是基于能量的转移，因此TBET为FRET的一种特例。</p>
+<p>对于TBET，由于采用共轭结构连接供体和受体，因此在能量传递上的要求就低于FRET的共振能量传递机制，同时导致TBET具有比FRET更高的能量传递效率。但该类分子的设计仍然具有一定难度，容易受FRET机制的影响。</p>
+<p><img src="/posts/3a0936ab/3a0936a-06.jpg" alt="3a0936a-06"></p>
+<p>如果从势能面的角度分析，就如上图所示，由于供体和受体采用共价连接的方式连接，因此，可以将供体和受体的势能面画到一起，其能量的转移不用经过一个能量的释放和吸收的过程，而是直接将能量转移到受体上。</p>
+<h1 id="光诱导电子转移（PET）"><a href="#光诱导电子转移（PET）" class="headerlink" title="光诱导电子转移（PET）"></a>光诱导电子转移（PET）</h1><p>光诱导电子转移型荧光探针中，供体（荧光团）与受体单元之间存在着光诱导电子转移，对荧光有非常强的淬灭作用，通常是电子从供体转移到激发态荧光团。因此在未结合客体之前，探针分子不发射荧光，或荧光很弱。一旦受体与客体相结合，光诱导电子转移作用受到抑制，甚至被完全阻断，荧光团就会发射荧光。</p>
+<p>对于PET型荧光探针，根据淬灭机制的不同，又一般分为Donor-PET和Acceptor-PET。</p>
+<p><img src="/posts/3a0936ab/3a0936a-07.jpg" alt="3a0936a-07"></p>
+<p>对于Donor-PET，供体的HOMO能量最低，供体的LUMO的能量位于受体的HOMO和LUMO能量之间，因此，供体的电子被激发到LUMO，由于受体的HOMO能量低于供体的LUMO，因此，受体HOMO上的电子容易转移到供体的HOMO轨道上，由于供体的HOMO被电子填满，导致供体LUMO上的电子不能按原路径返回供体的HOMO轨道，因此荧光被淬灭。</p>
+<p><img src="/posts/3a0936ab/3a0936a-08.jpg" alt="3a0936a-08"></p>
+<p>对于Acceptor-PET，受体的HOMO能量最低，受体的LUMO能量位于供体的HOMO和LUMO之间，因此，供体的电子被激发到LUMO，由于根据轨道的能量排布，供体LUMO上的电子更容易跃迁到与供体LUMO能量相差最小的受体LUMO上，供体的电子没有按原路径返回供体的HOMO，因此荧光被淬灭。</p>
+<p><img src="/posts/3a0936ab/3a0936a-09.jpg" alt="3a0936a-09"></p>
+<p>而只有当供体的HOMO和LUMO位于受体的HOMO和LUMO之间时，供体被激发的电子才能按原路径从供体的LUMO经辐射跃迁（荧光）返回HOMO。</p>
+<p>对于PET型荧光探针，正是利用受体（识别基团）与待识别物质的结合或反应，来改变受体的HOMO和LUMO能量，实现荧光的恢复。</p>
+<h1 id="激发态分子内质子转移-ESIPT"><a href="#激发态分子内质子转移-ESIPT" class="headerlink" title="激发态分子内质子转移(ESIPT)"></a>激发态分子内质子转移(ESIPT)</h1><p>激发态分子内质子转移是探针分子受光激发后，电子从基态跃迁到激发态，分子内的氢质子通过分子内的氢键转移到分子内相邻近的N、O和S等杂原子上，诱导基态和激发态间烯醇式（Enol）-酮式（Keto）转换，形成互变异构体。ESIPT过程是一个完全可逆的循环过程。</p>
+<p><img src="/posts/3a0936ab/3a0936a-10.jpg" alt="3a0936a-10"></p>
+<p>如果从势能面的角度分析，就如上图所示，醇式结构的分子被激发到激发态，在激发态经过烯醇式到酮式的转变，在通过辐射跃迁（荧光）的方式返回基态，并在基态通过酮式到烯醇式的转变恢复到最初的结构。</p>
+<h1 id="聚集诱导发光（AIE）"><a href="#聚集诱导发光（AIE）" class="headerlink" title="聚集诱导发光（AIE）"></a>聚集诱导发光（AIE）</h1><p>传统的荧光生色团在高浓度下荧光会减弱甚至不发光，这种现象被称作“浓度猝灭”效应。浓度猝灭的主要原因跟聚集体的形成有关，故浓度猝灭效应通常被叫做“聚集导致荧光猝灭（aggregation-caused quenching, ACQ）”。而有一类有机分子在溶液中几乎不发光，在凝聚态（形成聚集体或固体状态）中发光大幅度增强的现象，这类随着浓度增强的现象被叫做“聚集诱导荧光发光（AIE）“。</p>
+<p>与传统的发光分子不同，AIE分子呈现非平面的构型，它们就像微型螺旋桨一样，不停地转动。但当它们聚集时，旋转大大抑制，从而能量以光的形式释放出来。</p>
+<p><img src="/posts/3a0936ab/3a0936a-11.jpg" alt="3a0936a-11"></p>
+<p>在低粘度的稀溶液中，AIE分子可以自由地转动或振动，激发态的能量通过结构弛豫而稳定，而基态的能量明显升高，两态之间的能隙急剧减小，这使得激发态分子通过非辐射跃迁方式衰减到基态。</p>
+<p><img src="/posts/3a0936ab/3a0936a-12.jpg" alt="3a0936a-12"></p>
+<p>而在固体或晶体态中，由于相邻分子的空间位阻，激发态的能量在达到最低点之后急剧上升，分子内的运动由于较大的能量势垒而受到限制，从而阻断了非辐射跃迁方式，打开了诱导发光的大门。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>PET和ESIPT机理常用于设计具有淬灭和增强响应的荧光探针，该类探针具有信噪低和设计简单的优点。而ICT、FRET和TBET机理常用于设计具有比率响应的荧光探针，该类探针在实际应用中，由于采用双波长比值的方式来量化在检测过程的信号变化，相对于增强型和淬灭型探针，比率型探针极大的提高到检测型探针的灵敏度和准确性。TICT型分子由于具有较强的非辐射跃迁，常备用于光热和光动力整理。而AIE分子作为唐本忠院士提出的”明星分子“，被广泛的应用在各类分子的设计中。</p>
+<p>参考文献：<em>Chem. Biomed. Imaging</em> <strong>2024</strong>, 2, 2, 81–97</p>
+<hr>
+<p>被引：</p>
+<p>Wang, Y.; Li, Y.; Chao, J.; Yang, X.; Huang, J.; Huang, M.; Gu, S. Research progress of fluorescent probes for detection of glutathione (GSH): fluorophore, photophysical Pproperties, biological applications. <em>Molecules</em> <strong>2024</strong>, 29, 4333.（doi：10.3390&#x2F;molecules29184333）于2024年9月引用本博文。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>满东
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://mancekou.github.io/posts/3a0936ab/" title="荧光探针常见发光机理整理">https://mancekou.github.io/posts/3a0936ab/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B4%E7%90%86/" rel="tag"># 整理</a>
+              <a href="/tags/%E5%8F%91%E5%85%89%E6%8E%A2%E9%92%88/" rel="tag"># 发光探针</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/f5b46dab/" rel="prev" title="使用Multiwfn软件获取量化计算数据的教程">
+      <i class="fa fa-chevron-left"></i> 使用Multiwfn软件获取量化计算数据的教程
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/2dd13f90/" rel="next" title="基于Gaussian理论计算的粗浅经验小结">
+      基于Gaussian理论计算的粗浅经验小结 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%91%E5%85%89%E6%9C%BA%E7%90%86%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">发光机理内容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E5%AD%90%E5%86%85%E7%94%B5%E8%8D%B7%E8%BD%AC%E7%A7%BB%EF%BC%88ICT%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">分子内电荷转移（ICT）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%AD%E6%9B%B2%E5%88%86%E5%AD%90%E5%86%85%E7%94%B5%E8%8D%B7%E8%BD%AC%E7%A7%BB%EF%BC%88TICT%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">扭曲分子内电荷转移（TICT）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%8D%A7%E5%85%89%E5%85%B1%E6%8C%AF%E8%83%BD%E9%87%8F%E8%BD%AC%E7%A7%BB%EF%BC%88FRET%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">荧光共振能量转移（FRET）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%A8%E9%94%AE%E8%83%BD%E9%87%8F%E8%BD%AC%E7%A7%BB%EF%BC%88TBET%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">跨键能量转移（TBET）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%89%E8%AF%B1%E5%AF%BC%E7%94%B5%E5%AD%90%E8%BD%AC%E7%A7%BB%EF%BC%88PET%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">光诱导电子转移（PET）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%BF%80%E5%8F%91%E6%80%81%E5%88%86%E5%AD%90%E5%86%85%E8%B4%A8%E5%AD%90%E8%BD%AC%E7%A7%BB-ESIPT"><span class="nav-number">7.</span> <span class="nav-text">激发态分子内质子转移(ESIPT)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%81%9A%E9%9B%86%E8%AF%B1%E5%AF%BC%E5%8F%91%E5%85%89%EF%BC%88AIE%EF%BC%89"><span class="nav-number">8.</span> <span class="nav-text">聚集诱导发光（AIE）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">9.</span> <span class="nav-text">总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="满东"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">满东</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:koumch20@outlook.com" title="E-Mail → mailto:koumch20@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.researchgate.net/profile/Manchang-Kou" title="Researchgate → https:&#x2F;&#x2F;www.researchgate.net&#x2F;profile&#x2F;Manchang-Kou" rel="noopener" target="_blank"><i class="fa fa-share-alt fa-fw"></i>Researchgate</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mancekou.github.io/posts/6e97f420/#more" title="个人收藏页 → https:&#x2F;&#x2F;mancekou.github.io&#x2F;posts&#x2F;6e97f420&#x2F;#more"><i class="fas fa-bookmark fa-fw"></i>个人收藏页</a>
+      </span>
+  </div>
+  <div class="">
+    <a target="_blank" class="social-link" href="/atom.xml" style="color: Orange;">
+      <span class="icon">
+        <i class="fa fa-rss"></i>
+      </span>
+      <span class="label">RSS</span>
+    </a>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://yihui.org/" title="https:&#x2F;&#x2F;yihui.org&#x2F;" rel="noopener" target="_blank">谢益辉</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://liam0205.me/" title="https:&#x2F;&#x2F;liam0205.me&#x2F;" rel="noopener" target="_blank">黄晨成</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://jinjipang.com/" title="https:&#x2F;&#x2F;jinjipang.com&#x2F;" rel="noopener" target="_blank">逄金吉</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://yuanfan.rbind.io/" title="https:&#x2F;&#x2F;yuanfan.rbind.io&#x2F;" rel="noopener" target="_blank">袁凡</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://yufree.cn/" title="https:&#x2F;&#x2F;yufree.cn&#x2F;" rel="noopener" target="_blank">于淼</a>
+        </li>
+    </ul>
+  </div>
+      </div>
+      
+      <!-- Begin Insert clustrmaps.com -->
+    		<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=WYwfY2m-S2A9AF2BbM9sR-sSfTTJszs7DpiRejm2-Pk&cl=ffffff&w=a"></script>
+    	<!-- End Insert clustrmaps.com -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">满东</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">40k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:12</span>
+</div>
+  <div class="powered-by">
+    <!--  %%注释掉 由 Hexo & NexT.Pisces 强力驱动由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+    -->
+  </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+		year - 作为date对象的年份，为4位年份值
+		month - 0-11之间的整数，做为date对象的月份
+		day - 1-31之间的整数，做为date对象的天数
+		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+		minutes - 0-59之间的整数，做为date对象的分钟数
+		seconds - 0-59之间的整数，做为date对象的秒数
+		microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+		var t1 = Date.UTC(2019,05,25,22,00,00); //北京时间2018-2-13 00:00:00
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行 "+ diffYears +" 年 "+ diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
