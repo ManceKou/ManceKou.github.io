@@ -35,8 +35,8 @@
 <meta property="article:published_time" content="2022-02-19T09:15:07.000Z">
 <meta property="article:modified_time" content="2024-11-30T03:00:08.455Z">
 <meta property="article:author" content="满东">
-<meta property="article:tag" content="Gaussian">
 <meta property="article:tag" content="整理">
+<meta property="article:tag" content="Gaussian">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://mancekou.github.io/posts/f5b46dab/f5b46dab-01.png">
 
@@ -254,7 +254,6 @@
       
         <p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
 <span id="more"></span>
-
 <p>文中使用到的软件：Multiwfn和GaussView。</p>
 <h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
 <ul>
@@ -282,25 +281,20 @@
 </li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
-
 <p>如果修改展示的贡献范围，可以操作如下：</p>
 <ul>
 <li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
 </li>
-<li><p>输入1 Show non-Rydberg NAOs&#x2F;shells</p>
+<li><p>输入1 Show non-Rydberg NAOs/shells</p>
 </li>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道</p>
-</li>
+<li>输入0 Show composition of an orbital</li>
+<li>输入分析的轨道编号，此处输入255号轨道</li>
 </ul>
 <p>对于各个原子可以找到如下输出：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
 <p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
 <p>对于钌原子可以找到如下输出：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
-
 <p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
 <p>如果准备分析某一分子片段，则选要先定义片段。</p>
 <ul>
@@ -312,7 +306,6 @@
 <li>输入255,256 输出结果如下</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
-
 <p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
 <p><strong>补充：</strong></p>
 <p>关于原子序号的查找：</p>
@@ -358,8 +351,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Gaussian/" rel="tag"># Gaussian</a>
               <a href="/tags/%E6%95%B4%E7%90%86/" rel="tag"># 整理</a>
+              <a href="/tags/Gaussian/" rel="tag"># Gaussian</a>
           </div>
 
         
