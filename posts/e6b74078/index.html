@@ -250,7 +250,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。<br><span id="more"></span></p>
+        <p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
+<span id="more"></span>
 <h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
 <p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
 <h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
@@ -266,9 +267,13 @@
 <p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
 </blockquote>
 <h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
-<p>先设置用户名：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure></p>
+<p>先设置用户名：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
+
 <p><code>your name</code>建议根据github仓库设置。</p>
-<p>再设置邮箱：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure></p>
+<p>再设置邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
+
 <p><code>your email</code>建议根据github仓库设置。</p>
 <h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
 <ul>
@@ -280,6 +285,7 @@
 <p>剩下的回车即可，直至结束。</p>
 <p>当看到如下内容后，说明设置成功。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
 <p>同时他也会展示他的密钥内容。</p>
 <h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
 <p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
