@@ -34,8 +34,8 @@
 <meta property="article:published_time" content="2024-03-06T03:47:07.000Z">
 <meta property="article:modified_time" content="2024-11-30T03:00:32.767Z">
 <meta property="article:author" content="满东">
-<meta property="article:tag" content="整理">
 <meta property="article:tag" content="Gaussian">
+<meta property="article:tag" content="整理">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://mancekou.github.io/posts/ff240d57/ff240d57-01.png">
 
@@ -253,6 +253,7 @@
       
         <p>最近看了Tim（B站UP主）的一些视频后，产生了写一些内容的想法，以实现以写促学的目的。现阶段，我在计算方面的学习止步不前，还停留在吃老本的阶段（虽然没有什么老本可吃），但又想再学习一些新东西的想法，因此，开始想写一些计算的知识点整理（仅为DFT计算），一是帮助有可能看到这篇博文的读者，二是巩固自己的对这些内容的掌握。所写内容可能不成体系，没有前后逻辑关系，所以选择自己想看的部分吧。这部分主要写结构优化的部分，涉及分子结构的构建、任务的提交和结果的查看。</p>
 <span id="more"></span>
+
 <h1 id="什么是结构优化"><a href="#什么是结构优化" class="headerlink" title="什么是结构优化"></a>什么是结构优化</h1><p>结构优化是指对整个输入体系的坐标进行调整，得到一个相对稳定的基态结构。我们知道基态是一个稳定态，但是对于一个基态势能面，我们需要去找一个最稳定的点，也就是所谓的极小值点（你可以想象在一个凹凸不平的平面上找那里面的凹陷点）。但是对于整个势能面来说，势能面上不止一个极小值点，因此有必要去找最小值点（这个点的能量最低，也意味着更稳定，但这不是一个必要条件，需要根据情况去选择最优结构）。</p>
 <p>在Gaussian中结构优化的关键词为<code>opt</code>。</p>
 <p>而结构优化根据优化需求分为非限制性优化和限制性优化，常规优化一般为非限制性优化，即基于所有原子的优化。</p>
@@ -265,6 +266,7 @@
 <p>方法一：</p>
 <p>对想冻结的原子可以在文本文件的坐标部分进行修改，如想冻结原子1，在原子1符号和原子1坐标之间添加-1即可，对于不冻结原子，添加数字0即可。形式如下。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                0    1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                0    2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                0    2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                0    0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C               -1    2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                0    3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                0    2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C               -1    1.99379147    1.51724783    1.25599826</span><br><span class="line"> H               -1    0.92379369    1.51895378    1.25464336</span><br><span class="line"> H               -1    2.35015690    2.02153807    2.12983751</span><br><span class="line"> H               -1    2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>当然如上的冻结方式也可以通过GaussView进行操作。</p>
 <p>首先将输入文件导入GaussView，使用原子选择工具选择需要冻结的原子。接下来点击分子窗口的原子，选中后该原子为亮黄色。这时点击Tools下的Atom groups…选项，显示如下窗口界面。这时需要将Atom Group Class选择改为Freeze，以及选中Freeze (Yes)，点击Group Actions … 中的Add Selected Atoms to “Freeze (Yes)”。</p>
 <p><img src="/posts/ff240d57/ff240d57-01.png" alt="ff240d57-01"></p>
@@ -274,6 +276,7 @@
 <p>方法二：</p>
 <p>对于一类原子时，就可以使用一个讨巧的方法，在关键词<code>opt</code>后添加<code>readopt</code>选项，这时只需要在原子坐标后空一行然后用<code>notatoms=冻结原子元素符号1,冻结原子元素符号2,冻结原子元素符号3</code>来冻结原子即可。形式如下。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">%chk=molecular1.chk</span><br><span class="line"># b3lyp/6-31g* opt=readopt freq</span><br><span class="line"></span><br><span class="line">Title Card Required</span><br><span class="line"></span><br><span class="line">0 1</span><br><span class="line"> C                   1.99146523   -0.66145091    0.00000000</span><br><span class="line"> H                   2.34811966   -1.67026092    0.00000000</span><br><span class="line"> H                   2.34813807   -0.15705272   -0.87365150</span><br><span class="line"> H                   0.92146523   -0.66143773    0.00000000</span><br><span class="line"> C                   2.50480745    0.06450536    1.25740497</span><br><span class="line"> H                   3.57480564    0.06279829    1.25838332</span><br><span class="line"> H                   2.14653849   -0.43876264    2.13105517</span><br><span class="line"> C                   1.99379147    1.51724783    1.25599826</span><br><span class="line"> H                   0.92379369    1.51895378    1.25464336</span><br><span class="line"> H                   2.35015690    2.02153807    2.12983751</span><br><span class="line"> H                   2.35236743    2.02062424    0.38253649</span><br><span class="line"></span><br><span class="line">notatoms=C</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>对于上面两种方法，建议根据实际情况来选择，如果是冻结部分基团，那么方法一更加灵活，如果是冻结好几种元素，只优化一种元素时，方法二则更便捷。</p>
 <p>完成上面操作后，就可以像其他任务一样，将任务提交到对应的服务器，当然自己最好对输入文件设置内存和核数的多少，这样有利于对服务器资源的管理于分配。如果不会任务的提交，请查阅《<a href="https://mancekou.github.io/posts/2dd13f90/#more">基于Gaussian理论计算的粗浅经验小结</a>》。</p>
 <p>注：一般在进行优化计算的时候，都会写上<code>freq</code>，同时进行频率计算，以方便验证计算结果得到的结构是否为最优结构，如果没有虚频说明这个可用。但是否符合自己的预期，就需要根据自己的需要来判断是否可以被自己用于接下来的计算。</p>
@@ -308,8 +311,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%95%B4%E7%90%86/" rel="tag"># 整理</a>
               <a href="/tags/Gaussian/" rel="tag"># Gaussian</a>
+              <a href="/tags/%E6%95%B4%E7%90%86/" rel="tag"># 整理</a>
           </div>
 
         
@@ -447,9 +450,6 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
           <a href="https://yihui.org/" title="https:&#x2F;&#x2F;yihui.org&#x2F;" rel="noopener" target="_blank">谢益辉</a>
-        </li>
-        <li class="links-of-blogroll-item">
-          <a href="https://liam0205.me/" title="https:&#x2F;&#x2F;liam0205.me&#x2F;" rel="noopener" target="_blank">黄晨成</a>
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://jinjipang.com/" title="https:&#x2F;&#x2F;jinjipang.com&#x2F;" rel="noopener" target="_blank">逄金吉</a>
