@@ -986,6 +986,54 @@
       </tags>
   </entry>
   <entry>
+    <title>发光中常见名词及常量计算</title>
+    <url>/posts/f5cd83b7/</url>
+    <content><![CDATA[<p>这一部分主要为了去明确一些名词，同时整理部分常见常数的计算方法（如辐射跃迁速率常数、非辐射跃迁速率常数这种）。</p>
+<span id="more"></span>
+
+<h1 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h1><p><b>吸收</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态。（一般认为是从S<sub>0</sub>到S<sub>n</sub>）</p>
+<img src="/posts/f5cd83b7/f5cd83b7-1.png" width="100%/">
+
+<p><b>内转换</b>：指两个具有相同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到单重态 (S<sub>2</sub> -&gt; S<sub>1</sub>) 的跃迁。这个过程通常发生在势能面交叉或非常接近的区域，允许分子从一个电子态快速跃迁到另一个电子态，并将能量转化为振动能 。内转换的效率取决于 Franck-Condon 因子，该因子描述了两个电子态振动波函数的重叠程度。</p>
+<img src="/posts/f5cd83b7/f5cd83b7-2.png" width="100%/">
+
+<p><b>荧光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以辐射跃迁的形式发出磷光回到基态。（一般认为是从S<sub>1</sub>到S<sub>0</sub>）</p>
+<img src="/posts/f5cd83b7/f5cd83b7-3.png" width="100%/">
+
+<p><b>系间窜越</b>：指两个具有不同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到三重态 (S<sub>1</sub> -&gt; T<sub>1</sub>)的跃迁。由于自旋选择规则的限制，系间窜越通常比内转换慢。然而，在含有重原子的分子中，自旋轨道耦合效应增强，可以提高系间窜越的效率。</p>
+<img src="/posts/f5cd83b7/f5cd83b7-4.png" width="100%/">
+    
+<p><b>磷光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，最后以辐射跃迁的形式发出磷光回到基态。（一般认为是从T<sub>1</sub>到S<sub>0</sub>）</p>
+<img src="/posts/f5cd83b7/f5cd83b7-5.png" width="100%/">
+    
+<p><b>延迟荧光</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，由于较小的单三重态能级差，导致可以通过反系间窜越返回单重态激发态，最后以辐射跃迁的形式发出荧光回到基态，由于此类荧光相对于光致荧光通常表现出更长寿命，因此称为延迟荧光。</p>
+<img src="/posts/f5cd83b7/f5cd83b7-6.png" width="100%/">
+
+<p><b>发光寿命</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到某一激发态上，再以辐射跃迁的形式发出荧光或磷光回到基态。当去掉激发光后，分子的荧光强度降到激发时的荧光最大强度I<sub>0</sub>的1&#x2F;e所需要的时间，称为荧光寿命，常用τ表示。</p>
+<img src="/posts/f5cd83b7/f5cd83b7-7.png" width="100%/">
+    
+<p><b>量子产率</b>：通常是指光致发光量子产率，用于量化发光材料效率的重要参数，它被定义为发光物质发射的光子数与吸收的光子数之比。(在光电器件中的外量子效率和内量子效率不在此讨论范围内)</p>
+<p>$$ \Phi &#x3D; \frac{\mathrm{Photon_{em}}}{\mathrm{photon_{abs}}} $$</p>
+<p>量子产率的测试方法一般分为绝对法和相对法。绝对法通常使用积分球直接测量样品发射所需的所有光子数以及样品吸收的光子数。（<em>In Phosphor Handbook</em>, CRC Press, <strong>2021</strong>, pp 455–488.）相对法通常比较待测样品与一致量子产率的标准物质的发光强度来确定样品的量子产率。（<em>J. Phys.: Conf. Ser.</em> <strong>2016</strong>, <em>687</em>, 012097.）</p>
+<h1 id="常量计算"><a href="#常量计算" class="headerlink" title="常量计算"></a>常量计算</h1><p><b>辐射跃迁速率常数（k<sub>r</sub>）</b>：描述原子、分子或离子在两个能级之间跃迁时，通过自发或受激辐射过程释放能量的速率的物理量。这个速率常数与跃迁偶极矩密切相关，跃迁偶极矩越大，跃迁速率越高。</p>
+<p><b>非辐射跃迁速率常数（k<sub>nr</sub>）</b>：描述了分子或固体内电子或其他激发态通过非辐射途径（即不发射光子）返回基态的速率。这些非辐射过程包括内转换 (internal conversion) 和系间窜越 (intersystem crossing)，它们在能量耗散和光物理过程中起着关键作用。</p>
+<p>量子产率与辐射跃迁速率常数和非辐射跃迁速率常数的关系：（<em>Phys. Chem. Chem. Phys.</em> <strong>2010</strong>, <em>12</em>, 11432.）</p>
+<p>$$ \Phi &#x3D; \frac{k_r}{k_r + k_{nr}} $$</p>
+<p>发光寿命与辐射跃迁速率常数的关系：</p>
+<p>$$ \tau &#x3D; \frac{1}{k_r + k_{nr}} $$</p>
+<p>可推导出辐射跃迁速率常数为：</p>
+<p>$$ k_{r} &#x3D; \frac{\Phi}{\tau} $$</p>
+<p>可推导出非辐射跃迁速率常数为：</p>
+<p>$$ k_{nr} &#x3D; \frac{1}{\tau}(1 - \Phi) $$</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>发光</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于Hexo博客内容迁移的备忘录</title>
     <url>/posts/e6b74078/</url>
     <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
@@ -1046,54 +1094,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>发光中常见名词及常量计算</title>
-    <url>/posts/f5cd83b7/</url>
-    <content><![CDATA[<p>这一部分主要为了去明确一些名词，同时整理部分常见常数的计算方法（如辐射跃迁速率常数、非辐射跃迁速率常数这种）。</p>
-<span id="more"></span>
-
-<h1 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h1><p><b>吸收</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态。（一般认为是从S<sub>0</sub>到S<sub>n</sub>）</p>
-<img src="/posts/f5cd83b7/f5cd83b7-1.png" width="100%/">
-
-<p><b>内转换</b>：指两个具有相同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到单重态 (S<sub>2</sub> -&gt; S<sub>1</sub>) 的跃迁。这个过程通常发生在势能面交叉或非常接近的区域，允许分子从一个电子态快速跃迁到另一个电子态，并将能量转化为振动能 。内转换的效率取决于 Franck-Condon 因子，该因子描述了两个电子态振动波函数的重叠程度。</p>
-<img src="/posts/f5cd83b7/f5cd83b7-2.png" width="100%/">
-
-<p><b>荧光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以辐射跃迁的形式发出磷光回到基态。（一般认为是从S<sub>1</sub>到S<sub>0</sub>）</p>
-<img src="/posts/f5cd83b7/f5cd83b7-3.png" width="100%/">
-
-<p><b>系间窜越</b>：指两个具有不同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到三重态 (S<sub>1</sub> -&gt; T<sub>1</sub>)的跃迁。由于自旋选择规则的限制，系间窜越通常比内转换慢。然而，在含有重原子的分子中，自旋轨道耦合效应增强，可以提高系间窜越的效率。</p>
-<img src="/posts/f5cd83b7/f5cd83b7-4.png" width="100%/">
-    
-<p><b>磷光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，最后以辐射跃迁的形式发出磷光回到基态。（一般认为是从T<sub>1</sub>到S<sub>0</sub>）</p>
-<img src="/posts/f5cd83b7/f5cd83b7-5.png" width="100%/">
-    
-<p><b>延迟荧光</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，由于较小的单三重态能级差，导致可以通过反系间窜越返回单重态激发态，最后以辐射跃迁的形式发出荧光回到基态，由于此类荧光相对于光致荧光通常表现出更长寿命，因此称为延迟荧光。</p>
-<img src="/posts/f5cd83b7/f5cd83b7-6.png" width="100%/">
-
-<p><b>发光寿命</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到某一激发态上，再以辐射跃迁的形式发出荧光或磷光回到基态。当去掉激发光后，分子的荧光强度降到激发时的荧光最大强度I<sub>0</sub>的1&#x2F;e所需要的时间，称为荧光寿命，常用τ表示。</p>
-<img src="/posts/f5cd83b7/f5cd83b7-7.png" width="100%/">
-    
-<p><b>量子产率</b>：通常是指光致发光量子产率，用于量化发光材料效率的重要参数，它被定义为发光物质发射的光子数与吸收的光子数之比。(在光电器件中的外量子效率和内量子效率不在此讨论范围内)</p>
-<p>$$ \Phi &#x3D; \frac{\mathrm{Photon_{em}}}{\mathrm{photon_{abs}}} $$</p>
-<p>量子产率的测试方法一般分为绝对法和相对法。绝对法通常使用积分球直接测量样品发射所需的所有光子数以及样品吸收的光子数。（<em>In Phosphor Handbook</em>, CRC Press, <strong>2021</strong>, pp 455–488.）相对法通常比较待测样品与一致量子产率的标准物质的发光强度来确定样品的量子产率。（<em>J. Phys.: Conf. Ser.</em> <strong>2016</strong>, <em>687</em>, 012097.）</p>
-<h1 id="常量计算"><a href="#常量计算" class="headerlink" title="常量计算"></a>常量计算</h1><p><b>辐射跃迁速率常数（k<sub>r</sub>）</b>：描述原子、分子或离子在两个能级之间跃迁时，通过自发或受激辐射过程释放能量的速率的物理量。这个速率常数与跃迁偶极矩密切相关，跃迁偶极矩越大，跃迁速率越高。</p>
-<p><b>非辐射跃迁速率常数（k<sub>nr</sub>）</b>：描述了分子或固体内电子或其他激发态通过非辐射途径（即不发射光子）返回基态的速率。这些非辐射过程包括内转换 (internal conversion) 和系间窜越 (intersystem crossing)，它们在能量耗散和光物理过程中起着关键作用。</p>
-<p>量子产率与辐射跃迁速率常数和非辐射跃迁速率常数的关系：（<em>Phys. Chem. Chem. Phys.</em> <strong>2010</strong>, <em>12</em>, 11432.）</p>
-<p>$$ \Phi &#x3D; \frac{k_r}{k_r + k_{nr}} $$</p>
-<p>发光寿命与辐射跃迁速率常数的关系：</p>
-<p>$$ \tau &#x3D; \frac{1}{k_r + k_{nr}} $$</p>
-<p>可推导出辐射跃迁速率常数为：</p>
-<p>$$ k_{r} &#x3D; \frac{\Phi}{\tau} $$</p>
-<p>可推导出非辐射跃迁速率常数为：</p>
-<p>$$ k_{nr} &#x3D; \frac{1}{\tau}(1 - \Phi) $$</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>发光</tag>
       </tags>
   </entry>
   <entry>
@@ -1241,6 +1241,341 @@
       <tags>
         <tag>整理</tag>
         <tag>Gaussian</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见NMR碳谱溶剂峰</title>
+    <url>/posts/2504b91/</url>
+    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+<span id="more"></span>
+
+<style>
+    .bg{
+        background-color: pink;
+    }
+</style>
+<table id="T1" class="table" style="text-align: center; vertical-align: middle !important; background-color: #FFF;">
+    <thead>
+        <tr>
+            <th>溶剂</th>
+            <th></th>
+            <th style>CDCl<sub>3</sub></th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
+            <th style>C<sub>6</sub>D<sub>6</sub></th>
+            <th style>CD<sub>3</sub>CN</th>
+            <th style>CD<sub>3</sub>OD</th>
+            <th style>D<sub>2</sub>O</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" style>溶剂峰</th>
+            <td style>—</td>
+            <td>77.1</td>
+            <td>206</td>
+            <td>39.5</td>
+            <td>128.1</td>
+            <td>118.3</td>
+            <td>49.0</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td style>—</td>
+            <td>—</td>
+            <td>29.8</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1.3</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙酸</th>
+            <td>CO</td>
+            <td>176</td>
+            <td>172.3</td>
+            <td>171.9</td>
+            <td>176</td>
+            <td>173.2</td>
+            <td>175.1</td>
+            <td>177.2</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>20.8</td>
+            <td>20.5</td>
+            <td>20.9</td>
+            <td>20.3</td>
+            <td>20.7</td>
+            <td>20.6</td>
+            <td>21.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>丙酮</th>
+            <td>CO</td>
+            <td>207.1</td>
+            <td>205.9</td>
+            <td>206.3</td>
+            <td>204</td>
+            <td>207.4</td>
+            <td>209.7</td>
+            <td>215</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>30.9</td>
+            <td>30.6</td>
+            <td>30.6</td>
+            <td>30.1</td>
+            <td>30.9</td>
+            <td>30.7</td>
+            <td>30.9</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙腈</th>
+            <td>CN</td>
+            <td>116.4</td>
+            <td>117.6</td>
+            <td>117.9</td>
+            <td>116</td>
+            <td>118.3</td>
+            <td>118.1</td>
+            <td>119.7</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>1.9</td>
+            <td>1.1</td>
+            <td>1.0</td>
+            <td>2.0</td>
+            <td>1.8</td>
+            <td>0.8</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <th style>甲醇</th>
+            <td>—</td>
+            <td>50.4</td>
+            <td>49.8</td>
+            <td>48.6</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.5</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醚</th>
+            <td>CH<sub>2</sub></td>
+            <td>65.9</td>
+            <td>66.0</td>
+            <td>62.0</td>
+            <td>66.0</td>
+            <td>66.4</td>
+            <td>66.9</td>
+            <td>66.4</td>
+        </tr>
+        <tr>
+            <td style>CH<sub>3</sub></td>
+            <td>15.2</td>
+            <td>15.8</td>
+            <td>15.0</td>
+            <td>15.5</td>
+            <td>15.6</td>
+            <td>15.5</td>
+            <td>14.8</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醇</th>
+            <td>CH<sub>2</sub></td>
+            <td>58.3</td>
+            <td>57.8</td>
+            <td>56.1</td>
+            <td>58.0</td>
+            <td>58.0</td>
+            <td>58.3</td>
+            <td>58.0</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>18.4</td>
+            <td>18.9</td>
+            <td>18.5</td>
+            <td>18.7</td>
+            <td>18.8</td>
+            <td>18.4</td>
+            <td>17.5</td>
+        </tr>
+        <tr>
+            <th rowspan="4">乙酸乙酯</th>
+            <td>CO</td>
+            <td>171.4</td>
+            <td>171</td>
+            <td>170.3</td>
+            <td>170.4</td>
+            <td>171.7</td>
+            <td>172.9</td>
+            <td>175.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>60.5</td>
+            <td>60.6</td>
+            <td>59.7</td>
+            <td>60.2</td>
+            <td>61.0</td>
+            <td>61.5</td>
+            <td>62.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub>CO</td>
+            <td>21.0</td>
+            <td>20.8</td>
+            <td>20.7</td>
+            <td>20.2</td>
+            <td>21.2</td>
+            <td>20.9</td>
+            <td>21.1</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub>CH<sub>3</sub></td>
+            <td>14.2</td>
+            <td>14.5</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>14.5</td>
+            <td>14.5</td>
+            <td>13.9</td>
+        </tr>
+        <tr>
+            <th>氯仿</th>
+            <td>—</td>
+            <td>77.3</td>
+            <td>79.2</td>
+            <td>79.1</td>
+            <td>77.8</td>
+            <td>79.2</td>
+            <td>79.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">正己烷</th>
+            <td>CH<sub>2</sub></td>
+            <td>31.6</td>
+            <td>32.3</td>
+            <td>31.0</td>
+            <td>32.0</td>
+            <td>32.4</td>
+            <td>32.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>22.7</td>
+            <td>23.3</td>
+            <td>22.0</td>
+            <td>23.0</td>
+            <td>23.4</td>
+            <td>23.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>14.1</td>
+            <td>14.3</td>
+            <td>13.9</td>
+            <td>14.3</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">二甲基甲酰胺</th>
+            <td>CHO</td>
+            <td>162.3</td>
+            <td>163</td>
+            <td>163</td>
+            <td>162</td>
+            <td>163.2</td>
+            <td>164.7</td>
+            <td>165.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>36.4</td>
+            <td>36.1</td>
+            <td>35.7</td>
+            <td>35.0</td>
+            <td>36.6</td>
+            <td>36.9</td>
+            <td>37.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>31.4</td>
+            <td>31.1</td>
+            <td>30.7</td>
+            <td>30.7</td>
+            <td>31.3</td>
+            <td>31.6</td>
+            <td>32.0</td>
+        </tr>
+        <tr>
+            <th>二甲基亚砜</th>
+            <td>—</td>
+            <td>40.8/td>
+            </td><td>41.2</td>
+            <td>40.4</td>
+            <td>40.0</td>
+            <td>41.3</td>
+            <td>40.4</td>
+            <td>39.4</td>
+        </tr>
+        <tr>
+            <th>二氯甲烷</th>
+            <td>—</td>
+            <td>53.5</td>
+            <td>54.9</td>
+            <td>54.8</td>
+            <td>53.5</td>
+            <td>55.3</td>
+            <td>54.8</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th>环己烷</th>
+            <td>—</td>
+            <td>26.9</td>
+            <td>27.5</td>
+            <td>26.3</td>
+            <td>27.3</td>
+            <td>27.6</td>
+            <td>28.0</td>
+            <td>—</td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    var trs=document.querySelector('tbody').querySelectorAll('td');
+    for (var i=0;i<trs.length;i++){
+        trs[i].onmouseover=function () {
+            console.log(1);
+            this.className='bg';
+        }
+        trs[i].onmouseleave=function () {
+            this.className='tbody';
+        }
+    }
+</script>
+
+<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>整理</tag>
+        <tag>实验</tag>
       </tags>
   </entry>
   <entry>
@@ -1700,341 +2035,6 @@
 
 <p>这里提供一个链接来自中国科学技术大学<a href="http://staff.ustc.edu.cn/~xswang77/indexchinese.html">王细胜课题组</a>提供的<a href="http://staff.ustc.edu.cn/~xswang77/download/NMRweiyi.pdf">常见官能团氢谱化学位移表</a>以作分析参考。</p>
 <p>本页面灵感来源 ：<a href="http://811.mh0351.xyz/">马师兄的网站</a></p>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-      <tags>
-        <tag>整理</tag>
-        <tag>实验</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见NMR碳谱溶剂峰</title>
-    <url>/posts/2504b91/</url>
-    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
-<span id="more"></span>
-
-<style>
-    .bg{
-        background-color: pink;
-    }
-</style>
-<table id="T1" class="table" style="text-align: center; vertical-align: middle !important; background-color: #FFF;">
-    <thead>
-        <tr>
-            <th>溶剂</th>
-            <th></th>
-            <th style>CDCl<sub>3</sub></th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
-            <th style>C<sub>6</sub>D<sub>6</sub></th>
-            <th style>CD<sub>3</sub>CN</th>
-            <th style>CD<sub>3</sub>OD</th>
-            <th style>D<sub>2</sub>O</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th rowspan="2" style>溶剂峰</th>
-            <td style>—</td>
-            <td>77.1</td>
-            <td>206</td>
-            <td>39.5</td>
-            <td>128.1</td>
-            <td>118.3</td>
-            <td>49.0</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td style>—</td>
-            <td>—</td>
-            <td>29.8</td>
-            <td>—</td>
-            <td>—</td>
-            <td>1.3</td>
-            <td>—</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙酸</th>
-            <td>CO</td>
-            <td>176</td>
-            <td>172.3</td>
-            <td>171.9</td>
-            <td>176</td>
-            <td>173.2</td>
-            <td>175.1</td>
-            <td>177.2</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>20.8</td>
-            <td>20.5</td>
-            <td>20.9</td>
-            <td>20.3</td>
-            <td>20.7</td>
-            <td>20.6</td>
-            <td>21.0</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>丙酮</th>
-            <td>CO</td>
-            <td>207.1</td>
-            <td>205.9</td>
-            <td>206.3</td>
-            <td>204</td>
-            <td>207.4</td>
-            <td>209.7</td>
-            <td>215</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>30.9</td>
-            <td>30.6</td>
-            <td>30.6</td>
-            <td>30.1</td>
-            <td>30.9</td>
-            <td>30.7</td>
-            <td>30.9</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙腈</th>
-            <td>CN</td>
-            <td>116.4</td>
-            <td>117.6</td>
-            <td>117.9</td>
-            <td>116</td>
-            <td>118.3</td>
-            <td>118.1</td>
-            <td>119.7</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>1.9</td>
-            <td>1.1</td>
-            <td>1.0</td>
-            <td>2.0</td>
-            <td>1.8</td>
-            <td>0.8</td>
-            <td>1.5</td>
-        </tr>
-        <tr>
-            <th style>甲醇</th>
-            <td>—</td>
-            <td>50.4</td>
-            <td>49.8</td>
-            <td>48.6</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.5</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醚</th>
-            <td>CH<sub>2</sub></td>
-            <td>65.9</td>
-            <td>66.0</td>
-            <td>62.0</td>
-            <td>66.0</td>
-            <td>66.4</td>
-            <td>66.9</td>
-            <td>66.4</td>
-        </tr>
-        <tr>
-            <td style>CH<sub>3</sub></td>
-            <td>15.2</td>
-            <td>15.8</td>
-            <td>15.0</td>
-            <td>15.5</td>
-            <td>15.6</td>
-            <td>15.5</td>
-            <td>14.8</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醇</th>
-            <td>CH<sub>2</sub></td>
-            <td>58.3</td>
-            <td>57.8</td>
-            <td>56.1</td>
-            <td>58.0</td>
-            <td>58.0</td>
-            <td>58.3</td>
-            <td>58.0</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>18.4</td>
-            <td>18.9</td>
-            <td>18.5</td>
-            <td>18.7</td>
-            <td>18.8</td>
-            <td>18.4</td>
-            <td>17.5</td>
-        </tr>
-        <tr>
-            <th rowspan="4">乙酸乙酯</th>
-            <td>CO</td>
-            <td>171.4</td>
-            <td>171</td>
-            <td>170.3</td>
-            <td>170.4</td>
-            <td>171.7</td>
-            <td>172.9</td>
-            <td>175.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>60.5</td>
-            <td>60.6</td>
-            <td>59.7</td>
-            <td>60.2</td>
-            <td>61.0</td>
-            <td>61.5</td>
-            <td>62.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub>CO</td>
-            <td>21.0</td>
-            <td>20.8</td>
-            <td>20.7</td>
-            <td>20.2</td>
-            <td>21.2</td>
-            <td>20.9</td>
-            <td>21.1</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub>CH<sub>3</sub></td>
-            <td>14.2</td>
-            <td>14.5</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>14.5</td>
-            <td>14.5</td>
-            <td>13.9</td>
-        </tr>
-        <tr>
-            <th>氯仿</th>
-            <td>—</td>
-            <td>77.3</td>
-            <td>79.2</td>
-            <td>79.1</td>
-            <td>77.8</td>
-            <td>79.2</td>
-            <td>79.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">正己烷</th>
-            <td>CH<sub>2</sub></td>
-            <td>31.6</td>
-            <td>32.3</td>
-            <td>31.0</td>
-            <td>32.0</td>
-            <td>32.4</td>
-            <td>32.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>22.7</td>
-            <td>23.3</td>
-            <td>22.0</td>
-            <td>23.0</td>
-            <td>23.4</td>
-            <td>23.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>14.1</td>
-            <td>14.3</td>
-            <td>13.9</td>
-            <td>14.3</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">二甲基甲酰胺</th>
-            <td>CHO</td>
-            <td>162.3</td>
-            <td>163</td>
-            <td>163</td>
-            <td>162</td>
-            <td>163.2</td>
-            <td>164.7</td>
-            <td>165.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>36.4</td>
-            <td>36.1</td>
-            <td>35.7</td>
-            <td>35.0</td>
-            <td>36.6</td>
-            <td>36.9</td>
-            <td>37.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>31.4</td>
-            <td>31.1</td>
-            <td>30.7</td>
-            <td>30.7</td>
-            <td>31.3</td>
-            <td>31.6</td>
-            <td>32.0</td>
-        </tr>
-        <tr>
-            <th>二甲基亚砜</th>
-            <td>—</td>
-            <td>40.8/td>
-            </td><td>41.2</td>
-            <td>40.4</td>
-            <td>40.0</td>
-            <td>41.3</td>
-            <td>40.4</td>
-            <td>39.4</td>
-        </tr>
-        <tr>
-            <th>二氯甲烷</th>
-            <td>—</td>
-            <td>53.5</td>
-            <td>54.9</td>
-            <td>54.8</td>
-            <td>53.5</td>
-            <td>55.3</td>
-            <td>54.8</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th>环己烷</th>
-            <td>—</td>
-            <td>26.9</td>
-            <td>27.5</td>
-            <td>26.3</td>
-            <td>27.3</td>
-            <td>27.6</td>
-            <td>28.0</td>
-            <td>—</td>
-        </tr>
-    </tbody>
-</table>
-<script>
-    var trs=document.querySelector('tbody').querySelectorAll('td');
-    for (var i=0;i<trs.length;i++){
-        trs[i].onmouseover=function () {
-            console.log(1);
-            this.className='bg';
-        }
-        trs[i].onmouseleave=function () {
-            this.className='tbody';
-        }
-    }
-</script>
-
-<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
 ]]></content>
       <categories>
         <category>Notes</category>
