@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Mancekou</title>
+  <title>满东</title>
   
   <subtitle>真诚 热情 笃行</subtitle>
   <link href="https://mancekou.github.io/atom.xml" rel="self"/>
   
   <link href="https://mancekou.github.io/"/>
-  <updated>2024-12-31T08:57:39.971Z</updated>
+  <updated>2025-05-10T10:13:35.253Z</updated>
   <id>https://mancekou.github.io/</id>
   
   <author>
-    <name>满东</name>
+    <name>Komanch</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>发光中常见名词及常量计算</title>
+    <link href="https://mancekou.github.io/posts/f5cd83b7/"/>
+    <id>https://mancekou.github.io/posts/f5cd83b7/</id>
+    <published>2025-05-09T12:09:45.000Z</published>
+    <updated>2025-05-10T10:13:35.253Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一部分主要为了去明确一些名词，同时整理部分常见常数的计算方法（如辐射跃迁速率常数、非辐射跃迁速率常数这种）。</p><span id="more"></span><h1 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h1><p><b>吸收</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态。（一般认为是从S<sub>0</sub>到S<sub>n</sub>）</p><img src="/posts/f5cd83b7/f5cd83b7-1.png" width="100%/"><p><b>内转换</b>：指两个具有相同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到单重态 (S<sub>2</sub> -&gt; S<sub>1</sub>) 的跃迁。这个过程通常发生在势能面交叉或非常接近的区域，允许分子从一个电子态快速跃迁到另一个电子态，并将能量转化为振动能 。内转换的效率取决于 Franck-Condon 因子，该因子描述了两个电子态振动波函数的重叠程度。</p><img src="/posts/f5cd83b7/f5cd83b7-2.png" width="100%/"><p><b>荧光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以辐射跃迁的形式发出磷光回到基态。（一般认为是从S<sub>1</sub>到S<sub>0</sub>）</p><img src="/posts/f5cd83b7/f5cd83b7-3.png" width="100%/"><p><b>系间窜越</b>：指两个具有不同自旋多重度的电子态之间的非辐射跃迁。例如，单重态到三重态 (S<sub>1</sub> -&gt; T<sub>1</sub>)的跃迁。由于自旋选择规则的限制，系间窜越通常比内转换慢。然而，在含有重原子的分子中，自旋轨道耦合效应增强，可以提高系间窜越的效率。</p><img src="/posts/f5cd83b7/f5cd83b7-4.png" width="100%/">    <p><b>磷光发射</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，最后以辐射跃迁的形式发出磷光回到基态。（一般认为是从T<sub>1</sub>到S<sub>0</sub>）</p><img src="/posts/f5cd83b7/f5cd83b7-5.png" width="100%/">    <p><b>延迟荧光</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到激发单重态上，再以内转换和系间窜越跃迁至激发三重态，由于较小的单三重态能级差，导致可以通过反系间窜越返回单重态激发态，最后以辐射跃迁的形式发出荧光回到基态，由于此类荧光相对于光致荧光通常表现出更长寿命，因此称为延迟荧光。</p><img src="/posts/f5cd83b7/f5cd83b7-6.png" width="100%/"><p><b>发光寿命</b>：当某种物质被一束激光激发后，该物质的分子吸收能量后从基态跃迁到某一激发态上，再以辐射跃迁的形式发出荧光或磷光回到基态。当去掉激发光后，分子的荧光强度降到激发时的荧光最大强度I<sub>0</sub>的1&#x2F;e所需要的时间，称为荧光寿命，常用τ表示。</p><img src="/posts/f5cd83b7/f5cd83b7-7.png" width="100%/">    <p><b>量子产率</b>：通常是指光致发光量子产率，用于量化发光材料效率的重要参数，它被定义为发光物质发射的光子数与吸收的光子数之比。(在光电器件中的外量子效率和内量子效率不在此讨论范围内)</p><p>$$ \Phi &#x3D; \frac{\mathrm{Photon_{em}}}{\mathrm{photon_{abs}}} $$</p><p>量子产率的测试方法一般分为绝对法和相对法。绝对法通常使用积分球直接测量样品发射所需的所有光子数以及样品吸收的光子数。（<em>In Phosphor Handbook</em>, CRC Press, <strong>2021</strong>, pp 455–488.）相对法通常比较待测样品与一致量子产率的标准物质的发光强度来确定样品的量子产率。（<em>J. Phys.: Conf. Ser.</em> <strong>2016</strong>, <em>687</em>, 012097.）</p><h1 id="常量计算"><a href="#常量计算" class="headerlink" title="常量计算"></a>常量计算</h1><p><b>辐射跃迁速率常数（k<sub>r</sub>）</b>：描述原子、分子或离子在两个能级之间跃迁时，通过自发或受激辐射过程释放能量的速率的物理量。这个速率常数与跃迁偶极矩密切相关，跃迁偶极矩越大，跃迁速率越高。</p><p><b>非辐射跃迁速率常数（k<sub>nr</sub>）</b>：描述了分子或固体内电子或其他激发态通过非辐射途径（即不发射光子）返回基态的速率。这些非辐射过程包括内转换 (internal conversion) 和系间窜越 (intersystem crossing)，它们在能量耗散和光物理过程中起着关键作用。</p><p>量子产率与辐射跃迁速率常数和非辐射跃迁速率常数的关系：（<em>Phys. Chem. Chem. Phys.</em> <strong>2010</strong>, <em>12</em>, 11432.）</p><p>$$ \Phi &#x3D; \frac{k_r}{k_r + k_{nr}} $$</p><p>发光寿命与辐射跃迁速率常数的关系：</p><p>$$ \tau &#x3D; \frac{1}{k_r + k_{nr}} $$</p><p>可推导出辐射跃迁速率常数为：</p><p>$$ k_{r} &#x3D; \frac{\Phi}{\tau} $$</p><p>可推导出非辐射跃迁速率常数为：</p><p>$$ k_{nr} &#x3D; \frac{1}{\tau}(1 - \Phi) $$</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这一部分主要为了去明确一些名词，同时整理部分常见常数的计算方法（如辐射跃迁速率常数、非辐射跃迁速率常数这种）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://mancekou.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="发光" scheme="https://mancekou.github.io/tags/%E5%8F%91%E5%85%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对热激活延迟荧光的认识</title>
+    <link href="https://mancekou.github.io/posts/2a7a5801/"/>
+    <id>https://mancekou.github.io/posts/2a7a5801/</id>
+    <published>2025-05-07T00:45:40.000Z</published>
+    <updated>2025-05-09T13:23:34.636Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p><span id="more"></span><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物&#x2F;树枝状型。</p><h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p><img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/">    <blockquote><p>伊红的分子结构后期明确后再修订</p></blockquote><h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p><img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/"><blockquote><p>图片文献暂未找到，以后找到再进行补充</p></blockquote><p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p><h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p><p>系间窜越常数计算公式：</p><p>$$ k_{\mathrm{isc}}&#x3D;\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right] $$</p><p>$$ \hbar &#x3D; \frac{h}{2\pi} $$</p><blockquote><p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV&#x2F;K）<br>T：温度（298 K）<br>$\Delta E_{\mathrm{S-T}}$：单三重态能隙（$E_{\mathrm{S_1}}-E_{\mathrm{T_1}}$），数值需大于0</p></blockquote><p>反系间窜越常数计算公式：</p><p>$$ k_{\mathrm{risc}}&#x3D;k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right) $$</p><p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p><p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://mancekou.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="发光" scheme="https://mancekou.github.io/tags/%E5%8F%91%E5%85%89/"/>
+    
+  </entry>
   
   <entry>
     <title>2024·前路未尽，初心犹在</title>
@@ -138,9 +180,9 @@
     <category term="Software" scheme="https://mancekou.github.io/categories/Software/"/>
     
     
-    <category term="整理" scheme="https://mancekou.github.io/tags/%E6%95%B4%E7%90%86/"/>
-    
     <category term="ChimeraX" scheme="https://mancekou.github.io/tags/ChimeraX/"/>
+    
+    <category term="整理" scheme="https://mancekou.github.io/tags/%E6%95%B4%E7%90%86/"/>
     
   </entry>
   
@@ -184,9 +226,9 @@
     <category term="Software" scheme="https://mancekou.github.io/categories/Software/"/>
     
     
-    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
-    
     <category term="整理" scheme="https://mancekou.github.io/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
     
   </entry>
   
@@ -230,9 +272,9 @@
     <category term="Software" scheme="https://mancekou.github.io/categories/Software/"/>
     
     
-    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
-    
     <category term="整理" scheme="https://mancekou.github.io/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
     
   </entry>
   
@@ -276,9 +318,9 @@
     <category term="Software" scheme="https://mancekou.github.io/categories/Software/"/>
     
     
-    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
-    
     <category term="整理" scheme="https://mancekou.github.io/tags/%E6%95%B4%E7%90%86/"/>
+    
+    <category term="Gaussian" scheme="https://mancekou.github.io/tags/Gaussian/"/>
     
   </entry>
   
