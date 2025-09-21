@@ -409,7 +409,7 @@
   <entry>
     <title>个人收藏页（持续更新）</title>
     <url>/posts/6e97f420/</url>
-    <content><![CDATA[<p>该部分内容为一些网页收藏。</p>
+    <content><![CDATA[<p>该部分内容为一些网页收藏，主要包括常用网址、网站类小工具、期刊网址。</p>
 <span id="more"></span>
 <style>
     h1 {
@@ -431,11 +431,14 @@
         border-radius: 4px;
         transition-duration: 0.15s;
         margin-bottom: 1rem;
-        margin-right: 4%;
+        margin-left: 2.3%;
+        margin-right: 2.3%;
         display:flex;
+        border: 1px solid #ccc
     }
     .card-header {
         width: 45%;
+        text-align: center;
     }
     .card:hover {
         transform: scale(1.1);
@@ -458,12 +461,12 @@
     }
     .card .card-header a {
         font-style: normal;
-        color: #2bbc8a;
+        color: #555;
         font-weight: bold;
         text-decoration: none;
     }
     .card .card-header a:hover {
-        color: #00b6ff;
+        color: #fc6423;
         text-decoration: none;
     }
     .card .card-header .info {
@@ -487,7 +490,7 @@
     }
 </style>
 
-<p><strong>免责声明</strong>：本网页由博主<a href="https://mancekou.github.io/">满东</a>制作，展示的所有网站均为个人兴趣收集，不含任何商业推广成分，仅供交流学习。如有网站违反国家政策法规或链接已失效请联系博主（首页有E-mail或者在留言板留言），我将尽快修改。所有网站使用前请仔细查阅授权许可，部分网站的产出不可用于商业用途，如错误使用产生的相关后果均与本站无关。</p>
+<p><strong>免责声明</strong>：本网页由博主<a href="https://mancekou.github.io/">满东满仓</a>制作，展示的所有网站均为个人兴趣收集，不含任何商业推广成分，仅供交流学习。如有网站违反国家政策法规或链接已失效请联系博主（首页有E-mail或者在留言板留言），我将尽快修改。所有网站使用前请仔细查阅授权许可，部分网站的产出不可用于商业用途，如错误使用产生的相关后果均与本站无关。</p>
 <body>
     <dvi>
         <h1>学习网址</h1>
@@ -532,6 +535,14 @@
                <a href="https://sci-hub.se/">SCI-HUB</a>
             </div>
             <div class="info">免费提供学术文献的网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://chat.deepseek.com/">Deepseek</a>
+            </div>
+            <div class="info">DeepSeek-探索未至之境</div>
          </div>
       </div>
       <div class="card">
@@ -643,6 +654,14 @@
                <a href="https://fa5.dashgame.com/#/">Font Awesome</a>
             </div>
             <div class="info">矢量图标和社交标志</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://simpletex.cn/">Simpletex</a>
+            </div>
+            <div class="info">LaTeX的网页版公式编辑器</div>
          </div>
       </div>       
     </div>
@@ -969,6 +988,65 @@
       </tags>
   </entry>
   <entry>
+    <title>关于Hexo博客内容迁移的备忘录</title>
+    <url>/posts/e6b74078/</url>
+    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。<br><span id="more"></span></p>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
+<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
+<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
+<blockquote>
+<p>自己测试了一下，也可以不删除这个文件夹。</p>
+</blockquote>
+<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
+<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
+<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
+<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
+</blockquote>
+<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
+<p>先设置用户名：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure></p>
+<p><code>your name</code>建议根据github仓库设置。</p>
+<p>再设置邮箱：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure></p>
+<p><code>your email</code>建议根据github仓库设置。</p>
+<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
+<ul>
+<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
+<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
+</ul>
+<p>这里的Users为电脑的用户名。</p>
+<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
+<p>剩下的回车即可，直至结束。</p>
+<p>当看到如下内容后，说明设置成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>同时他也会展示他的密钥内容。</p>
+<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
+<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
+<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
+<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
+<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
+<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
+<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
+<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
+<blockquote>
+<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
+</blockquote>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
+<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>Hexo</tag>
+        <tag>Blogs</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Gaussian理论计算的粗浅经验小结</title>
     <url>/posts/2dd13f90/</url>
     <content><![CDATA[<p>由于本科时，在任老师的指导下，了解并学习了关于理论计算在单分子配合物分子中的应用，因此小入了一点门。到了研究生阶段，也就想着尝试将理论计算结合到自己的工作中，我的研究课题是基于钌配合物的探针和光敏剂设计，因此主要做的工作是基于金属配合物发光的理论研究。但是，我们课题组有不少的同学的研究方向为基于过渡和稀土金属的分子笼或MOFs的催化性能研究和识别性能研究，有时也需要相应的理论计算支持。而关于这个方向的计算与我自己的研究方向是有所不同的，因此想着写一篇简单的博文，整理一些自己认为重要的点方便自己回顾，同时期望帮助组内的同学可以快速的上手操作并获取自己想要的数据。</p>
@@ -1093,62 +1171,334 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Hexo博客内容迁移的备忘录</title>
-    <url>/posts/e6b74078/</url>
-    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。<br><span id="more"></span></p>
-<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
-<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
-<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
-<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
-<blockquote>
-<p>自己测试了一下，也可以不删除这个文件夹。</p>
-</blockquote>
-<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
-<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
-<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
-<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
-</blockquote>
-<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
-<p>先设置用户名：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure></p>
-<p><code>your name</code>建议根据github仓库设置。</p>
-<p>再设置邮箱：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure></p>
-<p><code>your email</code>建议根据github仓库设置。</p>
-<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
-<ul>
-<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
-<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
-</ul>
-<p>这里的Users为电脑的用户名。</p>
-<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
-<p>剩下的回车即可，直至结束。</p>
-<p>当看到如下内容后，说明设置成功。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>同时他也会展示他的密钥内容。</p>
-<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
-<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
-<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
-<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
-<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
-<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
-<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
-<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
-<blockquote>
-<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
-</blockquote>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
-<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
+    <title>常见NMR碳谱溶剂峰</title>
+    <url>/posts/2504b91/</url>
+    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+<span id="more"></span>
+<p><style><br>    .bg{<br>        background-color: pink;<br>    }
+</style></p>
+<p><table id="T1" class="table" style="text-align: center; vertical-align: middle !important; background-color: #FFF;">
+    <thead>
+        <tr>
+            <th>溶剂</th>
+            <th></th>
+            <th style>CDCl<sub>3</sub></th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
+            <th style>C<sub>6</sub>D<sub>6</sub></th>
+            <th style>CD<sub>3</sub>CN</th>
+            <th style>CD<sub>3</sub>OD</th>
+            <th style>D<sub>2</sub>O</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" style>溶剂峰</th>
+            <td style>—</td>
+            <td>77.1</td>
+            <td>206</td>
+            <td>39.5</td>
+            <td>128.1</td>
+            <td>118.3</td>
+            <td>49.0</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td style>—</td>
+            <td>—</td>
+            <td>29.8</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1.3</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙酸</th>
+            <td>CO</td>
+            <td>176</td>
+            <td>172.3</td>
+            <td>171.9</td>
+            <td>176</td>
+            <td>173.2</td>
+            <td>175.1</td>
+            <td>177.2</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>20.8</td>
+            <td>20.5</td>
+            <td>20.9</td>
+            <td>20.3</td>
+            <td>20.7</td>
+            <td>20.6</td>
+            <td>21.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>丙酮</th>
+            <td>CO</td>
+            <td>207.1</td>
+            <td>205.9</td>
+            <td>206.3</td>
+            <td>204</td>
+            <td>207.4</td>
+            <td>209.7</td>
+            <td>215</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>30.9</td>
+            <td>30.6</td>
+            <td>30.6</td>
+            <td>30.1</td>
+            <td>30.9</td>
+            <td>30.7</td>
+            <td>30.9</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙腈</th>
+            <td>CN</td>
+            <td>116.4</td>
+            <td>117.6</td>
+            <td>117.9</td>
+            <td>116</td>
+            <td>118.3</td>
+            <td>118.1</td>
+            <td>119.7</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>1.9</td>
+            <td>1.1</td>
+            <td>1.0</td>
+            <td>2.0</td>
+            <td>1.8</td>
+            <td>0.8</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <th style>甲醇</th>
+            <td>—</td>
+            <td>50.4</td>
+            <td>49.8</td>
+            <td>48.6</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.5</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醚</th>
+            <td>CH<sub>2</sub></td>
+            <td>65.9</td>
+            <td>66.0</td>
+            <td>62.0</td>
+            <td>66.0</td>
+            <td>66.4</td>
+            <td>66.9</td>
+            <td>66.4</td>
+        </tr>
+        <tr>
+            <td style>CH<sub>3</sub></td>
+            <td>15.2</td>
+            <td>15.8</td>
+            <td>15.0</td>
+            <td>15.5</td>
+            <td>15.6</td>
+            <td>15.5</td>
+            <td>14.8</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醇</th>
+            <td>CH<sub>2</sub></td>
+            <td>58.3</td>
+            <td>57.8</td>
+            <td>56.1</td>
+            <td>58.0</td>
+            <td>58.0</td>
+            <td>58.3</td>
+            <td>58.0</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>18.4</td>
+            <td>18.9</td>
+            <td>18.5</td>
+            <td>18.7</td>
+            <td>18.8</td>
+            <td>18.4</td>
+            <td>17.5</td>
+        </tr>
+        <tr>
+            <th rowspan="4">乙酸乙酯</th>
+            <td>CO</td>
+            <td>171.4</td>
+            <td>171</td>
+            <td>170.3</td>
+            <td>170.4</td>
+            <td>171.7</td>
+            <td>172.9</td>
+            <td>175.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>60.5</td>
+            <td>60.6</td>
+            <td>59.7</td>
+            <td>60.2</td>
+            <td>61.0</td>
+            <td>61.5</td>
+            <td>62.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub>CO</td>
+            <td>21.0</td>
+            <td>20.8</td>
+            <td>20.7</td>
+            <td>20.2</td>
+            <td>21.2</td>
+            <td>20.9</td>
+            <td>21.1</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub>CH<sub>3</sub></td>
+            <td>14.2</td>
+            <td>14.5</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>14.5</td>
+            <td>14.5</td>
+            <td>13.9</td>
+        </tr>
+        <tr>
+            <th>氯仿</th>
+            <td>—</td>
+            <td>77.3</td>
+            <td>79.2</td>
+            <td>79.1</td>
+            <td>77.8</td>
+            <td>79.2</td>
+            <td>79.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">正己烷</th>
+            <td>CH<sub>2</sub></td>
+            <td>31.6</td>
+            <td>32.3</td>
+            <td>31.0</td>
+            <td>32.0</td>
+            <td>32.4</td>
+            <td>32.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>22.7</td>
+            <td>23.3</td>
+            <td>22.0</td>
+            <td>23.0</td>
+            <td>23.4</td>
+            <td>23.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>14.1</td>
+            <td>14.3</td>
+            <td>13.9</td>
+            <td>14.3</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">二甲基甲酰胺</th>
+            <td>CHO</td>
+            <td>162.3</td>
+            <td>163</td>
+            <td>163</td>
+            <td>162</td>
+            <td>163.2</td>
+            <td>164.7</td>
+            <td>165.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>36.4</td>
+            <td>36.1</td>
+            <td>35.7</td>
+            <td>35.0</td>
+            <td>36.6</td>
+            <td>36.9</td>
+            <td>37.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>31.4</td>
+            <td>31.1</td>
+            <td>30.7</td>
+            <td>30.7</td>
+            <td>31.3</td>
+            <td>31.6</td>
+            <td>32.0</td>
+        </tr>
+        <tr>
+            <th>二甲基亚砜</th>
+            <td>—</td>
+            <td>40.8/td>
+            </td><td>41.2</td>
+            <td>40.4</td>
+            <td>40.0</td>
+            <td>41.3</td>
+            <td>40.4</td>
+            <td>39.4</td>
+        </tr>
+        <tr>
+            <th>二氯甲烷</th>
+            <td>—</td>
+            <td>53.5</td>
+            <td>54.9</td>
+            <td>54.8</td>
+            <td>53.5</td>
+            <td>55.3</td>
+            <td>54.8</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th>环己烷</th>
+            <td>—</td>
+            <td>26.9</td>
+            <td>27.5</td>
+            <td>26.3</td>
+            <td>27.3</td>
+            <td>27.6</td>
+            <td>28.0</td>
+            <td>—</td>
+        </tr>
+    </tbody>
+</table></p>
+<script>
+    var trs=document.querySelector('tbody').querySelectorAll('td');
+    for (var i=0;i<trs.length;i++){
+        trs[i].onmouseover=function () {
+            console.log(1);
+            this.className='bg';
+        }
+        trs[i].onmouseleave=function () {
+            this.className='tbody';
+        }
+    }
+</script>
+
+<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
 ]]></content>
       <categories>
         <category>Learning notes</category>
       </categories>
       <tags>
         <tag>Notes</tag>
-        <tag>Hexo</tag>
-        <tag>Blogs</tag>
+        <tag>NMR</tag>
       </tags>
   </entry>
   <entry>
@@ -1614,334 +1964,37 @@
       </tags>
   </entry>
   <entry>
-    <title>常见NMR碳谱溶剂峰</title>
-    <url>/posts/2504b91/</url>
-    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+    <title>对热激活延迟荧光的认识</title>
+    <url>/posts/2a7a5801/</url>
+    <content><![CDATA[<p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p>
 <span id="more"></span>
-<p><style><br>    .bg{<br>        background-color: pink;<br>    }
-</style></p>
-<p><table id="T1" class="table" style="text-align: center; vertical-align: middle !important; background-color: #FFF;">
-    <thead>
-        <tr>
-            <th>溶剂</th>
-            <th></th>
-            <th style>CDCl<sub>3</sub></th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
-            <th style>C<sub>6</sub>D<sub>6</sub></th>
-            <th style>CD<sub>3</sub>CN</th>
-            <th style>CD<sub>3</sub>OD</th>
-            <th style>D<sub>2</sub>O</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th rowspan="2" style>溶剂峰</th>
-            <td style>—</td>
-            <td>77.1</td>
-            <td>206</td>
-            <td>39.5</td>
-            <td>128.1</td>
-            <td>118.3</td>
-            <td>49.0</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td style>—</td>
-            <td>—</td>
-            <td>29.8</td>
-            <td>—</td>
-            <td>—</td>
-            <td>1.3</td>
-            <td>—</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙酸</th>
-            <td>CO</td>
-            <td>176</td>
-            <td>172.3</td>
-            <td>171.9</td>
-            <td>176</td>
-            <td>173.2</td>
-            <td>175.1</td>
-            <td>177.2</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>20.8</td>
-            <td>20.5</td>
-            <td>20.9</td>
-            <td>20.3</td>
-            <td>20.7</td>
-            <td>20.6</td>
-            <td>21.0</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>丙酮</th>
-            <td>CO</td>
-            <td>207.1</td>
-            <td>205.9</td>
-            <td>206.3</td>
-            <td>204</td>
-            <td>207.4</td>
-            <td>209.7</td>
-            <td>215</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>30.9</td>
-            <td>30.6</td>
-            <td>30.6</td>
-            <td>30.1</td>
-            <td>30.9</td>
-            <td>30.7</td>
-            <td>30.9</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙腈</th>
-            <td>CN</td>
-            <td>116.4</td>
-            <td>117.6</td>
-            <td>117.9</td>
-            <td>116</td>
-            <td>118.3</td>
-            <td>118.1</td>
-            <td>119.7</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>1.9</td>
-            <td>1.1</td>
-            <td>1.0</td>
-            <td>2.0</td>
-            <td>1.8</td>
-            <td>0.8</td>
-            <td>1.5</td>
-        </tr>
-        <tr>
-            <th style>甲醇</th>
-            <td>—</td>
-            <td>50.4</td>
-            <td>49.8</td>
-            <td>48.6</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.5</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醚</th>
-            <td>CH<sub>2</sub></td>
-            <td>65.9</td>
-            <td>66.0</td>
-            <td>62.0</td>
-            <td>66.0</td>
-            <td>66.4</td>
-            <td>66.9</td>
-            <td>66.4</td>
-        </tr>
-        <tr>
-            <td style>CH<sub>3</sub></td>
-            <td>15.2</td>
-            <td>15.8</td>
-            <td>15.0</td>
-            <td>15.5</td>
-            <td>15.6</td>
-            <td>15.5</td>
-            <td>14.8</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醇</th>
-            <td>CH<sub>2</sub></td>
-            <td>58.3</td>
-            <td>57.8</td>
-            <td>56.1</td>
-            <td>58.0</td>
-            <td>58.0</td>
-            <td>58.3</td>
-            <td>58.0</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>18.4</td>
-            <td>18.9</td>
-            <td>18.5</td>
-            <td>18.7</td>
-            <td>18.8</td>
-            <td>18.4</td>
-            <td>17.5</td>
-        </tr>
-        <tr>
-            <th rowspan="4">乙酸乙酯</th>
-            <td>CO</td>
-            <td>171.4</td>
-            <td>171</td>
-            <td>170.3</td>
-            <td>170.4</td>
-            <td>171.7</td>
-            <td>172.9</td>
-            <td>175.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>60.5</td>
-            <td>60.6</td>
-            <td>59.7</td>
-            <td>60.2</td>
-            <td>61.0</td>
-            <td>61.5</td>
-            <td>62.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub>CO</td>
-            <td>21.0</td>
-            <td>20.8</td>
-            <td>20.7</td>
-            <td>20.2</td>
-            <td>21.2</td>
-            <td>20.9</td>
-            <td>21.1</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub>CH<sub>3</sub></td>
-            <td>14.2</td>
-            <td>14.5</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>14.5</td>
-            <td>14.5</td>
-            <td>13.9</td>
-        </tr>
-        <tr>
-            <th>氯仿</th>
-            <td>—</td>
-            <td>77.3</td>
-            <td>79.2</td>
-            <td>79.1</td>
-            <td>77.8</td>
-            <td>79.2</td>
-            <td>79.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">正己烷</th>
-            <td>CH<sub>2</sub></td>
-            <td>31.6</td>
-            <td>32.3</td>
-            <td>31.0</td>
-            <td>32.0</td>
-            <td>32.4</td>
-            <td>32.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>22.7</td>
-            <td>23.3</td>
-            <td>22.0</td>
-            <td>23.0</td>
-            <td>23.4</td>
-            <td>23.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>14.1</td>
-            <td>14.3</td>
-            <td>13.9</td>
-            <td>14.3</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">二甲基甲酰胺</th>
-            <td>CHO</td>
-            <td>162.3</td>
-            <td>163</td>
-            <td>163</td>
-            <td>162</td>
-            <td>163.2</td>
-            <td>164.7</td>
-            <td>165.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>36.4</td>
-            <td>36.1</td>
-            <td>35.7</td>
-            <td>35.0</td>
-            <td>36.6</td>
-            <td>36.9</td>
-            <td>37.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>31.4</td>
-            <td>31.1</td>
-            <td>30.7</td>
-            <td>30.7</td>
-            <td>31.3</td>
-            <td>31.6</td>
-            <td>32.0</td>
-        </tr>
-        <tr>
-            <th>二甲基亚砜</th>
-            <td>—</td>
-            <td>40.8/td>
-            </td><td>41.2</td>
-            <td>40.4</td>
-            <td>40.0</td>
-            <td>41.3</td>
-            <td>40.4</td>
-            <td>39.4</td>
-        </tr>
-        <tr>
-            <th>二氯甲烷</th>
-            <td>—</td>
-            <td>53.5</td>
-            <td>54.9</td>
-            <td>54.8</td>
-            <td>53.5</td>
-            <td>55.3</td>
-            <td>54.8</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th>环己烷</th>
-            <td>—</td>
-            <td>26.9</td>
-            <td>27.5</td>
-            <td>26.3</td>
-            <td>27.3</td>
-            <td>27.6</td>
-            <td>28.0</td>
-            <td>—</td>
-        </tr>
-    </tbody>
-</table></p>
-<script>
-    var trs=document.querySelector('tbody').querySelectorAll('td');
-    for (var i=0;i<trs.length;i++){
-        trs[i].onmouseover=function () {
-            console.log(1);
-            this.className='bg';
-        }
-        trs[i].onmouseleave=function () {
-            this.className='tbody';
-        }
-    }
-</script>
-
-<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物/树枝状型。</p>
+<h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p>
+<p><img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/"></p>
+<blockquote>
+<p>伊红的分子结构后期明确后再修订</p>
+</blockquote>
+<h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p>
+<p><img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/"></p>
+<blockquote>
+<p>图片文献暂未找到，以后找到再进行补充</p>
+</blockquote>
+<p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p>
+<h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p>
+<p>系间窜越常数计算公式：</p>
+<script type="math/tex; mode=display">k_{\mathrm{isc}}=\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right]</script><script type="math/tex; mode=display">\hbar = \frac{h}{2\pi}</script><blockquote>
+<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV/K）<br>T：温度（298 K）<br>$\Delta E<em>{\mathrm{S-T}}$：单三重态能隙（$E</em>{\mathrm{S<em>1}}-E</em>{\mathrm{T_1}}$），数值需大于0</p>
+</blockquote>
+<p>反系间窜越常数计算公式：</p>
+<script type="math/tex; mode=display">k_{\mathrm{risc}}=k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right)</script><p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
+<p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>
 ]]></content>
       <categories>
-        <category>Learning notes</category>
+        <category>Theory</category>
       </categories>
       <tags>
-        <tag>Notes</tag>
-        <tag>NMR</tag>
+        <tag>Luminescence</tag>
+        <tag>TADF</tag>
       </tags>
   </entry>
   <entry>
@@ -1975,40 +2028,6 @@
         <tag>Multiwfn</tag>
         <tag>Excite states</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对热激活延迟荧光的认识</title>
-    <url>/posts/2a7a5801/</url>
-    <content><![CDATA[<p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p>
-<span id="more"></span>
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物/树枝状型。</p>
-<h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p>
-<p><img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/"></p>
-<blockquote>
-<p>伊红的分子结构后期明确后再修订</p>
-</blockquote>
-<h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p>
-<p><img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/"></p>
-<blockquote>
-<p>图片文献暂未找到，以后找到再进行补充</p>
-</blockquote>
-<p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p>
-<h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p>
-<p>系间窜越常数计算公式：</p>
-<script type="math/tex; mode=display">k_{\mathrm{isc}}=\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right]</script><script type="math/tex; mode=display">\hbar = \frac{h}{2\pi}</script><blockquote>
-<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV/K）<br>T：温度（298 K）<br>$\Delta E<em>{\mathrm{S-T}}$：单三重态能隙（$E</em>{\mathrm{S<em>1}}-E</em>{\mathrm{T_1}}$），数值需大于0</p>
-</blockquote>
-<p>反系间窜越常数计算公式：</p>
-<script type="math/tex; mode=display">k_{\mathrm{risc}}=k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right)</script><p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
-<p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>
-]]></content>
-      <categories>
-        <category>Theory</category>
-      </categories>
-      <tags>
-        <tag>Luminescence</tag>
-        <tag>TADF</tag>
       </tags>
   </entry>
   <entry>
