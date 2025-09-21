@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+<meta name="google-site-verification" content="fSQGPNRAU4DCvvnYGCHYOpUg94XlzSCdD5Uk2xLF2fI">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"mancekou.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="激发态数据整理的便捷方法">
+<meta property="og:url" content="https://mancekou.github.io/posts/383282c1/index.html">
+<meta property="og:site_name" content="满东满仓">
+<meta property="og:description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-01.png">
+<meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-02.png">
+<meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-03.png">
+<meta property="article:published_time" content="2025-09-21T12:42:33.000Z">
+<meta property="article:modified_time" content="2025-09-21T14:15:07.121Z">
+<meta property="article:author" content="Komanch">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Multiwfn">
+<meta property="article:tag" content="Excite states">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mancekou.github.io/posts/383282c1/383282c1-01.png">
+
+<link rel="canonical" href="https://mancekou.github.io/posts/383282c1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>激发态数据整理的便捷方法 | 满东满仓</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="满东满仓" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">满东满仓</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">真诚 热情 笃行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">25</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-notes">
+
+    <a href="/notes" rel="section"><i class="fa fa-list-alt fa-fw"></i>手记</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a>
+
+  </li>
+        <li class="menu-item menu-item-works">
+
+    <a href="/works" rel="section"><i class="fa fa-laptop fa-fw"></i>参与工作</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>个人说明书</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mancekou.github.io/posts/383282c1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Komanch">
+      <meta itemprop="description" content="记录一些故事的地方">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="满东满仓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          激发态数据整理的便捷方法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025年09月21日 20:42:33" itemprop="dateCreated datePublished" datetime="2025-09-21T20:42:33+08:00">2025年09月21日</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Learning-notes/" itemprop="url" rel="index"><span itemprop="name">Learning notes</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>9 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。</p>
+<span id="more"></span>
+<h1 id="需求的产生"><a href="#需求的产生" class="headerlink" title="需求的产生"></a>需求的产生</h1><p>虽然卢天老师开发的Multiwfn软件已经非常人性化，只需将激发态计算的out/log文件，拖入Multiwfn，简单的敲击几下键盘就可以得到一个txt文件，里面包含了我们需要使用到的信息（如下图所示）。</p>
+<blockquote>
+<p>上然的“虽然”只是为引出下文，卢老师开发的软件很好，如果没有他无私的贡献，也不会有这部分内容的产生。</p>
+</blockquote>
+<p><img src="/posts/383282c1/383282c1-01.png" alt="383282c1-01"></p>
+<p>但这边的需求是需要将这个文本里的信息整理到一个word表格中（如下图所示），这样就需要人工的进行好多次的Ctrl C和Ctrl V，实在是太废时间和精力。</p>
+<p><img src="/posts/383282c1/383282c1-02.png" alt="383282c1-02"></p>
+<p>所以就在想，能不能让deepseek去生成一个python文件，当读入Multiwfn产生的txt文本文件后，将不同激发态的跃迁轨道、跃迁轨道的贡献、激发波长、激发能和振子强度整理到一个excel表中，同时设置两个阈值，分别控制跃迁轨道的贡献和振子强度，以实现输出仅大于等于振子强度阈值的激发态和大于等于跃迁轨道的贡献的跃迁轨道。最后还需要保证强制输出第一个激发态。</p>
+<h1 id="与deepseek的友好交流"><a href="#与deepseek的友好交流" class="headerlink" title="与deepseek的友好交流"></a>与deepseek的友好交流</h1><p>带着这些需求，便开始与deepseek的多番交流，以及产生代码的测试。产生了以下符合上述条件的代码：</p>
+<div style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_excitation_data</span>(<span class="params">file_path, </span></span><br><span class="line"><span class="params">                        oscillator_strength_threshold=<span class="number">0.01</span>,  <span class="comment"># 振子强度阈值默认0.01</span></span></span><br><span class="line"><span class="params">                        transition_contribution_threshold=<span class="number">5.0</span></span>):  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line">    <span class="comment"># 读取文件内容</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        lines = file.readlines()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 初始化结果列表</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&#x27;State&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Transition&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Contribution&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;E, nm(eV)&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;o.s.&#x27;</span>: []</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 正则表达式匹配每一部分</span></span><br><span class="line">    state_pattern = re.<span class="built_in">compile</span>(</span><br><span class="line">        <span class="string">r&#x27;#\s*(\d+)\s*([\d.]+)\s*eV\s*([\d.]+)\s*nm\s*f=\s*([\d.]+)\s*Spin multiplicity=\s*(\d+):&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    transition_pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;([A-Za-z0-9+-]+)\s*-&gt;\s*([A-Za-z0-9+-]+)\s*([\d.]+)%&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    first_state_processed = <span class="literal">False</span>  <span class="comment"># 标记是否已处理第一个态</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">        line = lines[i].strip()</span><br><span class="line">        <span class="keyword">if</span> line.startswith(<span class="string">&#x27;#&#x27;</span>):</span><br><span class="line">            <span class="comment"># 解析态信息</span></span><br><span class="line">            <span class="keyword">match</span> = state_pattern.<span class="keyword">match</span>(line)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">match</span>:</span><br><span class="line">                state_num = <span class="built_in">int</span>(<span class="keyword">match</span>.group(<span class="number">1</span>))</span><br><span class="line">                energy = <span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">2</span>)))</span><br><span class="line">                wavelength = <span class="keyword">match</span>.group(<span class="number">3</span>)</span><br><span class="line">                oscillator_strength = <span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">4</span>))</span><br><span class="line">                spin_multiplicity = <span class="keyword">match</span>.group(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 检查是否是第一个态或振子强度大于阈值</span></span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">not</span> first_state_processed) <span class="keyword">or</span> (oscillator_strength &gt;= oscillator_strength_threshold):</span><br><span class="line">                    <span class="comment"># 解析跃迁信息</span></span><br><span class="line">                    i += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">                        transition_line = lines[i].strip()</span><br><span class="line">                        transitions = []</span><br><span class="line">                        contributions = []</span><br><span class="line">                        <span class="keyword">for</span> part <span class="keyword">in</span> transition_line.split(<span class="string">&#x27;,&#x27;</span>):</span><br><span class="line">                            part = part.strip()</span><br><span class="line">                            trans_match = transition_pattern.<span class="keyword">match</span>(part)</span><br><span class="line">                            <span class="keyword">if</span> trans_match:</span><br><span class="line">                                contribution = <span class="built_in">float</span>(trans_match.group(<span class="number">3</span>))</span><br><span class="line">                                <span class="comment"># 只保留贡献大于阈值的跃迁</span></span><br><span class="line">                                <span class="keyword">if</span> contribution &gt;= transition_contribution_threshold:</span><br><span class="line">                                    from_orb = trans_match.group(<span class="number">1</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    to_orb = trans_match.group(<span class="number">2</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    contribution_str = <span class="string">f&quot;<span class="subst">&#123;contribution&#125;</span>%&quot;</span></span><br><span class="line">                                    transitions.append(<span class="string">f&quot;<span class="subst">&#123;from_orb&#125;</span>→<span class="subst">&#123;to_orb&#125;</span>&quot;</span>)</span><br><span class="line">                                    contributions.append(contribution_str)</span><br><span class="line"></span><br><span class="line">                        <span class="comment"># 如果有符合要求的跃迁，则添加到结果中</span></span><br><span class="line">                        <span class="keyword">if</span> transitions:</span><br><span class="line">                            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(transitions)):</span><br><span class="line">                                data[<span class="string">&#x27;State&#x27;</span>].append(<span class="string">f&quot;S<span class="subst">&#123;state_num&#125;</span>&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;Transition&#x27;</span>].append(transitions[j])</span><br><span class="line">                                data[<span class="string">&#x27;Contribution&#x27;</span>].append(contributions[j])</span><br><span class="line">                                data[<span class="string">&#x27;E, nm(eV)&#x27;</span>].append(<span class="string">f&quot;<span class="subst">&#123;wavelength&#125;</span> (<span class="subst">&#123;energy&#125;</span>)&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;o.s.&#x27;</span>].append(oscillator_strength <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                    </span><br><span class="line">                    <span class="comment"># 标记第一个态已处理</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="keyword">not</span> first_state_processed:</span><br><span class="line">                        first_state_processed = <span class="literal">True</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pd.DataFrame(data)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">save_to_excel</span>(<span class="params">df, output_file</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 确保目录存在</span></span><br><span class="line">        output_path = Path(output_file)</span><br><span class="line">        output_path.parent.mkdir(parents=<span class="literal">True</span>, exist_ok=<span class="literal">True</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 保存Excel文件</span></span><br><span class="line">        df.to_excel(output_file, index=<span class="literal">False</span>, sheet_name=<span class="string">&#x27;Sheet1&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;文件已成功保存到 <span class="subst">&#123;output_file&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> PermissionError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;权限错误：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;建议操作：&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;1. 关闭Excel或其他正在使用该文件的程序&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;2. 检查是否有权写入目录：<span class="subst">&#123;output_path.parent&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;3. 尝试使用其他路径，如桌面目录&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;保存失败：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    input_file = <span class="string">&#x27;sample_exc.txt&#x27;</span>	<span class="comment"># 建议统一修改文件名为sample_exc.txt</span></span><br><span class="line">    output_file = <span class="string">&#x27;excitation_states.xlsx&#x27;</span></span><br><span class="line">    osc_threshold = <span class="number">0.01</span>  <span class="comment"># 振子强度阈值默认0.01</span></span><br><span class="line">    contrib_threshold = <span class="number">5.0</span>  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入振子强度阈值</span></span><br><span class="line">    user_input_osc = <span class="built_in">input</span>(<span class="string">f&quot;请输入振子强度阈值（默认值为 <span class="subst">&#123;osc_threshold&#125;</span>，S1将始终输出）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_osc.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            osc_threshold = <span class="built_in">float</span>(user_input_osc)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认振子强度阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入跃迁贡献阈值</span></span><br><span class="line">    user_input_contrib = <span class="built_in">input</span>(<span class="string">f&quot;请输入跃迁贡献阈值(%)（默认值为 <span class="subst">&#123;contrib_threshold&#125;</span>，小于此值的跃迁将被过滤）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_contrib.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            contrib_threshold = <span class="built_in">float</span>(user_input_contrib)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认跃迁贡献阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    df = parse_excitation_data(input_file, osc_threshold, contrib_threshold)</span><br><span class="line">    save_to_excel(df, output_file)</span><br></pre></td></tr></table></figure>
+</div>
+
+<p>首先，使用该部分代码，需要确保你运行的python安装了<code>re</code>、<code>pandas</code>、<code>pathlib</code>这三个库。其次，将待处理文件改名为<code>sample_exc.txt</code>。接着，将上述代码保存为<code>sample_exc.py</code>且与<code>sample_exc.txt</code>在同一个文件夹中。最后，命令行运行<code>python sample_exc.py</code>，应该就可以产生一个<code>excitation_states.xlsx</code>的文件，excel中的内容大概如下图所示，只需要将内容粘贴到word中即可。</p>
+<p><img src="/posts/383282c1/383282c1-03.png" alt="383282c1-03"></p>
+<p>当然建议上述python操作，最好是在虚拟环境中运行，感觉会比较安全，在运行时，只需要在对应的虚拟环境中安装对应的库即可。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过这个例子可以看出，将一些简单但需要重复的事，交给deepseek这种大语言模型完全是可行，像我这样一个对python并不是很懂的人，也可以借助与大语言模型的交流，来解决实际工作中的问题。总之，学习一直在路上。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Komanch
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://mancekou.github.io/posts/383282c1/" title="激发态数据整理的便捷方法">https://mancekou.github.io/posts/383282c1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+			
+			<footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Notes/" rel="tag"># Notes</a>
+              <a href="/tags/Multiwfn/" rel="tag"># Multiwfn</a>
+              <a href="/tags/Excite-states/" rel="tag"># Excite states</a>
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+        
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/2a7a5801/" rel="prev" title="对热激活延迟荧光的认识">
+      <i class="fa fa-chevron-left"></i> 对热激活延迟荧光的认识
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="nav-number">1.</span> <span class="nav-text">需求的产生</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8Edeepseek%E7%9A%84%E5%8F%8B%E5%A5%BD%E4%BA%A4%E6%B5%81"><span class="nav-number">2.</span> <span class="nav-text">与deepseek的友好交流</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%80%E5%90%8E"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Komanch"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Komanch</p>
+  <div class="site-description" itemprop="description">记录一些故事的地方</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:koumch20@outlook.com" title="E-Mail → mailto:koumch20@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.researchgate.net/profile/Manchang-Kou" title="Researchgate → https:&#x2F;&#x2F;www.researchgate.net&#x2F;profile&#x2F;Manchang-Kou" rel="noopener" target="_blank"><i class="fa fa-share-alt fa-fw"></i>Researchgate</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mancekou.github.io/posts/6e97f420/#more" title="个人收藏页 → https:&#x2F;&#x2F;mancekou.github.io&#x2F;posts&#x2F;6e97f420&#x2F;#more"><i class="fas fa-bookmark fa-fw"></i>个人收藏页</a>
+      </span>
+  </div>
+  <div class="">
+    <a target="_blank" class="social-link" href="/atom.xml" style="color: Orange;">
+      <span class="icon">
+        <i class="fa fa-rss"></i>
+      </span>
+      <span class="label">RSS</span>
+    </a>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://yihui.org/" title="https:&#x2F;&#x2F;yihui.org&#x2F;" rel="noopener" target="_blank">谢益辉</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://jinjipang.com/" title="https:&#x2F;&#x2F;jinjipang.com&#x2F;" rel="noopener" target="_blank">逄金吉</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://yuanfan.rbind.io/" title="https:&#x2F;&#x2F;yuanfan.rbind.io&#x2F;" rel="noopener" target="_blank">袁凡</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://yufree.cn/" title="https:&#x2F;&#x2F;yufree.cn&#x2F;" rel="noopener" target="_blank">于淼</a>
+        </li>
+    </ul>
+  </div>
+      </div>
+      
+      <!-- Begin Insert clustrmaps.com -->
+    		<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=WYwfY2m-S2A9AF2BbM9sR-sSfTTJszs7DpiRejm2-Pk&cl=ffffff&w=a"></script> -->
+    	<!-- End Insert clustrmaps.com -->
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Komanch</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">46k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">1:24</span>
+</div>
+  <div class="powered-by">
+    <!--  %%注释掉 由 Hexo & NexT.Pisces 强力驱动由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+    -->
+  </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+		year - 作为date对象的年份，为4位年份值
+		month - 0-11之间的整数，做为date对象的月份
+		day - 1-31之间的整数，做为date对象的天数
+		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+		minutes - 0-59之间的整数，做为date对象的分钟数
+		seconds - 0-59之间的整数，做为date对象的秒数
+		microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+		var t1 = Date.UTC(2019,05,25,22,00,00); //北京时间2018-2-13 00:00:00
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行 "+ diffYears +" 年 "+ diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
