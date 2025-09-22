@@ -252,31 +252,25 @@
       
         <p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p>
 <span id="more"></span>
-
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物&#x2F;树枝状型。</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物/树枝状型。</p>
 <h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p>
-<img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/">
-    
+<p><img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/"></p>
 <blockquote>
 <p>伊红的分子结构后期明确后再修订</p>
 </blockquote>
 <h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p>
-<img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/">
-
+<p><img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/"></p>
 <blockquote>
 <p>图片文献暂未找到，以后找到再进行补充</p>
 </blockquote>
 <p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p>
 <h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p>
 <p>系间窜越常数计算公式：</p>
-<p>$$ k_{\mathrm{isc}}&#x3D;\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right] $$</p>
-<p>$$ \hbar &#x3D; \frac{h}{2\pi} $$</p>
-<blockquote>
-<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV&#x2F;K）<br>T：温度（298 K）<br>$\Delta E_{\mathrm{S-T}}$：单三重态能隙（$E_{\mathrm{S_1}}-E_{\mathrm{T_1}}$），数值需大于0</p>
+<script type="math/tex; mode=display">k_{\mathrm{isc}}=\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right]</script><script type="math/tex; mode=display">\hbar = \frac{h}{2\pi}</script><blockquote>
+<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV/K）<br>T：温度（298 K）<br>$\Delta E<em>{\mathrm{S-T}}$：单三重态能隙（$E</em>{\mathrm{S<em>1}}-E</em>{\mathrm{T_1}}$），数值需大于0</p>
 </blockquote>
 <p>反系间窜越常数计算公式：</p>
-<p>$$ k_{\mathrm{risc}}&#x3D;k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right) $$</p>
-<p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
+<script type="math/tex; mode=display">k_{\mathrm{risc}}=k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right)</script><p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
 <p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>
 
     </div>
