@@ -21,18 +21,18 @@
     var CONFIG = {"hostname":"mancekou.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
+  <meta name="description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点辛苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="激发态数据整理的便捷方法">
 <meta property="og:url" content="https://mancekou.github.io/posts/383282c1/index.html">
 <meta property="og:site_name" content="满东满仓">
-<meta property="og:description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
+<meta property="og:description" content="俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点辛苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-01.png">
 <meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-02.png">
 <meta property="og:image" content="https://mancekou.github.io/posts/383282c1/383282c1-03.png">
 <meta property="article:published_time" content="2025-09-21T12:42:33.000Z">
-<meta property="article:modified_time" content="2025-09-21T14:15:07.121Z">
+<meta property="article:modified_time" content="2025-09-22T11:44:08.959Z">
 <meta property="article:author" content="Komanch">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Multiwfn">
@@ -253,9 +253,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点幸苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。</p>
+        <p>俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点辛苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。</p>
 <span id="more"></span>
-<h1 id="需求的产生"><a href="#需求的产生" class="headerlink" title="需求的产生"></a>需求的产生</h1><p>虽然卢天老师开发的Multiwfn软件已经非常人性化，只需将激发态计算的out/log文件，拖入Multiwfn，简单的敲击几下键盘就可以得到一个txt文件，里面包含了我们需要使用到的信息（如下图所示）。</p>
+
+<h1 id="需求的产生"><a href="#需求的产生" class="headerlink" title="需求的产生"></a>需求的产生</h1><p>虽然卢天老师开发的Multiwfn软件已经非常人性化，只需将激发态计算的out&#x2F;log文件，拖入Multiwfn，简单的敲击几下键盘就可以得到一个txt文件，里面包含了我们需要使用到的信息（如下图所示）。</p>
 <blockquote>
 <p>上然的“虽然”只是为引出下文，卢老师开发的软件很好，如果没有他无私的贡献，也不会有这部分内容的产生。</p>
 </blockquote>
@@ -444,6 +445,15 @@
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://yufree.cn/" title="https:&#x2F;&#x2F;yufree.cn&#x2F;" rel="noopener" target="_blank">于淼</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://mednoter.com/" title="https:&#x2F;&#x2F;mednoter.com&#x2F;" rel="noopener" target="_blank">吕小荣</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://innei.in/about" title="https:&#x2F;&#x2F;innei.in&#x2F;about" rel="noopener" target="_blank">拾一 Innei</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.jiangshen.org/" title="https:&#x2F;&#x2F;blog.jiangshen.org&#x2F;" rel="noopener" target="_blank">Jiang Shen</a>
         </li>
     </ul>
   </div>
