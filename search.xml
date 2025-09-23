@@ -509,10 +509,62 @@
 </style>
 
 <p><strong>免责声明</strong>：本网页由博主<a href="https://mancekou.github.io/">满东满仓</a>制作，展示的所有网站均为个人兴趣收集，不含任何商业推广成分，仅供交流学习。如有网站违反国家政策法规或链接已失效请联系博主（首页有E-mail或者在留言板留言），我将尽快修改。所有网站使用前请仔细查阅授权许可，部分网站的产出不可用于商业用途，如错误使用产生的相关后果均与本站无关。</p>
-<body>
-    <dvi>
-        <h1>学习网址</h1>
-    </dvi>
+<h1 id="学校相关"><a href="#学校相关" class="headerlink" title="学校相关"></a>学校相关</h1><body>
+    <div class="links-content">
+        <div class="link-navigation">
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://www.lzu.edu.cn/">兰州大学</a>
+            </div>
+            <div class="info">学校官网</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://chem.lzu.edu.cn/">兰州大学化学化工学院</a>
+            </div>
+            <div class="info">学院官网</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://sso.lzu.edu.cn/">个人工作平台</a>
+            </div>
+            <div class="info">可以跳转学校的各个网站</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="http://202.201.13.16/genee/">大型仪器共享平台</a>
+            </div>
+            <div class="info">送样的地方</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://hpc.lzu.edu.cn/">高性能计算服务平台</a>
+            </div>
+            <div class="info">超算平台</div>
+         </div>
+      </div>
+      <div class="card">
+         <div class="card-header">
+            <div>
+               <a href="https://wisdom.chaoxing.com/newwisdom/doordatabase/database.html?pageId=51729&wfwfid=145952&websiteId=41192&choren=1&scope=1">外文数据库</a>
+            </div>
+            <div class="info">文献查阅</div>
+         </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<h1 id="学习网址"><a href="#学习网址" class="headerlink" title="学习网址"></a>学习网址</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -573,9 +625,9 @@
       </div>
     </div>
   </div>
-  <dvi>
-        <h1>工具网址</h1>
-    </dvi>
+</body>
+
+<h1 id="工具网址"><a href="#工具网址" class="headerlink" title="工具网址"></a>工具网址</h1><body>
     <div class="links-content">
         <div class="link-navigation">
             <div class="card">
@@ -684,9 +736,9 @@
       </div>       
     </div>
   </div>
-  <dvi>
-        <h1>试剂药品</h1>
-    </dvi>
+</body>
+
+<h1 id="试剂药品"><a href="#试剂药品" class="headerlink" title="试剂药品"></a>试剂药品</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -731,9 +783,9 @@
       </div>
     </div>
   </div>
-  <dvi>
-        <h1>一些论坛</h1>
-    </dvi>
+</body>
+
+<h1 id="一些论坛"><a href="#一些论坛" class="headerlink" title="一些论坛"></a>一些论坛</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -754,9 +806,9 @@
       </div>
     </div>
   </div>
-    <dvi>
-        <h1>影视网址</h1>
-    </dvi>
+</body>
+
+<h1 id="影视网址"><a href="#影视网址" class="headerlink" title="影视网址"></a>影视网址</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -793,9 +845,9 @@
       </div>
     </div>
   </div>
-  <dvi>
-        <h1>音乐网址</h1>
-    </dvi>
+</body>
+
+<h1 id="音乐网址"><a href="#音乐网址" class="headerlink" title="音乐网址"></a>音乐网址</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -808,9 +860,9 @@
       </div>
     </div>
   </div>
-  <dvi>
-        <h1>快乐一下</h1>
-    </dvi>
+</body>
+
+<h1 id="快乐一下"><a href="#快乐一下" class="headerlink" title="快乐一下"></a>快乐一下</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -831,9 +883,9 @@
       </div>
     </div>
   </div>
-  <dvi>
-        <h1>期刊网址</h1>
-    </dvi>
+</body>
+
+<h1 id="期刊网址"><a href="#期刊网址" class="headerlink" title="期刊网址"></a>期刊网址</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -948,9 +1000,11 @@
             <div class="info">预印版文献网址</div>
          </div>
       </div>
-        <dvi>
-        <h1>研究小组</h1>
-    </dvi>
+    </div>
+  </div>
+</body>
+
+<h1 id="研究小组"><a href="#研究小组" class="headerlink" title="研究小组"></a>研究小组</h1><body>
     <div class="links-content">
         <div class="link-navigation">
       <div class="card">
@@ -961,8 +1015,6 @@
             <div class="info">一个港科大的课题组</div>
          </div>
       </div>
-    </div>
-  </div>
     </div>
   </div>
 </body>
