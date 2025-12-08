@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>满东满仓</title>
+  <title>满东</title>
   
   <subtitle>真诚 热情 笃行</subtitle>
   <link href="https://mancekou.github.io/atom.xml" rel="self"/>
   
   <link href="https://mancekou.github.io/"/>
-  <updated>2025-09-22T11:44:08.959Z</updated>
+  <updated>2025-11-25T12:29:45.830Z</updated>
   <id>https://mancekou.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>油脂分配系数的测试及计算方法</title>
+    <link href="https://mancekou.github.io/posts/490b8db9/"/>
+    <id>https://mancekou.github.io/posts/490b8db9/</id>
+    <published>2025-11-25T11:40:43.000Z</published>
+    <updated>2025-11-25T12:29:45.830Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个实验原先其实一直有测，但是总是出现一个问题，如果高效的取出水相用于光谱测试，这次在温医这边补数据的时候，看着师弟放在铁架台上的分液漏斗，就突然在想是否可以像分液漏斗那样，从底部移出液体，受此启发，在样品管的下方直接戳了一个洞出来，让水层自然流出，其效果出奇的好。</p><span id="more"></span><p>操作步骤如下：</p><ol><li>三个5 mL的离心管，分别加入2 mL的水和正辛醇，再加入浓度为4 μL的光敏剂。</li></ol><blockquote><p>光敏剂浓度为5 mM，相当于体系浓度为5 μM</p></blockquote><ol start="2"><li><p>在密封好样品管的前提下，使用摇床摇晃24 h。</p></li><li><p>摇晃完后，使用离心机进行离心，使水油两层明显分层。</p></li></ol><blockquote><p>离心机转速为2000 rmp，5 min</p></blockquote><ol start="4"><li><p>再取三个离心管，使用尖锐的针状物在样品底部扎孔，让其能够自然留下，在离心管中收集纯净的水相。</p></li><li><p>收集的水相进行吸收测试，并测试标准曲线用于水相浓度的计算。</p></li><li><p>计算出水相浓度后，反推油相浓度，其油水的比值为Po&#x2F;w，在对这个比值进行取log，即为我们所说的油水分配系数。</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这个实验原先其实一直有测，但是总是出现一个问题，如果高效的取出水相用于光谱测试，这次在温医这边补数据的时候，看着师弟放在铁架台上的分液漏斗，就突然在想是否可以像分液漏斗那样，从底部移出液体，受此启发，在样品管的下方直接戳了一个洞出来，让水层自然流出，其效果出奇的好。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Wenyi" scheme="https://mancekou.github.io/categories/Wenyi/"/>
+    
+    
+    <category term="oil-solubility" scheme="https://mancekou.github.io/tags/oil-solubility/"/>
+    
+    <category term="water-solubility" scheme="https://mancekou.github.io/tags/water-solubility/"/>
+    
+  </entry>
   
   <entry>
     <title>激发态数据整理的便捷方法</title>
@@ -127,11 +150,11 @@
     <category term="Learning notes" scheme="https://mancekou.github.io/categories/Learning-notes/"/>
     
     
+    <category term="Chemdraw software" scheme="https://mancekou.github.io/tags/Chemdraw-software/"/>
+    
     <category term="Notes" scheme="https://mancekou.github.io/tags/Notes/"/>
     
     <category term="Draw" scheme="https://mancekou.github.io/tags/Draw/"/>
-    
-    <category term="Chemdraw software" scheme="https://mancekou.github.io/tags/Chemdraw-software/"/>
     
   </entry>
   
@@ -204,13 +227,13 @@
     <category term="Learning notes" scheme="https://mancekou.github.io/categories/Learning-notes/"/>
     
     
-    <category term="ChimeraX software" scheme="https://mancekou.github.io/tags/ChimeraX-software/"/>
-    
     <category term="Notes" scheme="https://mancekou.github.io/tags/Notes/"/>
     
-    <category term="Install software" scheme="https://mancekou.github.io/tags/Install-software/"/>
-    
     <category term="Draw" scheme="https://mancekou.github.io/tags/Draw/"/>
+    
+    <category term="ChimeraX software" scheme="https://mancekou.github.io/tags/ChimeraX-software/"/>
+    
+    <category term="Install software" scheme="https://mancekou.github.io/tags/Install-software/"/>
     
   </entry>
   
