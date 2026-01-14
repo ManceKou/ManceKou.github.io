@@ -277,6 +277,27 @@
       </tags>
   </entry>
   <entry>
+    <title>《个人收藏页》的位置更改说明</title>
+    <url>/posts/a783eba7/</url>
+    <content><![CDATA[<p>《<a href="https://mancekou.github.io/posts/6e97f420/#more">个人收藏页</a>》作为本人基于兴趣以及便利自己的目的进行的整理，但相信随着时间的流逝，也可能会有人喜欢上这个页面（自作多情的想法哈，哈哈哈哈），原先作为post方式显示在首页，就显的略微不合适和美观了。另一方面，随着其它博文的加入，这篇博文也会被排序到后方（博文基于时间排序，随着新博文的添加，旧的就会被挪到后面），不方便查找（现在去找NMR的氢谱和碳谱就有点不那么便利了，需要往后划一些才能看到），随产生更改该博文位置的想法。</p>
+<span id="more"></span>
+
+<h1 id="网络地址"><a href="#网络地址" class="headerlink" title="网络地址"></a>网络地址</h1><p>个人收藏页：<a href="https://mancekou.github.io/posts/6e97f420/#more">https://mancekou.github.io/posts/6e97f420/#more</a></p>
+<h1 id="更改说明"><a href="#更改说明" class="headerlink" title="更改说明"></a>更改说明</h1><p>原先的收藏页如下图所示，是显示在首页的顶部的，一方面我感觉内容有点空旷，不尽美观，二方面考虑到后期的博文需求，随将该篇博文的链接转移到侧边栏。</p>
+<p><img src="/posts/a783eba7/a783eba7-01.png" alt="a783eba7-01.png"></p>
+<p>相信有的朋友原先已经发现在侧边栏有一个叫<code>Bookmark</code>的链接，这个链接就是对应的《个人收藏页》这篇博文，今天特写这篇博文以作告知（不过做了名字的更改，由原先的<code>Bookmark</code>变更为<code>个人收藏页</code>）。</p>
+<h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><p>由于本博客是基于hexo的静态网页，对于重新写一个收藏页面，考虑到本人技术有限（俗称：太菜）。因此，使用了一个讨巧的方法，将该《个人收藏页》的发表时间进行了手动更改，将其挪到了最后（最后一篇博文）。现在如果还需要访问该页面的方法有两种，一个是点击如下图所示的首页链接<code>个人收藏页</code>，二是通过访问最后一篇博文（下拉的最底部，选择最后的页面）。</p>
+<p><img src="/posts/a783eba7/a783eba7-02.png" alt="a783eba7-02.png"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>《个人收藏页》作为一个我自己觉得用着还算方便的页面，希望阅读到的朋友也可以喜欢。这个收藏页本应该如一个导航页那般，但从新一个页面对于我来说还有点难度，并且现在被记录的内容还不算多，因此，就先将就用吧，等哪天这个页面变得不那么方便的时候，在考虑刚刚提到的写一个导航页。</p>
+]]></content>
+      <categories>
+        <category>Collection</category>
+      </categories>
+      <tags>
+        <tag>links</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chemdraw画化学分子式的参数设置</title>
     <url>/posts/904ca03/</url>
     <content><![CDATA[<p>Chemdraw默认的风格确实有点丑，不那么好看，所以总想探讨一下。如何才能画出和文献里的相像的分子式一直是我思考的问题，浏览文献可以发现，大家的画法各式各样，但整体美观。这篇博文的内容主要描述自己使用的一些参数设置，以得到还算看得过眼的化学分子式。</p>
@@ -1014,27 +1035,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《个人收藏页》的位置更改说明</title>
-    <url>/posts/a783eba7/</url>
-    <content><![CDATA[<p>《<a href="https://mancekou.github.io/posts/6e97f420/#more">个人收藏页</a>》作为本人基于兴趣以及便利自己的目的进行的整理，但相信随着时间的流逝，也可能会有人喜欢上这个页面（自作多情的想法哈，哈哈哈哈），原先作为post方式显示在首页，就显的略微不合适和美观了。另一方面，随着其它博文的加入，这篇博文也会被排序到后方（博文基于时间排序，随着新博文的添加，旧的就会被挪到后面），不方便查找（现在去找NMR的氢谱和碳谱就有点不那么便利了，需要往后划一些才能看到），随产生更改该博文位置的想法。</p>
-<span id="more"></span>
-
-<h1 id="网络地址"><a href="#网络地址" class="headerlink" title="网络地址"></a>网络地址</h1><p>个人收藏页：<a href="https://mancekou.github.io/posts/6e97f420/#more">https://mancekou.github.io/posts/6e97f420/#more</a></p>
-<h1 id="更改说明"><a href="#更改说明" class="headerlink" title="更改说明"></a>更改说明</h1><p>原先的收藏页如下图所示，是显示在首页的顶部的，一方面我感觉内容有点空旷，不尽美观，二方面考虑到后期的博文需求，随将该篇博文的链接转移到侧边栏。</p>
-<p><img src="/posts/a783eba7/a783eba7-01.png" alt="a783eba7-01.png"></p>
-<p>相信有的朋友原先已经发现在侧边栏有一个叫<code>Bookmark</code>的链接，这个链接就是对应的《个人收藏页》这篇博文，今天特写这篇博文以作告知（不过做了名字的更改，由原先的<code>Bookmark</code>变更为<code>个人收藏页</code>）。</p>
-<h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><p>由于本博客是基于hexo的静态网页，对于重新写一个收藏页面，考虑到本人技术有限（俗称：太菜）。因此，使用了一个讨巧的方法，将该《个人收藏页》的发表时间进行了手动更改，将其挪到了最后（最后一篇博文）。现在如果还需要访问该页面的方法有两种，一个是点击如下图所示的首页链接<code>个人收藏页</code>，二是通过访问最后一篇博文（下拉的最底部，选择最后的页面）。</p>
-<p><img src="/posts/a783eba7/a783eba7-02.png" alt="a783eba7-02.png"></p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>《个人收藏页》作为一个我自己觉得用着还算方便的页面，希望阅读到的朋友也可以喜欢。这个收藏页本应该如一个导航页那般，但从新一个页面对于我来说还有点难度，并且现在被记录的内容还不算多，因此，就先将就用吧，等哪天这个页面变得不那么方便的时候，在考虑刚刚提到的写一个导航页。</p>
-]]></content>
-      <categories>
-        <category>Collection</category>
-      </categories>
-      <tags>
-        <tag>links</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Multiwfn软件获取量化计算数据的教程</title>
     <url>/posts/f5b46dab/</url>
     <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
@@ -1124,6 +1124,116 @@
       <tags>
         <tag>Notes</tag>
         <tag>Multiwfn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>依旧历，总结25</title>
+    <url>/posts/6e91b400/</url>
+    <content><![CDATA[<p>依照旧历，每年起始，都会总结上一年，想想一年干了什么事，没干什么事，以及又想干什么事。一般而言，总结应该是年前的事，不过今年年前从西北内陆来到了东南沿海补实验，显得忙了一些，随把总结的事宜拖拉到现在。</p>
+<span id="more"></span>
+
+<h1 id="起始"><a href="#起始" class="headerlink" title="起始"></a>起始</h1><p>记得在元旦前夕写完24年总结后，问了王岩要不要一起跨年，刚好大家都闲着，就这样约上了跨年活动。下午下班后，我便坐着地铁去和王岩碰面，先在他家吃了年夜饭，后又和他的朋友一起去了老街跨年。</p>
+<p>兰州每逢节日，总还是热闹的，可能是西北人都喜热闹，不喜冷清吧。还记得当年万达茂放墩子炮，吸引好多人去围观，当然我也是那波凑热闹的人，最后回学校的时候，连地铁站都挤不进去，还是和一起的朋友骑共享单车到老街，才坐上的地铁。</p>
+<p>就这样2025的开端这样开始了，在兰州。</p>
+<h1 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h1><p>25年起始，那会儿，还在进行文章的第一次返修，看到审稿意见的时候，只想说，“这审稿人真会挑我不会回答的问题”。虽然和审稿人来回拉扯了很久，总共进行了三次返修，好在正月十五的时候顺利接收了。</p>
+<p>过去的一年里，<br>学业上，有所进步，硕士阶段做的工作终于见刊，凭借前面的已经发表的工作，以及参与的系列工作，申请到博士国奖。</p>
+<p>但仍有拖拉之处，个人工作的推进仍然缓慢，需要更加努力。</p>
+<h1 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h1><p>25年，继续尝试走出学校，虽然有时候还是一个人，但也开始与父母、朋友们一起出发，去见不同的风景。</p>
+<p>暑假时，带父母去九寨沟旅游，和师姐徒步虎跳峡，去文昌看火箭发射。由于想看日出云海，去爬了临夏的莲花山。</p>
+<p>除了徒步和爬山外，依旧选择通过骑行放松自己，五一的时候，一个人骑行了兰州-马坡-榆中环线（100 km）。普通周末如果不犯懒的话，就会去一个人骑车爬兰山。</p>
+<h1 id="见面"><a href="#见面" class="headerlink" title="见面"></a>见面</h1><p>过去的一年里和一些朋友继续保持着联系，时不时也会小聚一下，也见到一些很久没见到朋友，以及认识了一些新的朋友。</p>
+<p>三月份，<br>在兰州见到了赶考回家的尹盼，请她吃了我认为好吃的混沌（我觉得叫抄手更合适）。</p>
+<p>五一假期，参加周师兄答谢宴，在秦安见到了毕业的周师兄和张师兄，以及中科院的韩师姐。</p>
+<p>暑假见到了冯师姐和朱，参加了王婷的婚礼，见到了朋友王文元，因为时间不合适，就没在武都见到小石，不过常保持着联系。</p>
+<p>国庆见到了本科同学沈耿亮，在饭桌上，大家依旧健聊。耿亮应该是我大学毕业后我见到的第一个大学同学（当然张耀除外，因为，他和我既是大学同学，也是研究生室友）。</p>
+<p>在慈溪做实验的这段时间，认识了师兄课题组的学生，大家都很好，得空时，会一起约饭、玩耍（当然也很感谢他们教我做实验）。</p>
+<h1 id="欢送"><a href="#欢送" class="headerlink" title="欢送"></a>欢送</h1><p>六月，欢送毕业生——发生在学校里的季节性活动。李师兄做出了自己的顶刊工作，去了宁大发展，崔师兄留在了兰州继续开展博士后工作，师妹们都回到了自己老家，寻找属于自己的那一份工作。</p>
+<p>在欢送活动上，课题的人都有参加。张师妹因为家里有事，没能参加（至于她自己的毕业照有没有拍上，我便不知道了，反正课题组的毕业照她没有参加）。</p>
+<p>#小结</p>
+<p>25年，我感觉是很快的一年，最开始从家里过完年，然后去到兰州上班，中间经历了暑假，然后又开始新的学期，现在已经是新的一年。</p>
+<p>这种感觉上的时间快，可能是因为焦虑变得更多了，大量的时间被低效的工作方式浪费，同时又在哪里通过额外的加班来弥补那一点心的不安。最后形成一种恶性循环，不停地加班，低效的工作，导致又加班。现在来看，有一个合适的规划，是一个很重要的事，既需要当天的待办事项，也需要未来一段时间的代办事项，同时，对完成事项，及时的进行归纳整理总结。</p>
+<p>回顾去年的几个目标</p>
+<ul>
+<li>和父母联系的次数多一些</li>
+<li>和朋友保持着联系</li>
+<li>工作上取得一些进展</li>
+<li>再次挑战自己，多出去转转</li>
+<li>大家都开心快乐</li>
+</ul>
+<p>现在来看，每个目标都有完成，和父母保持了比以前多联系，也主动的想起问问家里人近况，朋友继续保持着联系，工作进展有所推进，也出门转过。</p>
+<p>下一年里，希望毕业工作量能够完全推完，不要再在27年做实验了。就业工作也能推上日程。其它，还是如24年目标那样，继续保持着，常和父母、朋友联系，适当放松。</p>
+]]></content>
+      <categories>
+        <category>Summary</category>
+      </categories>
+      <tags>
+        <tag>Record</tag>
+        <tag>Amuse oneself</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Hexo博客内容迁移的备忘录</title>
+    <url>/posts/e6b74078/</url>
+    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
+<span id="more"></span>
+<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
+<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
+<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
+<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
+<blockquote>
+<p>自己测试了一下，也可以不删除这个文件夹。</p>
+</blockquote>
+<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
+<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
+<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
+<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
+<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
+</blockquote>
+<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
+<p>先设置用户名：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>your name</code>建议根据github仓库设置。</p>
+<p>再设置邮箱：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
+
+<p><code>your email</code>建议根据github仓库设置。</p>
+<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
+<ul>
+<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
+<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
+</ul>
+<p>这里的Users为电脑的用户名。</p>
+<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
+<p>剩下的回车即可，直至结束。</p>
+<p>当看到如下内容后，说明设置成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>同时他也会展示他的密钥内容。</p>
+<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
+<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
+<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
+<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
+<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
+<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
+<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
+<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
+<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
+<blockquote>
+<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
+</blockquote>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
+<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>Hexo</tag>
+        <tag>Blogs</tag>
       </tags>
   </entry>
   <entry>
@@ -1271,6 +1381,432 @@
       <tags>
         <tag>Computational chemistry</tag>
         <tag>Gaussian software</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见NMR碳谱溶剂峰</title>
+    <url>/posts/2504b91/</url>
+    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+<span id="more"></span>
+
+<style>
+        
+        .table-row-hover {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .table-row-hover th, .table-row-hover td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .table-row-hover th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* 整行高亮 - 优先级较低 */
+        .table-row-hover tr:hover td {
+            background-color: #e3f2fd !important;
+        }
+
+        /* 单元格高亮 - 提高优先级 */
+        .table-row-hover tr:hover td:hover {
+            background-color: #a1e1c3 !important;
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 2; /* 确保在最上层 */
+        }
+</style>
+
+<table class="table-row-hover">
+    <thead>
+        <tr>
+            <th>溶剂</th>
+            <th></th>
+            <th style>CDCl<sub>3</sub></th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
+            <th style>C<sub>6</sub>D<sub>6</sub></th>
+            <th style>CD<sub>3</sub>CN</th>
+            <th style>CD<sub>3</sub>OD</th>
+            <th style>D<sub>2</sub>O</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" style>溶剂峰</th>
+            <td style>—</td>
+            <td>77.1</td>
+            <td>206</td>
+            <td>39.5</td>
+            <td>128.1</td>
+            <td>118.3</td>
+            <td>49.0</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td style>—</td>
+            <td>—</td>
+            <td>29.8</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1.3</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙酸</th>
+            <td>CO</td>
+            <td>176</td>
+            <td>172.3</td>
+            <td>171.9</td>
+            <td>176</td>
+            <td>173.2</td>
+            <td>175.1</td>
+            <td>177.2</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>20.8</td>
+            <td>20.5</td>
+            <td>20.9</td>
+            <td>20.3</td>
+            <td>20.7</td>
+            <td>20.6</td>
+            <td>21.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>丙酮</th>
+            <td>CO</td>
+            <td>207.1</td>
+            <td>205.9</td>
+            <td>206.3</td>
+            <td>204</td>
+            <td>207.4</td>
+            <td>209.7</td>
+            <td>215</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>30.9</td>
+            <td>30.6</td>
+            <td>30.6</td>
+            <td>30.1</td>
+            <td>30.9</td>
+            <td>30.7</td>
+            <td>30.9</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙腈</th>
+            <td>CN</td>
+            <td>116.4</td>
+            <td>117.6</td>
+            <td>117.9</td>
+            <td>116</td>
+            <td>118.3</td>
+            <td>118.1</td>
+            <td>119.7</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>1.9</td>
+            <td>1.1</td>
+            <td>1.0</td>
+            <td>2.0</td>
+            <td>1.8</td>
+            <td>0.8</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <th style>甲醇</th>
+            <td>—</td>
+            <td>50.4</td>
+            <td>49.8</td>
+            <td>48.6</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.5</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醚</th>
+            <td>CH<sub>2</sub></td>
+            <td>65.9</td>
+            <td>66.0</td>
+            <td>62.0</td>
+            <td>66.0</td>
+            <td>66.4</td>
+            <td>66.9</td>
+            <td>66.4</td>
+        </tr>
+        <tr>
+            <td style>CH<sub>3</sub></td>
+            <td>15.2</td>
+            <td>15.8</td>
+            <td>15.0</td>
+            <td>15.5</td>
+            <td>15.6</td>
+            <td>15.5</td>
+            <td>14.8</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醇</th>
+            <td>CH<sub>2</sub></td>
+            <td>58.3</td>
+            <td>57.8</td>
+            <td>56.1</td>
+            <td>58.0</td>
+            <td>58.0</td>
+            <td>58.3</td>
+            <td>58.0</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>18.4</td>
+            <td>18.9</td>
+            <td>18.5</td>
+            <td>18.7</td>
+            <td>18.8</td>
+            <td>18.4</td>
+            <td>17.5</td>
+        </tr>
+        <tr>
+            <th rowspan="4">乙酸乙酯</th>
+            <td>CO</td>
+            <td>171.4</td>
+            <td>171</td>
+            <td>170.3</td>
+            <td>170.4</td>
+            <td>171.7</td>
+            <td>172.9</td>
+            <td>175.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>60.5</td>
+            <td>60.6</td>
+            <td>59.7</td>
+            <td>60.2</td>
+            <td>61.0</td>
+            <td>61.5</td>
+            <td>62.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub>CO</td>
+            <td>21.0</td>
+            <td>20.8</td>
+            <td>20.7</td>
+            <td>20.2</td>
+            <td>21.2</td>
+            <td>20.9</td>
+            <td>21.1</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub>CH<sub>3</sub></td>
+            <td>14.2</td>
+            <td>14.5</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>14.5</td>
+            <td>14.5</td>
+            <td>13.9</td>
+        </tr>
+        <tr>
+            <th>氯仿</th>
+            <td>—</td>
+            <td>77.3</td>
+            <td>79.2</td>
+            <td>79.1</td>
+            <td>77.8</td>
+            <td>79.2</td>
+            <td>79.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">正己烷</th>
+            <td>CH<sub>2</sub></td>
+            <td>31.6</td>
+            <td>32.3</td>
+            <td>31.0</td>
+            <td>32.0</td>
+            <td>32.4</td>
+            <td>32.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>22.7</td>
+            <td>23.3</td>
+            <td>22.0</td>
+            <td>23.0</td>
+            <td>23.4</td>
+            <td>23.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>14.1</td>
+            <td>14.3</td>
+            <td>13.9</td>
+            <td>14.3</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">二甲基甲酰胺</th>
+            <td>CHO</td>
+            <td>162.3</td>
+            <td>163</td>
+            <td>163</td>
+            <td>162</td>
+            <td>163.2</td>
+            <td>164.7</td>
+            <td>165.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>36.4</td>
+            <td>36.1</td>
+            <td>35.7</td>
+            <td>35.0</td>
+            <td>36.6</td>
+            <td>36.9</td>
+            <td>37.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>31.4</td>
+            <td>31.1</td>
+            <td>30.7</td>
+            <td>30.7</td>
+            <td>31.3</td>
+            <td>31.6</td>
+            <td>32.0</td>
+        </tr>
+        <tr>
+            <th>二甲基亚砜</th>
+            <td>—</td>
+            <td>40.8/td>
+            </td><td>41.2</td>
+            <td>40.4</td>
+            <td>40.0</td>
+            <td>41.3</td>
+            <td>40.4</td>
+            <td>39.4</td>
+        </tr>
+        <tr>
+            <th>二氯甲烷</th>
+            <td>—</td>
+            <td>53.5</td>
+            <td>54.9</td>
+            <td>54.8</td>
+            <td>53.5</td>
+            <td>55.3</td>
+            <td>54.8</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th>环己烷</th>
+            <td>—</td>
+            <td>26.9</td>
+            <td>27.5</td>
+            <td>26.3</td>
+            <td>27.3</td>
+            <td>27.6</td>
+            <td>28.0</td>
+            <td>—</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>NMR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>油脂分配系数的测试及计算方法</title>
+    <url>/posts/490b8db9/</url>
+    <content><![CDATA[<p>这个实验原先其实一直有测，但是总是出现一个问题，如果高效的取出水相用于光谱测试，这次在温医这边补数据的时候，看着师弟放在铁架台上的分液漏斗，就突然在想是否可以像分液漏斗那样，从底部移出液体，受此启发，在样品管的下方直接戳了一个洞出来，让水层自然流出，其效果出奇的好。</p>
+<span id="more"></span>
+
+<p>操作步骤如下：</p>
+<ol>
+<li>三个5 mL的离心管，分别加入2 mL的水和正辛醇，再加入浓度为4 μL的光敏剂。</li>
+</ol>
+<blockquote>
+<p>光敏剂浓度为5 mM，相当于体系浓度为5 μM</p>
+</blockquote>
+<ol start="2">
+<li><p>在密封好样品管的前提下，使用摇床摇晃24 h。</p>
+</li>
+<li><p>摇晃完后，使用离心机进行离心，使水油两层明显分层。</p>
+</li>
+</ol>
+<blockquote>
+<p>离心机转速为2000 rmp，5 min</p>
+</blockquote>
+<ol start="4">
+<li><p>再取三个离心管，使用尖锐的针状物在样品底部扎孔，让其能够自然留下，在离心管中收集纯净的水相。</p>
+</li>
+<li><p>收集的水相进行吸收测试，并测试标准曲线用于水相浓度的计算。</p>
+</li>
+<li><p>计算出水相浓度后，反推油相浓度，其油水的比值为Po&#x2F;w，在对这个比值进行取log，即为我们所说的油水分配系数。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Wenyi</category>
+      </categories>
+      <tags>
+        <tag>oil-solubility</tag>
+        <tag>water-solubility</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>激发态数据整理的便捷方法</title>
+    <url>/posts/383282c1/</url>
+    <content><![CDATA[<p>俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点辛苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。</p>
+<span id="more"></span>
+
+<h1 id="需求的产生"><a href="#需求的产生" class="headerlink" title="需求的产生"></a>需求的产生</h1><p>虽然卢天老师开发的Multiwfn软件已经非常人性化，只需将激发态计算的out&#x2F;log文件，拖入Multiwfn，简单的敲击几下键盘就可以得到一个txt文件，里面包含了我们需要使用到的信息（如下图所示）。</p>
+<blockquote>
+<p>上然的“虽然”只是为引出下文，卢老师开发的软件很好，如果没有他无私的贡献，也不会有这部分内容的产生。</p>
+</blockquote>
+<p><img src="/posts/383282c1/383282c1-01.png" alt="383282c1-01"></p>
+<p>但这边的需求是需要将这个文本里的信息整理到一个word表格中（如下图所示），这样就需要人工的进行好多次的Ctrl C和Ctrl V，实在是太废时间和精力。</p>
+<p><img src="/posts/383282c1/383282c1-02.png" alt="383282c1-02"></p>
+<p>所以就在想，能不能让deepseek去生成一个python文件，当读入Multiwfn产生的txt文本文件后，将不同激发态的跃迁轨道、跃迁轨道的贡献、激发波长、激发能和振子强度整理到一个excel表中，同时设置两个阈值，分别控制跃迁轨道的贡献和振子强度，以实现输出仅大于等于振子强度阈值的激发态和大于等于跃迁轨道的贡献的跃迁轨道。最后还需要保证强制输出第一个激发态。</p>
+<h1 id="与deepseek的友好交流"><a href="#与deepseek的友好交流" class="headerlink" title="与deepseek的友好交流"></a>与deepseek的友好交流</h1><p>带着这些需求，便开始与deepseek的多番交流，以及产生代码的测试。产生了以下符合上述条件的代码：</p>
+<div style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_excitation_data</span>(<span class="params">file_path, </span></span><br><span class="line"><span class="params">                        oscillator_strength_threshold=<span class="number">0.01</span>,  <span class="comment"># 振子强度阈值默认0.01</span></span></span><br><span class="line"><span class="params">                        transition_contribution_threshold=<span class="number">5.0</span></span>):  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line">    <span class="comment"># 读取文件内容</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        lines = file.readlines()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 初始化结果列表</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&#x27;State&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Transition&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Contribution&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;E, nm(eV)&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;o.s.&#x27;</span>: []</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 正则表达式匹配每一部分</span></span><br><span class="line">    state_pattern = re.<span class="built_in">compile</span>(</span><br><span class="line">        <span class="string">r&#x27;#\s*(\d+)\s*([\d.]+)\s*eV\s*([\d.]+)\s*nm\s*f=\s*([\d.]+)\s*Spin multiplicity=\s*(\d+):&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    transition_pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;([A-Za-z0-9+-]+)\s*-&gt;\s*([A-Za-z0-9+-]+)\s*([\d.]+)%&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    first_state_processed = <span class="literal">False</span>  <span class="comment"># 标记是否已处理第一个态</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">        line = lines[i].strip()</span><br><span class="line">        <span class="keyword">if</span> line.startswith(<span class="string">&#x27;#&#x27;</span>):</span><br><span class="line">            <span class="comment"># 解析态信息</span></span><br><span class="line">            <span class="keyword">match</span> = state_pattern.<span class="keyword">match</span>(line)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">match</span>:</span><br><span class="line">                state_num = <span class="built_in">int</span>(<span class="keyword">match</span>.group(<span class="number">1</span>))</span><br><span class="line">                energy = <span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">2</span>)))</span><br><span class="line">                wavelength = <span class="keyword">match</span>.group(<span class="number">3</span>)</span><br><span class="line">                oscillator_strength = <span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">4</span>))</span><br><span class="line">                spin_multiplicity = <span class="keyword">match</span>.group(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 检查是否是第一个态或振子强度大于阈值</span></span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">not</span> first_state_processed) <span class="keyword">or</span> (oscillator_strength &gt;= oscillator_strength_threshold):</span><br><span class="line">                    <span class="comment"># 解析跃迁信息</span></span><br><span class="line">                    i += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">                        transition_line = lines[i].strip()</span><br><span class="line">                        transitions = []</span><br><span class="line">                        contributions = []</span><br><span class="line">                        <span class="keyword">for</span> part <span class="keyword">in</span> transition_line.split(<span class="string">&#x27;,&#x27;</span>):</span><br><span class="line">                            part = part.strip()</span><br><span class="line">                            trans_match = transition_pattern.<span class="keyword">match</span>(part)</span><br><span class="line">                            <span class="keyword">if</span> trans_match:</span><br><span class="line">                                contribution = <span class="built_in">float</span>(trans_match.group(<span class="number">3</span>))</span><br><span class="line">                                <span class="comment"># 只保留贡献大于阈值的跃迁</span></span><br><span class="line">                                <span class="keyword">if</span> contribution &gt;= transition_contribution_threshold:</span><br><span class="line">                                    from_orb = trans_match.group(<span class="number">1</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    to_orb = trans_match.group(<span class="number">2</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    contribution_str = <span class="string">f&quot;<span class="subst">&#123;contribution&#125;</span>%&quot;</span></span><br><span class="line">                                    transitions.append(<span class="string">f&quot;<span class="subst">&#123;from_orb&#125;</span>→<span class="subst">&#123;to_orb&#125;</span>&quot;</span>)</span><br><span class="line">                                    contributions.append(contribution_str)</span><br><span class="line"></span><br><span class="line">                        <span class="comment"># 如果有符合要求的跃迁，则添加到结果中</span></span><br><span class="line">                        <span class="keyword">if</span> transitions:</span><br><span class="line">                            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(transitions)):</span><br><span class="line">                                data[<span class="string">&#x27;State&#x27;</span>].append(<span class="string">f&quot;S<span class="subst">&#123;state_num&#125;</span>&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;Transition&#x27;</span>].append(transitions[j])</span><br><span class="line">                                data[<span class="string">&#x27;Contribution&#x27;</span>].append(contributions[j])</span><br><span class="line">                                data[<span class="string">&#x27;E, nm(eV)&#x27;</span>].append(<span class="string">f&quot;<span class="subst">&#123;wavelength&#125;</span> (<span class="subst">&#123;energy&#125;</span>)&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;o.s.&#x27;</span>].append(oscillator_strength <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                    </span><br><span class="line">                    <span class="comment"># 标记第一个态已处理</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="keyword">not</span> first_state_processed:</span><br><span class="line">                        first_state_processed = <span class="literal">True</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pd.DataFrame(data)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">save_to_excel</span>(<span class="params">df, output_file</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 确保目录存在</span></span><br><span class="line">        output_path = Path(output_file)</span><br><span class="line">        output_path.parent.mkdir(parents=<span class="literal">True</span>, exist_ok=<span class="literal">True</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 保存Excel文件</span></span><br><span class="line">        df.to_excel(output_file, index=<span class="literal">False</span>, sheet_name=<span class="string">&#x27;Sheet1&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;文件已成功保存到 <span class="subst">&#123;output_file&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> PermissionError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;权限错误：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;建议操作：&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;1. 关闭Excel或其他正在使用该文件的程序&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;2. 检查是否有权写入目录：<span class="subst">&#123;output_path.parent&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;3. 尝试使用其他路径，如桌面目录&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;保存失败：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    input_file = <span class="string">&#x27;sample_exc.txt&#x27;</span>	<span class="comment"># 建议统一修改文件名为sample_exc.txt</span></span><br><span class="line">    output_file = <span class="string">&#x27;excitation_states.xlsx&#x27;</span></span><br><span class="line">    osc_threshold = <span class="number">0.01</span>  <span class="comment"># 振子强度阈值默认0.01</span></span><br><span class="line">    contrib_threshold = <span class="number">5.0</span>  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入振子强度阈值</span></span><br><span class="line">    user_input_osc = <span class="built_in">input</span>(<span class="string">f&quot;请输入振子强度阈值（默认值为 <span class="subst">&#123;osc_threshold&#125;</span>，S1将始终输出）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_osc.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            osc_threshold = <span class="built_in">float</span>(user_input_osc)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认振子强度阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入跃迁贡献阈值</span></span><br><span class="line">    user_input_contrib = <span class="built_in">input</span>(<span class="string">f&quot;请输入跃迁贡献阈值(%)（默认值为 <span class="subst">&#123;contrib_threshold&#125;</span>，小于此值的跃迁将被过滤）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_contrib.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            contrib_threshold = <span class="built_in">float</span>(user_input_contrib)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认跃迁贡献阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    df = parse_excitation_data(input_file, osc_threshold, contrib_threshold)</span><br><span class="line">    save_to_excel(df, output_file)</span><br></pre></td></tr></table></figure>
+</div>
+
+<p>首先，使用该部分代码，需要确保你运行的python安装了<code>re</code>、<code>pandas</code>、<code>pathlib</code>这三个库。其次，将待处理文件改名为<code>sample_exc.txt</code>。接着，将上述代码保存为<code>sample_exc.py</code>且与<code>sample_exc.txt</code>在同一个文件夹中。最后，命令行运行<code>python sample_exc.py</code>，应该就可以产生一个<code>excitation_states.xlsx</code>的文件，excel中的内容大概如下图所示，只需要将内容粘贴到word中即可。</p>
+<p><img src="/posts/383282c1/383282c1-03.png" alt="383282c1-03"></p>
+<p>当然建议上述python操作，最好是在虚拟环境中运行，感觉会比较安全，在运行时，只需要在对应的虚拟环境中安装对应的库即可。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过这个例子可以看出，将一些简单但需要重复的事，交给deepseek这种大语言模型完全是可行，像我这样一个对python并不是很懂的人，也可以借助与大语言模型的交流，来解决实际工作中的问题。总之，学习一直在路上。</p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>Multiwfn</tag>
+        <tag>Excite states</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1758,472 +2294,6 @@
       </tags>
   </entry>
   <entry>
-    <title>油脂分配系数的测试及计算方法</title>
-    <url>/posts/490b8db9/</url>
-    <content><![CDATA[<p>这个实验原先其实一直有测，但是总是出现一个问题，如果高效的取出水相用于光谱测试，这次在温医这边补数据的时候，看着师弟放在铁架台上的分液漏斗，就突然在想是否可以像分液漏斗那样，从底部移出液体，受此启发，在样品管的下方直接戳了一个洞出来，让水层自然流出，其效果出奇的好。</p>
-<span id="more"></span>
-
-<p>操作步骤如下：</p>
-<ol>
-<li>三个5 mL的离心管，分别加入2 mL的水和正辛醇，再加入浓度为4 μL的光敏剂。</li>
-</ol>
-<blockquote>
-<p>光敏剂浓度为5 mM，相当于体系浓度为5 μM</p>
-</blockquote>
-<ol start="2">
-<li><p>在密封好样品管的前提下，使用摇床摇晃24 h。</p>
-</li>
-<li><p>摇晃完后，使用离心机进行离心，使水油两层明显分层。</p>
-</li>
-</ol>
-<blockquote>
-<p>离心机转速为2000 rmp，5 min</p>
-</blockquote>
-<ol start="4">
-<li><p>再取三个离心管，使用尖锐的针状物在样品底部扎孔，让其能够自然留下，在离心管中收集纯净的水相。</p>
-</li>
-<li><p>收集的水相进行吸收测试，并测试标准曲线用于水相浓度的计算。</p>
-</li>
-<li><p>计算出水相浓度后，反推油相浓度，其油水的比值为Po&#x2F;w，在对这个比值进行取log，即为我们所说的油水分配系数。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Wenyi</category>
-      </categories>
-      <tags>
-        <tag>oil-solubility</tag>
-        <tag>water-solubility</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见NMR碳谱溶剂峰</title>
-    <url>/posts/2504b91/</url>
-    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
-<span id="more"></span>
-
-<style>
-        
-        .table-row-hover {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        .table-row-hover th, .table-row-hover td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .table-row-hover th {
-            background-color: #f8f9fa;
-            font-weight: bold;
-        }
-
-        /* 整行高亮 - 优先级较低 */
-        .table-row-hover tr:hover td {
-            background-color: #e3f2fd !important;
-        }
-
-        /* 单元格高亮 - 提高优先级 */
-        .table-row-hover tr:hover td:hover {
-            background-color: #a1e1c3 !important;
-            transform: scale(1.03);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 2; /* 确保在最上层 */
-        }
-</style>
-
-<table class="table-row-hover">
-    <thead>
-        <tr>
-            <th>溶剂</th>
-            <th></th>
-            <th style>CDCl<sub>3</sub></th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
-            <th style>C<sub>6</sub>D<sub>6</sub></th>
-            <th style>CD<sub>3</sub>CN</th>
-            <th style>CD<sub>3</sub>OD</th>
-            <th style>D<sub>2</sub>O</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th rowspan="2" style>溶剂峰</th>
-            <td style>—</td>
-            <td>77.1</td>
-            <td>206</td>
-            <td>39.5</td>
-            <td>128.1</td>
-            <td>118.3</td>
-            <td>49.0</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td style>—</td>
-            <td>—</td>
-            <td>29.8</td>
-            <td>—</td>
-            <td>—</td>
-            <td>1.3</td>
-            <td>—</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙酸</th>
-            <td>CO</td>
-            <td>176</td>
-            <td>172.3</td>
-            <td>171.9</td>
-            <td>176</td>
-            <td>173.2</td>
-            <td>175.1</td>
-            <td>177.2</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>20.8</td>
-            <td>20.5</td>
-            <td>20.9</td>
-            <td>20.3</td>
-            <td>20.7</td>
-            <td>20.6</td>
-            <td>21.0</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>丙酮</th>
-            <td>CO</td>
-            <td>207.1</td>
-            <td>205.9</td>
-            <td>206.3</td>
-            <td>204</td>
-            <td>207.4</td>
-            <td>209.7</td>
-            <td>215</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>30.9</td>
-            <td>30.6</td>
-            <td>30.6</td>
-            <td>30.1</td>
-            <td>30.9</td>
-            <td>30.7</td>
-            <td>30.9</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙腈</th>
-            <td>CN</td>
-            <td>116.4</td>
-            <td>117.6</td>
-            <td>117.9</td>
-            <td>116</td>
-            <td>118.3</td>
-            <td>118.1</td>
-            <td>119.7</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>1.9</td>
-            <td>1.1</td>
-            <td>1.0</td>
-            <td>2.0</td>
-            <td>1.8</td>
-            <td>0.8</td>
-            <td>1.5</td>
-        </tr>
-        <tr>
-            <th style>甲醇</th>
-            <td>—</td>
-            <td>50.4</td>
-            <td>49.8</td>
-            <td>48.6</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.5</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醚</th>
-            <td>CH<sub>2</sub></td>
-            <td>65.9</td>
-            <td>66.0</td>
-            <td>62.0</td>
-            <td>66.0</td>
-            <td>66.4</td>
-            <td>66.9</td>
-            <td>66.4</td>
-        </tr>
-        <tr>
-            <td style>CH<sub>3</sub></td>
-            <td>15.2</td>
-            <td>15.8</td>
-            <td>15.0</td>
-            <td>15.5</td>
-            <td>15.6</td>
-            <td>15.5</td>
-            <td>14.8</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醇</th>
-            <td>CH<sub>2</sub></td>
-            <td>58.3</td>
-            <td>57.8</td>
-            <td>56.1</td>
-            <td>58.0</td>
-            <td>58.0</td>
-            <td>58.3</td>
-            <td>58.0</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>18.4</td>
-            <td>18.9</td>
-            <td>18.5</td>
-            <td>18.7</td>
-            <td>18.8</td>
-            <td>18.4</td>
-            <td>17.5</td>
-        </tr>
-        <tr>
-            <th rowspan="4">乙酸乙酯</th>
-            <td>CO</td>
-            <td>171.4</td>
-            <td>171</td>
-            <td>170.3</td>
-            <td>170.4</td>
-            <td>171.7</td>
-            <td>172.9</td>
-            <td>175.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>60.5</td>
-            <td>60.6</td>
-            <td>59.7</td>
-            <td>60.2</td>
-            <td>61.0</td>
-            <td>61.5</td>
-            <td>62.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub>CO</td>
-            <td>21.0</td>
-            <td>20.8</td>
-            <td>20.7</td>
-            <td>20.2</td>
-            <td>21.2</td>
-            <td>20.9</td>
-            <td>21.1</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub>CH<sub>3</sub></td>
-            <td>14.2</td>
-            <td>14.5</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>14.5</td>
-            <td>14.5</td>
-            <td>13.9</td>
-        </tr>
-        <tr>
-            <th>氯仿</th>
-            <td>—</td>
-            <td>77.3</td>
-            <td>79.2</td>
-            <td>79.1</td>
-            <td>77.8</td>
-            <td>79.2</td>
-            <td>79.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">正己烷</th>
-            <td>CH<sub>2</sub></td>
-            <td>31.6</td>
-            <td>32.3</td>
-            <td>31.0</td>
-            <td>32.0</td>
-            <td>32.4</td>
-            <td>32.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>22.7</td>
-            <td>23.3</td>
-            <td>22.0</td>
-            <td>23.0</td>
-            <td>23.4</td>
-            <td>23.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>14.1</td>
-            <td>14.3</td>
-            <td>13.9</td>
-            <td>14.3</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">二甲基甲酰胺</th>
-            <td>CHO</td>
-            <td>162.3</td>
-            <td>163</td>
-            <td>163</td>
-            <td>162</td>
-            <td>163.2</td>
-            <td>164.7</td>
-            <td>165.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>36.4</td>
-            <td>36.1</td>
-            <td>35.7</td>
-            <td>35.0</td>
-            <td>36.6</td>
-            <td>36.9</td>
-            <td>37.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>31.4</td>
-            <td>31.1</td>
-            <td>30.7</td>
-            <td>30.7</td>
-            <td>31.3</td>
-            <td>31.6</td>
-            <td>32.0</td>
-        </tr>
-        <tr>
-            <th>二甲基亚砜</th>
-            <td>—</td>
-            <td>40.8/td>
-            </td><td>41.2</td>
-            <td>40.4</td>
-            <td>40.0</td>
-            <td>41.3</td>
-            <td>40.4</td>
-            <td>39.4</td>
-        </tr>
-        <tr>
-            <th>二氯甲烷</th>
-            <td>—</td>
-            <td>53.5</td>
-            <td>54.9</td>
-            <td>54.8</td>
-            <td>53.5</td>
-            <td>55.3</td>
-            <td>54.8</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th>环己烷</th>
-            <td>—</td>
-            <td>26.9</td>
-            <td>27.5</td>
-            <td>26.3</td>
-            <td>27.3</td>
-            <td>27.6</td>
-            <td>28.0</td>
-            <td>—</td>
-        </tr>
-    </tbody>
-</table>
-
-<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
-]]></content>
-      <categories>
-        <category>Learning notes</category>
-      </categories>
-      <tags>
-        <tag>Notes</tag>
-        <tag>NMR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>对热激活延迟荧光的认识</title>
-    <url>/posts/2a7a5801/</url>
-    <content><![CDATA[<p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p>
-<span id="more"></span>
-
-<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物&#x2F;树枝状型。</p>
-<h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p>
-<img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/">
-    
-<blockquote>
-<p>伊红的分子结构后期明确后再修订</p>
-</blockquote>
-<h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p>
-<img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/">
-
-<blockquote>
-<p>图片文献暂未找到，以后找到再进行补充</p>
-</blockquote>
-<p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p>
-<h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p>
-<p>系间窜越常数计算公式：</p>
-<p>$$ k_{\mathrm{isc}}&#x3D;\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right] $$</p>
-<p>$$ \hbar &#x3D; \frac{h}{2\pi} $$</p>
-<blockquote>
-<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV&#x2F;K）<br>T：温度（298 K）<br>$\Delta E_{\mathrm{S-T}}$：单三重态能隙（$E_{\mathrm{S_1}}-E_{\mathrm{T_1}}$），数值需大于0</p>
-</blockquote>
-<p>反系间窜越常数计算公式：</p>
-<p>$$ k_{\mathrm{risc}}&#x3D;k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right) $$</p>
-<p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
-<p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>
-]]></content>
-      <categories>
-        <category>Theory</category>
-      </categories>
-      <tags>
-        <tag>Luminescence</tag>
-        <tag>TADF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>激发态数据整理的便捷方法</title>
-    <url>/posts/383282c1/</url>
-    <content><![CDATA[<p>俗话说：有需求才有产出。由于经常需要整理激发态的相关跃迁信息，但每次都是人工进行Ctrl C和Ctrl V，还是感觉有点辛苦和无聊，且可能出错。秉着能被重复执行的行为，必然就会有更简单方法代替的原则。再加上大语言模型的普及，遂产生能不能用deepseek产生一个python代码的想法，帮我快速整理目标信息到表格，这样数据就可以直接被使用。</p>
-<span id="more"></span>
-
-<h1 id="需求的产生"><a href="#需求的产生" class="headerlink" title="需求的产生"></a>需求的产生</h1><p>虽然卢天老师开发的Multiwfn软件已经非常人性化，只需将激发态计算的out&#x2F;log文件，拖入Multiwfn，简单的敲击几下键盘就可以得到一个txt文件，里面包含了我们需要使用到的信息（如下图所示）。</p>
-<blockquote>
-<p>上然的“虽然”只是为引出下文，卢老师开发的软件很好，如果没有他无私的贡献，也不会有这部分内容的产生。</p>
-</blockquote>
-<p><img src="/posts/383282c1/383282c1-01.png" alt="383282c1-01"></p>
-<p>但这边的需求是需要将这个文本里的信息整理到一个word表格中（如下图所示），这样就需要人工的进行好多次的Ctrl C和Ctrl V，实在是太废时间和精力。</p>
-<p><img src="/posts/383282c1/383282c1-02.png" alt="383282c1-02"></p>
-<p>所以就在想，能不能让deepseek去生成一个python文件，当读入Multiwfn产生的txt文本文件后，将不同激发态的跃迁轨道、跃迁轨道的贡献、激发波长、激发能和振子强度整理到一个excel表中，同时设置两个阈值，分别控制跃迁轨道的贡献和振子强度，以实现输出仅大于等于振子强度阈值的激发态和大于等于跃迁轨道的贡献的跃迁轨道。最后还需要保证强制输出第一个激发态。</p>
-<h1 id="与deepseek的友好交流"><a href="#与deepseek的友好交流" class="headerlink" title="与deepseek的友好交流"></a>与deepseek的友好交流</h1><p>带着这些需求，便开始与deepseek的多番交流，以及产生代码的测试。产生了以下符合上述条件的代码：</p>
-<div style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">parse_excitation_data</span>(<span class="params">file_path, </span></span><br><span class="line"><span class="params">                        oscillator_strength_threshold=<span class="number">0.01</span>,  <span class="comment"># 振子强度阈值默认0.01</span></span></span><br><span class="line"><span class="params">                        transition_contribution_threshold=<span class="number">5.0</span></span>):  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line">    <span class="comment"># 读取文件内容</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">        lines = file.readlines()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 初始化结果列表</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&#x27;State&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Transition&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;Contribution&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;E, nm(eV)&#x27;</span>: [],</span><br><span class="line">        <span class="string">&#x27;o.s.&#x27;</span>: []</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 正则表达式匹配每一部分</span></span><br><span class="line">    state_pattern = re.<span class="built_in">compile</span>(</span><br><span class="line">        <span class="string">r&#x27;#\s*(\d+)\s*([\d.]+)\s*eV\s*([\d.]+)\s*nm\s*f=\s*([\d.]+)\s*Spin multiplicity=\s*(\d+):&#x27;</span></span><br><span class="line">    )</span><br><span class="line">    transition_pattern = re.<span class="built_in">compile</span>(<span class="string">r&#x27;([A-Za-z0-9+-]+)\s*-&gt;\s*([A-Za-z0-9+-]+)\s*([\d.]+)%&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    first_state_processed = <span class="literal">False</span>  <span class="comment"># 标记是否已处理第一个态</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">        line = lines[i].strip()</span><br><span class="line">        <span class="keyword">if</span> line.startswith(<span class="string">&#x27;#&#x27;</span>):</span><br><span class="line">            <span class="comment"># 解析态信息</span></span><br><span class="line">            <span class="keyword">match</span> = state_pattern.<span class="keyword">match</span>(line)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">match</span>:</span><br><span class="line">                state_num = <span class="built_in">int</span>(<span class="keyword">match</span>.group(<span class="number">1</span>))</span><br><span class="line">                energy = <span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">2</span>)))</span><br><span class="line">                wavelength = <span class="keyword">match</span>.group(<span class="number">3</span>)</span><br><span class="line">                oscillator_strength = <span class="built_in">float</span>(<span class="keyword">match</span>.group(<span class="number">4</span>))</span><br><span class="line">                spin_multiplicity = <span class="keyword">match</span>.group(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 检查是否是第一个态或振子强度大于阈值</span></span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">not</span> first_state_processed) <span class="keyword">or</span> (oscillator_strength &gt;= oscillator_strength_threshold):</span><br><span class="line">                    <span class="comment"># 解析跃迁信息</span></span><br><span class="line">                    i += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">if</span> i &lt; <span class="built_in">len</span>(lines):</span><br><span class="line">                        transition_line = lines[i].strip()</span><br><span class="line">                        transitions = []</span><br><span class="line">                        contributions = []</span><br><span class="line">                        <span class="keyword">for</span> part <span class="keyword">in</span> transition_line.split(<span class="string">&#x27;,&#x27;</span>):</span><br><span class="line">                            part = part.strip()</span><br><span class="line">                            trans_match = transition_pattern.<span class="keyword">match</span>(part)</span><br><span class="line">                            <span class="keyword">if</span> trans_match:</span><br><span class="line">                                contribution = <span class="built_in">float</span>(trans_match.group(<span class="number">3</span>))</span><br><span class="line">                                <span class="comment"># 只保留贡献大于阈值的跃迁</span></span><br><span class="line">                                <span class="keyword">if</span> contribution &gt;= transition_contribution_threshold:</span><br><span class="line">                                    from_orb = trans_match.group(<span class="number">1</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    to_orb = trans_match.group(<span class="number">2</span>).replace(<span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;HOMO&#x27;</span>).replace(<span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;LUMO&#x27;</span>).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;–&#x27;</span>)</span><br><span class="line">                                    contribution_str = <span class="string">f&quot;<span class="subst">&#123;contribution&#125;</span>%&quot;</span></span><br><span class="line">                                    transitions.append(<span class="string">f&quot;<span class="subst">&#123;from_orb&#125;</span>→<span class="subst">&#123;to_orb&#125;</span>&quot;</span>)</span><br><span class="line">                                    contributions.append(contribution_str)</span><br><span class="line"></span><br><span class="line">                        <span class="comment"># 如果有符合要求的跃迁，则添加到结果中</span></span><br><span class="line">                        <span class="keyword">if</span> transitions:</span><br><span class="line">                            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(transitions)):</span><br><span class="line">                                data[<span class="string">&#x27;State&#x27;</span>].append(<span class="string">f&quot;S<span class="subst">&#123;state_num&#125;</span>&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;Transition&#x27;</span>].append(transitions[j])</span><br><span class="line">                                data[<span class="string">&#x27;Contribution&#x27;</span>].append(contributions[j])</span><br><span class="line">                                data[<span class="string">&#x27;E, nm(eV)&#x27;</span>].append(<span class="string">f&quot;<span class="subst">&#123;wavelength&#125;</span> (<span class="subst">&#123;energy&#125;</span>)&quot;</span> <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                                data[<span class="string">&#x27;o.s.&#x27;</span>].append(oscillator_strength <span class="keyword">if</span> j == <span class="number">0</span> <span class="keyword">else</span> <span class="string">&quot;&quot;</span>)</span><br><span class="line">                    </span><br><span class="line">                    <span class="comment"># 标记第一个态已处理</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="keyword">not</span> first_state_processed:</span><br><span class="line">                        first_state_processed = <span class="literal">True</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pd.DataFrame(data)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">save_to_excel</span>(<span class="params">df, output_file</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 确保目录存在</span></span><br><span class="line">        output_path = Path(output_file)</span><br><span class="line">        output_path.parent.mkdir(parents=<span class="literal">True</span>, exist_ok=<span class="literal">True</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 保存Excel文件</span></span><br><span class="line">        df.to_excel(output_file, index=<span class="literal">False</span>, sheet_name=<span class="string">&#x27;Sheet1&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;文件已成功保存到 <span class="subst">&#123;output_file&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> PermissionError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;权限错误：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;建议操作：&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;1. 关闭Excel或其他正在使用该文件的程序&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;2. 检查是否有权写入目录：<span class="subst">&#123;output_path.parent&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;3. 尝试使用其他路径，如桌面目录&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;保存失败：<span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    input_file = <span class="string">&#x27;sample_exc.txt&#x27;</span>	<span class="comment"># 建议统一修改文件名为sample_exc.txt</span></span><br><span class="line">    output_file = <span class="string">&#x27;excitation_states.xlsx&#x27;</span></span><br><span class="line">    osc_threshold = <span class="number">0.01</span>  <span class="comment"># 振子强度阈值默认0.01</span></span><br><span class="line">    contrib_threshold = <span class="number">5.0</span>  <span class="comment"># 跃迁贡献阈值默认5%</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入振子强度阈值</span></span><br><span class="line">    user_input_osc = <span class="built_in">input</span>(<span class="string">f&quot;请输入振子强度阈值（默认值为 <span class="subst">&#123;osc_threshold&#125;</span>，S1将始终输出）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_osc.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            osc_threshold = <span class="built_in">float</span>(user_input_osc)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认振子强度阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 用户输入跃迁贡献阈值</span></span><br><span class="line">    user_input_contrib = <span class="built_in">input</span>(<span class="string">f&quot;请输入跃迁贡献阈值(%)（默认值为 <span class="subst">&#123;contrib_threshold&#125;</span>，小于此值的跃迁将被过滤）: &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> user_input_contrib.strip():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            contrib_threshold = <span class="built_in">float</span>(user_input_contrib)</span><br><span class="line">        <span class="keyword">except</span> ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;输入无效，使用默认跃迁贡献阈值。&quot;</span>)</span><br><span class="line"></span><br><span class="line">    df = parse_excitation_data(input_file, osc_threshold, contrib_threshold)</span><br><span class="line">    save_to_excel(df, output_file)</span><br></pre></td></tr></table></figure>
-</div>
-
-<p>首先，使用该部分代码，需要确保你运行的python安装了<code>re</code>、<code>pandas</code>、<code>pathlib</code>这三个库。其次，将待处理文件改名为<code>sample_exc.txt</code>。接着，将上述代码保存为<code>sample_exc.py</code>且与<code>sample_exc.txt</code>在同一个文件夹中。最后，命令行运行<code>python sample_exc.py</code>，应该就可以产生一个<code>excitation_states.xlsx</code>的文件，excel中的内容大概如下图所示，只需要将内容粘贴到word中即可。</p>
-<p><img src="/posts/383282c1/383282c1-03.png" alt="383282c1-03"></p>
-<p>当然建议上述python操作，最好是在虚拟环境中运行，感觉会比较安全，在运行时，只需要在对应的虚拟环境中安装对应的库即可。</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过这个例子可以看出，将一些简单但需要重复的事，交给deepseek这种大语言模型完全是可行，像我这样一个对python并不是很懂的人，也可以借助与大语言模型的交流，来解决实际工作中的问题。总之，学习一直在路上。</p>
-]]></content>
-      <categories>
-        <category>Learning notes</category>
-      </categories>
-      <tags>
-        <tag>Notes</tag>
-        <tag>Multiwfn</tag>
-        <tag>Excite states</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>荧光探针常见发光机理整理</title>
     <url>/posts/3a0936ab/</url>
     <content><![CDATA[<p>最近在老板的”逼迫“下，终于看完了一篇关于线粒体自噬及荧光探针设计的综述，也是得此机会，有时间仔细的学习了关于探针发光机理的内容。为什么不叫总结而叫整理，其原因有二，一是自己能力不足，还达不到总结他人成果的地步，二是这些内容在文献和网络上一查便有，只是有的文献和网络帖子总结不全或重点不在所有发光机理，故有了整理本文内容的想法。如有整理不恰当的地方，望批评指正（主页有我的email）。</p>
@@ -2286,68 +2356,43 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Hexo博客内容迁移的备忘录</title>
-    <url>/posts/e6b74078/</url>
-    <content><![CDATA[<p>最近我那台在2016年买的惠普笔记本电脑在各种科研任务的加持下，终于卡的让我不能忍受。奈何在我钱包的不支持下，选择了格式化电脑并重装系统的道路。其中就伴随这各种文件的备份，其中，我的博客本地内容迁移就成了一件头疼的事。以前，虽然也重装过这台电脑，也重新备份过该博客的本地内容，但并没有留下相关的方法笔记，网上资料确实不少，但有些确实写的繁琐，随写本内容，为给自己留一个操作流程的备忘录，当然也希望这部分内容可以帮助有遇到同样问题的人。</p>
+    <title>对热激活延迟荧光的认识</title>
+    <url>/posts/2a7a5801/</url>
+    <content><![CDATA[<p>由于最近在学习热激活延迟荧光的知识，为了更好的梳理其中的知识点，随产生了整理这篇文章的想法，可能内容不够全面，如有错误，还望理解。</p>
 <span id="more"></span>
-<h1 id="原始数据的备份"><a href="#原始数据的备份" class="headerlink" title="原始数据的备份"></a>原始数据的备份</h1><p>网上有通过github直接clone仓库的方案，但对于个人仓库大概率是有目的的进行迁移，因此通常还会保留原始的本地文件夹及内容。</p>
-<p>所以，对于原始数据的备份，这边选择直接copy旧电脑的文件夹到新的U盘或者云上。为了提高传输效率建议压缩后进行传输。</p>
-<h1 id="原始数据的迁移"><a href="#原始数据的迁移" class="headerlink" title="原始数据的迁移"></a>原始数据的迁移</h1><p>将U盘或者云上的数据拷贝到新电脑的目标文件夹，为了安装不报错建议将node_modules文件夹删除。</p>
-<p><img src="/posts/e6b74078/e6b74078-01.png" alt="movefile"></p>
+
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>热激活延迟荧光（TADF）从发光上讲它仍然属于荧光（FL），但由于其经历了复杂的系间窜越（ISC）和反系间窜越（RISC），导致其表现出较为长的发光寿命，而RISC的前提是热能的吸收和较窄的单三重态能隙。TADF过程一般涉及处于三重态的激子，该激子向单重态的跃迁通常是禁阻的，通过吸收热能，三重态激子可以通过RISC过程将三重态激子转变为单重态激子，再通过单重态发射返回基态，因此称为热激活延迟荧光。TADF一般分为激基复合物型（E型）、分子内电荷转移型（ICT型）、空间电荷转移型（TSCT）、多共振型（MR型）、杂化局域-电荷转移型（HLCT型）、金属配合物型和聚合物&#x2F;树枝状型。</p>
+<h1 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h1><p>1961年通过研究化合物Eosin（伊红）被认为是TADF的第一个例子。（<em>Trans. Faraday Soc.</em> <strong>1961</strong>, <em>57</em>, 1894–1904.）1986年，使用芳香族硫酮进一步研究和描述了这种机制（E型）。（<em>J. Phys. Chem.</em> <strong>1986</strong>, <em>90</em>, 6314–6318.）2008年，Yersin及其同事提出TADF机制在OLED中的高效发光的应用，才开始了对其发光机制的深入研究。(Internal patent filing, University of Regensburg, <strong>2006</strong>.)</p>
+<img src="/posts/2a7a5801/2a7a5801-1.png" width="100%/">
+    
 <blockquote>
-<p>自己测试了一下，也可以不删除这个文件夹。</p>
+<p>伊红的分子结构后期明确后再修订</p>
 </blockquote>
-<h1 id="软件及环境的准备"><a href="#软件及环境的准备" class="headerlink" title="软件及环境的准备"></a>软件及环境的准备</h1><h2 id="git软件的准备"><a href="#git软件的准备" class="headerlink" title="git软件的准备"></a>git软件的准备</h2><p>软件的下载：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。</p>
-<h2 id="Node软件的准备"><a href="#Node软件的准备" class="headerlink" title="Node软件的准备"></a>Node软件的准备</h2><p>软件的下载：<a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a></p>
-<p>建议下载最新版本，在安装的过程中，除安装位置视个人情况更改，其他默认即可。（Node版本低可能会导致报错）</p>
-<h2 id="环境的准备"><a href="#环境的准备" class="headerlink" title="环境的准备"></a>环境的准备</h2><blockquote>
-<p>对于git，网上有教程说需要进行git的系统变量配置。一般来说，根据默认安装git已经被写入系统的环境变量中，因此这一步没太有必要，如果不放心，可以自行百度如何将git添加到系统变量的PATH中。</p>
-</blockquote>
-<h2 id="gitbash设置用户"><a href="#gitbash设置用户" class="headerlink" title="gitbash设置用户"></a>gitbash设置用户</h2><p>在备份了本地内容的目标文件夹中右击鼠标，可以见到<code>Open Git Bash here</code>的选项，选中并单击即可打开gitbash。</p>
-<p>先设置用户名：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your name&quot;</span><br></pre></td></tr></table></figure>
+<h1 id="发光机制"><a href="#发光机制" class="headerlink" title="发光机制"></a>发光机制</h1><p>TADF机制如图所示（基态是单重态），电子从基态（S<sub>0</sub>）被光激发至激发单重态（S<sub>n</sub>），通过系间窜越（ISC）跃迁至激发三重态（T<sub>n</sub>），由于第一激发单重态（S<sub>1</sub>）和第一激发三重态（T<sub>1</sub>）的能级较小，这部分电子又有可能通过反系间窜越（RISC）跃迁至S<sub>n</sub>，最后通过单重态的辐射通道返回至S<sub>0</sub>。此外，在这个过程中存在多个能量的竞争路径（例如：荧光发射、磷光发射和能量转移），因此对于功能分子合理设计是使分子能够发射TADF的重要因素。</p>
+<img src="/posts/2a7a5801/2a7a5801-2.png" width="100%/">
 
-<p><code>your name</code>建议根据github仓库设置。</p>
-<p>再设置邮箱：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your email&quot;</span><br></pre></td></tr></table></figure>
-
-<p><code>your email</code>建议根据github仓库设置。</p>
-<h2 id="SSH的配置"><a href="#SSH的配置" class="headerlink" title="SSH的配置"></a>SSH的配置</h2><p>使用<code>~/.ssh</code>或者<code>~/.ssh ls</code>查看电脑是否有.ssh文件夹。</p>
-<ul>
-<li>如果有的话，就会显示<code>bash: /c/Users/…/.ssh: Is a directory</code></li>
-<li>如果没有的话，便会显示<code>bash: /c/Users/…/.ssh: No such file or directory</code></li>
-</ul>
-<p>这里的Users为电脑的用户名。</p>
-<p>如果没有.ssh文件夹，在gitbash中输入<code>ssh-keygen -t rsa -C &quot;your email&quot;</code>。</p>
-<p>剩下的回车即可，直至结束。</p>
-<p>当看到如下内容后，说明设置成功。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /c/Users/…/.ssh/id_rsa</span><br><span class="line">Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-
-<p>同时他也会展示他的密钥内容。</p>
-<h2 id="将密钥添加到Github"><a href="#将密钥添加到Github" class="headerlink" title="将密钥添加到Github"></a>将密钥添加到Github</h2><p>打开github并登录到自己的页面，点击右上角自己的头像，进入Settings页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-02.png" alt="setting"></p>
-<p>在settings中选择SSH and GPG keys，并点击New SSH key，进入如下页面。</p>
-<p><img src="/posts/e6b74078/e6b74078-03.png" alt="ssh"></p>
-<p>Title部分可以根据自己喜好输入内容，这边以为仓库名为例。</p>
-<p>Key部分可以在<code>C:\Users\…\.ssh</code>中的id_rsa.pub文件中获取，使用记事本打卡即可查看其中的内容，全部复制后，粘贴到此处的Key中。</p>
-<p>这两部分设置完后，点击Add SSH key，同时也会email中收到SSH key添加成功的邮件。</p>
-<p>在gitbash中输入<code>ssh -T git@github.com</code>，如果显示<code>Hi “your name”! You’ve successfully authenticated, but GitHub does not provide shell access.</code>，说明成功设置密钥，并建立连接。</p>
-<h2 id="hexo的准备"><a href="#hexo的准备" class="headerlink" title="hexo的准备"></a>hexo的准备</h2><p>输入<code>npm install hexo-cli -g</code>安装hexo。</p>
-<p>执行完上面的命令后，输入<code>npm install</code>安装依赖，执行完后，会产生一个node_modules的文件夹。</p>
 <blockquote>
-<p>如果在迁移的时候没有删除node_modules，就可以不用执行npm install安装依赖。</p>
+<p>图片文献暂未找到，以后找到再进行补充</p>
 </blockquote>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>通过上面的操作，这个时候就可以使用<code>hexo clean</code>、<code>hexo g</code>和<code>hexo d</code>等来测试是否迁移并配置成功。如果一切顺利，那就祝你 Have a good day 。</p>
-<p>资料参考：<br><a href="https://blog.csdn.net/qq_36667170/article/details/118163563">[1] 换电脑后怎么迁移hexo博客？</a><br><a href="https://blog.csdn.net/qq_36667170/article/details/79094257">[2] Git教程 SSH keys配置</a></p>
+<p>对于传统发光材料，只能收集单重激发态激子。因此，由于自旋禁阻，只能利用25%的激子，而对于TADF材料，可以实现三重态激子到单重态激子的反系间窜越，在理论上就可以利用100%的激子。</p>
+<h1 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h1><p>根据TADF的发光路径，不难推理出几个关键的动力学特征决定了材料通过TADF有效产生光的能力，同时应最大限度地减少热损耗途径。ISC速率（k<sub>ISC</sub>）和RISC速率（k<sub>RISC</sub>）应尽可能的快，而这两个数值均有自旋轨道耦合（SOC）常数决定。特别的k<sub>RISC</sub>应该比三重态非辐射跃迁速率（k<sub>nr</sub>）快。</p>
+<p>系间窜越常数计算公式：</p>
+<p>$$ k_{\mathrm{isc}}&#x3D;\frac{2\pi}{\hbar}|H_{\mathrm{SOC}}|^2\frac{1}{\sqrt{4\pi\lambda k_{\mathrm{B}}T}}\mathrm{exp}\left[-\frac{(\lambda+\Delta E_{\mathrm{S-T}})^2}{4\lambda k_{\mathrm{B}}T}\right] $$</p>
+<p>$$ \hbar &#x3D; \frac{h}{2\pi} $$</p>
+<blockquote>
+<p>h：普朗克常数（6.62607015×10<sup>−34</sup> J⋅s）<br>H<sub>SOC</sub>：旋轨耦合矩阵元<br>$ \lambda $：重组能<br>k<sub>B</sub>：玻尔兹曼常数（8.617×10<sup>−5</sup> eV&#x2F;K）<br>T：温度（298 K）<br>$\Delta E_{\mathrm{S-T}}$：单三重态能隙（$E_{\mathrm{S_1}}-E_{\mathrm{T_1}}$），数值需大于0</p>
+</blockquote>
+<p>反系间窜越常数计算公式：</p>
+<p>$$ k_{\mathrm{risc}}&#x3D;k_{\mathrm{isc}}\cdot\exp\left(-\frac{\Delta E_{\mathrm{S-T}}}{k_BT}\right) $$</p>
+<p>通过上面的公式不难发现，另一个关键特征就是单重激发态和三重激发态之间的能级差，这个数值应该尽可能的小，因为，k<sub>RISC</sub>指数级依赖于这个数值。这也是被认为合成潜在TADF材料的重要策略之一。</p>
+<p>最后就是TADF衰变应尽可能短，以减少激发期间不需要的化学反应。</p>
 ]]></content>
       <categories>
-        <category>Learning notes</category>
+        <category>Theory</category>
       </categories>
       <tags>
-        <tag>Notes</tag>
-        <tag>Hexo</tag>
-        <tag>Blogs</tag>
+        <tag>Luminescence</tag>
+        <tag>TADF</tag>
       </tags>
   </entry>
   <entry>
