@@ -314,27 +314,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《个人收藏页》的位置更改说明</title>
-    <url>/posts/a783eba7/</url>
-    <content><![CDATA[<p>《<a href="https://mancekou.github.io/posts/6e97f420/#more">个人收藏页</a>》作为本人基于兴趣以及便利自己的目的进行的整理，但相信随着时间的流逝，也可能会有人喜欢上这个页面（自作多情的想法哈，哈哈哈哈），原先作为post方式显示在首页，就显的略微不合适和美观了。另一方面，随着其它博文的加入，这篇博文也会被排序到后方（博文基于时间排序，随着新博文的添加，旧的就会被挪到后面），不方便查找（现在去找NMR的氢谱和碳谱就有点不那么便利了，需要往后划一些才能看到），随产生更改该博文位置的想法。</p>
-<span id="more"></span>
-
-<h1 id="网络地址"><a href="#网络地址" class="headerlink" title="网络地址"></a>网络地址</h1><p>个人收藏页：<a href="https://mancekou.github.io/posts/6e97f420/#more">https://mancekou.github.io/posts/6e97f420/#more</a></p>
-<h1 id="更改说明"><a href="#更改说明" class="headerlink" title="更改说明"></a>更改说明</h1><p>原先的收藏页如下图所示，是显示在首页的顶部的，一方面我感觉内容有点空旷，不尽美观，二方面考虑到后期的博文需求，随将该篇博文的链接转移到侧边栏。</p>
-<p><img src="/posts/a783eba7/a783eba7-01.png" alt="a783eba7-01.png"></p>
-<p>相信有的朋友原先已经发现在侧边栏有一个叫<code>Bookmark</code>的链接，这个链接就是对应的《个人收藏页》这篇博文，今天特写这篇博文以作告知（不过做了名字的更改，由原先的<code>Bookmark</code>变更为<code>个人收藏页</code>）。</p>
-<h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><p>由于本博客是基于hexo的静态网页，对于重新写一个收藏页面，考虑到本人技术有限（俗称：太菜）。因此，使用了一个讨巧的方法，将该《个人收藏页》的发表时间进行了手动更改，将其挪到了最后（最后一篇博文）。现在如果还需要访问该页面的方法有两种，一个是点击如下图所示的首页链接<code>个人收藏页</code>，二是通过访问最后一篇博文（下拉的最底部，选择最后的页面）。</p>
-<p><img src="/posts/a783eba7/a783eba7-02.png" alt="a783eba7-02.png"></p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>《个人收藏页》作为一个我自己觉得用着还算方便的页面，希望阅读到的朋友也可以喜欢。这个收藏页本应该如一个导航页那般，但从新一个页面对于我来说还有点难度，并且现在被记录的内容还不算多，因此，就先将就用吧，等哪天这个页面变得不那么方便的时候，在考虑刚刚提到的写一个导航页。</p>
-]]></content>
-      <categories>
-        <category>Collection</category>
-      </categories>
-      <tags>
-        <tag>links</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ChimeraX软件的学习记录</title>
     <url>/posts/9549c3dc/</url>
     <content><![CDATA[<p>UCSF ChimeraX（或简称ChimeraX）是继UCSF Chimer之后，生物计算、可视化和信息学资源（RBVI）的下一代分子可视化程序（这句话是从官网上抄的）。ChimeraX作为一款功能强大的生化分析和可视化软件，对于我这样一个学化学的，是不太会那些高端操作的，也没那能力，但最近觉得ChimeraX做的图质感很好，随产生了用该软件画反应机理计算中的分子结构图的想法。但我是小白呀，从没接触过该软件，对于分子的调整完全不了解。本着边学边做笔记的想法，随产生了写这篇博文的想法。</p>
@@ -424,6 +403,27 @@
       </tags>
   </entry>
   <entry>
+    <title>《个人收藏页》的位置更改说明</title>
+    <url>/posts/a783eba7/</url>
+    <content><![CDATA[<p>《<a href="https://mancekou.github.io/posts/6e97f420/#more">个人收藏页</a>》作为本人基于兴趣以及便利自己的目的进行的整理，但相信随着时间的流逝，也可能会有人喜欢上这个页面（自作多情的想法哈，哈哈哈哈），原先作为post方式显示在首页，就显的略微不合适和美观了。另一方面，随着其它博文的加入，这篇博文也会被排序到后方（博文基于时间排序，随着新博文的添加，旧的就会被挪到后面），不方便查找（现在去找NMR的氢谱和碳谱就有点不那么便利了，需要往后划一些才能看到），随产生更改该博文位置的想法。</p>
+<span id="more"></span>
+
+<h1 id="网络地址"><a href="#网络地址" class="headerlink" title="网络地址"></a>网络地址</h1><p>个人收藏页：<a href="https://mancekou.github.io/posts/6e97f420/#more">https://mancekou.github.io/posts/6e97f420/#more</a></p>
+<h1 id="更改说明"><a href="#更改说明" class="headerlink" title="更改说明"></a>更改说明</h1><p>原先的收藏页如下图所示，是显示在首页的顶部的，一方面我感觉内容有点空旷，不尽美观，二方面考虑到后期的博文需求，随将该篇博文的链接转移到侧边栏。</p>
+<p><img src="/posts/a783eba7/a783eba7-01.png" alt="a783eba7-01.png"></p>
+<p>相信有的朋友原先已经发现在侧边栏有一个叫<code>Bookmark</code>的链接，这个链接就是对应的《个人收藏页》这篇博文，今天特写这篇博文以作告知（不过做了名字的更改，由原先的<code>Bookmark</code>变更为<code>个人收藏页</code>）。</p>
+<h1 id="修改方法"><a href="#修改方法" class="headerlink" title="修改方法"></a>修改方法</h1><p>由于本博客是基于hexo的静态网页，对于重新写一个收藏页面，考虑到本人技术有限（俗称：太菜）。因此，使用了一个讨巧的方法，将该《个人收藏页》的发表时间进行了手动更改，将其挪到了最后（最后一篇博文）。现在如果还需要访问该页面的方法有两种，一个是点击如下图所示的首页链接<code>个人收藏页</code>，二是通过访问最后一篇博文（下拉的最底部，选择最后的页面）。</p>
+<p><img src="/posts/a783eba7/a783eba7-02.png" alt="a783eba7-02.png"></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>《个人收藏页》作为一个我自己觉得用着还算方便的页面，希望阅读到的朋友也可以喜欢。这个收藏页本应该如一个导航页那般，但从新一个页面对于我来说还有点难度，并且现在被记录的内容还不算多，因此，就先将就用吧，等哪天这个页面变得不那么方便的时候，在考虑刚刚提到的写一个导航页。</p>
+]]></content>
+      <categories>
+        <category>Collection</category>
+      </categories>
+      <tags>
+        <tag>links</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一塌糊涂的我</title>
     <url>/posts/1b06bc6f/</url>
     <content><![CDATA[<p>7号，课题组开完组会，宣告本学期的结束，大家也在8号开始，陆续离开学校。今天再去实验室的时候，只有我一个人，瞬间感觉冷清了很多，上班的欲望一点也再没有，随下午睡醒后，再没去实验室，刷了一下午的抖音。</p>
@@ -450,98 +450,6 @@
       <tags>
         <tag>Record</tag>
         <tag>Amuse oneself</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Multiwfn软件获取量化计算数据的教程</title>
-    <url>/posts/f5b46dab/</url>
-    <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
-<span id="more"></span>
-
-<p>文中使用到的软件：Multiwfn和GaussView。</p>
-<h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入0 Show molecular structure and view orbitals，按回车键</li>
-</ul>
-<p>此时，会弹出一个显示窗口，可以直观的观察分子式，以及不同分子轨道的电子云分布，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-01.png" alt="f5b46dab-01"></p>
-<p>其中，1号红框内可以切换不同的分子轨道，2号红框可以旋转、缩放分子。</p>
-<p>在DOC窗口中，可以读取对应分子轨道的能量，以及能隙，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-02.png" alt="f5b46dab-02"></p>
-<p>通过，红色框内内容，可以读出轨道255代表的是HOMO轨道，256代表的是LUMO轨道，同理，254就是HOMO-1，257就是LUMO+1，以此类推其它HOMO、LUMO轨道。</p>
-<h1 id="轨道成分"><a href="#轨道成分" class="headerlink" title="轨道成分"></a>轨道成分</h1><p>此处使用NAO方法获取分子轨道成分，具体内容见Sob老师的<a href="http://sobereva.com/131">谈谈轨道成份的计算方法</a>。</p>
-<p>重新打开Multiwfn 程序，将NAO作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入8 Orbital composition analysis</li>
-</ul>
-<ul>
-<li>输入7 Orbital composition analysis by natural atomic orbital (NAO) method</li>
-</ul>
-<p>如果只想分析单个原子在某个分子轨道的贡献。</p>
-<ul>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道，输出结果如下</p>
-</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
-
-<p>如果修改展示的贡献范围，可以操作如下：</p>
-<ul>
-<li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
-</li>
-<li><p>输入1 Show non-Rydberg NAOs&#x2F;shells</p>
-</li>
-<li><p>输入0 Show composition of an orbital</p>
-</li>
-<li><p>输入分析的轨道编号，此处输入255号轨道</p>
-</li>
-</ul>
-<p>对于各个原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
-<p>对于钌原子可以找到如下输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
-<p>如果准备分析某一分子片段，则选要先定义片段。</p>
-<ul>
-<li>输入-1 Define fragment for option 1</li>
-<li>输入clean Clean current fragment</li>
-<li>输入a 3,4,6,7,17-19,26,27,30-50,95-98,107-112（此处3,4,6,7,17-19,26,27,30-50,95-98,107-112为举例，以实际的片段序号为准。）</li>
-<li>输入q save and exit</li>
-<li>输入1 Show fragment contribution to a batch of orbitals</li>
-<li>输入255,256 输出结果如下</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
-
-<p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
-<p><strong>补充：</strong></p>
-<p>关于原子序号的查找：</p>
-<p>打开GaussView，将NAO作业的out文件，拖入软件。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-03.png" alt="f5b46dab-01"></p>
-<p>如上图所示，点击View里的Labels选项，此时分子式中就会出现其各个原子的序号，想定义哪一个片段，就整理哪一个片段的原子序号就好，图中，两个邻菲罗啉的原子序号就是3,4,6,7,17-19,26,27,30-50,95-98,107-112。</p>
-<h1 id="紫外吸收光谱"><a href="#紫外吸收光谱" class="headerlink" title="紫外吸收光谱"></a>紫外吸收光谱</h1><p>重新打开Multiwfn 程序，将紫外吸收或者磷光发射作业的out文件，拖入Multiwfn窗口。</p>
-<ul>
-<li>输入18 Electron excitation analysis</li>
-<li>输入15 Print major MO transitions in all excited states</li>
-</ul>
-<p>此时，就会输出紫外吸收的组态信息，如下图所示。</p>
-<p><img src="/posts/f5b46dab/f5b46dab-04.png" alt="f5b46dab-04"></p>
-<p>其中，1代表S1态，2.5460 eV代表激发能，486.98 nm代表激发波长，f代表振子强度，Spin multiplicity代表多重度，其余部分就是组态信息（包含不同的跃迁轨道以及贡献成分）</p>
-<p>（发射光谱的分析同紫外吸收光谱光谱分析的内容，在此不再赘述。）</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>Multiwfn可以从Sob老师的论坛“计算化学公社“获取。</p>
-<p>（网址：<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>）</p>
-<p>该博文参考了Sob老师的多篇博文，如有兴趣自行到公社获取。</p>
-<p>若待发表论文中有使用Sob老师的相关研究成果，建议引用相关研究成果。</p>
-]]></content>
-      <categories>
-        <category>Learning notes</category>
-      </categories>
-      <tags>
-        <tag>Notes</tag>
-        <tag>Multiwfn</tag>
       </tags>
   </entry>
   <entry>
@@ -1156,6 +1064,98 @@
       </tags>
   </entry>
   <entry>
+    <title>使用Multiwfn软件获取量化计算数据的教程</title>
+    <url>/posts/f5b46dab/</url>
+    <content><![CDATA[<p>由于课题组需求，总是需要帮组内同门完成一些理论计算的工作，但在自己计算完相关工作后，自己可能没有时间来得及帮忙处理数据，特写此问，以帮助组内成员快速处理gaussian输出文件，并拿到自己想要的数据。本博文的内容包括分子能级的获取、分子轨道的成分分析、紫外光谱和发射光谱数据的处理。</p>
+<span id="more"></span>
+
+<p>文中使用到的软件：Multiwfn和GaussView。</p>
+<h1 id="分子的能级"><a href="#分子的能级" class="headerlink" title="分子的能级"></a>分子的能级</h1><p>打开Multiwfn 程序，此时，出现的是一个DOC窗口（黑色的命令行窗口），将分子单点能（single energy）作业的fchk文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入0 Show molecular structure and view orbitals，按回车键</li>
+</ul>
+<p>此时，会弹出一个显示窗口，可以直观的观察分子式，以及不同分子轨道的电子云分布，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-01.png" alt="f5b46dab-01"></p>
+<p>其中，1号红框内可以切换不同的分子轨道，2号红框可以旋转、缩放分子。</p>
+<p>在DOC窗口中，可以读取对应分子轨道的能量，以及能隙，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-02.png" alt="f5b46dab-02"></p>
+<p>通过，红色框内内容，可以读出轨道255代表的是HOMO轨道，256代表的是LUMO轨道，同理，254就是HOMO-1，257就是LUMO+1，以此类推其它HOMO、LUMO轨道。</p>
+<h1 id="轨道成分"><a href="#轨道成分" class="headerlink" title="轨道成分"></a>轨道成分</h1><p>此处使用NAO方法获取分子轨道成分，具体内容见Sob老师的<a href="http://sobereva.com/131">谈谈轨道成份的计算方法</a>。</p>
+<p>重新打开Multiwfn 程序，将NAO作业的out文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入8 Orbital composition analysis</li>
+</ul>
+<ul>
+<li>输入7 Orbital composition analysis by natural atomic orbital (NAO) method</li>
+</ul>
+<p>如果只想分析单个原子在某个分子轨道的贡献。</p>
+<ul>
+<li><p>输入0 Show composition of an orbital</p>
+</li>
+<li><p>输入分析的轨道编号，此处输入255号轨道，输出结果如下</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Note: All Rydberg NAOs/shells or contributions &lt;=  0.50 % will not be printed</span><br><span class="line"></span><br><span class="line">    NAO#   Center   Label      Type    Composition</span><br><span class="line">      12    1(N )    pz       Val( 2p)     0.968 %</span><br><span class="line">     161    6(C )    px       Val( 2p)     0.578 %</span><br><span class="line">     192    7(C )    px       Val( 2p)     0.554 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to shells:</span><br><span class="line">   Atom:     1(N )  Shell:     6( 2p Val)     1.116 %</span><br><span class="line">   Atom:     3(N )  Shell:    28( 2p Val)     0.578 %</span><br><span class="line">   Atom:     4(N )  Shell:    39( 2p Val)     0.588 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Composition of different types of shells (%):</span><br><span class="line"> s:   0.668  p:  21.842  d:  77.488  f:   0.007  g:   0.000  h:   0.000</span><br><span class="line"></span><br><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     3(N )     0.624 %</span><br><span class="line">     4(N )     0.657 %</span><br><span class="line">......</span><br><span class="line"></span><br><span class="line"> Core composition:        0.023 %</span><br><span class="line"> Valence composition:    99.471 %</span><br><span class="line"> Rydberg composition:     0.512 %</span><br><span class="line"></span><br><span class="line"> Orbital delocalization index:   60.34</span><br></pre></td></tr></table></figure>
+
+<p>如果修改展示的贡献范围，可以操作如下：</p>
+<ul>
+<li><p>输入2 Select output mode for option 0, current: Non-Rydberg terms with contribution &gt;  0.50%</p>
+</li>
+<li><p>输入1 Show non-Rydberg NAOs&#x2F;shells</p>
+</li>
+<li><p>输入0 Show composition of an orbital</p>
+</li>
+<li><p>输入分析的轨道编号，此处输入255号轨道</p>
+</li>
+</ul>
+<p>对于各个原子可以找到如下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> Condensed NAO terms to atoms:</span><br><span class="line">   Center   Composition</span><br><span class="line">     1(N )     1.183 %</span><br><span class="line">     ...        ...</span><br><span class="line">   107(N )     0.563 %</span><br><span class="line">   108(N )     0.919 %</span><br><span class="line">   109(C )     0.013 %</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以直观的看到，对于255分子轨道主要是Ru原子（77.56%）贡献。</p>
+<p>对于钌原子可以找到如下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NAO#   Center   Label      Type    Composition</span><br><span class="line">2478  117(Ru)    s        Cor( 4s)     0.018 %</span><br><span class="line">2479  117(Ru)    s        Val( 6s)     0.172 %</span><br><span class="line">2484  117(Ru)    px       Cor( 4p)     0.000 %</span><br><span class="line">2485  117(Ru)    px       Val( 5p)     0.000 %</span><br><span class="line">2489  117(Ru)    py       Cor( 4p)     0.000 %</span><br><span class="line">2490  117(Ru)    py       Val( 5p)     0.000 %</span><br><span class="line">2494  117(Ru)    pz       Cor( 4p)     0.000 %</span><br><span class="line">2495  117(Ru)    pz       Val( 5p)     0.000 %</span><br><span class="line">2499  117(Ru)    dxy      Val( 4d)     1.117 %</span><br><span class="line">2502  117(Ru)    dxz      Val( 4d)     0.345 %</span><br><span class="line">2505  117(Ru)    dyz      Val( 4d)    26.337 %</span><br><span class="line">2508  117(Ru)    dx2y2    Val( 4d)     0.255 %</span><br><span class="line">2511  117(Ru)    dz2      Val( 4d)    49.308 %</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以直观的看到，对于钌原子主要是d轨道贡献。</p>
+<p>如果准备分析某一分子片段，则选要先定义片段。</p>
+<ul>
+<li>输入-1 Define fragment for option 1</li>
+<li>输入clean Clean current fragment</li>
+<li>输入a 3,4,6,7,17-19,26,27,30-50,95-98,107-112（此处3,4,6,7,17-19,26,27,30-50,95-98,107-112为举例，以实际的片段序号为准。）</li>
+<li>输入q save and exit</li>
+<li>输入1 Show fragment contribution to a batch of orbitals</li>
+<li>输入255,256 输出结果如下</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Orb.#       Core      Valence     Rydberg      Total</span><br><span class="line"> 255        0.021 %    89.286 %     0.324 %    89.631 %</span><br><span class="line"> 256        0.000 %     0.024 %     0.009 %     0.033 %</span><br></pre></td></tr></table></figure>
+
+<p>其中，我们可以看到，这个片段在255和256轨道的贡献，这里取Total值。</p>
+<p><strong>补充：</strong></p>
+<p>关于原子序号的查找：</p>
+<p>打开GaussView，将NAO作业的out文件，拖入软件。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-03.png" alt="f5b46dab-01"></p>
+<p>如上图所示，点击View里的Labels选项，此时分子式中就会出现其各个原子的序号，想定义哪一个片段，就整理哪一个片段的原子序号就好，图中，两个邻菲罗啉的原子序号就是3,4,6,7,17-19,26,27,30-50,95-98,107-112。</p>
+<h1 id="紫外吸收光谱"><a href="#紫外吸收光谱" class="headerlink" title="紫外吸收光谱"></a>紫外吸收光谱</h1><p>重新打开Multiwfn 程序，将紫外吸收或者磷光发射作业的out文件，拖入Multiwfn窗口。</p>
+<ul>
+<li>输入18 Electron excitation analysis</li>
+<li>输入15 Print major MO transitions in all excited states</li>
+</ul>
+<p>此时，就会输出紫外吸收的组态信息，如下图所示。</p>
+<p><img src="/posts/f5b46dab/f5b46dab-04.png" alt="f5b46dab-04"></p>
+<p>其中，1代表S1态，2.5460 eV代表激发能，486.98 nm代表激发波长，f代表振子强度，Spin multiplicity代表多重度，其余部分就是组态信息（包含不同的跃迁轨道以及贡献成分）</p>
+<p>（发射光谱的分析同紫外吸收光谱光谱分析的内容，在此不再赘述。）</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>Multiwfn可以从Sob老师的论坛“计算化学公社“获取。</p>
+<p>（网址：<a href="http://bbs.keinsci.com/forum.php">http://bbs.keinsci.com/forum.php</a>）</p>
+<p>该博文参考了Sob老师的多篇博文，如有兴趣自行到公社获取。</p>
+<p>若待发表论文中有使用Sob老师的相关研究成果，建议引用相关研究成果。</p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>Multiwfn</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>依旧历，总结25</title>
     <url>/posts/6e91b400/</url>
     <content><![CDATA[<p>依照旧历，每年起始，都会总结上一年，想想一年干了什么事，没干什么事，以及又想干什么事。一般而言，总结应该是年前的事，不过今年年前从西北内陆来到了东南沿海补实验，显得忙了一些，随把总结的事宜拖拉到现在。</p>
@@ -1410,359 +1410,6 @@
       <tags>
         <tag>Computational chemistry</tag>
         <tag>Gaussian software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见NMR碳谱溶剂峰</title>
-    <url>/posts/2504b91/</url>
-    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
-<span id="more"></span>
-
-<style>
-        
-        .table-row-hover {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        .table-row-hover th, .table-row-hover td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .table-row-hover th {
-            background-color: #f8f9fa;
-            font-weight: bold;
-        }
-
-        /* 整行高亮 - 优先级较低 */
-        .table-row-hover tr:hover td {
-            background-color: #e3f2fd !important;
-        }
-
-        /* 单元格高亮 - 提高优先级 */
-        .table-row-hover tr:hover td:hover {
-            background-color: #a1e1c3 !important;
-            transform: scale(1.03);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 2; /* 确保在最上层 */
-        }
-</style>
-
-<table class="table-row-hover">
-    <thead>
-        <tr>
-            <th>溶剂</th>
-            <th></th>
-            <th style>CDCl<sub>3</sub></th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
-            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
-            <th style>C<sub>6</sub>D<sub>6</sub></th>
-            <th style>CD<sub>3</sub>CN</th>
-            <th style>CD<sub>3</sub>OD</th>
-            <th style>D<sub>2</sub>O</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th rowspan="2" style>溶剂峰</th>
-            <td style>—</td>
-            <td>77.1</td>
-            <td>206</td>
-            <td>39.5</td>
-            <td>128.1</td>
-            <td>118.3</td>
-            <td>49.0</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td style>—</td>
-            <td>—</td>
-            <td>29.8</td>
-            <td>—</td>
-            <td>—</td>
-            <td>1.3</td>
-            <td>—</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙酸</th>
-            <td>CO</td>
-            <td>176</td>
-            <td>172.3</td>
-            <td>171.9</td>
-            <td>176</td>
-            <td>173.2</td>
-            <td>175.1</td>
-            <td>177.2</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>20.8</td>
-            <td>20.5</td>
-            <td>20.9</td>
-            <td>20.3</td>
-            <td>20.7</td>
-            <td>20.6</td>
-            <td>21.0</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>丙酮</th>
-            <td>CO</td>
-            <td>207.1</td>
-            <td>205.9</td>
-            <td>206.3</td>
-            <td>204</td>
-            <td>207.4</td>
-            <td>209.7</td>
-            <td>215</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>30.9</td>
-            <td>30.6</td>
-            <td>30.6</td>
-            <td>30.1</td>
-            <td>30.9</td>
-            <td>30.7</td>
-            <td>30.9</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙腈</th>
-            <td>CN</td>
-            <td>116.4</td>
-            <td>117.6</td>
-            <td>117.9</td>
-            <td>116</td>
-            <td>118.3</td>
-            <td>118.1</td>
-            <td>119.7</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>1.9</td>
-            <td>1.1</td>
-            <td>1.0</td>
-            <td>2.0</td>
-            <td>1.8</td>
-            <td>0.8</td>
-            <td>1.5</td>
-        </tr>
-        <tr>
-            <th style>甲醇</th>
-            <td>—</td>
-            <td>50.4</td>
-            <td>49.8</td>
-            <td>48.6</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.9</td>
-            <td>49.5</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醚</th>
-            <td>CH<sub>2</sub></td>
-            <td>65.9</td>
-            <td>66.0</td>
-            <td>62.0</td>
-            <td>66.0</td>
-            <td>66.4</td>
-            <td>66.9</td>
-            <td>66.4</td>
-        </tr>
-        <tr>
-            <td style>CH<sub>3</sub></td>
-            <td>15.2</td>
-            <td>15.8</td>
-            <td>15.0</td>
-            <td>15.5</td>
-            <td>15.6</td>
-            <td>15.5</td>
-            <td>14.8</td>
-        </tr>
-        <tr>
-            <th rowspan="2" style>乙醇</th>
-            <td>CH<sub>2</sub></td>
-            <td>58.3</td>
-            <td>57.8</td>
-            <td>56.1</td>
-            <td>58.0</td>
-            <td>58.0</td>
-            <td>58.3</td>
-            <td>58.0</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>18.4</td>
-            <td>18.9</td>
-            <td>18.5</td>
-            <td>18.7</td>
-            <td>18.8</td>
-            <td>18.4</td>
-            <td>17.5</td>
-        </tr>
-        <tr>
-            <th rowspan="4">乙酸乙酯</th>
-            <td>CO</td>
-            <td>171.4</td>
-            <td>171</td>
-            <td>170.3</td>
-            <td>170.4</td>
-            <td>171.7</td>
-            <td>172.9</td>
-            <td>175.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>60.5</td>
-            <td>60.6</td>
-            <td>59.7</td>
-            <td>60.2</td>
-            <td>61.0</td>
-            <td>61.5</td>
-            <td>62.3</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub>CO</td>
-            <td>21.0</td>
-            <td>20.8</td>
-            <td>20.7</td>
-            <td>20.2</td>
-            <td>21.2</td>
-            <td>20.9</td>
-            <td>21.1</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub>CH<sub>3</sub></td>
-            <td>14.2</td>
-            <td>14.5</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>14.5</td>
-            <td>14.5</td>
-            <td>13.9</td>
-        </tr>
-        <tr>
-            <th>氯仿</th>
-            <td>—</td>
-            <td>77.3</td>
-            <td>79.2</td>
-            <td>79.1</td>
-            <td>77.8</td>
-            <td>79.2</td>
-            <td>79.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">正己烷</th>
-            <td>CH<sub>2</sub></td>
-            <td>31.6</td>
-            <td>32.3</td>
-            <td>31.0</td>
-            <td>32.0</td>
-            <td>32.4</td>
-            <td>32.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>2</sub></td>
-            <td>22.7</td>
-            <td>23.3</td>
-            <td>22.0</td>
-            <td>23.0</td>
-            <td>23.4</td>
-            <td>23.7</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>14.1</td>
-            <td>14.3</td>
-            <td>13.9</td>
-            <td>14.3</td>
-            <td>14.4</td>
-            <td>14.4</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th rowspan="3">二甲基甲酰胺</th>
-            <td>CHO</td>
-            <td>162.3</td>
-            <td>163</td>
-            <td>163</td>
-            <td>162</td>
-            <td>163.2</td>
-            <td>164.7</td>
-            <td>165.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>36.4</td>
-            <td>36.1</td>
-            <td>35.7</td>
-            <td>35.0</td>
-            <td>36.6</td>
-            <td>36.9</td>
-            <td>37.5</td>
-        </tr>
-        <tr>
-            <td>CH<sub>3</sub></td>
-            <td>31.4</td>
-            <td>31.1</td>
-            <td>30.7</td>
-            <td>30.7</td>
-            <td>31.3</td>
-            <td>31.6</td>
-            <td>32.0</td>
-        </tr>
-        <tr>
-            <th>二甲基亚砜</th>
-            <td>—</td>
-            <td>40.8/td>
-            </td><td>41.2</td>
-            <td>40.4</td>
-            <td>40.0</td>
-            <td>41.3</td>
-            <td>40.4</td>
-            <td>39.4</td>
-        </tr>
-        <tr>
-            <th>二氯甲烷</th>
-            <td>—</td>
-            <td>53.5</td>
-            <td>54.9</td>
-            <td>54.8</td>
-            <td>53.5</td>
-            <td>55.3</td>
-            <td>54.8</td>
-            <td>—</td>
-        </tr>
-        <tr>
-            <th>环己烷</th>
-            <td>—</td>
-            <td>26.9</td>
-            <td>27.5</td>
-            <td>26.3</td>
-            <td>27.3</td>
-            <td>27.6</td>
-            <td>28.0</td>
-            <td>—</td>
-        </tr>
-    </tbody>
-</table>
-
-<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
-]]></content>
-      <categories>
-        <category>Learning notes</category>
-      </categories>
-      <tags>
-        <tag>Notes</tag>
-        <tag>NMR</tag>
       </tags>
   </entry>
   <entry>
@@ -2240,6 +1887,359 @@
 
 <p>这里提供一个链接来自中国科学技术大学<a href="http://staff.ustc.edu.cn/~xswang77/indexchinese.html">王细胜课题组</a>提供的<a href="http://staff.ustc.edu.cn/~xswang77/download/NMRweiyi.pdf">常见官能团氢谱化学位移表</a>以作分析参考。</p>
 <p>本页面灵感来源 ：<a href="http://811.mh0351.xyz/">马师兄的网站</a></p>
+]]></content>
+      <categories>
+        <category>Learning notes</category>
+      </categories>
+      <tags>
+        <tag>Notes</tag>
+        <tag>NMR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常见NMR碳谱溶剂峰</title>
+    <url>/posts/2504b91/</url>
+    <content><![CDATA[<p>书接上回《<a href="https://mancekou.github.io/posts/55e617e7/#more">常见NMR氢谱溶剂峰</a>》的整理，现特整理一下碳谱的氘代溶剂峰及溶剂峰的表。</p>
+<span id="more"></span>
+
+<style>
+        
+        .table-row-hover {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .table-row-hover th, .table-row-hover td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .table-row-hover th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        /* 整行高亮 - 优先级较低 */
+        .table-row-hover tr:hover td {
+            background-color: #e3f2fd !important;
+        }
+
+        /* 单元格高亮 - 提高优先级 */
+        .table-row-hover tr:hover td:hover {
+            background-color: #a1e1c3 !important;
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 2; /* 确保在最上层 */
+        }
+</style>
+
+<table class="table-row-hover">
+    <thead>
+        <tr>
+            <th>溶剂</th>
+            <th></th>
+            <th style>CDCl<sub>3</sub></th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>CO</th>
+            <th style>(CD<sub>3</sub>)<sub>2</sub>SO</th>
+            <th style>C<sub>6</sub>D<sub>6</sub></th>
+            <th style>CD<sub>3</sub>CN</th>
+            <th style>CD<sub>3</sub>OD</th>
+            <th style>D<sub>2</sub>O</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" style>溶剂峰</th>
+            <td style>—</td>
+            <td>77.1</td>
+            <td>206</td>
+            <td>39.5</td>
+            <td>128.1</td>
+            <td>118.3</td>
+            <td>49.0</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td style>—</td>
+            <td>—</td>
+            <td>29.8</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1.3</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙酸</th>
+            <td>CO</td>
+            <td>176</td>
+            <td>172.3</td>
+            <td>171.9</td>
+            <td>176</td>
+            <td>173.2</td>
+            <td>175.1</td>
+            <td>177.2</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>20.8</td>
+            <td>20.5</td>
+            <td>20.9</td>
+            <td>20.3</td>
+            <td>20.7</td>
+            <td>20.6</td>
+            <td>21.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>丙酮</th>
+            <td>CO</td>
+            <td>207.1</td>
+            <td>205.9</td>
+            <td>206.3</td>
+            <td>204</td>
+            <td>207.4</td>
+            <td>209.7</td>
+            <td>215</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>30.9</td>
+            <td>30.6</td>
+            <td>30.6</td>
+            <td>30.1</td>
+            <td>30.9</td>
+            <td>30.7</td>
+            <td>30.9</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙腈</th>
+            <td>CN</td>
+            <td>116.4</td>
+            <td>117.6</td>
+            <td>117.9</td>
+            <td>116</td>
+            <td>118.3</td>
+            <td>118.1</td>
+            <td>119.7</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>1.9</td>
+            <td>1.1</td>
+            <td>1.0</td>
+            <td>2.0</td>
+            <td>1.8</td>
+            <td>0.8</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <th style>甲醇</th>
+            <td>—</td>
+            <td>50.4</td>
+            <td>49.8</td>
+            <td>48.6</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.9</td>
+            <td>49.5</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醚</th>
+            <td>CH<sub>2</sub></td>
+            <td>65.9</td>
+            <td>66.0</td>
+            <td>62.0</td>
+            <td>66.0</td>
+            <td>66.4</td>
+            <td>66.9</td>
+            <td>66.4</td>
+        </tr>
+        <tr>
+            <td style>CH<sub>3</sub></td>
+            <td>15.2</td>
+            <td>15.8</td>
+            <td>15.0</td>
+            <td>15.5</td>
+            <td>15.6</td>
+            <td>15.5</td>
+            <td>14.8</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style>乙醇</th>
+            <td>CH<sub>2</sub></td>
+            <td>58.3</td>
+            <td>57.8</td>
+            <td>56.1</td>
+            <td>58.0</td>
+            <td>58.0</td>
+            <td>58.3</td>
+            <td>58.0</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>18.4</td>
+            <td>18.9</td>
+            <td>18.5</td>
+            <td>18.7</td>
+            <td>18.8</td>
+            <td>18.4</td>
+            <td>17.5</td>
+        </tr>
+        <tr>
+            <th rowspan="4">乙酸乙酯</th>
+            <td>CO</td>
+            <td>171.4</td>
+            <td>171</td>
+            <td>170.3</td>
+            <td>170.4</td>
+            <td>171.7</td>
+            <td>172.9</td>
+            <td>175.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>60.5</td>
+            <td>60.6</td>
+            <td>59.7</td>
+            <td>60.2</td>
+            <td>61.0</td>
+            <td>61.5</td>
+            <td>62.3</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub>CO</td>
+            <td>21.0</td>
+            <td>20.8</td>
+            <td>20.7</td>
+            <td>20.2</td>
+            <td>21.2</td>
+            <td>20.9</td>
+            <td>21.1</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub>CH<sub>3</sub></td>
+            <td>14.2</td>
+            <td>14.5</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>14.5</td>
+            <td>14.5</td>
+            <td>13.9</td>
+        </tr>
+        <tr>
+            <th>氯仿</th>
+            <td>—</td>
+            <td>77.3</td>
+            <td>79.2</td>
+            <td>79.1</td>
+            <td>77.8</td>
+            <td>79.2</td>
+            <td>79.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">正己烷</th>
+            <td>CH<sub>2</sub></td>
+            <td>31.6</td>
+            <td>32.3</td>
+            <td>31.0</td>
+            <td>32.0</td>
+            <td>32.4</td>
+            <td>32.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>2</sub></td>
+            <td>22.7</td>
+            <td>23.3</td>
+            <td>22.0</td>
+            <td>23.0</td>
+            <td>23.4</td>
+            <td>23.7</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>14.1</td>
+            <td>14.3</td>
+            <td>13.9</td>
+            <td>14.3</td>
+            <td>14.4</td>
+            <td>14.4</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th rowspan="3">二甲基甲酰胺</th>
+            <td>CHO</td>
+            <td>162.3</td>
+            <td>163</td>
+            <td>163</td>
+            <td>162</td>
+            <td>163.2</td>
+            <td>164.7</td>
+            <td>165.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>36.4</td>
+            <td>36.1</td>
+            <td>35.7</td>
+            <td>35.0</td>
+            <td>36.6</td>
+            <td>36.9</td>
+            <td>37.5</td>
+        </tr>
+        <tr>
+            <td>CH<sub>3</sub></td>
+            <td>31.4</td>
+            <td>31.1</td>
+            <td>30.7</td>
+            <td>30.7</td>
+            <td>31.3</td>
+            <td>31.6</td>
+            <td>32.0</td>
+        </tr>
+        <tr>
+            <th>二甲基亚砜</th>
+            <td>—</td>
+            <td>40.8/td>
+            </td><td>41.2</td>
+            <td>40.4</td>
+            <td>40.0</td>
+            <td>41.3</td>
+            <td>40.4</td>
+            <td>39.4</td>
+        </tr>
+        <tr>
+            <th>二氯甲烷</th>
+            <td>—</td>
+            <td>53.5</td>
+            <td>54.9</td>
+            <td>54.8</td>
+            <td>53.5</td>
+            <td>55.3</td>
+            <td>54.8</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <th>环己烷</th>
+            <td>—</td>
+            <td>26.9</td>
+            <td>27.5</td>
+            <td>26.3</td>
+            <td>27.3</td>
+            <td>27.6</td>
+            <td>28.0</td>
+            <td>—</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>参考文献：<em>Org. Process Res. Dev.</em> <strong>2016</strong>, 20(3), 661–667</p>
 ]]></content>
       <categories>
         <category>Learning notes</category>
